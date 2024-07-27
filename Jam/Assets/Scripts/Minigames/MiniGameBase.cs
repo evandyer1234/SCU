@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MiniGameBase : MonoBehaviour
 {
-    
+    public GameObject piece;
     public void Enable()
     {
         gameObject.SetActive(true);
@@ -17,6 +17,7 @@ public class MiniGameBase : MonoBehaviour
 
     public void OnSuccess()
     {
-
+        piece.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
