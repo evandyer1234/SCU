@@ -9,7 +9,7 @@ public class GameModeManager : MonoBehaviour
 {
     [SerializeField] float StartTime;
     float CurrentTime;
-    [SerializeField] TextMeshProUGUI timerdisplay;
+    
     public List<Ingredient.ItemVal> neededItems = new List<Ingredient.ItemVal>();
     [SerializeField] GameObject Gameover;
     [SerializeField] GameObject Gamewin;
@@ -25,7 +25,7 @@ public class GameModeManager : MonoBehaviour
     void FixedUpdate()
     {
         CurrentTime -= Time.fixedDeltaTime;
-        timerdisplay.text = "" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00");
+        UIManager.instance.SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
         if (CurrentTime <= 0)
         {
             Time.timeScale = 0;
