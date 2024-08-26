@@ -5,6 +5,9 @@ using UnityEngine;
 public class MiniGameBase : MonoBehaviour
 {
     public GameObject piece;
+
+    public string miniGameInstructions;
+    
     public void Enable()
     {
         gameObject.SetActive(true);
