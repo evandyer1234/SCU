@@ -600,8 +600,8 @@ GameObject:
   - component: {fileID: 7531017303318887203}
   - component: {fileID: 7531017303318887200}
   - component: {fileID: 7531017303318887202}
-  - component: {fileID: 2484600456134791694}
   - component: {fileID: 2484600456134791689}
+  - component: {fileID: 8225334474099724023}
   m_Layer: 0
   m_Name: XRayButton
   m_TagString: Untagged
@@ -692,36 +692,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2484600456134791694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531017303318887206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d28efdcaa83534044a9be9a46eabee03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2484600456134791694}
-        m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
-        m_MethodName: OnSelected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  yonly: 1
-  minY: -3.5
-  maxY: 3.5
 --- !u!114 &2484600456134791689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,3 +706,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piece: {fileID: 0}
   miniGameInstructions: 
+  miniGameStage: 0
+--- !u!114 &8225334474099724023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7531017303318887206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28efdcaa83534044a9be9a46eabee03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8225334474099724023}
+        m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
+        m_MethodName: OnSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  yonly: 1
+  minY: -3.5
+  maxY: 3.5

@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Case1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Case1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/XRayButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/XRayButton.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
       <workItem from="1724615566135" duration="1306000" />
       <workItem from="1724616899604" duration="3000" />
       <workItem from="1724695351452" duration="2509000" />
-      <workItem from="1724855020401" duration="2371000" />
+      <workItem from="1724855020401" duration="3304000" />
     </task>
     <servers />
   </component>

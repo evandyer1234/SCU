@@ -32,7 +32,6 @@ public class ClickandDrag : ClickEvent
     public void FollowMouse()
     {
         Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-        Debug.Log(pos.y);
         if (yonly)
         {
             if (pos.y <= maxY && pos.y >= minY)
