@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ClickandDrag : ClickEvent
 {
+    bool isTesting = true;
+    
     bool selected = false;
     [SerializeField] bool yonly = false;
 
