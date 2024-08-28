@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 7531017303318887200}
   - component: {fileID: 7531017303318887202}
   - component: {fileID: 2484600456134791689}
-  - component: {fileID: 8225334474099724023}
+  - component: {fileID: 3463130358149003668}
   m_Layer: 0
   m_Name: XRayButton
   m_TagString: Untagged
@@ -707,7 +707,7 @@ MonoBehaviour:
   piece: {fileID: 0}
   miniGameInstructions: 
   miniGameStage: 0
---- !u!114 &8225334474099724023
+--- !u!114 &3463130358149003668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -716,13 +716,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7531017303318887206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d28efdcaa83534044a9be9a46eabee03, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a81c6d78d5aaaa4b87c91d64536072c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8225334474099724023}
+      - m_Target: {fileID: 3463130358149003668}
         m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
         m_MethodName: OnSelected
         m_Mode: 1
