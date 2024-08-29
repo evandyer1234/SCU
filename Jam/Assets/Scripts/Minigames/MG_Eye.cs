@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,8 @@ public class MG_Eye : MiniGameBase
     [SerializeField] private List<GameObject> selectableEyes;
     [SerializeField] private GameObject lEye, rEye;
 
+    [SerializeField] internal Iris intactEye;
+
 
 
     [SerializeField] private List<Sprite> irisColors;
@@ -16,6 +19,20 @@ public class MG_Eye : MiniGameBase
     public override void Enable()
     {
         base.Enable();
+        
+        RandomizeIrisColors();
+    }
+
+    private void Awake()
+    {
+        if (lEye.GetComponentInChildren<Iris>().isIntactEye)
+        {
+            intactEye = lEye.GetComponentInChildren<Iris>();
+        }
+        else
+        {
+            intactEye = rEye.GetComponentInChildren<Iris>();
+        }
         
         RandomizeIrisColors();
     }
