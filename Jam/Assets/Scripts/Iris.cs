@@ -7,6 +7,7 @@ public class Iris : MonoBehaviour
 
     public bool isIntactEye;
     public bool otherEyeExtracted;
+    public bool extractionInProgress;
     public float timeBetweenMovements;
     public float irisMoveSpeed;
 
@@ -16,10 +17,16 @@ public class Iris : MonoBehaviour
     private int randomInt;
 
     [SerializeField] private List<Vector3> eyePositions;
+
+    private Vector3 originalPosition;
+    
+    public float jitterAmount = 0.1f;
+    public float jitterSpeed = 0.1f;
     
     // Start is called before the first frame update
     void Start()
     {
+        originalPosition = transform.localPosition;
         randomInt = Random.Range(1, eyePositions.Count);
     }
 
@@ -33,6 +40,12 @@ public class Iris : MonoBehaviour
         else
         {
             isCentered = false;
+        }
+
+        if (isIntactEye && extractionInProgress)
+        {
+            Vector3 jitter = originalPosition + (Vector3)Random.insideUnitCircle * jitterAmount;
+            transform.localPosition = jitter;
         }
         
         if (isIntactEye && otherEyeExtracted)

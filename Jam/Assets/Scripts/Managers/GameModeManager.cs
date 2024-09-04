@@ -7,14 +7,28 @@ using System;
 
 public class GameModeManager : MonoBehaviour
 {
+
+    public static GameModeManager instance;
+    
     [SerializeField] float StartTime;
-    float CurrentTime;
+    public float CurrentTime;
     
     public List<Ingredient.ItemVal> neededItems = new List<Ingredient.ItemVal>();
     [SerializeField] GameObject Gameover;
     [SerializeField] GameObject Gamewin;
 
-    
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         CurrentTime = StartTime;

@@ -16,14 +16,7 @@ public class MG_Eye : MiniGameBase
 
     [SerializeField] private List<Sprite> irisColors;
 
-    public override void Enable()
-    {
-        base.Enable();
-        
-        RandomizeIrisColors();
-    }
-
-    private void Awake()
+    private void OnEnable()
     {
         if (lEye.GetComponentInChildren<Iris>().isIntactEye)
         {

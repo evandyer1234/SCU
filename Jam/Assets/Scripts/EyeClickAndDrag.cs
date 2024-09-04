@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,13 @@ public class EyeClickAndDrag : ClickandDrag
 {
     [SerializeField] private float maxRotation;
 
-    public bool isInfectedEye;
+    [SerializeField] private SpriteRenderer irisRenderer, reflectionRenderer, eyeRenderer;
 
+    public bool isInfectedEye;
+    public bool isOverEyeSlot;
+
+    private Transform eyeSlotTransform;
+    
     public MG_Eye _mgEye;
 
     public override void Update()
@@ -36,6 +42,10 @@ public class EyeClickAndDrag : ClickandDrag
     {
         base.OnSelected();
 
+        if (isInfectedEye)
+        {
+            _mgEye.intactEye.extractionInProgress = true;
+        }
 
     }
 
@@ -46,7 +56,47 @@ public class EyeClickAndDrag : ClickandDrag
         if (isInfectedEye)
         {
             transform.parent.gameObject.SetActive(false);
+            _mgEye.intactEye.extractionInProgress = false;
             _mgEye.intactEye.otherEyeExtracted = true;
+        }
+        else
+        {
+            if (isOverEyeSlot)
+            {
+
+                // CHECK IF IS CORRECT EYE
+                // IF SO, PLACE IN SLOT AND FINISH MINIGAME
+                eyeRenderer.sortingOrder = 2;
+                irisRenderer.sortingOrder = 3;
+                reflectionRenderer.sortingOrder = 4;
+                
+                transform.position = eyeSlotTransform.position;
+                // ELSE, TIMER COUNTS DOWN FASTER TEMPORARILY
+
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EyeSlot")
+        {
+            isOverEyeSlot = true;
+            eyeSlotTransform = other.transform;
+        }
+    }
+    
+    
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "EyeSlot")
+        {
+            isOverEyeSlot = true;
+            eyeSlotTransform = other.transform;
+        }
+        else
+        {
+            isOverEyeSlot = false;
         }
     }
 }
