@@ -7,13 +7,13 @@ public class ClickandDrag : ClickEvent
     bool isTesting = true;
     
     bool selected = false;
-    [SerializeField] bool yonly = false;
+    [SerializeField] internal bool yonly = false;
 
-    [SerializeField] private float minY, maxY;
+    [SerializeField] internal float minY, maxY;
     
-    void Update()
+    public virtual void Update()
     {
-        if (Input.GetMouseButtonUp(0)) 
+        if (Input.GetMouseButtonUp(0) && selected) 
         {
             selected = false;
             Release();
@@ -29,7 +29,7 @@ public class ClickandDrag : ClickEvent
 
     }
 
-    public void FollowMouse()
+    public virtual void FollowMouse()
     {
         Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
         if (yonly)
@@ -46,7 +46,7 @@ public class ClickandDrag : ClickEvent
         
     }
 
-    public void OnSelected()
+    public virtual void OnSelected()
     {
         selected = true;
     }
