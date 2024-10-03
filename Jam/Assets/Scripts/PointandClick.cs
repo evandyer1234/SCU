@@ -22,7 +22,7 @@ public class PointandClick : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 //Transform objectHit = hit.transform;
-                Debug.Log("Hit somthin");
+                Debug.Log("Hit " + hit.collider.gameObject.name);
                 ClickEvent ce = hit.collider.gameObject.GetComponent<ClickEvent>();
                 ce.Clicked();
                

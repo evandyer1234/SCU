@@ -6038,6 +6038,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759549185}
   m_CullTransparentMesh: 1
+--- !u!1 &1793704796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2484600456350198679, guid: 1b17e2e8734f13b4c8874f796b232b3e, type: 3}
+  m_PrefabInstance: {fileID: 2484600454702152436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1793704799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793704796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346f8bd6d43674949bd5b5a2ca945ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1799431108
 GameObject:
   m_ObjectHideFlags: 0
@@ -7372,6 +7404,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1275498755}
     m_Modifications:
+    - target: {fileID: 2484600456350198673, guid: 1b17e2e8734f13b4c8874f796b232b3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7531017303318887203, guid: 1b17e2e8734f13b4c8874f796b232b3e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7437,27 +7473,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 2093522155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d28efdcaa83534044a9be9a46eabee03, type: 3}
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5402242184788296160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093522155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81c6d78d5aaaa4b87c91d64536072c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5402242184788296156}
-        m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
-        m_MethodName: OnSelected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   yonly: 1
-  minY: -3.5
-  maxY: 3.5
+  minY: -1000
+  maxY: 1000
 --- !u!1001 &5402242185566144725
 PrefabInstance:
   m_ObjectHideFlags: 0
