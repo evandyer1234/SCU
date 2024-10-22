@@ -17,13 +17,14 @@ public class MG_Pump : MiniGameBase
     [SerializeField] float length;
     float currentvalue;
     float currentrate;
-    GameModeManager gmm;
+   
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         pressure.maxValue = 100f;
         currentvalue = goalnum;
-        gmm = EventSystem.current.gameObject.GetComponent<GameModeManager>();
+        gameModeManager = EventSystem.current.gameObject.GetComponent<GameModeManager>();
         timeremaining.maxValue = length;
     }
 
@@ -48,11 +49,11 @@ public class MG_Pump : MiniGameBase
 
         if (currentvalue > (goalnum + variance))
         {
-            gmm.subtractTime(timepunishment);
+            gameModeManager.subtractTime(timepunishment);
         }
         else if (currentvalue < (goalnum - variance)) 
         {
-            gmm.subtractTime(timepunishment);
+            gameModeManager.subtractTime(timepunishment);
         }
         else
         {

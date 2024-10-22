@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MiniGameBase : MonoBehaviour
 {
@@ -10,7 +12,11 @@ public class MiniGameBase : MonoBehaviour
     public string miniGameInstructions;
     
     [SerializeField] internal Stage miniGameStage;
-    
+    [HideInInspector] public GameModeManager gameModeManager;
+    public virtual void Start()
+    {
+        gameModeManager = EventSystem.current.gameObject.GetComponent<GameModeManager>();
+    }
     public virtual void Enable()
     {
         gameObject.SetActive(true);
@@ -28,7 +34,11 @@ public class MiniGameBase : MonoBehaviour
 
     public virtual void OnSuccess()
     {
-        piece.SetActive(true);
+        if (piece != null)
+        {
+            piece.SetActive(true);
+        }
+        
         gameObject.SetActive(false);
     }
     
