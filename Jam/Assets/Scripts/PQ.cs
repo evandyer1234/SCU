@@ -10,14 +10,14 @@ public class PQ<DataType>
     public class PQElement
     {
         public DataType data;
-        public int priority;
+        public float priority;
     }
 
     // Using a linked list to store all of our data internally
     public LinkedList<PQElement> linkedList = new LinkedList<PQElement>();
 
     // Add a new value into the priority queue, with the given priority
-    public void Enqueue(DataType aData, int aPriority)
+    public void Enqueue(DataType aData, float aPriority)
     {
         
         if (linkedList.Count > 0)
