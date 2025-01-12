@@ -1663,7 +1663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &509148954
 Transform:
   m_ObjectHideFlags: 0
@@ -6346,18 +6346,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7531017303318887203, guid: 1b17e2e8734f13b4c8874f796b232b3e, type: 3}
   m_PrefabInstance: {fileID: 2484600454702152436}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5402242184788296156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093522155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5402242184788296160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6734,6 +6722,10 @@ PrefabInstance:
     - target: {fileID: 7735831155073416184, guid: 146fff57e84d5b94fbc059b3779edc6f, type: 3}
       propertyPath: m_Name
       value: rhythm
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735831155073416184, guid: 146fff57e84d5b94fbc059b3779edc6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7735831155073416185, guid: 146fff57e84d5b94fbc059b3779edc6f, type: 3}
       propertyPath: m_RootOrder

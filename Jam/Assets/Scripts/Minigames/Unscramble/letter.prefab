@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7219672475133363547}
   - component: {fileID: 4225915323555897981}
   - component: {fileID: 3095038377756760048}
+  - component: {fileID: 3773081068596802574}
+  - component: {fileID: 2561167256372388454}
   m_Layer: 0
   m_Name: letter
   m_TagString: Untagged
@@ -150,3 +152,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letter: 0
   text: {fileID: 4225915323555897981}
+--- !u!114 &3773081068596802574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816389819699324630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81c6d78d5aaaa4b87c91d64536072c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3773081068596802574}
+        m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
+        m_MethodName: OnSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  yonly: 0
+  minY: 0
+  maxY: 0
+--- !u!65 &2561167256372388454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816389819699324630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.454834, y: 26.400757, z: 1}
+  m_Center: {x: -0.4119873, y: 4.270935, z: 0}

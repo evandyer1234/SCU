@@ -6,11 +6,13 @@ using UnityEngine;
 public class MG_Unscramble : MiniGameBase
 {
     [SerializeField] List<string> WordList = new List<string>();
+    List<Letter> letters = new List<Letter>();
     [SerializeField] List<Slot> SlotList = new List<Slot>();
     [SerializeField] GameObject Canvas;
     [SerializeField] Letter defaultletter;
     string word;
     [SerializeField] SpriteRenderer spriteRenderer;
+
     public override void Start()
     {
         word = WordList[Random.Range(0, WordList.Count)];
@@ -25,6 +27,38 @@ public class MG_Unscramble : MiniGameBase
             Letter clone = Instantiate(defaultletter, pos, Quaternion.identity);
             clone.lettersetup(word[i]);
             clone.transform.SetParent(Canvas.transform);
+            letters.Add(clone);
         }
     }
+
+    IEnumerator CheckString()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        List<Letter> orderedletters = new List<Letter>();
+
+        
+        foreach (Letter l in letters)
+        {
+
+            /*
+            if (orderedletters.Count == 0)
+            {
+                orderedletters.Add(l);
+            }
+            else
+            {
+                foreach(Letter m in orderedletters)
+                {
+                    if (l.transform.position.x > m.transform.position.x)
+                    {
+
+                    }
+                }
+            }
+            */
+        }
+    }
+
+
 }
