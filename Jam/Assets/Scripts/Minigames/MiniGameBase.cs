@@ -10,7 +10,8 @@ public class MiniGameBase : MonoBehaviour
     public GameObject piece;
 
     public string miniGameInstructions;
-    
+    public float penalty;
+
     [SerializeField] internal Stage miniGameStage;
     [HideInInspector] public GameModeManager gameModeManager;
     public virtual void Start()

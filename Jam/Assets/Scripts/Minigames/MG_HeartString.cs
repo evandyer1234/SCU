@@ -8,7 +8,7 @@ public class MG_HeartString : MiniGameBase
     [SerializeField] List<HS_SO_Base> HSIMAGES = new List<HS_SO_Base>();
     int imageindex;
     [SerializeField] SpriteRenderer PuzzleImage;
-    [SerializeField] float penalty;
+    
    
     public override void Start()
     {
