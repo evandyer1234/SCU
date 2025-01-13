@@ -58,12 +58,22 @@ public class EyeClickAndDrag : ClickandDrag
             transform.parent.gameObject.SetActive(false);
             _mgEye.intactEye.extractionInProgress = false;
             _mgEye.intactEye.otherEyeExtracted = true;
+            _mgEye.sc.enabled = true;
         }
         else
         {
+           
             if (isOverEyeSlot)
             {
-
+                Debug.Log("hi");
+                if (_mgEye.correctsprite == irisRenderer.sprite)
+                {
+                    _mgEye.OnSuccess();
+                }
+                else
+                {
+                    _mgEye.gameModeManager.subtractTime(_mgEye.penalty);
+                }
                 // CHECK IF IS CORRECT EYE
                 // IF SO, PLACE IN SLOT AND FINISH MINIGAME
                 eyeRenderer.sortingOrder = 2;

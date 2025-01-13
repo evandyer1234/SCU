@@ -12,7 +12,8 @@ public class MG_Eye : MiniGameBase
 
     [SerializeField] internal Iris intactEye;
 
-
+    [HideInInspector] public Sprite correctsprite;
+     public SphereCollider sc;
 
     [SerializeField] private List<Sprite> irisColors;
 
@@ -28,6 +29,8 @@ public class MG_Eye : MiniGameBase
         }
         
         RandomizeIrisColors();
+
+        correctsprite = lEye.GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite;
     }
 
     public override void Update()
@@ -59,6 +62,7 @@ public class MG_Eye : MiniGameBase
         for (int i = 0; i < selectableEyes.Count; i++)
         {
             selectableEyes[i].GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite = irisColors[Random.Range(0, irisColors.Count)];
+            Debug.Log("" + selectableEyes[i].GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite);
         }
     }
 }

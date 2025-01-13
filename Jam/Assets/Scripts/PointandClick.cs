@@ -24,7 +24,11 @@ public class PointandClick : MonoBehaviour
                 //Transform objectHit = hit.transform;
                 Debug.Log("Hit " + hit.collider.gameObject.name);
                 ClickEvent ce = hit.collider.gameObject.GetComponent<ClickEvent>();
-                ce.Clicked();
+                if (ce != null)
+                {
+                    ce.Clicked();
+                }
+               
                
             }
         }
