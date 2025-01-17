@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class MG_Whack : MiniGameBase
 {
     [Tooltip("Spawn locations for the targets")]
@@ -30,6 +31,12 @@ public class MG_Whack : MiniGameBase
 
     //to stop courutines from reseting when they arent supposed to
     bool done = false;
+    
+    
+    // Audio
+    private AudioSource _audioSource;
+    [SerializeField] private AudioClip _hitSound;
+    [SerializeField] private AudioClip _missSound;
 
     public override void Start()
     {
@@ -37,6 +44,8 @@ public class MG_Whack : MiniGameBase
         
         //start timer
         StartCoroutine(timer());
+        
+        _audioSource = GetComponent<AudioSource>();
 
     }
     IEnumerator timer()
@@ -86,6 +95,9 @@ public class MG_Whack : MiniGameBase
     public void Miss()
     {
         gameModeManager.subtractTime(penalty);
+        Debug.Log("Miss");
+
+        _audioSource.PlayOneShot(_missSound);
     }
 
     //plays wheh the player hits a mole
@@ -97,5 +109,10 @@ public class MG_Whack : MiniGameBase
             done = true;
             OnSuccess();
         }
+
+        Debug.Log("Hit");
+        
+        _audioSource.PlayOneShot(_hitSound);
+
     }
 }
