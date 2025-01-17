@@ -47,6 +47,8 @@ public class EyeClickAndDrag : ClickandDrag
             _mgEye.intactEye.extractionInProgress = true;
         }
 
+        _mgEye.PickupEyeSound();
+
     }
 
     public override void Release()
@@ -85,6 +87,8 @@ public class EyeClickAndDrag : ClickandDrag
 
             }
         }
+        
+        _mgEye.ReleaseEyeSound();
     }
 
     private void OnTriggerEnter(Collider other)

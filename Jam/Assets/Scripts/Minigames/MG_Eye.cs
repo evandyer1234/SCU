@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(AudioSource))]
 public class MG_Eye : MiniGameBase
 {
     [SerializeField] private List<GameObject> selectableEyes;
@@ -16,6 +17,10 @@ public class MG_Eye : MiniGameBase
      public SphereCollider sc;
 
     [SerializeField] private List<Sprite> irisColors;
+    
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _pickupEyeSound;
+    [SerializeField] private AudioClip _releaseEyeSound;
 
     private void OnEnable()
     {
@@ -31,6 +36,8 @@ public class MG_Eye : MiniGameBase
         RandomizeIrisColors();
 
         correctsprite = lEye.GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite;
+        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public override void Update()
@@ -64,5 +71,15 @@ public class MG_Eye : MiniGameBase
             selectableEyes[i].GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite = irisColors[Random.Range(0, irisColors.Count)];
             Debug.Log("" + selectableEyes[i].GetComponentInChildren<Iris>().gameObject.GetComponent<SpriteRenderer>().sprite);
         }
+    }
+
+    public void PickupEyeSound()
+    {
+        _audioSource.PlayOneShot(_pickupEyeSound);
+    }
+
+    public void ReleaseEyeSound()
+    {
+        _audioSource.PlayOneShot(_releaseEyeSound);
     }
 }
