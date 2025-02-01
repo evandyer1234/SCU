@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Audio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Audio/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Audio/sfx/Dry Ingredient Drag.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Audio/sfx/Organ Grab.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Audio/sfx/Organ Squelch.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Audio/sfx/Single Page Flip.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Audio/sfx/Wet Ingredient .wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Master.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Master.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Big Pump 1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX/Big Pump 1.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/EvantestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EvantestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Whack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Whack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Pump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Pump.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Whack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Whack.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,6 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/pageFlip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -109,7 +109,7 @@
       <workItem from="1724976839111" duration="2956000" />
       <workItem from="1725132136153" duration="2257000" />
       <workItem from="1725411404531" duration="3006000" />
-      <workItem from="1737146165166" duration="7659000" />
+      <workItem from="1737146165166" duration="5800000" />
     </task>
     <servers />
   </component>
