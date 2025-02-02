@@ -6293,13 +6293,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 807065302069914729, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
+      propertyPath: spawnrate
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 807065302069914729, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 807065302069914731, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
       propertyPath: m_Name
       value: Whack
       objectReference: {fileID: 0}
     - target: {fileID: 807065302069914731, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825804041571084208, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dd7f1fbe1e2822418af1b0a27b4d5e9, type: 3}
@@ -6745,7 +6757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5857707209621837940, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5857707209621837946, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
       propertyPath: sc
@@ -6810,6 +6822,10 @@ PrefabInstance:
     - target: {fileID: 5857707209816131959, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
       propertyPath: m_TagString
       value: EyeSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291531585778306953, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8291531585778306953, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -6928,6 +6944,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7277374188036527215, guid: 031f1634715615d4b98239ada4fdc6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7277374188548516136, guid: 031f1634715615d4b98239ada4fdc6ec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -6948,6 +6968,14 @@ PrefabInstance:
     - target: {fileID: 7483306270801604016, guid: 92e119cab6c7a574a83e09a944f0dab3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483306270801604018, guid: 92e119cab6c7a574a83e09a944f0dab3, type: 3}
+      propertyPath: miniGameStage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483306270801604018, guid: 92e119cab6c7a574a83e09a944f0dab3, type: 3}
+      propertyPath: WordList.Array.data[0]
+      value: defenestration
       objectReference: {fileID: 0}
     - target: {fileID: 7483306270801604019, guid: 92e119cab6c7a574a83e09a944f0dab3, type: 3}
       propertyPath: m_RootOrder

@@ -3,7 +3,17 @@ guid: 3d46d9e057f32a049bfd4e14e0f6aa83
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - piece: {instanceID: 0}
+  - gameModeManager: {instanceID: 0}
+  - lEye: {instanceID: 0}
+  - rEye: {instanceID: 0}
+  - intactEye: {instanceID: 0}
+  - correctsprite: {instanceID: 0}
+  - sc: {instanceID: 0}
+  - _audioSource: {instanceID: 0}
+  - _pickupEyeSound: {fileID: 8300000, guid: 78a8aaba99a194420972af8f2cacd459, type: 3}
+  - _releaseEyeSound: {fileID: 8300000, guid: 7ff077de54fca4fef8aa62073c88c5bf, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

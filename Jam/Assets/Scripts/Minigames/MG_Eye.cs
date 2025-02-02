@@ -75,11 +75,14 @@ public class MG_Eye : MiniGameBase
 
     public void PickupEyeSound()
     {
-        _audioSource.PlayOneShot(_pickupEyeSound);
+        _audioSource.loop = true;
+        _audioSource.clip = _pickupEyeSound;
+        _audioSource.Play();
     }
 
     public void ReleaseEyeSound()
     {
+        _audioSource.Stop();
         _audioSource.PlayOneShot(_releaseEyeSound);
     }
 }
