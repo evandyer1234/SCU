@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class PointandClick : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private AudioSource _audioSource;
+    [SerializeField] private AudioClip[] genericClickSounds = new AudioClip[8];
+
     void Start()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
     }
-
-    
+    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -28,8 +30,10 @@ public class PointandClick : MonoBehaviour
                 {
                     ce.Clicked();
                 }
-               
-               
+            }
+            else
+            {
+                _audioSource.PlayOneShot(genericClickSounds[Random.Range(0, genericClickSounds.Length)]);
             }
         }
         else if (Input.GetMouseButtonUp(0))

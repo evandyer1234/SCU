@@ -161,6 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piece: {fileID: 0}
   miniGameInstructions: Pump the lungs to save the patient.
+  penalty: 0
   miniGameStage: 0
   gameModeManager: {fileID: 0}
   pressure: {fileID: 7277374187823912623}
@@ -171,6 +172,9 @@ MonoBehaviour:
   pumpamount: 10
   timepunishment: 0.1
   length: 7
+  _pumpSounds:
+  - {fileID: 8300000, guid: 286d10cc9eadd4b78ab39bb0fd4fbded, type: 3}
+  - {fileID: 8300000, guid: fe676cc9652b24ed2885888aa05fee28, type: 3}
 --- !u!82 &8037699184902740491
 AudioSource:
   m_ObjectHideFlags: 0
@@ -191,8 +195,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 5
-  MaxDistance: 10
+  MinDistance: 1
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -227,7 +231,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.111
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -257,7 +261,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
