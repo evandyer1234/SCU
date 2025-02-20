@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MG_Alchemy : MiniGameBase
 {
+
     
     void Start()
     {
