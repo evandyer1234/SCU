@@ -20,8 +20,6 @@ public class MG_HeartString : MiniGameBase
         base.Start();
         
         _correctVeinNumber = Random.Range(0, _icons.Length);
-        Debug.Log("correct num:" + _correctVeinNumber);
-
 
         _icons[_correctVeinNumber].sprite = corruptionIcon;
 
@@ -32,19 +30,18 @@ public class MG_HeartString : MiniGameBase
     
     public void Selection(int index)
     {
+        Debug.Log("selection");
 
-
-
-        /*
-        if (index == HSIMAGES[_imageindex].CorrectNum)
+        if (index == _correctVeinNumber)
         {
             OnSuccess();
+            Debug.Log("success");
         }
         else
         {
             gameModeManager.subtractTime(penalty);
+            Debug.Log("failure");
 
         }
-        */
     }
 }

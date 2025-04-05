@@ -618,7 +618,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266122061}
+      - m_Target: {fileID: 8155302}
         m_TargetAssemblyTypeName: MG_HeartString, Assembly-CSharp
         m_MethodName: Selection
         m_Mode: 3
@@ -1764,17 +1764,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244165018}
   m_CullTransparentMesh: 1
---- !u!114 &266122061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3950176161115989434, guid: 789203004f94546499163bd031f18b0d, type: 3}
-  m_PrefabInstance: {fileID: 1282326851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 338123644835c5349ab217f5e5ac62d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &278135068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2322,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266122061}
+      - m_Target: {fileID: 8155302}
         m_TargetAssemblyTypeName: MG_HeartString, Assembly-CSharp
         m_MethodName: Selection
         m_Mode: 3
@@ -3418,7 +3407,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266122061}
+      - m_Target: {fileID: 8155302}
         m_TargetAssemblyTypeName: MG_HeartString, Assembly-CSharp
         m_MethodName: Selection
         m_Mode: 3
@@ -5479,6 +5468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeartString
       objectReference: {fileID: 0}
+    - target: {fileID: 3950176161115989432, guid: 789203004f94546499163bd031f18b0d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3950176161115989433, guid: 789203004f94546499163bd031f18b0d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5497,11 +5490,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3950176161115989433, guid: 789203004f94546499163bd031f18b0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: -5.7700005
       objectReference: {fileID: 0}
     - target: {fileID: 3950176161115989433, guid: 789203004f94546499163bd031f18b0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 5.0709476
       objectReference: {fileID: 0}
     - target: {fileID: 3950176161115989433, guid: 789203004f94546499163bd031f18b0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6750,11 +6743,11 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -6781,7 +6774,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266122061}
+      - m_Target: {fileID: 8155302}
         m_TargetAssemblyTypeName: MG_HeartString, Assembly-CSharp
         m_MethodName: Selection
         m_Mode: 3
@@ -8237,7 +8230,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266122061}
+      - m_Target: {fileID: 8155302}
         m_TargetAssemblyTypeName: MG_HeartString, Assembly-CSharp
         m_MethodName: Selection
         m_Mode: 3
