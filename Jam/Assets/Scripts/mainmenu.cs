@@ -7,6 +7,15 @@ using UnityEngine.SceneManagement;
 public class mainmenu : MonoBehaviour
 {
    
+    public void StartLevel(string  levelname)
+    {
+        SceneManager.LoadScene(levelname);
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     public void enterlevel()
     {
