@@ -10,7 +10,7 @@ public class MG_HeartString : MiniGameBase
 
     private int _correctVeinNumber;
     [SerializeField] private SpriteRenderer[] _icons;
-    [SerializeField] private Sprite corruptionIcon;
+    [SerializeField] private Sprite _corruptionIcon;
     
    
     public override void Start()
@@ -19,7 +19,7 @@ public class MG_HeartString : MiniGameBase
         
         _correctVeinNumber = Random.Range(0, _icons.Length);
 
-        _icons[_correctVeinNumber].sprite = corruptionIcon;
+        _icons[_correctVeinNumber].sprite = _corruptionIcon;
     }
 
     
