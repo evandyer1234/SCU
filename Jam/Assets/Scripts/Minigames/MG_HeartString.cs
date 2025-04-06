@@ -5,14 +5,12 @@ using UnityEngine;
 
 public class MG_HeartString : MiniGameBase
 {
-    [SerializeField] List<HS_SO_Base> HSIMAGES = new List<HS_SO_Base>();
-    private int _correctVeinNumber;
-    [SerializeField] SpriteRenderer PuzzleImage;
+    //[SerializeField] List<HS_SO_Base> HSIMAGES = new List<HS_SO_Base>();
+    //[SerializeField] SpriteRenderer PuzzleImag
 
+    private int _correctVeinNumber;
     [SerializeField] private SpriteRenderer[] _icons;
     [SerializeField] private Sprite corruptionIcon;
-    //[SerializeField] private Sprite heartIcon;
-
     
    
     public override void Start()
@@ -22,9 +20,6 @@ public class MG_HeartString : MiniGameBase
         _correctVeinNumber = Random.Range(0, _icons.Length);
 
         _icons[_correctVeinNumber].sprite = corruptionIcon;
-
-        //_imageindex = Random.Range(0, HSIMAGES.Count);
-        //PuzzleImage.sprite = HSIMAGES[imageindex].Puzzleim;
     }
 
     
