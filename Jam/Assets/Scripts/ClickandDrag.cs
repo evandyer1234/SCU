@@ -26,7 +26,7 @@ public class ClickandDrag : ClickEvent
     
     public virtual void Release()
     {
-
+        GameCursor.instance.Default();
     }
 
     public virtual void FollowMouse()
@@ -49,5 +49,6 @@ public class ClickandDrag : ClickEvent
     public virtual void OnSelected()
     {
         selected = true;
+        GameCursor.instance.Clickable();
     }
 }
