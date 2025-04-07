@@ -17,7 +17,7 @@ public class MG_Drain : MiniGameBase
     float safebloodlevel;
 
     [SerializeField, Tooltip("Text to display the current toxicity level")]
-    TextMeshProUGUI displaylevel;
+    TextMeshPro displaylevel;
 
     [SerializeField, Tooltip("amount of time the display takes to load")]
     float loadtime = .5f;
@@ -41,6 +41,7 @@ public class MG_Drain : MiniGameBase
         base.Start();
         //set start value for blood
         bloodtoxicity = Random.Range(minstartvalue, maxstartvalue);
+        SafeInd.SetActive(false);
 
     }
 
