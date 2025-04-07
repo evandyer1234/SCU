@@ -10,9 +10,6 @@ public class ClickandDrag : ClickEvent
     [SerializeField] internal bool yonly = false;
 
     [SerializeField] internal float minY, maxY;
-
-    private Vector3 _positionOffset;
-
     
     public virtual void Update()
     {
@@ -29,13 +26,12 @@ public class ClickandDrag : ClickEvent
     
     public virtual void Release()
     {
-
+        GameCursor.instance.Default();
     }
 
     public virtual void FollowMouse()
     {
-        Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0)) - _positionOffset;
-
+        Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
         if (yonly)
         {
             if (pos.y <= maxY && pos.y >= minY)
@@ -53,11 +49,6 @@ public class ClickandDrag : ClickEvent
     public virtual void OnSelected()
     {
         selected = true;
-
-        //calculate position offset
-        Vector3 cursorPos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-
-        _positionOffset = cursorPos - transform.position;
-
+        GameCursor.instance.Clickable();
     }
 }
