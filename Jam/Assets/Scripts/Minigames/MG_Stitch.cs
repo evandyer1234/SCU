@@ -8,6 +8,9 @@ public class MG_Stitch : MiniGameBase
     [SerializeField] Transform top, bottom, test;
     float angle;
     [SerializeField] LineRenderer lineRendererprefab;
+    [SerializeField] GameObject needle;
+
+    bool stringcomplete = true;
 
     public override void Start()
     {
@@ -16,5 +19,12 @@ public class MG_Stitch : MiniGameBase
 
     }
     
+    public void NewString()
+    {
+        if (stringcomplete)
+        {
+           
+        }
+    }
 
 }
