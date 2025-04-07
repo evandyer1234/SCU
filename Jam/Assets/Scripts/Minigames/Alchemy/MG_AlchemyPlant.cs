@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MG_AlchemyPlant : MonoBehaviour
+public class MG_AlchemyPlant : MG_AlchemyBase
 {
     public GameObject leafObject;
     public int leafNum = 5;
     public float leafDistance = 0.75f;
     public float leftX = 1.65f;
     public float rightX = 3.39f;
+    public float maxHeight = 2.0f;
+    public float minHeight = -3.0f;
     public float leafPickDistance = 1.5f;
 
     // Start is called before the first frame update
@@ -28,8 +30,8 @@ public class MG_AlchemyPlant : MonoBehaviour
             bool breakLoop = false;
             while (!breakLoop)
             {
-                float point = Random.Range(-3.0f, 2.0f);
-                foreach (float item in leftPoints)
+                float point = Random.Range(minHeight, maxHeight);
+                foreach (float item in leftPoints)  
                 {
                     if ((item - 1.0f) <= point && point <= (item + 1.0f))
                     {
@@ -47,7 +49,7 @@ public class MG_AlchemyPlant : MonoBehaviour
             bool breakLoop = false; 
             while (!breakLoop)
             {
-                float point = Random.Range(-3.0f, 2.0f);
+                float point = Random.Range(minHeight, maxHeight);
                 breakLoop = true;
                 foreach (float item in rightPoints)
                 {
@@ -67,6 +69,7 @@ public class MG_AlchemyPlant : MonoBehaviour
         foreach (float point in leftPoints)
         {
             GameObject leaf = Instantiate(leafObject, new Vector3(leftX, point, -2.9f), Quaternion.identity);
+            leaf.transform.parent = this.transform;
             leaf.GetComponent<MG_AlchemyLeaf>().pickDistance = leafPickDistance;
             //Debug.Log(point);
         }
@@ -83,6 +86,11 @@ public class MG_AlchemyPlant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.childCount == 0)
+        {
+            Debug.Log("You win!");
+            gameFinished = true;
+            enabled = false;
+        }
     }
 }
