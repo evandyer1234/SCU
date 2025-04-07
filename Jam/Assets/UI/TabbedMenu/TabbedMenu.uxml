@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/TabbedMenu/TabbedMenu.uss?fileID=7433441132597879392&amp;guid=0a33fa4e9a66ae943a16a095ced6a3ef&amp;type=3#TabbedMenu" />
+    <ui:VisualElement name="tabs">
+        <ui:Label text="Metal" display-tooltip-when-elided="true" name="MetalTab" class="tab currentlySelectedTab" />
+        <ui:Label text="Plant" display-tooltip-when-elided="true" name="PlantTab" class="tab" />
+        <ui:Label text="Liquid" display-tooltip-when-elided="true" name="LiquidTab" class="tab" />
+        <ui:Label text="Powder" display-tooltip-when-elided="true" name="PowderTab" class="tab" />
+    </ui:VisualElement>
+    <ui:VisualElement name="tabContent" style="position: relative;">
+        <ui:Label text="Iron" display-tooltip-when-elided="true" name="MetalContent" class="currentlySelectedTab" />
+        <ui:Label text="Sage" display-tooltip-when-elided="true" name="PlantContent" class="unselectedContent" />
+        <ui:Label text="Vinegar" display-tooltip-when-elided="true" name="LiquidContent" class="unselectedContent" />
+        <ui:Label text="Salt" display-tooltip-when-elided="true" name="PowderContent" class="unselectedContent" />
+    </ui:VisualElement>
+</ui:UXML>
