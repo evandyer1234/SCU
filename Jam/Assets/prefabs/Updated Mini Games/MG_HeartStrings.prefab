@@ -188,7 +188,7 @@ MonoBehaviour:
   - {fileID: 5648822917277244081}
   - {fileID: 5648822917847885642}
   - {fileID: 5648822917565970948}
-  corruptionIcon: {fileID: 21300000, guid: 7745dca01ceeb574c90cdb800c89dbbf, type: 3}
+  _corruptionIcon: {fileID: 21300000, guid: 7745dca01ceeb574c90cdb800c89dbbf, type: 3}
 --- !u!1 &5648822916456989635
 GameObject:
   m_ObjectHideFlags: 0
