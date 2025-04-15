@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/toffl_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/toffl_Proto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameCursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameCursor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursors/Glove.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cursors/Glove.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cursors/GlovePress.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cursors/GlovePress.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Mini Games/EyeGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Mini Games/EyeGame.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +26,12 @@
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Ethan.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/EvantestScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/MM.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/toffl_Proto.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/EyeClickAndDrag.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/GameCursor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Iris.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/GameModeManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +53,8 @@
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/mainmenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/mainmenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Shaders/MagnifyingGlass.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Sprites/Cursors/Glove.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Sprites/Cursors/GlovePress.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Main Camera.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Mini Games/EyeGame.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
@@ -149,6 +151,15 @@
       <workItem from="1725411404531" duration="3006000" />
       <workItem from="1737146165166" duration="5800000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
+      <option name="closed" value="true" />
+      <created>1744743977837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744743977837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +187,7 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Fix Warnings, missing Scripts in Prefabs, etc..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Warnings, missing Scripts in Prefabs, etc..." />
   </component>
 </project>
