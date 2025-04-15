@@ -10,6 +10,9 @@ public class ClickandDrag : ClickEvent
     [SerializeField] internal bool yonly = false;
 
     [SerializeField] internal float minY, maxY;
+
+    private Vector3 _positionOffset;
+
     
     public virtual void Update()
     {
