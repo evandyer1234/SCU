@@ -22,15 +22,15 @@ The Gameplay loop goes something like this:
 
 **(1) The Runnable `main` branch**
 
-> The `main` branch has to remain in a **buildable** + **runnable** State at all times!
-> 
+The `main` branch has to remain in a **buildable** + **runnable** State at all times!
+
 _Our Artists, Writers, Sound Designers will be happy to test and feedback on even unfinished but functioning Minigames!_
 
 ===============
 
 **(2) Limit Lifetime of `other Branches`**
 
-> All `other branches` should attempt to be merged **within a week** to the main.
+All `other branches` should attempt to be merged **within a week** to the main.
 
 _If you have an unfinished minigame and alot of work ahead: work on making the current minigame **buildable** + **runnable** with unfinished features._ 
 _And then branch away again for another week!_
@@ -39,11 +39,11 @@ _And then branch away again for another week!_
 
 **(3) Limit Scenes and Non-Main Scene Lifetime**
 
-> Working in different Scenes seems convenient at first, until we don't know anymore which scene contains what. Lets try to stick to:
-> * 1 x Main Scene
-> * at **most** 1x Experimental Scene
-> 
-> ... at all times! And attempt to merge the progress of the Experimental Scene as well on a weekly basis.
+Working in different Scenes seems convenient at first, until we don't know anymore which scene contains what. Lets try to stick to:
+* 1 x Main Scene
+* at **most** 1x Experimental Scene
+
+... at all times! And attempt to merge the progress of the Experimental Scene as well on a weekly basis.
 
 
 ## Building a Minigame to show progress!
@@ -56,12 +56,8 @@ Make sure to upload and update your progress to a running version with a running
 1. In Unity go to `File > Build Settings` and select the Scene to build with the target Minigame
 2. Select a folder to Build to and hit Build
 3. Zip the Result with a program like [7zip](https://www.7-zip.org/)
-4. Name the Zip File according to our Naming Convention!
-5. Upload it to our Gdrive!
-
-> Naming Convention: MG_HeartStrings_v1.zip
-
-> GDrive Folder: `Game Dev > SCU > Game Builds` or [click here](https://drive.google.com/drive/folders/1_VMiCXF90PWppXd4vomWxtbQlfueDJjb)
+4. Name the Zip File according to our Naming Convention: e.g. **MG_HeartStrings_v1.zip**
+5. Upload it to our Gdrive! Folder: `Game Dev > SCU > Game Builds` or [click here](https://drive.google.com/drive/folders/1_VMiCXF90PWppXd4vomWxtbQlfueDJjb)
 
 
 
