@@ -10,19 +10,6 @@ public class GameCursor : MonoBehaviour
 
     public static GameCursor instance;
 
-    public void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void Start()
     {
         Default();

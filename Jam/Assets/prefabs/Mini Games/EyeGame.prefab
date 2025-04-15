@@ -183,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 1
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0.9
   irisMoveSpeed: 10
   isCentered: 0
@@ -199,6 +200,8 @@ MonoBehaviour:
   - {x: 1.75, y: 2.75, z: 0}
   - {x: 1.75, y: -2.75, z: 0}
   - {x: -1.75, y: -2.75, z: 0}
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707207851340762
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,10 +385,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707208010953949
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,10 +491,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707208051550159
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,10 +597,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707208136372473
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +883,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208272571967
 GameObject:
@@ -972,6 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0.9
   irisMoveSpeed: 0
   isCentered: 0
@@ -988,6 +1005,8 @@ MonoBehaviour:
   - {x: 1.75, y: 2.75, z: 0}
   - {x: 1.75, y: -2.75, z: 0}
   - {x: -1.75, y: -2.75, z: 0}
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707208329558274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1139,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208370930197
 GameObject:
@@ -1506,7 +1529,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208659652383
 GameObject:
@@ -1640,7 +1667,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208683938271
 GameObject:
@@ -1774,7 +1805,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208697449096
 GameObject:
@@ -1875,10 +1910,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707208742927473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,7 +2049,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707208909398833
 GameObject:
@@ -2339,7 +2381,11 @@ MonoBehaviour:
   minY: 2
   maxY: 4
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 1
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!135 &5857707208979447159
 SphereCollider:
@@ -2453,10 +2499,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707209087339233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,7 +2600,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5857707209089045118}
   - component: {fileID: 5857707209089045117}
-  - component: {fileID: 5857707209089045059}
   - component: {fileID: 5857707209089045058}
   m_Layer: 0
   m_Name: EyeL
@@ -2629,36 +2677,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5857707209089045059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5857707209089045119}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d28efdcaa83534044a9be9a46eabee03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5857707209089045059}
-        m_TargetAssemblyTypeName: ClickandDrag, Assembly-CSharp
-        m_MethodName: OnSelected
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  yonly: 1
-  minY: 0
-  maxY: 3.5
 --- !u!135 &5857707209089045058
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3035,7 +3053,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707209142395437
 GameObject:
@@ -3169,7 +3191,11 @@ MonoBehaviour:
   minY: -3.5
   maxY: 3.5
   maxRotation: 0
+  irisRenderer: {fileID: 0}
+  reflectionRenderer: {fileID: 0}
+  eyeRenderer: {fileID: 0}
   isInfectedEye: 0
+  isOverEyeSlot: 0
   _mgEye: {fileID: 5857707209621837946}
 --- !u!1 &5857707209169649341
 GameObject:
@@ -3354,10 +3380,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707209358870749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,10 +3659,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707209490884836
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,6 +3932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5857707209621837947}
   - component: {fileID: 5857707209621837946}
+  - component: {fileID: 8291531585778306953}
   m_Layer: 0
   m_Name: EyeGame
   m_TagString: Untagged
@@ -3938,7 +3971,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piece: {fileID: 0}
   miniGameInstructions: Do something
+  penalty: 0
   miniGameStage: 0
+  gameModeManager: {fileID: 0}
   selectableEyes:
   - {fileID: 5857707208659652383}
   - {fileID: 5857707208635528408}
@@ -3953,10 +3988,111 @@ MonoBehaviour:
   lEye: {fileID: 5857707209089045119}
   rEye: {fileID: 5857707209495912490}
   intactEye: {fileID: 0}
+  correctsprite: {fileID: 0}
+  sc: {fileID: 0}
   irisColors:
   - {fileID: 21300000, guid: 4e278fa315ab314479451c3a17e9604e, type: 3}
   - {fileID: 21300000, guid: 565732533bd7b214e8f254928d54c4a7, type: 3}
   - {fileID: 21300000, guid: e43c210a38ad5844d81c174a7066e1b6, type: 3}
+  _audioSource: {fileID: 0}
+  _pickupEyeSound: {fileID: 0}
+  _releaseEyeSound: {fileID: 0}
+--- !u!82 &8291531585778306953
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857707209621837940}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5857707209715086289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,10 +4192,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIntactEye: 0
   otherEyeExtracted: 0
+  extractionInProgress: 0
   timeBetweenMovements: 0
   irisMoveSpeed: 0
   isCentered: 0
   eyePositions: []
+  jitterAmount: 0.1
+  jitterSpeed: 0.1
 --- !u!1 &5857707209766084912
 GameObject:
   m_ObjectHideFlags: 0

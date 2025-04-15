@@ -700,7 +700,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EyeSlot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5857707209089045059, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8843b673f986ead4b93187ac1b4f09cb, type: 3}
 --- !u!1 &116399428 stripped
 GameObject:
@@ -7304,14 +7305,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   genericClickSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8e568eaedd5a5459f80c3cb9e920d830, type: 3}
+  - {fileID: 8300000, guid: 35a16cc63008f4008ba7dd4373ed67d2, type: 3}
+  - {fileID: 8300000, guid: 5d4b3e04467e84c83b0437531ee5a6dc, type: 3}
+  - {fileID: 8300000, guid: f94b6335cd56a47bb9c2aec0fff076ad, type: 3}
+  - {fileID: 8300000, guid: 683b90b61b1034a3b952cf9d7f9cbc19, type: 3}
+  - {fileID: 8300000, guid: ea0f56ad110db4e63afa0609007cfd8a, type: 3}
+  - {fileID: 8300000, guid: 748a8b1974bde497191d709037c49ba4, type: 3}
+  - {fileID: 8300000, guid: a04f974a89134464eab3d0e8151f1e68, type: 3}
 --- !u!114 &2025941354
 MonoBehaviour:
   m_ObjectHideFlags: 0
