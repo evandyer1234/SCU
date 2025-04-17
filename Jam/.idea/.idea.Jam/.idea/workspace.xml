@@ -4,66 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="Add Addressables and more interaction on Magnifying Glass">
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Built In Data.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Built In Data.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/Built In Data_PlayerDataGroupSchema.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/Built In Data_PlayerDataGroupSchema.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/SCU_BundledAssetGroupSchema.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/SCU_BundledAssetGroupSchema.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/SCU_ContentUpdateGroupSchema.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/SCU_ContentUpdateGroupSchema.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/DefaultObject.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/FileLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/FileLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/MouseInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/MouseInput.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/ScanState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/ScanState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow-closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow-closed.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow-open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow-open.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
+    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="Make Layers react to">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow closed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Magnifying glass/shadow open.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,21 +25,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "bigal91"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bigal91&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/evandyer1234/AlchemyGameJam.git",
-    "accountId": "426b3779-f94f-4391-b37e-b096812c223e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/evandyer1234/AlchemyGameJam.git&quot;,
+    &quot;accountId&quot;: &quot;426b3779-f94f-4391-b37e-b096812c223e&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/2b/9e3b569d/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/toffl_Proto.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -105,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "alex-scan",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-scan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
@@ -190,7 +137,8 @@
       <workItem from="1725132136153" duration="2257000" />
       <workItem from="1725411404531" duration="3006000" />
       <workItem from="1737146165166" duration="5800000" />
-      <workItem from="1744821347578" duration="13704000" />
+      <workItem from="1744821347578" duration="14078000" />
+      <workItem from="1744911677466" duration="2950000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -216,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744822550764</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Addressables and more interaction on Magnifying Glass">
+      <option name="closed" value="true" />
+      <created>1744836448135</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744836448135</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,5 +203,6 @@
     <MESSAGE value="Fix Warnings, missing Scripts in Prefabs, etc..." />
     <MESSAGE value="Drag and drop Magnifying Glass on Handly only" />
     <MESSAGE value="Remove Magnifying glass from toffl Scene" />
+    <MESSAGE value="Add Addressables and more interaction on Magnifying Glass" />
   </component>
 </project>

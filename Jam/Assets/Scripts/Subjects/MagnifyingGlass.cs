@@ -37,11 +37,11 @@ namespace Subjects
             if (followMouse)
             {
                 Vector3 mousepos =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector3(mousepos.x - offsetGlassSpriteToMouse.x, mousepos.y - offsetGlassSpriteToMouse.y, transform.position.z);
-                glassSwitchReference.transform.position = new Vector3(mousepos.x - offsetSwitchSpriteToMouse.x, mousepos.y - offsetSwitchSpriteToMouse.y, glassSwitchReference.transform.position.z);
-                middleLensReference.transform.position = new Vector3(mousepos.x - offsetMiddleLensToMouse.x, mousepos.y - offsetMiddleLensToMouse.y, middleLensReference.transform.position.z);
-                leftLensReference.transform.position = new Vector3(mousepos.x - offsetLeftLensToMouse.x, mousepos.y - offsetLeftLensToMouse.y, leftLensReference.transform.position.z);
-                rightLensReference.transform.position = new Vector3(mousepos.x - offsetRightLensToMouse.x, mousepos.y - offsetRightLensToMouse.y, rightLensReference.transform.position.z);
+                KeepSpriteRelativeToMouse(gameObject, mousepos, offsetGlassSpriteToMouse);
+                KeepSpriteRelativeToMouse(glassSwitchReference, mousepos, offsetSwitchSpriteToMouse);
+                KeepSpriteRelativeToMouse(middleLensReference, mousepos, offsetMiddleLensToMouse);
+                KeepSpriteRelativeToMouse(leftLensReference, mousepos, offsetLeftLensToMouse);
+                KeepSpriteRelativeToMouse(rightLensReference, mousepos, offsetRightLensToMouse);
             }
         }
 
@@ -66,6 +66,11 @@ namespace Subjects
             offsetMiddleLensToMouse = (mousepos - middleLensReference.transform.position);
             offsetLeftLensToMouse = (mousepos - leftLensReference.transform.position);
             offsetRightLensToMouse = (mousepos - rightLensReference.transform.position);
+        }
+        
+        private void KeepSpriteRelativeToMouse(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
+        {
+            spriteRefGo.transform.position = new Vector3(mousePos.x - offset.x, mousePos.y - offset.y, spriteRefGo.transform.position.z);
         }
         
         public GameObject getMiddleLensReference()

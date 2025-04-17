@@ -1,6 +1,7 @@
 using System;
 using Helpers;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Subjects
 {
@@ -21,6 +22,15 @@ namespace Subjects
         [SerializeField, Tooltip("The Sprite of the Switch laying above the handle")]
         private SpriteRenderer glassSwitchSpriteRenderer;
         
+        [SerializeField, Tooltip("The Under cloth Layer, also called Skin Layer")] 
+        private GameObject underClothLayerReference;
+        
+        [SerializeField, Tooltip("The skeleton layer")] 
+        private GameObject skeletonLayerReference;
+        
+        [SerializeField, Tooltip("The organ layer")] 
+        private GameObject organLayerReference;
+        
         // Addressable sprite names to match
         private static string GLASS_SHADOW_OPEN = "glass_shadow_open";
         private static string GLASS_SHADOW_CLOSED = "glass_shadow_closed";
@@ -28,6 +38,10 @@ namespace Subjects
         private static string GLASS_CLOSED = "glass_closed";
         private static string GLASS_SWITCH_OPEN = "glass_switch_open";
         private static string GLASS_SWITCH_CLOSED = "glass_switch_closed";
+        
+        // Lens Colors
+        private Color lensActive = new Color(0f, 0.9f, 0.75f, 0.16f);
+        private Color lensInactive = new Color(0.5f, 0.5f, 0.5f, 0.5f);
         
         // Loading these sprites once
         private Sprite glassShadowOpen;
@@ -74,14 +88,17 @@ namespace Subjects
                 glassMainSpriteRenderer.sprite = glassOpen;
                 glassSwitchSpriteRenderer.sprite = switchOpen;
                 scanState = (int) ScanState.SKIN;
-                EnableMiddleLens();
+                SetAllLensesActive(true);
+                UnfocusAllLensesAndLayers();
+                FocusMiddleLensAndLayer();
             }
             else
             {
                 glassShadowSpriteRenderer.sprite = glassShadowClosed;
                 glassMainSpriteRenderer.sprite = glassClosed;
                 glassSwitchSpriteRenderer.sprite = switchClosed;
-                DisableAllLenses();
+                UnfocusAllLensesAndLayers();
+                SetAllLensesActive(false);
             }
         }
         
@@ -117,47 +134,73 @@ namespace Subjects
             switch (scanState)
             {
                 case (int)ScanState.NONE:
-                    DisableAllLenses();
+                    UnfocusAllLensesAndLayers();
                     break;
                 case (int)ScanState.SKIN:
-                    DisableAllLenses();
-                    EnableMiddleLens();
+                    UnfocusAllLensesAndLayers();
+                    FocusMiddleLensAndLayer();
                     break;
                 case (int)ScanState.ORGANS:
-                    DisableAllLenses();
-                    EnableLeftLens();
+                    UnfocusAllLensesAndLayers();
+                    FocusLeftLensAndLayer();
                     break;
                 case (int)ScanState.BONES:
-                    DisableAllLenses();
-                    EnableRightLens();
+                    UnfocusAllLensesAndLayers();
+                    FocusRightLensAndLayer();
                     break;
             }
         }
 
-        private void DisableAllLenses()
+        private void UnfocusAllLensesAndLayers()
         {
             MagnifyingGlass mg = magnifyingGlassReference.GetComponent<MagnifyingGlass>();
-            mg.getMiddleLensReference().SetActive(false);
-            mg.getLeftLensReference().SetActive(false);
-            mg.getRightLensReference().SetActive(false);
+            RenderLensInactive(mg.getMiddleLensReference());
+            RenderLensInactive(mg.getLeftLensReference());
+            RenderLensInactive(mg.getRightLensReference());
+            underClothLayerReference.SetActive(false);
+            skeletonLayerReference.SetActive(false);
+            organLayerReference.SetActive(false);
         }
 
-        private void EnableMiddleLens()
+        private void SetAllLensesActive(bool activeState)
         {
             MagnifyingGlass mg = magnifyingGlassReference.GetComponent<MagnifyingGlass>();
-            mg.getMiddleLensReference().SetActive(true);
+            mg.getMiddleLensReference().SetActive(activeState);
+            mg.getLeftLensReference().SetActive(activeState);
+            mg.getRightLensReference().SetActive(activeState);
         }
 
-        private void EnableLeftLens()
+        private void FocusMiddleLensAndLayer()
         {
             MagnifyingGlass mg = magnifyingGlassReference.GetComponent<MagnifyingGlass>();
-            mg.getLeftLensReference().SetActive(true);
+            RenderLensActive(mg.getMiddleLensReference());
+            underClothLayerReference.SetActive(true);
+        }
+
+        private void FocusLeftLensAndLayer()
+        {
+            MagnifyingGlass mg = magnifyingGlassReference.GetComponent<MagnifyingGlass>();
+            RenderLensActive(mg.getLeftLensReference());
+            organLayerReference.SetActive(true);
         }
         
-        private void EnableRightLens()
+        private void FocusRightLensAndLayer()
         {
             MagnifyingGlass mg = magnifyingGlassReference.GetComponent<MagnifyingGlass>();
-            mg.getRightLensReference().SetActive(true);
+            RenderLensActive(mg.getRightLensReference());
+            skeletonLayerReference.SetActive(true);
+        }
+
+        private void RenderLensActive(GameObject lensReference)
+        {
+            lensReference.GetComponent<SpriteRenderer>().color = lensActive;
+            lensReference.GetComponent<SpriteMask>().enabled = true;
+        }
+        
+        private void RenderLensInactive(GameObject lensReference)
+        {
+            lensReference.GetComponent<SpriteRenderer>().color = lensInactive;
+            lensReference.GetComponent<SpriteMask>().enabled = false;
         }
     }
 }
