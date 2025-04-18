@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SCU
+  m_EditorClassIdentifier: 
+  m_GroupName: SCU
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1262c6054370c24419909c1f464b65b8
+  m_SerializeEntries:
+  - m_GUID: 641f994d1a7ab0a489143b345854fa67
+    m_Address: glass_shadow_closed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d325d734a1d86d34a8800b0aed73babe
+    m_Address: glass_shadow_open
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 72ed4e9e28a349e419b12f87349f52c7
+    m_Address: glass_closed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 992062fc891b72d42afe7c0dd22a9793
+    m_Address: glass_open
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 02f20253d699d0949a74ef38cb2e4966
+    m_Address: glass_switch_closed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a7614ea62440ce84c90bbfbe416b2cc5
+    m_Address: glass_switch_open
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a7ee6dc6540f13d438b42c995f56470d, type: 2}
+    - {fileID: 11400000, guid: b9d4056c73309dd4cb19bcb28c6ecbe0, type: 2}
