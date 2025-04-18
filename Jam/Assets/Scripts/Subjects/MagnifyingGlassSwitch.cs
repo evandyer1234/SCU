@@ -1,7 +1,6 @@
 using System;
 using Helpers;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Subjects
 {
@@ -54,8 +53,8 @@ namespace Subjects
         // State Management
         private bool magnifyingGlassInUse = false;
         private bool magnifyingGlassOpen = false;
-        private int scanState = (int) ScanState.NONE;
-        private int scanStateLength = Enum.GetNames(typeof(ScanState)).Length;
+        private int scanState = (int) ScanMode.NONE;
+        private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;
         
         private void Awake()
         {
@@ -87,7 +86,7 @@ namespace Subjects
                 glassShadowSpriteRenderer.sprite = glassShadowOpen;
                 glassMainSpriteRenderer.sprite = glassOpen;
                 glassSwitchSpriteRenderer.sprite = switchOpen;
-                scanState = (int) ScanState.SKIN;
+                scanState = (int) ScanMode.SKIN;
                 SetAllLensesActive(true);
                 UnfocusAllLensesAndLayers();
                 FocusMiddleLensAndLayer();
@@ -106,7 +105,7 @@ namespace Subjects
         {
             if (!magnifyingGlassOpen)
             {
-                scanState = (int) ScanState.NONE;
+                scanState = (int) ScanMode.NONE;
                 return;
             }
             if (MouseInput.ScrollForward())
@@ -125,26 +124,26 @@ namespace Subjects
         {
             if (scanState >= scanStateLength)
             {
-                scanState = (int) ScanState.SKIN;
+                scanState = (int) ScanMode.SKIN;
             }
             if (scanState <= 0)
             {
-                scanState = (int) ScanState.BONES;
+                scanState = (int) ScanMode.BONES;
             }
             switch (scanState)
             {
-                case (int)ScanState.NONE:
+                case (int)ScanMode.NONE:
                     UnfocusAllLensesAndLayers();
                     break;
-                case (int)ScanState.SKIN:
+                case (int)ScanMode.SKIN:
                     UnfocusAllLensesAndLayers();
                     FocusMiddleLensAndLayer();
                     break;
-                case (int)ScanState.ORGANS:
+                case (int)ScanMode.ORGANS:
                     UnfocusAllLensesAndLayers();
                     FocusLeftLensAndLayer();
                     break;
-                case (int)ScanState.BONES:
+                case (int)ScanMode.BONES:
                     UnfocusAllLensesAndLayers();
                     FocusRightLensAndLayer();
                     break;

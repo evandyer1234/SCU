@@ -1,6 +1,6 @@
 namespace Subjects
 {
-    enum ScanState : int
+    enum ScanMode : int
     {
         NONE = 0,
         SKIN = 1,
