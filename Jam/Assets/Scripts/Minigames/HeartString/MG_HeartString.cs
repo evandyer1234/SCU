@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 
 public class MG_HeartString : MiniGameBase
 {
-    //[SerializeField] List<HS_SO_Base> HSIMAGES = new List<HS_SO_Base>();
-    //[SerializeField] SpriteRenderer PuzzleImag
 
-    private int _correctVeinNumber;
-    [SerializeField] private SpriteRenderer[] _icons;
-    [SerializeField] private Sprite _corruptionIcon;
+    [SerializeField, Tooltip("A reference to the used icons on the top")] 
+    private SpriteRenderer[] _icons;
     
-   
+    [SerializeField, Tooltip("A reference to the corruption icon")] 
+    private Sprite _corruptionIcon;
+    
+    [SerializeField, Tooltip("A reference to temporary display feedback for the Minigame")] 
+    private TextMeshProUGUI debugMessage;
+    
+    private int _correctVeinNumber;
+
+    void Awake()
+    {
+        debugMessage.text = "";
+    }
+    
     public override void Start()
     {
         base.Start();
@@ -22,21 +29,22 @@ public class MG_HeartString : MiniGameBase
         _icons[_correctVeinNumber].sprite = _corruptionIcon;
     }
 
-    
     public void Selection(int index)
     {
-        Debug.Log("selection");
-
         if (index == _correctVeinNumber)
         {
             OnSuccess();
-            Debug.Log("success");
+            DisplayFeedback("Success!");
         }
         else
         {
             gameModeManager.subtractTime(penalty);
-            Debug.Log("failure");
-
+            DisplayFeedback("Failure...");
         }
+    }
+
+    private void DisplayFeedback(string text)
+    {
+        debugMessage.text = text;
     }
 }
