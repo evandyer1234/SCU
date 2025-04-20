@@ -53,7 +53,7 @@ namespace Subjects
         // State Management
         private bool magnifyingGlassInUse = false;
         private bool magnifyingGlassOpen = false;
-        private int scanState = (int) ScanMode.NONE;
+        private int scanMode = (int) ScanMode.NONE;
         private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;
         
         private void Awake()
@@ -86,7 +86,7 @@ namespace Subjects
                 glassShadowSpriteRenderer.sprite = glassShadowOpen;
                 glassMainSpriteRenderer.sprite = glassOpen;
                 glassSwitchSpriteRenderer.sprite = switchOpen;
-                scanState = (int) ScanMode.SKIN;
+                scanMode = (int) ScanMode.SKIN;
                 SetAllLensesActive(true);
                 UnfocusAllLensesAndLayers();
                 FocusMiddleLensAndLayer();
@@ -105,32 +105,32 @@ namespace Subjects
         {
             if (!magnifyingGlassOpen)
             {
-                scanState = (int) ScanMode.NONE;
+                scanMode = (int) ScanMode.NONE;
                 return;
             }
             if (MouseInput.ScrollForward())
             {
-                scanState++;
+                scanMode++;
                 UpdateLensByState();
             }
             else if (MouseInput.ScrollBackward())
             {
-                scanState--;
+                scanMode--;
                 UpdateLensByState();
             }
         }
 
         private void UpdateLensByState()
         {
-            if (scanState >= scanStateLength)
+            if (scanMode >= scanStateLength)
             {
-                scanState = (int) ScanMode.SKIN;
+                scanMode = (int) ScanMode.SKIN;
             }
-            if (scanState <= 0)
+            if (scanMode <= 0)
             {
-                scanState = (int) ScanMode.BONES;
+                scanMode = (int) ScanMode.BONES;
             }
-            switch (scanState)
+            switch (scanMode)
             {
                 case (int)ScanMode.NONE:
                     UnfocusAllLensesAndLayers();

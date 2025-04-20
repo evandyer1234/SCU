@@ -4,15 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs.meta" afterDir="false" />
+    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="Add Corruption mark to Subject">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/CorruptionMark.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/CorruptionMark.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLeaf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLeaf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/leech.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/leech.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_HeartString.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +57,17 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46da9ce57a644141b0e40d2e12db7dd57400/99/e6ee5032/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/1b/aba48e58/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/2b/9e3b569d/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/EyeClickAndDrag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLeaf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/ScanningSubject/Patient.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/leech.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -253,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744960092483</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Scene and Tag Constants">
+      <option name="closed" value="true" />
+      <created>1745170145329</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745170145329</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +318,6 @@
     <MESSAGE value="Add updated subject sprite layer files" />
     <MESSAGE value="Use Box Collider 2D" />
     <MESSAGE value="Cleanup Proto Scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup Proto Scene" />
+    <MESSAGE value="Add Scene and Tag Constants" />
   </component>
 </project>

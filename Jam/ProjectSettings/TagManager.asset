@@ -6,6 +6,11 @@ TagManager:
   tags:
   - EyeSlot
   - MinigameHeartstring
+  - LensMiddle
+  - LensRight
+  - LensLeft
+  - MagnifyingGlassShadow
+  - MinigameManager
   layers:
   - Default
   - TransparentFX

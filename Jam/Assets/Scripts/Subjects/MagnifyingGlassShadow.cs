@@ -41,5 +41,10 @@ namespace Subjects
         {
             return IsMagnifyingGlassInUse;
         }
+
+        public void SetMagnifyingGlassInUse(bool value)
+        {
+            IsMagnifyingGlassInUse = value;
+        }
     }
 }
