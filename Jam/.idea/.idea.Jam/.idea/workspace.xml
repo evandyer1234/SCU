@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Windows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/CorruptionMark.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/CorruptionMark.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
