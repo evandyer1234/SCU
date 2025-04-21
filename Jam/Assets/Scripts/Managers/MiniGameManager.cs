@@ -14,22 +14,4 @@ public class MiniGameManager : MonoBehaviour
             miniGame.Disable();
         }
     }
-    
-    public void ActivateMinigameByTag(string minigameTag)
-    {
-        foreach (var miniGame in miniGames)
-        {
-            if (miniGame.gameObject.CompareTag(minigameTag))
-            {
-                miniGame.Enable();
-                activeMiniGame = miniGame;
-            }
-        }
-    }
-    
-    public void SetInstructionTextToCurrentMiniGame()
-    {
-        UIManager.instance.SetInstructionText("Instructions: " + "\n" + "\n" + activeMiniGame.miniGameInstructions);
-    }
-    
 }

@@ -10,9 +10,12 @@ namespace Subjects
         [SerializeField, Tooltip("The outline of the mark triggering on hover")] 
         private GameObject corruptionOutline;
 
-        [SerializeField, Tooltip("The Minigame Tag name to start respective minigame")] 
-        private string minigameTagName;
+        [SerializeField, Tooltip("The Minigame Reference to start the game")] 
+        private GameObject minigameRef;
 
+        [SerializeField, Tooltip("The Reference of the lens to allow triggering the minigame only when hovered")] 
+        private GameObject lensRef;
+        
         private bool miniGameLaunched = false;
         
         public void Awake()
@@ -35,7 +38,6 @@ namespace Subjects
         private void MouseLeftClick()
         {
             if (miniGameLaunched) return;   
-            
             List<Collider2D> lensColliders = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x/2)
                 .Where(col => 
                     col.gameObject.CompareTag(NamingConstants.TAG_LENS_MIDDLE)
@@ -43,30 +45,20 @@ namespace Subjects
                     || col.gameObject.CompareTag(NamingConstants.TAG_LENS_RIGHT)
                     ).ToList();
             
-            switch (minigameTagName)
+            if (IsLensHovering(lensColliders))
             {
-                case NamingConstants.TAG_MINIGAME_HEARTSTRING:
-                    if (IsLensHovering(lensColliders, NamingConstants.TAG_LENS_LEFT))
-                    {
-                        LaunchMinigameByTag(NamingConstants.TAG_MINIGAME_HEARTSTRING);
-                    }
-                    break;
-                default:
-                    Debug.LogError("No Minigame matched to launch from Corruption Mark. Check if you have a typo on the Minigame Tag or whether you renamed it recently!");
-                    break;
+                LaunchMinigame();
             }
         }
 
-        private bool IsLensHovering(List<Collider2D> colliders, string lensTag)
+        private bool IsLensHovering(List<Collider2D> colliders)
         {
-            return colliders.Any(col => col.gameObject.CompareTag(lensTag));
+            return colliders.Any(col => col.gameObject.CompareTag(lensRef.tag));
         }
 
-        private void LaunchMinigameByTag(string minigameTagName)
+        private void LaunchMinigame()
         {
-            MiniGameManager mgm = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINI_GAME_MANAGER)
-                .GetComponent<MiniGameManager>();
-            mgm.ActivateMinigameByTag(minigameTagName);
+            minigameRef.SetActive(true);
             miniGameLaunched = true;
             MagnifyingGlassShadow mgs = GameObject
                 .FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS_SHADOW).GetComponent<MagnifyingGlassShadow>();

@@ -51,7 +51,6 @@ namespace Subjects
         private Sprite switchClosed;
 
         // State Management
-        private bool magnifyingGlassInUse = false;
         private bool magnifyingGlassOpen = false;
         private int scanMode = (int) ScanMode.NONE;
         private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;

@@ -5,12 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - EyeSlot
-  - MinigameHeartstring
   - LensMiddle
   - LensRight
   - LensLeft
   - MagnifyingGlassShadow
-  - MinigameManager
   layers:
   - Default
   - TransparentFX

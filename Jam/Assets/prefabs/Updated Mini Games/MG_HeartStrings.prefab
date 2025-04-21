@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 1262437563243944679}
   m_Layer: 0
   m_Name: MG_HeartStrings
-  m_TagString: MinigameHeartstring
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
