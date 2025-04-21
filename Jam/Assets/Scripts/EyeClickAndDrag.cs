@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 public class EyeClickAndDrag : ClickandDrag
@@ -93,7 +91,7 @@ public class EyeClickAndDrag : ClickandDrag
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "EyeSlot")
+        if (other.CompareTag(NamingConstants.TAG_EYE_SLOT))
         {
             isOverEyeSlot = true;
             eyeSlotTransform = other.transform;
@@ -103,7 +101,7 @@ public class EyeClickAndDrag : ClickandDrag
     
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "EyeSlot")
+        if (other.CompareTag(NamingConstants.TAG_EYE_SLOT))
         {
             isOverEyeSlot = true;
             eyeSlotTransform = other.transform;

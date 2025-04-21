@@ -1,3 +1,5 @@
+using System;
+using Helpers;
 using UnityEngine;
 
 namespace Subjects
@@ -48,9 +50,9 @@ namespace Subjects
         private void OnMouseOver()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            if(Input.GetMouseButtonDown(0)) MouseLeftClick();
+            if(MouseInput.LeftClick()) MouseLeftClick();
         }
-
+        
         void OnMouseUp()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;

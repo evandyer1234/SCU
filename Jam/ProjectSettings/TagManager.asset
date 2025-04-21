@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - EyeSlot
+  - LensMiddle
+  - LensRight
+  - LensLeft
+  - MagnifyingGlassShadow
   layers:
   - Default
   - TransparentFX
