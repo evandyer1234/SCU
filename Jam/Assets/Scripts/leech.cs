@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
+using Helpers;
 using UnityEngine;
 
 public class leech : MonoBehaviour
@@ -10,7 +8,7 @@ public class leech : MonoBehaviour
     //when the leeche enters a trigger, it adds a leech to the leech counter in the main script
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag(NamingConstants.TAG_PLAYER))
         {
             _Drain.leeches++;
         }
@@ -18,7 +16,7 @@ public class leech : MonoBehaviour
     //remeoves a leech when exiting the trigger
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag(NamingConstants.TAG_PLAYER))
         {
             _Drain.leeches--;
         }
