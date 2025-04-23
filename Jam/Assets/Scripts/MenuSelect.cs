@@ -6,16 +6,25 @@ public class MenuSelect : MonoBehaviour
 {
     [SerializeField] private Transform _canvas;
 
+    void Start()
+    {
+        //default state: only start menu enabled
+        DisableAllMenus();
+        _canvas.GetChild(0).gameObject.SetActive(true);
+    }
+
     public void ChangeMenu(GameObject selectedmenu)
     {
-        //Debug.Log(GameObject.Find("Canvas").transform.GetChild(0).name);
+        DisableAllMenus();
+        selectedmenu.SetActive(true);
+    }
 
+    void DisableAllMenus()
+    {
         for(int i = 0; i < _canvas.childCount; i++)
         {
             _canvas.GetChild(i).gameObject.SetActive(false);
         }
-
-        selectedmenu.SetActive(true);
     }
     
     
