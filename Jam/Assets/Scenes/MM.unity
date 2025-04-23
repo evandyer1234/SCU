@@ -313,6 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menus: []
+  _canvas: {fileID: 0}
 --- !u!1 &96564096
 GameObject:
   m_ObjectHideFlags: 0
@@ -4846,6 +4847,7 @@ MonoBehaviour:
   - {fileID: 454888491}
   - {fileID: 1200623977}
   - {fileID: 2041887055}
+  _canvas: {fileID: 1778161695}
 --- !u!1 &2041887055
 GameObject:
   m_ObjectHideFlags: 0

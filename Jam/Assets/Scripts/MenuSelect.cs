@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class MenuSelect : MonoBehaviour
 {
-    [SerializeField] List<GameObject> menus = new List<GameObject>();
+    [SerializeField] private Transform _canvas;
 
     public void ChangeMenu(GameObject selectedmenu)
     {
-        foreach (GameObject menu in menus)
+        //Debug.Log(GameObject.Find("Canvas").transform.GetChild(0).name);
+
+        for(int i = 0; i < _canvas.childCount; i++)
         {
-            menu.SetActive(false);
+            _canvas.GetChild(i).gameObject.SetActive(false);
         }
 
         selectedmenu.SetActive(true);
