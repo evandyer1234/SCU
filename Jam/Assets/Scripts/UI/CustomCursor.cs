@@ -19,7 +19,7 @@ public class CustomCursor : MonoBehaviour
     {
         Cursor.visible = false;
 
-        SetDefaultCursor();
+        //SetDefaultCursor();
     }
 
     void Update()
@@ -53,6 +53,7 @@ public class CustomCursor : MonoBehaviour
         return true;
     }
 
+    /*
     public void SetDefaultCursor()
     {
         _spriteRenderer.sprite = _defaultCursor;
@@ -62,4 +63,5 @@ public class CustomCursor : MonoBehaviour
     {
         _spriteRenderer.sprite = _pressedCursor;
     }
+    */
 }
