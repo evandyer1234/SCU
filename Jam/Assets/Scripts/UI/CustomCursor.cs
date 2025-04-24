@@ -2,14 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.EventSystems;
 
 public class CustomCursor : MonoBehaviour
 {
+    [SerializeField] private Sprite _defaultCursor;
+    [SerializeField] private Sprite _pressedCursor;
+
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+
     private Vector3 _targetPos;
+
+    public static CustomCursor instance;
 
     void Start()
     {
         Cursor.visible = false;
+
+        SetDefaultCursor();
     }
 
     void Update()
@@ -41,5 +51,15 @@ public class CustomCursor : MonoBehaviour
         #endif
         
         return true;
+    }
+
+    public void SetDefaultCursor()
+    {
+        _spriteRenderer.sprite = _defaultCursor;
+    }
+
+    public void SetPressedCursor()
+    {
+        _spriteRenderer.sprite = _pressedCursor;
     }
 }
