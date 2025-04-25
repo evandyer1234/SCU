@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -100
+      value: -100.00003
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2382,6 +2382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1778161695}
+  startMenu: {fileID: 966181838}
 --- !u!1 &2041887055
 GameObject:
   m_ObjectHideFlags: 0

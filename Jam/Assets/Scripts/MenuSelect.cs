@@ -5,12 +5,15 @@ using UnityEngine;
 public class MenuSelect : MonoBehaviour
 {
     [SerializeField] private Transform _canvas;
+    
+    [SerializeField, Tooltip("The top level Start Menu to load initially")] 
+    private GameObject startMenu;
 
     void Start()
     {
         //default state: only start menu enabled
         DisableAllMenus();
-        _canvas.GetChild(0).gameObject.SetActive(true);
+        startMenu.SetActive(true);
     }
 
     public void ChangeMenu(GameObject selectedmenu)
