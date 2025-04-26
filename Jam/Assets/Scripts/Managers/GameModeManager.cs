@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameModeManager : MonoBehaviour
 {
@@ -41,6 +42,10 @@ public class GameModeManager : MonoBehaviour
         {
             Time.timeScale = 0;
             Gameover.SetActive(true);
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene(0);
         }
     }
 
