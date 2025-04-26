@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="use Gameobject ref">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Eye.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Gear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Gear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="alex-lungpump" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -61,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "#12 on main-menu-ui",
+    "git-widget-placeholder": "alex-connect-games",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -195,6 +207,7 @@
       <workItem from="1744911677466" duration="2950000" />
       <workItem from="1744959730338" duration="1071000" />
       <workItem from="1745169045306" duration="43000" />
+      <workItem from="1745652149481" duration="5322000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />

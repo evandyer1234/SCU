@@ -11,5 +11,7 @@ namespace Helpers
         // OTHER
         public const string TAG_PLAYER = "Player";
         public const string TAG_EYE_SLOT = "EyeSlot";
+        public const string TAG_MINIGAME_MANAGER = "MinigameManager";
+        public const string TAG_DEBUG_MESSAGE_USER_FEEDBACK = "DebugMessageUserFeedback";
     }
 }

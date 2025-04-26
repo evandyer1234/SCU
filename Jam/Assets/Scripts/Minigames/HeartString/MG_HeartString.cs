@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 public class MG_HeartString : MiniGameBase
@@ -9,17 +8,10 @@ public class MG_HeartString : MiniGameBase
     
     [SerializeField, Tooltip("A reference to the corruption icon")] 
     private Sprite _corruptionIcon;
-    
-    [SerializeField, Tooltip("A reference to temporary display feedback for the Minigame")] 
-    private TextMeshProUGUI debugMessage;
+
     
     private int _correctVeinNumber;
 
-    void Awake()
-    {
-        debugMessage.text = "";
-    }
-    
     public override void Start()
     {
         base.Start();
@@ -34,17 +26,11 @@ public class MG_HeartString : MiniGameBase
         if (index == _correctVeinNumber)
         {
             OnSuccess();
-            DisplayFeedback("Success!");
         }
         else
         {
             gameModeManager.subtractTime(penalty);
-            DisplayFeedback("Failure...");
+            OnPenalty();
         }
-    }
-
-    private void DisplayFeedback(string text)
-    {
-        debugMessage.text = text;
     }
 }

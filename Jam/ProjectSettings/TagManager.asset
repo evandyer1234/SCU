@@ -9,6 +9,8 @@ TagManager:
   - LensRight
   - LensLeft
   - MagnifyingGlassShadow
+  - MinigameManager
+  - DebugMessageUserFeedback
   layers:
   - Default
   - TransparentFX

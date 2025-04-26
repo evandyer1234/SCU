@@ -44,6 +44,7 @@ namespace Minigames.Lungpump
         
         private void Start()
         {
+            base.Start();
             _onClickCollider = GetComponent<CircleCollider2D>();
             _onClickCollider.offset = _collOffsetLeft;
             colliderIsLeft = true;

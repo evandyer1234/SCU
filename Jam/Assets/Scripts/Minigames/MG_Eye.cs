@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -40,10 +37,8 @@ public class MG_Eye : MiniGameBase
         _audioSource = GetComponent<AudioSource>();
     }
 
-    public override void Update()
+    public void Update()
     {
-        base.Update();
-
         if (miniGameStage == Stage.Stage01)
         {
             // DO STAGE 1 STUFF HERE
