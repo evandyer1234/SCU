@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using UnityEngine.EventSystems;
 
 public class CustomCursor : MonoBehaviour
 {
@@ -19,6 +16,7 @@ public class CustomCursor : MonoBehaviour
     {
         Cursor.visible = false;
 
+        DontDestroyOnLoad(gameObject);
         //SetDefaultCursor();
     }
 
