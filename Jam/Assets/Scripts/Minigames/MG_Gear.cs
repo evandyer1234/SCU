@@ -19,9 +19,8 @@ public class MG_Gear : MiniGameBase
         CloseDoor();
     }
     public bool gearchanged = false; 
-    public override void Update()
+    public void Update()
     {
-        base.Update();
         Vector3[] pos = { handle.position, root.position };
         pullcord.SetPositions(pos);
 

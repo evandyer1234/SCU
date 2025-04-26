@@ -27,7 +27,6 @@ public class ClickandDrag : ClickEvent
     
     public virtual void Release()
     {
-        GameCursor.instance.Default();      //remove once new cursor system is finished
         //CustomCursor.instance.SetDefaultCursor();
     }
 
@@ -52,10 +51,7 @@ public class ClickandDrag : ClickEvent
     public virtual void OnSelected()
     {
         selected = true;
-
-        GameCursor.instance.Clickable();        //remove
-        //CustomCursor.instance.SetDefaultCursor();
-
+        //CustomCursor.instance.SetPressedCursor();
         _positionOffset = GetCameraPosition() - transform.position;
     }
 

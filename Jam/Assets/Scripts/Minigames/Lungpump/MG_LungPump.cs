@@ -18,8 +18,11 @@ namespace Minigames.Lungpump
         private int ticksToSuccess;
         
         // barometer needle
-        private static float NEEDLE_MIN_ANGLE = 145;
-        private static float NEEDLE_MAX_ANGLE = -145;
+        private const float NEEDLE_MIN_ANGLE = 145;
+        private const float NEEDLE_MAX_ANGLE = 218;
+        private const float NEEDLE_POINT_DOWN = 180;
+        private const float NEEDLE_POINT_UP_360 = 360;
+        private const float NEEDLE_POINT_UP_0 = 0;
 
         // lung sprites and addressable names
         private static string LUNGS_SMALL = "lungs_small";
@@ -44,6 +47,9 @@ namespace Minigames.Lungpump
         
         private void Start()
         {
+            base.Start();
+            ingredient = NamingConstants.INGREDIENT_ID_PEARL_ASH;
+            
             _onClickCollider = GetComponent<CircleCollider2D>();
             _onClickCollider.offset = _collOffsetLeft;
             colliderIsLeft = true;
@@ -75,8 +81,8 @@ namespace Minigames.Lungpump
 
         private bool IsPressureWithinSuccessRange()
         {
-            return (barometerNeedle.transform.rotation.eulerAngles.z is >= 0 and <= 20)
-                || (barometerNeedle.transform.rotation.eulerAngles.z is <= 360 and >= 340);
+            return (barometerNeedle.transform.rotation.eulerAngles.z is >= NEEDLE_POINT_UP_0 and <= 20)
+                || (barometerNeedle.transform.rotation.eulerAngles.z is <= NEEDLE_POINT_UP_360 and >= 340);
         }
 
         private bool IsPressureWithinMediumRange()
@@ -141,12 +147,12 @@ namespace Minigames.Lungpump
         
         private bool IsBarometerBelowLowest()
         {
-            return barometerNeedle.transform.rotation.eulerAngles.z is > 145 and < 180;
+            return barometerNeedle.transform.rotation.eulerAngles.z is > NEEDLE_MIN_ANGLE and < NEEDLE_POINT_DOWN;
         }
         
         private bool IsBarometerAboveHighest()
         {
-            return barometerNeedle.transform.rotation.eulerAngles.z is < 218 and > 180;
+            return barometerNeedle.transform.rotation.eulerAngles.z is < NEEDLE_MAX_ANGLE and > NEEDLE_POINT_DOWN;
         }
 
         private void SetLungSprite(Sprite sprite)

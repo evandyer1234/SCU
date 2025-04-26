@@ -58,7 +58,7 @@ namespace Subjects
 
         private void LaunchMinigame()
         {
-            minigameRef.SetActive(true);
+            minigameRef.GetComponent<MiniGameBase>().StartMinigame(gameObject);
             miniGameLaunched = true;
             MagnifyingGlassShadow mgs = GameObject
                 .FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS_SHADOW).GetComponent<MagnifyingGlassShadow>();

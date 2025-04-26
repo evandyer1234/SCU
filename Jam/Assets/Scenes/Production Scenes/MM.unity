@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: EvantestScene
+      value: MainMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2726,6 +2726,14 @@ PrefabInstance:
     - target: {fileID: 7591816654968479817, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591816655581624365, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7591816655581624367, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
