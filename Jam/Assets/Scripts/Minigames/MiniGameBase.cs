@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class MiniGameBase : MonoBehaviour
 {
-    public GameObject piece;
+    [HideInInspector] public string ingredient;
     public float penalty;
 
     [SerializeField] internal Stage miniGameStage;
@@ -40,15 +40,10 @@ public class MiniGameBase : MonoBehaviour
 
     public void OnSuccess()
     {
-        if (piece != null)
-        {
-            piece.SetActive(true);
-        }
-        
         debugMessage.text = "Success";
         gameObject.SetActive(false);
         corruptionMarkRef.SetActive(false);
-        miniGameManager.FinishMiniGameByName(gameObject.name);
+        miniGameManager.FinishMiniGame(this);
     }
 
     public void OnPenalty()

@@ -1225,12 +1225,12 @@ GameObject:
   - component: {fileID: 195830247}
   - component: {fileID: 195830246}
   m_Layer: 0
-  m_Name: Instruction
+  m_Name: Ingredients
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &195830245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1271,10 +1271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Instructions
-
-
-    Pump the lungs to save the patient.'
+  m_text: Ingredients
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2474,11 +2471,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7ce958bd6a11e4cb6d991469ac2b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTime: 90
-  CurrentTime: 0
-  neededItems: 00000000
   Gameover: {fileID: 278443058}
   Gamewin: {fileID: 1175987135}
+  StartTime: 90
+  postIt: {fileID: 195830244}
+  CurrentTime: 0
+  neededItems: 00000000
 --- !u!114 &735303468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,7 +4199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359539557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15, y: -9, z: 0}
+  m_LocalPosition: {x: -14.95, y: -8.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4310,7 +4308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d46d9e057f32a049bfd4e14e0f6aa83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piece: {fileID: 0}
+  ingredient: 
   penalty: 0
   miniGameStage: 0
   gameModeManager: {fileID: 0}

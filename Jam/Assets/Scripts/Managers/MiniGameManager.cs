@@ -27,13 +27,16 @@ public class MiniGameManager : MonoBehaviour
         }
     }
 
-    public void FinishMiniGameByName(string miniGameName)
+    public void FinishMiniGame(MiniGameBase minigameBase)
     {
+        string miniGameName = minigameBase.gameObject.name;
+        
         foreach (var miniGameState in miniGamesFinishedState)
         {
             if (miniGameState.Key == miniGameName)
             {
                 miniGamesFinishedState[miniGameName] = true;
+                gameModeManager.AddIngredient(minigameBase.ingredient);
                 magnifyingGlassShadowRef.GetComponent<MagnifyingGlassShadow>().SetMagnifyingGlassInUse(true);
                 break;
             }
