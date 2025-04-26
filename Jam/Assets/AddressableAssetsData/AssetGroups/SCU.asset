@@ -41,6 +41,18 @@ MonoBehaviour:
     m_Address: glass_switch_open
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: ccea36ece3389ab46931ad4a6e693fc8
+    m_Address: lungs_medium
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 857c2f2e6a445e045bccc9d4924d2a90
+    m_Address: lungs_small
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3f01587bd8601ae47a941e13fa0c35db
+    m_Address: lungs_big
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
   m_SchemaSet:
