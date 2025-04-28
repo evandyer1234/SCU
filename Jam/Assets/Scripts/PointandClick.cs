@@ -24,7 +24,6 @@ public class PointandClick : MonoBehaviour
     {
         if (MouseInput.LeftClicked(_scuInputAction))
         {
-            Debug.Log("LEFTCLICKED");
             RaycastHit hit;
             Vector2 mousePos = MouseInput.ScreenPosition(_scuInputAction);
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
