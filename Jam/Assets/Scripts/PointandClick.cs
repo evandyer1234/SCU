@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
+using Helpers;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -9,21 +7,30 @@ public class PointandClick : MonoBehaviour
     private AudioSource _audioSource;
     [SerializeField] private AudioClip[] genericClickSounds = new AudioClip[8];
 
+    private SCUInputAction _scuInputAction;
+    
+    void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+    
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
     }
-    // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (MouseInput.LeftClicked(_scuInputAction))
         {
+            Debug.Log("LEFTCLICKED");
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector2 mousePos = MouseInput.ScreenPosition(_scuInputAction);
+            Ray ray = Camera.main.ScreenPointToRay(mousePos);
 
             if (Physics.Raycast(ray, out hit))
             {
-                //Transform objectHit = hit.transform;
                 Debug.Log("Hit " + hit.collider.gameObject.name);
                 ClickEvent ce = hit.collider.gameObject.GetComponent<ClickEvent>();
                 if (ce != null)
@@ -36,7 +43,7 @@ public class PointandClick : MonoBehaviour
                 _audioSource.PlayOneShot(genericClickSounds[Random.Range(0, genericClickSounds.Length)]);
             }
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (MouseInput.LeftReleased(_scuInputAction))
         {
 
         }

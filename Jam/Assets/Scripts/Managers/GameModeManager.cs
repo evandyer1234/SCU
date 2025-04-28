@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using Helpers;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -21,9 +22,12 @@ public class GameModeManager : MonoBehaviour
     public List<Ingredient.ItemVal> neededItems = new List<Ingredient.ItemVal>();
     private List<string> collectedIngredientNames = new List<string>();
 
+    private SCUInputAction _scuInputAction;
 
     private void Awake()
     {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
         if (instance == null)
         {
             instance = this;
@@ -50,7 +54,7 @@ public class GameModeManager : MonoBehaviour
             Gameover.SetActive(true);
         }
         
-        if(Input.GetKeyDown(KeyCode.Escape)) {
+        if (KeyboardInput.EscapePressed(_scuInputAction)) {
             SceneManager.LoadScene(0);
         }
     }

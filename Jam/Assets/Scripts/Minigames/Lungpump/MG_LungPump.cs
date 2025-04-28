@@ -38,11 +38,15 @@ namespace Minigames.Lungpump
         private static Vector2 _collOffsetLeft = new Vector2(3f, 7f);
         private static Vector2 _collOffsetRight = new Vector2(12.5f, 7f);
 
+        private SCUInputAction _scuInputAction;
+        
         private void Awake()
         {
             lungsSmallSprite = FileLoader.GetSpriteByName(LUNGS_SMALL);
             lungsMediumSprite = FileLoader.GetSpriteByName(LUNGS_MEDIUM);
             lungsBigSprite = FileLoader.GetSpriteByName(LUNGS_BIG);
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
         
         private void Start()
@@ -93,7 +97,10 @@ namespace Minigames.Lungpump
         
         private void OnMouseOver()
         {
-            if(MouseInput.LeftClick()) HandleLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
         }
 
         private void HandleLeftClick()

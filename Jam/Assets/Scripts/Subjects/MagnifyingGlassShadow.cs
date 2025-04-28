@@ -13,17 +13,24 @@ namespace Subjects
 
         private bool IsMagnifyingGlassInUse = false;
         
+        private SCUInputAction _scuInputAction;
+        
         public void Awake()
         {
             SpriteRenderer magnifyingGlassSprite = spriteGlassReference.GetComponent<SpriteRenderer>();
             magnifyingGlassSprite.enabled = false;
             SpriteRenderer switchReference = spriteSwitchReference.GetComponent<SpriteRenderer>();
             switchReference.enabled = false;
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
         
         private void OnMouseOver()
         {
-            if(MouseInput.LeftClick()) HandleLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
         }
 
         private void HandleLeftClick()

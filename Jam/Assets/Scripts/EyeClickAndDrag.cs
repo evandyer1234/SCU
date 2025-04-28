@@ -14,6 +14,14 @@ public class EyeClickAndDrag : ClickandDrag
     
     public MG_Eye _mgEye;
 
+    private SCUInputAction _scuInputAction;
+
+    void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+    
     public override void Update()
     {
         base.Update();
@@ -21,7 +29,7 @@ public class EyeClickAndDrag : ClickandDrag
 
     public override void FollowMouse()
     {
-        Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+        Vector2 pos = MouseInput.WorldPosition(_scuInputAction);
         if (yonly)
         {
             if (pos.y <= maxY && pos.y >= minY)
