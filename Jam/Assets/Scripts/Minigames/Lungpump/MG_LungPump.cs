@@ -85,8 +85,8 @@ namespace Minigames.Lungpump
 
         private bool IsPressureWithinSuccessRange()
         {
-            return (barometerNeedle.transform.rotation.eulerAngles.z is >= NEEDLE_POINT_UP_0 and <= 20)
-                || (barometerNeedle.transform.rotation.eulerAngles.z is <= NEEDLE_POINT_UP_360 and >= 340);
+            return (barometerNeedle.transform.rotation.eulerAngles.z is >= NEEDLE_POINT_UP_0 and <= 36)
+                || (barometerNeedle.transform.rotation.eulerAngles.z is <= NEEDLE_POINT_UP_360 and >= 327);
         }
 
         private bool IsPressureWithinMediumRange()
@@ -129,7 +129,7 @@ namespace Minigames.Lungpump
                 // make it more difficult to keep within success range
                 naturalPressureDrop = Random.Range(0.5f, 1.5f);
             }
-
+            
             barometerNeedle.transform.Rotate(0, 0, naturalPressureDrop);
             if (IsBarometerBelowLowest())
             {
