@@ -1,6 +1,7 @@
 using System;
 using Helpers;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Subjects
 {
@@ -55,6 +56,8 @@ namespace Subjects
         private int scanMode = (int) ScanMode.NONE;
         private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;
         
+        private SCUInputAction _scuInputAction;
+        
         private void Awake()
         {
             glassShadowOpen = FileLoader.GetSpriteByName(GLASS_SHADOW_OPEN);
@@ -63,6 +66,8 @@ namespace Subjects
             glassClosed = FileLoader.GetSpriteByName(GLASS_CLOSED);
             switchOpen = FileLoader.GetSpriteByName(GLASS_SWITCH_OPEN);
             switchClosed = FileLoader.GetSpriteByName(GLASS_SWITCH_CLOSED);
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
 
         private void Update()
@@ -74,11 +79,15 @@ namespace Subjects
         private void OnMouseOver()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            if(MouseInput.LeftClick()) HandleLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
         }
         
         private void HandleLeftClick()
         {
+            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             magnifyingGlassOpen = !magnifyingGlassOpen;
             if (magnifyingGlassOpen)
             {
@@ -107,12 +116,12 @@ namespace Subjects
                 scanMode = (int) ScanMode.NONE;
                 return;
             }
-            if (MouseInput.ScrollForward())
+            if (MouseInput.ScrollForward(_scuInputAction))
             {
                 scanMode++;
                 UpdateLensByState();
             }
-            else if (MouseInput.ScrollBackward())
+            else if (MouseInput.ScrollBackward(_scuInputAction))
             {
                 scanMode--;
                 UpdateLensByState();

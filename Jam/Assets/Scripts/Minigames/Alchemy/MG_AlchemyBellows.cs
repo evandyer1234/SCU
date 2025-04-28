@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 public class MG_AlchemyBellows : MG_AlchemyBase
@@ -14,7 +15,14 @@ public class MG_AlchemyBellows : MG_AlchemyBase
 
     public float colorShiftRate = 0.5f;
 
-    // Start is called before the first frame update
+    private SCUInputAction _scuInputAction;
+
+    private void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+
     void Start()
     {
         beakerSpriteRenderer = beakerSprite.GetComponent<SpriteRenderer>();
@@ -25,7 +33,7 @@ public class MG_AlchemyBellows : MG_AlchemyBase
     {
         if (!enabled) return;
         
-        if (Input.GetKeyDown("space"))
+        if (KeyboardInput.SpacebarPressed(_scuInputAction))
         {
             fireSprite.transform.localScale += new Vector3(fireGrowRate, fireGrowRate);
         }

@@ -1,4 +1,3 @@
-using System;
 using Helpers;
 using UnityEngine;
 
@@ -26,43 +25,59 @@ namespace Subjects
         
         // dragging state
         private bool followMouse = false;
+        private bool hovered = false;
         private Vector3 offsetGlassSpriteToMouse = Vector3.zero;
         private Vector3 offsetSwitchSpriteToMouse = Vector3.zero;
         private Vector3 offsetMiddleLensToMouse = Vector3.zero;
         private Vector3 offsetLeftLensToMouse = Vector3.zero;
         private Vector3 offsetRightLensToMouse = Vector3.zero;
 
+        private SCUInputAction _scuInputAction;
+
+        private void Awake()
+        {
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
+        }
+        
         private void Update()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             
             if (followMouse)
             {
-                Vector3 mousepos =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                KeepSpriteRelativeToMouse(gameObject, mousepos, offsetGlassSpriteToMouse);
-                KeepSpriteRelativeToMouse(glassSwitchReference, mousepos, offsetSwitchSpriteToMouse);
-                KeepSpriteRelativeToMouse(middleLensReference, mousepos, offsetMiddleLensToMouse);
-                KeepSpriteRelativeToMouse(leftLensReference, mousepos, offsetLeftLensToMouse);
-                KeepSpriteRelativeToMouse(rightLensReference, mousepos, offsetRightLensToMouse);
+                Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
+                KeepSpriteRelativeToMouse(gameObject, mouseWorldPos, offsetGlassSpriteToMouse);
+                KeepSpriteRelativeToMouse(glassSwitchReference, mouseWorldPos, offsetSwitchSpriteToMouse);
+                KeepSpriteRelativeToMouse(middleLensReference, mouseWorldPos, offsetMiddleLensToMouse);
+                KeepSpriteRelativeToMouse(leftLensReference, mouseWorldPos, offsetLeftLensToMouse);
+                KeepSpriteRelativeToMouse(rightLensReference, mouseWorldPos, offsetRightLensToMouse);
             }
         }
 
         private void OnMouseOver()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            if(MouseInput.LeftClick()) MouseLeftClick();
-        }
-        
-        void OnMouseUp()
-        {
-            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            followMouse = false;
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                MouseLeftClick();
+            }
+            if (MouseInput.LeftReleased(_scuInputAction))
+            {
+                followMouse = false;
+            }
+            hovered = true;
         }
 
+        private void OnMouseExit()
+        {
+            hovered = false;
+        }
+        
         private void MouseLeftClick()
         {
             followMouse = true;
-            Vector3 mousepos =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousepos =  MouseInput.WorldPosition(_scuInputAction);
             offsetGlassSpriteToMouse = (mousepos - transform.position);
             offsetSwitchSpriteToMouse = (mousepos - glassSwitchReference.transform.position) / canvas.scaleFactor;
             offsetMiddleLensToMouse = (mousepos - middleLensReference.transform.position);

@@ -18,9 +18,13 @@ namespace Subjects
         
         private bool miniGameLaunched = false;
         
+        private SCUInputAction _scuInputAction;
+        
         public void Awake()
         {
             corruptionOutline.SetActive(false);
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
 
         void OnMouseOver()
@@ -31,8 +35,10 @@ namespace Subjects
             {
                 corruptionOutline.SetActive(true);
             }
-
-            if(MouseInput.LeftClick()) MouseLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                MouseLeftClick();
+            }
         }
 
         private void MouseLeftClick()

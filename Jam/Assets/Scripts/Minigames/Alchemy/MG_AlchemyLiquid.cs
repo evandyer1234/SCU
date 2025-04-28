@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 public class MG_AlchemyLiquid : MG_AlchemyBase
@@ -44,6 +43,14 @@ public class MG_AlchemyLiquid : MG_AlchemyBase
     private const float TT2_POURING_POS_Y = 3.76f;
 
     private const float TT_POURING_ANGLE = 56f;
+    
+    private SCUInputAction _scuInputAction;
+    
+    private void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
 
     // Set the level for test tube 1, from a value of 0 to 1
     void SetTT1Level(float level)
@@ -133,8 +140,8 @@ public class MG_AlchemyLiquid : MG_AlchemyBase
             } 
         }
 
-        if (Input.GetMouseButton(0) && !tt2_pouring) tt1_pouring = true;
-        if (Input.GetMouseButton(1) && !tt1_pouring) tt2_pouring = true;
+        if (MouseInput.LeftClicked(_scuInputAction) && !tt2_pouring) tt1_pouring = true;
+        if (MouseInput.RightClicked(_scuInputAction) && !tt1_pouring) tt2_pouring = true;
 
         if (tt1_pouring)
         {
@@ -172,6 +179,6 @@ public class MG_AlchemyLiquid : MG_AlchemyBase
             tt1_level_transform.localPosition += new Vector3(0f, diff / 2f, 0f);
         }
 
-        if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) runTimer = true;
+        if (MouseInput.LeftReleased(_scuInputAction) || MouseInput.RightReleased(_scuInputAction)) runTimer = true;
     }
 }

@@ -14,8 +14,13 @@ namespace Minigames.HeartString
         [SerializeField, Tooltip("The index of the icon this vein is attached to")] 
         private int iconIndex;
         
-        public void Awake()
+        private SCUInputAction _scuInputAction;
+
+        
+        private void Awake()
         {
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
             veinOutline.SetActive(false);
         }
         
@@ -25,8 +30,10 @@ namespace Minigames.HeartString
             {
                 veinOutline.SetActive(true);
             }
-            
-            if(MouseInput.LeftClick()) MouseLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                MouseLeftClick();
+            }
         }
 
         private void MouseLeftClick()
@@ -41,6 +48,5 @@ namespace Minigames.HeartString
                 veinOutline.SetActive(false);
             }
         }
-        
     }
 }

@@ -1,19 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 public class Xrayfollow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SCUInputAction _scuInputAction;
+
+    private void Awake()
     {
-        
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousepos =  Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(transform.position.x, mousepos.y, transform.position.z);
+        transform.position = MouseInput.WorldPosition(_scuInputAction);
     }
 }
