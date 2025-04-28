@@ -6,7 +6,6 @@ public class MainMenu : MonoBehaviour
     public void StartLevel(string levelname)
     {
         Time.timeScale = 1.0f;
-        Debug.Log("PRESSED");
         SceneManager.LoadScene(levelname);
     }
 
