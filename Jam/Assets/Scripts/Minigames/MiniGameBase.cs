@@ -1,7 +1,6 @@
 using Helpers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class MiniGameBase : MonoBehaviour
 {
@@ -9,14 +8,12 @@ public class MiniGameBase : MonoBehaviour
     public float penalty;
 
     [SerializeField] internal Stage miniGameStage;
-    [HideInInspector] public GameModeManager gameModeManager;
-    private MiniGameManager miniGameManager;
+    protected MiniGameManager miniGameManager;
     private TextMeshProUGUI debugMessage;
     private GameObject corruptionMarkRef;
 
     public virtual void Start()
     {
-        gameModeManager = EventSystem.current.gameObject.GetComponent<GameModeManager>();
         miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER).GetComponent<MiniGameManager>();
         debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
         debugMessage.text = "";

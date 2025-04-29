@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuSelect : MonoBehaviour
@@ -29,6 +27,4 @@ public class MenuSelect : MonoBehaviour
             _canvas.GetChild(i).gameObject.SetActive(false);
         }
     }
-    
-    
 }

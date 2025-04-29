@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/PatientPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/PatientPage.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MM.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MM.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EyeClickAndDrag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameModeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameModeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Whack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Whack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_rhythm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_rhythm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CustomCursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CustomCursor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Character15/15 outfit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/Character15/15 outfit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/Character15/15 under.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/Character15/15 under.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="alex-inputsystem" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -41,81 +70,34 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/5a/ff6447a9/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/AddressableAssetsData/AssetGroups/SCU.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/InputSystem.inputsettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/InputSystem.inputsettings.asset.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/SCUInputAction.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/SCUInputAction.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/SCUInputAction.inputactions" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/SCUInputAction.inputactions.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/AddressableAssetsData/AssetGroups/SCU.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/EyeClickAndDrag.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/EyeClickAndDrag.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/EyeClickAndDrag.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/KeyboardInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/KeyboardInput.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/MouseInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/MouseInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/MouseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/NamingConstants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/GameModeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/GameModeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyBellows.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyBellows.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLeaf.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLeaf.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLiquid.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Alchemy/MG_AlchemyLiquid.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/MiniGameManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/SubjectManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/SubjectManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MenuSelect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MenuSelect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/MG_Drain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/MG_Pump.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/MG_Whack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/MG_rhythm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/MiniGameBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/PointandClick.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/PointandClick.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/PointandClick.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/CorruptionMark.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/CorruptionMark.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/CorruptionMark.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Pot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/Subject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/Subject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/UI/CustomCursor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/UI/CustomCursor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/UI/CustomCursor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Xrayfollow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Xrayfollow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Xrayfollow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/ShadowCorruptionUnitDemo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/ShadowCorruptionUnitDemo.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Sprites/Lungpump game/barometer_safezone.png.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_LungPump.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_LungPump.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_LungPump.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Sprites/Characters/Character15/15 outfit.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Sprites/Characters/Character15/15 under.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -132,7 +114,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;alex-inputsystem&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-patients&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -269,6 +251,7 @@
       <workItem from="1745652149481" duration="13661000" />
       <workItem from="1745745386483" duration="6196000" />
       <workItem from="1745856194961" duration="4742000" />
+      <workItem from="1745938696439" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -390,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745864266470</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fixes LungPump thresholds to fit the sprite">
+      <option name="closed" value="true" />
+      <created>1745866029313</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745866029313</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +424,7 @@
     <MESSAGE value="ESC to quit to main menu" />
     <MESSAGE value="Use new Input System" />
     <MESSAGE value="remove unused Debug Log statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused Debug Log statements" />
+    <MESSAGE value="Fixes LungPump thresholds to fit the sprite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes LungPump thresholds to fit the sprite" />
   </component>
 </project>

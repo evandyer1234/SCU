@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +12,7 @@ public class Pot : MonoBehaviour
 
    public void Mix()
    {
+       /*
         GameModeManager gmm = FindObjectOfType<GameModeManager>();
         if (gmm != null ) 
         { 
@@ -33,6 +33,7 @@ public class Pot : MonoBehaviour
                 //win code
             }
         }
+        */
 
    }
 

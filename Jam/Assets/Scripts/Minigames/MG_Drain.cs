@@ -65,7 +65,7 @@ public class MG_Drain : MiniGameBase
         //if the counter gets below zero, the player "loses" and has a significant time penalty, but the game is cleared
         if (bloodtoxicity <= 0)
         {
-            gameModeManager.subtractTime(penalty);
+            miniGameManager.subtractTime(penalty);
             OnSuccess();
         }
 

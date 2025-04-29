@@ -17,6 +17,7 @@ public class CustomCursor : MonoBehaviour
     
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
     }
@@ -24,8 +25,6 @@ public class CustomCursor : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-
-        DontDestroyOnLoad(gameObject);
         //SetDefaultCursor();
     }
 
