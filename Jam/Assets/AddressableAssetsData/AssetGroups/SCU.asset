@@ -53,6 +53,58 @@ MonoBehaviour:
     m_Address: lungs_big
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e35ffcf17faf1ab458acbaac2aed64d8
+    m_Address: char_15_outfit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c3f14e30454f042438ca95847bb1f55a
+    m_Address: char_15_under
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 716cca04ed37fdb4bbab0b62a67fb122
+    m_Address: char_14_outfit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3207e14a5b6f7784cab932976954efd5
+    m_Address: char_14_under
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20676acd73d7ce748afea75fdbb649cf
+    m_Address: char_04_outfit
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c3a3b1d4ce1a5ea46884b7c8c8ec747b
+    m_Address: char_04_under
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c4e8f38b367546248a8e640c12b14a81
+    m_Address: char_04_skeleton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5ae572cc2a2b15d44b58eac5ad7d2bf5
+    m_Address: char_04_organs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f424c3f16a62b4447b8951f2cceaa9e3
+    m_Address: char_14_skeleton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 709b359b3fc4bae438a284a23a8ae264
+    m_Address: char_14_organs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7d954957a5e6a144189cbb8fe8e52a3e
+    m_Address: char_15_skeleton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d1e5bb5cc05b4b4386344e6d603ba37
+    m_Address: char_15_organs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 844aa8573979008479a658b328342233
+    m_Address: team_logo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
   m_SchemaSet:

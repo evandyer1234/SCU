@@ -94,7 +94,7 @@ public class MG_Whack : MiniGameBase
     //plays when the player misses a target, either by letting a mole get away or hitting a civ
     public void Miss()
     {
-        gameModeManager.subtractTime(penalty);
+        // gameModeManager.subtractTime(penalty);
         Debug.Log("Miss");
 
         _audioSource.PlayOneShot(_missSound);

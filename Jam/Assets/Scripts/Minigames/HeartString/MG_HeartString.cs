@@ -30,7 +30,7 @@ public class MG_HeartString : MiniGameBase
         }
         else
         {
-            gameModeManager.subtractTime(penalty);
+            miniGameManager.subtractTime(penalty);
             OnPenalty();
         }
     }

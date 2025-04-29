@@ -11,6 +11,7 @@ public class PointandClick : MonoBehaviour
     
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
     }

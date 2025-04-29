@@ -80,7 +80,7 @@ public class EyeClickAndDrag : ClickandDrag
                 }
                 else
                 {
-                    _mgEye.gameModeManager.subtractTime(_mgEye.penalty);
+                    // _mgEye.gameModeManager.subtractTime(_mgEye.penalty);
                 }
                 // CHECK IF IS CORRECT EYE
                 // IF SO, PLACE IN SLOT AND FINISH MINIGAME

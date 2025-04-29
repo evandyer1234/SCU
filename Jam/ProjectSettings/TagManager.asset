@@ -11,6 +11,8 @@ TagManager:
   - MagnifyingGlassShadow
   - MinigameManager
   - DebugMessageUserFeedback
+  - MainEventSystem
+  - PatientPage
   layers:
   - Default
   - TransparentFX
