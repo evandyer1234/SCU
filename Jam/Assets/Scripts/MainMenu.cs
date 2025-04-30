@@ -12,11 +12,26 @@ public class MainMenu : MonoBehaviour
             .GetComponent<SubjectManager>();
     }
 
-    public void StartLevel(string levelname)
+    public void StartLevelProfile04()
+    {
+        StartLevel(SubjectManager.SUBJECT_NAME_04);
+    }
+    
+    public void StartLevelProfile14()
+    {
+        StartLevel(SubjectManager.SUBJECT_NAME_14);
+    }
+    
+    public void StartLevelProfile15()
+    {
+        StartLevel(SubjectManager.SUBJECT_NAME_15);
+    }
+    
+    private void StartLevel(string subjectName)
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(levelname);
-        _subjectManager.SetMinigamesLaunched(true);
+        SceneManager.LoadScene(NamingConstants.SCENE_MAIN_MINIGAME);
+        _subjectManager.SetMinigamesLaunched(true, subjectName);
     }
 
     public void exitgame()
