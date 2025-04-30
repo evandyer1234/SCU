@@ -23,5 +23,7 @@ namespace Helpers
         public const string TAG_DEBUG_MESSAGE_USER_FEEDBACK = "DebugMessageUserFeedback";
         public const string TAG_PATIENT_PAGE = "PatientPage";
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
+        
+        public const string SCENE_MAIN_MINIGAME = "MainMinigame";
     }
 }

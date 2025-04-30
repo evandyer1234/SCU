@@ -338,6 +338,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &752517757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7591816654968479814, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
+  m_PrefabInstance: {fileID: 38029659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806843214
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914515357}
   - component: {fileID: 914515356}
+  - component: {fileID: 914515358}
   m_Layer: 0
   m_Name: TeamLogo
   m_TagString: Untagged
@@ -514,6 +520,22 @@ Transform:
   m_Father: {fileID: 1676883289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &914515358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914515355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2311ef7c3b5e4963ad1a57e992c50343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playDuration: 300
+  cursorToHide: {fileID: 752517757}
+  soundTrackToHide: {fileID: 1982110583}
+  playerToHide: {fileID: 71246692}
 --- !u!1 &1131745501
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -699,6 +721,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1982110583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8249381771929338752, guid: cd3526c9701d4474d95c5b10b850c980, type: 3}
+  m_PrefabInstance: {fileID: 2011994726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2011994726
 PrefabInstance:
   m_ObjectHideFlags: 0

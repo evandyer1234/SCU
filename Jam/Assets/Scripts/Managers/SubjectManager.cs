@@ -14,15 +14,16 @@ public class SubjectManager : MonoBehaviour
     private Dictionary<string, Subject> subjectsCured = new();
 
     private List<string> subjectOrder = new List<string>
-    {SUBJECT_NAME_14,
+    {
         SUBJECT_NAME_15,
+        SUBJECT_NAME_14,
         SUBJECT_NAME_04,
     };
     
     // subject ids = names
-    private const string SUBJECT_NAME_04 = "subject_04";
-    private const string SUBJECT_NAME_14 = "subject_14";
-    private const string SUBJECT_NAME_15 = "subject_15";
+    public const string SUBJECT_NAME_04 = "subject_04";
+    public const string SUBJECT_NAME_14 = "subject_14";
+    public const string SUBJECT_NAME_15 = "subject_15";
     
     // subject sprite addressables
     private const string SUBJECT_SPRITENAME_OUTFIT_04 = "char_04_outfit";
@@ -50,8 +51,6 @@ public class SubjectManager : MonoBehaviour
         subjectsCured = CreateSubjectMap();
 
         currentSubject = GetCurrentSubjectByCureOrder();
-        
-        Invoke(nameof(InitiateGame), 0.5f);
     }
 
     private void Update()
@@ -67,15 +66,11 @@ public class SubjectManager : MonoBehaviour
         }
     }
 
-    public void SetMinigamesLaunched(bool launched)
+    public void SetMinigamesLaunched(bool launched, string subjectName)
     {
         _minigamesLaunched = launched;
         _spritesLoadedForMinigames = false;
-    }
-    
-    private void InitiateGame()
-    {
-        SceneManager.LoadScene(1);
+        currentSubject = GetCurrentSubjectByName(subjectName);
     }
     
     private static Subject CreateSubject(
@@ -96,6 +91,11 @@ public class SubjectManager : MonoBehaviour
         return subject;
     }
 
+
+    private Subject GetCurrentSubjectByName(string name)
+    {
+        return subjectsCured[name];
+    }
     private Subject GetCurrentSubjectByCureOrder()
     {
         foreach (var subjectKey in subjectOrder)
