@@ -26,7 +26,7 @@ public class MG_AlchemyLeaf : ClickandDrag
         // Don't have the leaf follow mouse
     }
 
-    public override void Release()
+    public void Release()
     {
         Vector2 mousePos = MouseInput.WorldPosition(_scuInputAction);
         if (Vector3.Distance(mouseClickPosition, mousePos) >= pickDistance)

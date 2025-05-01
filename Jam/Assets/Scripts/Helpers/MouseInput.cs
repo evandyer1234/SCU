@@ -28,6 +28,11 @@ namespace Helpers
         {
             return action.UI.Click.WasReleasedThisFrame();
         }
+
+        public static bool IsLeftPressed(SCUInputAction action)
+        {
+            return action.UI.Click.IsPressed();
+        }
         
         public static bool RightClicked(SCUInputAction action)
         {

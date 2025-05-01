@@ -41,7 +41,15 @@ public class MiniGameManager : MonoBehaviour
         CurrentTime = StartTime;
         Time.timeScale = 1f;
     }
-    
+
+    private void Update()
+    {
+        if (KeyboardInput.EscapePressed(_scuInputAction))
+        {
+            BackToMainMenu();
+        }
+    }
+
     void FixedUpdate()
     {
         CurrentTime -= Time.fixedDeltaTime;
@@ -50,10 +58,6 @@ public class MiniGameManager : MonoBehaviour
         {
             Time.timeScale = 0;
             GameoverPanel.SetActive(true);
-        }
-        
-        if (KeyboardInput.EscapePressed(_scuInputAction)) {
-            SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
         }
     }
 

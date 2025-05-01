@@ -28,7 +28,6 @@ public class PointandClick : MonoBehaviour
             RaycastHit hit;
             Vector2 mousePos = MouseInput.ScreenPosition(_scuInputAction);
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
-
             if (Physics.Raycast(ray, out hit))
             {
                 Debug.Log("Hit " + hit.collider.gameObject.name);
@@ -40,7 +39,7 @@ public class PointandClick : MonoBehaviour
             }
             else
             {
-                _audioSource.PlayOneShot(genericClickSounds[Random.Range(0, genericClickSounds.Length)]);
+                // _audioSource.PlayOneShot(genericClickSounds[Random.Range(0, genericClickSounds.Length)]);
             }
         }
         else if (MouseInput.LeftReleased(_scuInputAction))
