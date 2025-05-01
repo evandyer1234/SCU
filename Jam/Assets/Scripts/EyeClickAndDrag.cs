@@ -57,9 +57,8 @@ public class EyeClickAndDrag : ClickandDrag
 
     }
 
-    public override void Release()
+    public void Release()
     {
-        base.Release();
 
         if (isInfectedEye)
         {

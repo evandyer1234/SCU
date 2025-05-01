@@ -25,7 +25,7 @@ public class CustomCursor : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-        //SetDefaultCursor();
+        SetDefaultCursor();
     }
 
     void Update()
@@ -34,6 +34,15 @@ public class CustomCursor : MonoBehaviour
         _targetPos = new Vector3 (_targetPos.x, _targetPos.y, 10f);
         transform.position = _targetPos;
 
+        if (MouseInput.IsLeftPressed(_scuInputAction))
+        {
+            SetPressedCursor();
+        }
+        else
+        {
+            SetDefaultCursor();
+        }
+        
         Cursor.visible = !MouseScreenCheck();
     }
 
@@ -60,15 +69,13 @@ public class CustomCursor : MonoBehaviour
         return true;
     }
 
-    /*
-    public void SetDefaultCursor()
+    private void SetDefaultCursor()
     {
         _spriteRenderer.sprite = _defaultCursor;
     }
 
-    public void SetPressedCursor()
+    private void SetPressedCursor()
     {
         _spriteRenderer.sprite = _pressedCursor;
     }
-    */
 }

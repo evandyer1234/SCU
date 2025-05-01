@@ -25,7 +25,6 @@ public class ClickandDrag : ClickEvent
         if (MouseInput.LeftReleased(_scuInputAction) && selected) 
         {
             selected = false;
-            Release();
         }
         if (selected)
         {
@@ -33,11 +32,6 @@ public class ClickandDrag : ClickEvent
         }
     }
     
-    public virtual void Release()
-    {
-        //CustomCursor.instance.SetDefaultCursor();
-    }
-
     public virtual void FollowMouse()
     {
         Vector3 pos  = GetCameraPosition() - _positionOffset;
@@ -59,10 +53,8 @@ public class ClickandDrag : ClickEvent
     public virtual void OnSelected()
     {
         selected = true;
-        //CustomCursor.instance.SetPressedCursor();
         _positionOffset = GetCameraPosition() - transform.position;
     }
-
 
     Vector3 GetCameraPosition()
     {

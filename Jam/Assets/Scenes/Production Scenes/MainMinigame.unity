@@ -3469,6 +3469,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2809540556394340299, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2809540556786409279, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4514,7 +4518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246576664855515351, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
       propertyPath: StartTime
-      value: 12
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 6246576664855515351, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
       propertyPath: timerText
