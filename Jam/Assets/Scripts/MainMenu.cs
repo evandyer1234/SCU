@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(NamingConstants.SCENE_MAIN_MINIGAME);
-        _subjectManager.SetMinigamesLaunched(true, subjectName);
+        _subjectManager.LaunchMinigames(subjectName);
     }
 
     public void exitgame()

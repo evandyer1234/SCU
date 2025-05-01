@@ -4,10 +4,10 @@ namespace Subjects
 {
     public class PatientPage : MonoBehaviour
     {
-        [SerializeField] private GameObject clothLayer;
-        [SerializeField] private GameObject underClothLayer;
-        [SerializeField] private GameObject organLayer;
-        [SerializeField] private GameObject skeletonLayer;
+        [SerializeField] public GameObject clothLayer;
+        [SerializeField] public GameObject underClothLayer;
+        [SerializeField] public GameObject organLayer;
+        [SerializeField] public GameObject skeletonLayer;
 
 
         public void SetSpriteBySubject(Subject subject)

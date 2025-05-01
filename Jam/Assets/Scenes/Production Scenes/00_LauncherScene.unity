@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa2687781bf0e41bd34140e8dcd5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corruptionMarkPrefab: {fileID: 5363652497388291598, guid: 652ea42a5e2089346bf6620c325f0b5b, type: 3}
 --- !u!114 &806843217
 MonoBehaviour:
   m_ObjectHideFlags: 0

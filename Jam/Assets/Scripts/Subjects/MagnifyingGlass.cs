@@ -15,13 +15,13 @@ namespace Subjects
         private GameObject glassSwitchReference;
         
         [SerializeField, Tooltip("The middle lens of the Glass")] 
-        private GameObject middleLensReference;
+        public GameObject middleLensReference;
         
         [SerializeField, Tooltip("The left lens of the Glass")] 
-        private GameObject leftLensReference;
+        public GameObject leftLensReference;
         
         [SerializeField, Tooltip("The right lens of the Glass")] 
-        private GameObject rightLensReference;
+        public GameObject rightLensReference;
         
         // dragging state
         private bool followMouse = false;

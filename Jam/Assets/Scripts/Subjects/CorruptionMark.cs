@@ -11,10 +11,10 @@ namespace Subjects
         private GameObject corruptionOutline;
 
         [SerializeField, Tooltip("The Minigame Reference to start the game")] 
-        private GameObject minigameRef;
+        public GameObject minigameRef;
 
         [SerializeField, Tooltip("The Reference of the lens to allow triggering the minigame only when hovered")] 
-        private GameObject lensRef;
+        public GameObject lensRef;
         
         private bool miniGameLaunched = false;
         

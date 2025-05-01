@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 1262437563243944679}
   m_Layer: 0
   m_Name: MG_HeartStrings
-  m_TagString: Untagged
+  m_TagString: MinigameHeartstring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2146,11 +2146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338123644835c5349ab217f5e5ac62d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piece: {fileID: 0}
-  miniGameInstructions: Follow the path to cut the correct vein
+  ingredient: 
   penalty: 1
   miniGameStage: 0
-  gameModeManager: {fileID: 0}
   _icons:
   - {fileID: 1262437561832193054}
   - {fileID: 1262437561445098310}
@@ -2158,7 +2156,6 @@ MonoBehaviour:
   - {fileID: 1262437562036361252}
   - {fileID: 1262437562052188235}
   _corruptionIcon: {fileID: 21300000, guid: 7745dca01ceeb574c90cdb800c89dbbf, type: 3}
-  debugMessage: {fileID: 0}
 --- !u!1 &1262437563488267273
 GameObject:
   m_ObjectHideFlags: 0

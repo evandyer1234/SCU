@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 8082073346161567337}
   m_Layer: 0
   m_Name: MG_LeechesBloodDrain
-  m_TagString: Untagged
+  m_TagString: MinigameDrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,12 +860,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71825d582e755749915743333b3cc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piece: {fileID: 0}
-  miniGameInstructions: Check the patients blood corruption and drain the blood to
-    a safe level
+  ingredient: 
   penalty: 30
   miniGameStage: 0
-  gameModeManager: {fileID: 0}
   drainrate: 1
   safebloodlevel: 60
   displaylevel: {fileID: 8082073346019491961}

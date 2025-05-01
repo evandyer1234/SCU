@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 3914261225192150584}
   m_Layer: 0
   m_Name: MG_LungPump
-  m_TagString: Untagged
+  m_TagString: MinigameLungpump
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -687,7 +687,6 @@ MonoBehaviour:
   ingredient: 
   penalty: 0
   miniGameStage: 0
-  gameModeManager: {fileID: 0}
   barometerNeedle: {fileID: 3914261223380901623}
   lungPump: {fileID: 3914261223423513630}
   lungs: {fileID: 3914261224564634057}
