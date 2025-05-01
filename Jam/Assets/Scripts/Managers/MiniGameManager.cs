@@ -108,11 +108,19 @@ public class MiniGameManager : MonoBehaviour
 
     public void ReloadCurrentScene()
     {
+        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+            .GetComponent<SubjectManager>();
+        var subjectNameBefore = _subjectManager.currentSubject.name;
+        _subjectManager.ResetMinigameState();
+        _subjectManager.LaunchMinigames(subjectNameBefore);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void BackToMainMenu()
     {
+        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+            .GetComponent<SubjectManager>();
+        _subjectManager.ResetMinigameState();
         SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
     }
     
