@@ -9,8 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class MiniGameManager : MonoBehaviour
 {
-    [SerializeField] private List<MiniGameBase> miniGames;
-    [SerializeField] private MiniGameBase activeMiniGame;
+    [SerializeField] public List<MiniGameBase> miniGames;
     [SerializeField] float StartTime;
     [SerializeField] private TMP_Text timerText;
     [SerializeField] GameObject GameoverPanel;
@@ -114,7 +113,7 @@ public class MiniGameManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
     }
     
     public void Win()

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6246576664855515351}
   m_Layer: 0
   m_Name: MiniGame Page
-  m_TagString: Untagged
+  m_TagString: MinigameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +52,12 @@ MonoBehaviour:
   - {fileID: 1574750518147182946}
   - {fileID: 7965065728643618494}
   - {fileID: 2963477765614932825}
-  activeMiniGame: {fileID: 0}
+  StartTime: 0
+  timerText: {fileID: 0}
+  GameoverPanel: {fileID: 0}
+  GamewinPanel: {fileID: 0}
+  magnifyingGlassShadowRef: {fileID: 0}
+  postItIngredients: {fileID: 0}
 --- !u!1 &6246576665607146319
 GameObject:
   m_ObjectHideFlags: 0

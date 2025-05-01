@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Subject
@@ -8,6 +9,8 @@ public class Subject
     public Sprite imageUnder;
     public Sprite imageOrgans;
     public Sprite imageSkeleton;
-    public bool isAdult;
     public bool isCured = false;
+    public bool isAdult = false;
+
+    public List<string> subjectMinigames = new();
 }

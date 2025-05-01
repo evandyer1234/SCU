@@ -2,18 +2,17 @@ using System.Collections.Generic;
 using Helpers;
 using Subjects;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SubjectManager : MonoBehaviour
 {
-    public static SubjectManager instance;
+    [SerializeField] private GameObject corruptionMarkPrefab;
     
     private Subject currentSubject;
 
     // Subject progression state
-    private Dictionary<string, Subject> subjectsCured = new();
+    private Dictionary<string, Subject> subjectsToCure = new();
 
-    private List<string> subjectOrder = new List<string>
+    private List<string> subjectCureOrder = new List<string>
     {
         SUBJECT_NAME_15,
         SUBJECT_NAME_14,
@@ -25,82 +24,166 @@ public class SubjectManager : MonoBehaviour
     public const string SUBJECT_NAME_14 = "subject_14";
     public const string SUBJECT_NAME_15 = "subject_15";
     
-    // subject sprite addressables
-    private const string SUBJECT_SPRITENAME_OUTFIT_04 = "char_04_outfit";
-    private const string SUBJECT_SPRITENAME_UNDER_04 = "char_04_under";
-    private const string SUBJECT_SPRITENAME_ORGANS_04 = "char_04_organs";
-    private const string SUBJECT_SPRITENAME_SKELETON_04 = "char_04_skeleton";
-    private const string SUBJECT_SPRITENAME_OUTFIT_14 = "char_14_outfit";
-    private const string SUBJECT_SPRITENAME_UNDER_14 = "char_14_under";
-    private const string SUBJECT_SPRITENAME_ORGANS_14 = "char_14_organs";
-    private const string SUBJECT_SPRITENAME_SKELETON_14 = "char_14_skeleton";
-    private const string SUBJECT_SPRITENAME_OUTFIT_15 = "char_15_outfit";
-    private const string SUBJECT_SPRITENAME_UNDER_15 = "char_15_under";
-    private const string SUBJECT_SPRITENAME_ORGANS_15 = "char_15_organs";
-    private const string SUBJECT_SPRITENAME_SKELETON_15 = "char_15_skeleton";
-
-    private bool _minigamesLaunched = false;
-    private bool _spritesLoadedForMinigames = false;
+    private bool _minigamesInitiating = false;
+    private bool _minigamesFullyLoaded = false;
+    private bool _corruptionMarksPlaced = false;
 
     private PatientPage _patientPage;
+    private MagnifyingGlass _magnifyingGlass;
+    private MiniGameManager _miniGameManager;
     
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
-        subjectsCured = CreateSubjectMap();
-
-        currentSubject = GetCurrentSubjectByCureOrder();
+        subjectsToCure = SubjectFactory.CreateSubjectMap();
     }
 
     private void Update()
     {
-        if (_minigamesLaunched && !_spritesLoadedForMinigames)
+        if (_minigamesFullyLoaded) return;
+        if (!IsMinigameSceneLoaded()) return;
+        
+        if (_minigamesInitiating && !AreMinigamesFullyLoaded())
         {
-            var _patientPageGO = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PATIENT_PAGE);
-            if (_patientPageGO != null){
-                _patientPage = _patientPageGO.GetComponent<PatientPage>();
-                _patientPage.SetSpriteBySubject(currentSubject);
-                _spritesLoadedForMinigames = true;
-            }
+            LoadPatientPage();
+            LoadMinigameManager();
+            LoadMagnifyingGlass();
+            LoadCorruptionMarksAndMinigamesForCurrentSubject();
+        }
+
+        /* improve performance by checking a boolean instead of null checks on gameobjects */
+        if (AreMinigamesFullyLoaded())
+        {
+            _minigamesFullyLoaded = true;
         }
     }
 
-    public void SetMinigamesLaunched(bool launched, string subjectName)
+    private void LoadMinigameManager()
     {
-        _minigamesLaunched = launched;
-        _spritesLoadedForMinigames = false;
-        currentSubject = GetCurrentSubjectByName(subjectName);
+        if (_miniGameManager != null) return;
+        
+        var _minigameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER);
+        if (_minigameManager != null){
+            _miniGameManager = _minigameManager.GetComponent<MiniGameManager>();
+        }
     }
     
-    private static Subject CreateSubject(
-        string name, 
-        string outfit, 
-        string under, 
-        string organs, 
-        string skeleton, 
-        bool isAdult)
+    public void LaunchMinigames(string subjectName)
     {
-        Subject subject = new Subject();
-        subject.name = name;
-        subject.imageOutfit = FileLoader.GetSpriteByName(outfit);
-        subject.imageUnder = FileLoader.GetSpriteByName(under);
-        subject.imageOrgans = FileLoader.GetSpriteByName(organs);
-        subject.imageSkeleton = FileLoader.GetSpriteByName(skeleton);
-        subject.isAdult = isAdult;
-        return subject;
+        _minigamesInitiating = true;
+        currentSubject = GetCurrentSubjectByName(subjectName);
     }
 
+    private void LoadCorruptionMarksAndMinigamesForCurrentSubject()
+    {
+        if (currentSubject == null) return;
+        if (_corruptionMarksPlaced) return;
+        
+        foreach (var subjectMinigame in currentSubject.subjectMinigames)
+        {
+            var corrMarkGO = Instantiate(
+                corruptionMarkPrefab,
+                CorruptionMarkPositions.GetPositionByMinigameId(subjectMinigame, currentSubject.isAdult),
+                Quaternion.identity
+            );
+            corrMarkGO.transform.SetParent(GetSubjectScanLayerFromMinigameId(subjectMinigame).transform.parent, false);
+            var cm = corrMarkGO.GetComponentInChildren<CorruptionMark>();
+            cm.minigameRef = GetMinigameByMinigameId(subjectMinigame);
+            cm.lensRef = GetMagnifyingGlassLensForMinigameId(subjectMinigame);
+        }
 
+        _corruptionMarksPlaced = true;
+    }
+
+    private GameObject GetMinigameByMinigameId(string minigameId)
+    {
+        foreach (var minigame in _miniGameManager.miniGames)
+        {
+            if (minigame.CompareTag(minigameId)) return minigame.gameObject;
+        }
+
+        Debug.LogWarning($"Failed to load matching minigame from MinigameManager by tag {minigameId}");
+        return null;
+    }
+
+    private GameObject GetMagnifyingGlassLensForMinigameId(string minigameId)
+    {
+        switch (minigameId)
+        {
+            case NamingConstants.TAG_MINIGAME_HEARTSTRING:
+                return _magnifyingGlass.leftLensReference;
+            case NamingConstants.TAG_MINIGAME_LUNGPUMP:
+                return _magnifyingGlass.leftLensReference;
+            case NamingConstants.TAG_MINIGAME_DRAIN:
+                return _magnifyingGlass.middleLensReference;
+        }
+        
+        Debug.LogWarning($"Failed to match Magnifying Glass Lens for minigameId {minigameId}");
+        return null;
+    }
+    
+    private GameObject GetSubjectScanLayerFromMinigameId(string minigameId)
+    {
+        switch (minigameId)
+        {
+            case NamingConstants.TAG_MINIGAME_HEARTSTRING:
+                return _patientPage.organLayer;
+            case NamingConstants.TAG_MINIGAME_LUNGPUMP:
+                return _patientPage.organLayer;
+            case NamingConstants.TAG_MINIGAME_DRAIN:
+                return _patientPage.underClothLayer;
+        }
+
+        Debug.LogWarning($"Failed to match Patient Scan Layer for minigameId {minigameId}");
+        return null;
+    }
+
+    private bool AreMinigamesFullyLoaded()
+    {
+        return _patientPage != null
+               && _magnifyingGlass != null;
+    }
+
+    private bool IsMinigameSceneLoaded()
+    {
+        return GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER) != null;
+    }
+    
     private Subject GetCurrentSubjectByName(string name)
     {
-        return subjectsCured[name];
+        return subjectsToCure[name];
     }
+    
+    private void LoadPatientPage()
+    {
+        if (_patientPage != null) return;
+        
+        var _patientPageGO = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PATIENT_PAGE);
+        if (_patientPageGO != null){
+            _patientPage = _patientPageGO.GetComponent<PatientPage>();
+            _patientPage.SetSpriteBySubject(currentSubject);
+        }
+    }
+    
+    private void LoadMagnifyingGlass()
+    {
+        if (_magnifyingGlass != null) return;
+        
+        var _magnifyingGlassGO = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS);
+        if (_magnifyingGlassGO != null)
+        {
+            _magnifyingGlass = _magnifyingGlassGO.GetComponent<MagnifyingGlass>();
+        }
+    }
+    
+    /* IN CASE WE WANT TO DEFINE A CURE ORDER FOR GAME PROGRESSION */
+    /* Currently unused */
     private Subject GetCurrentSubjectByCureOrder()
     {
-        foreach (var subjectKey in subjectOrder)
+        foreach (var subjectKey in subjectCureOrder)
         {
-            var subject = subjectsCured[subjectKey];
+            var subject = subjectsToCure[subjectKey];
             if (subject != null && !subject.isCured)
             {
                 return subject;
@@ -109,36 +192,5 @@ public class SubjectManager : MonoBehaviour
 
         Debug.LogWarning("FAILED TO LOAD SUBJECT TO CURE!");
         return null;
-    }
-    
-    private Dictionary<string, Subject> CreateSubjectMap()
-    {
-        Dictionary<string, Subject> subjectMap = new();
-        Subject subject04 = CreateSubject(
-            SUBJECT_NAME_04, 
-            SUBJECT_SPRITENAME_OUTFIT_04, 
-            SUBJECT_SPRITENAME_UNDER_04, 
-            SUBJECT_SPRITENAME_ORGANS_04, 
-            SUBJECT_SPRITENAME_SKELETON_04, 
-            true);
-        Subject subject14 = CreateSubject(
-            SUBJECT_NAME_14, 
-            SUBJECT_SPRITENAME_OUTFIT_14, 
-            SUBJECT_SPRITENAME_UNDER_14,
-            SUBJECT_SPRITENAME_ORGANS_14,
-            SUBJECT_SPRITENAME_SKELETON_14,
-            false);
-        Subject subject15 = CreateSubject(
-            SUBJECT_NAME_15, 
-            SUBJECT_SPRITENAME_OUTFIT_15, 
-            SUBJECT_SPRITENAME_UNDER_15, 
-            SUBJECT_SPRITENAME_ORGANS_15, 
-            SUBJECT_SPRITENAME_SKELETON_15, 
-            true);
-        
-        subjectMap.Add(subject04.name, subject04);
-        subjectMap.Add(subject14.name, subject14);
-        subjectMap.Add(subject15.name, subject15);
-        return subjectMap;
     }
 }
