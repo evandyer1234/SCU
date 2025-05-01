@@ -19,7 +19,7 @@ namespace Subjects
             new (3.2f, 13.4f),
             new (2.8f, 11.9f),
             new (4.6f, 13f),
-            new (4.8f, 11f),
+            new (4.8f, 11.9f),
         };
         
         private static List<Vector2> heartStringAdultPositions = new List<Vector2>()
