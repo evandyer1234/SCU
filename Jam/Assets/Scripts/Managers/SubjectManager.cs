@@ -25,18 +25,18 @@ public class SubjectManager : MonoBehaviour
         SUBJECT_NAME_04,
     };
     
+    /** ****************************************************
+     * *************** MINIGAME SPECIFIC *******************
+     * *****************************************************
+     */
     private bool _minigamesFullyLoaded = false;
     private bool _corruptionMarksPlaced = false;
-    /*
-     * this needs to be a countdown because a scene reload while beeing in the same scene
-     * would instantly trigger initiation 
-     */
-    private int _minigamesInitiatingCountDown = 0;
-    private int _countdownBase = 3;
-
+    // needs to be a countdown instead of bool, since reloading the scene might trigger initiation in same frame
+    private int _minigameSceneInitiationCountDown = 0;
     private PatientPage _patientPage;
     private MagnifyingGlass _magnifyingGlass;
     private MiniGameManager _miniGameManager;
+    /* **************************************************** */
     
     private void Awake()
     {
@@ -46,12 +46,35 @@ public class SubjectManager : MonoBehaviour
 
     private void Update()
     {
-        if (_minigamesInitiatingCountDown >= 0)
-        {
-            _minigamesInitiatingCountDown--;
-        }
-        if (_minigamesInitiatingCountDown > 0) return;
+        LoadMinigamesAndSceneStateMachine();
+    }
+    
+    /** ****************************************************
+    * *************** MINIGAME SPECIFIC *******************
+    * *****************************************************
+    */
+    
+    public void LaunchMinigames(string subjectName)
+    {
+        _minigameSceneInitiationCountDown = 3;
+        currentSubject = GetCurrentSubjectByName(subjectName);
+    }
+
+    public void ResetMinigameState()
+    {
+        currentSubject = null;
+        _minigameSceneInitiationCountDown = 3;
+        _minigamesFullyLoaded = false;
+        _patientPage = null;
+        _magnifyingGlass = null;
+        _miniGameManager = null;
+        _corruptionMarksPlaced = false;
+    }
+    
+    private void LoadMinigamesAndSceneStateMachine()
+    {
         if (_minigamesFullyLoaded) return;
+        if (!IsMinigameSceneInitationComplete()) return;
         if (!IsMinigameSceneLoaded()) return;
         
         if (!AreMinigamesFullyLoaded())
@@ -61,29 +84,11 @@ public class SubjectManager : MonoBehaviour
             LoadMagnifyingGlass();
             LoadCorruptionMarksAndMinigamesForCurrentSubject();
         }
-
-        /* improve performance by checking a boolean instead of null checks on gameobjects */
-        if (AreMinigamesFullyLoaded())
+        else
         {
+            /* improve performance by checking a boolean instead of null checks each frame on gameobjects */
             _minigamesFullyLoaded = true;
         }
-    }
-    
-    public void LaunchMinigames(string subjectName)
-    {
-        _minigamesInitiatingCountDown = _countdownBase;
-        currentSubject = GetCurrentSubjectByName(subjectName);
-    }
-
-    public void ResetMinigameState()
-    {
-        currentSubject = null;
-        _minigamesInitiatingCountDown = _countdownBase;
-        _minigamesFullyLoaded = false;
-        _patientPage = null;
-        _magnifyingGlass = null;
-        _miniGameManager = null;
-        _corruptionMarksPlaced = false;
     }
 
     private void LoadPatientPage()
@@ -149,10 +154,30 @@ public class SubjectManager : MonoBehaviour
                && _magnifyingGlass != null;
     }
 
+    private bool IsMinigameSceneInitationComplete()
+    {
+        if (_minigameSceneInitiationCountDown >= 0)
+        {
+            _minigameSceneInitiationCountDown--;
+        }
+
+        if (_minigameSceneInitiationCountDown > 0)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     private bool IsMinigameSceneLoaded()
     {
         return GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER) != null;
     }
+    
+    /** ****************************************************
+    * ************* END: MINIGAME SPECIFIC *****************
+    * *****************************************************
+    */
     
     private Subject GetCurrentSubjectByName(string name)
     {
