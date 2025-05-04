@@ -17,11 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 1262c6054370c24419909c1f464b65b8
   m_SerializeEntries:
-  - m_GUID: 641f994d1a7ab0a489143b345854fa67
+  - m_GUID: 6d01209539f9e294496a88d104cc5efa
     m_Address: glass_shadow_closed
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: d325d734a1d86d34a8800b0aed73babe
+  - m_GUID: 7edc57913d6a2644da6a9e5985e791c9
     m_Address: glass_shadow_open
     m_ReadOnly: 0
     m_SerializedLabels: []
