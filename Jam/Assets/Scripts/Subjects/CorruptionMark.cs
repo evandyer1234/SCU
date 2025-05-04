@@ -19,16 +19,22 @@ namespace Subjects
         private bool miniGameLaunched = false;
         
         private SCUInputAction _scuInputAction;
+
+        private MagnifyingGlassShadow glassShadowRef;
         
         public void Awake()
         {
             corruptionOutline.SetActive(false);
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
+            
+            glassShadowRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS_SHADOW)
+                .GetComponent<MagnifyingGlassShadow>();
         }
 
         void OnMouseOver()
         {
+            if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
             if (miniGameLaunched) return;
             
             if (!corruptionOutline.activeInHierarchy)
@@ -43,6 +49,7 @@ namespace Subjects
 
         private void MouseLeftClick()
         {
+            if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
             if (miniGameLaunched) return;   
             List<Collider2D> lensColliders = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x/2)
                 .Where(col => 
@@ -64,11 +71,12 @@ namespace Subjects
 
         private void LaunchMinigame()
         {
+            if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
+            
             minigameRef.GetComponent<MiniGameBase>().StartMinigame(gameObject);
             miniGameLaunched = true;
-            MagnifyingGlassShadow mgs = GameObject
-                .FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS_SHADOW).GetComponent<MagnifyingGlassShadow>();
-            mgs.SetMagnifyingGlassInUse(false);
+
+            glassShadowRef.SetMagnifyingGlassInUse(false);
         }
         
         void OnMouseExit()
