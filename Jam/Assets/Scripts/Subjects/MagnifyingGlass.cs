@@ -1,4 +1,6 @@
+using System;
 using Helpers;
+using UI;
 using UnityEngine;
 
 namespace Subjects
@@ -23,6 +25,9 @@ namespace Subjects
         [SerializeField, Tooltip("The right lens of the Glass")] 
         public GameObject rightLensReference;
         
+        [SerializeField, Tooltip("The hint to play if not interacted")] 
+        public InteractionHint handleHint;
+        
         // dragging state
         private bool followMouse = false;
         private bool hovered = false;
@@ -32,6 +37,10 @@ namespace Subjects
         private Vector3 offsetLeftLensToMouse = Vector3.zero;
         private Vector3 offsetRightLensToMouse = Vector3.zero;
 
+        // interaction hint
+        private bool usedOnce = false;
+        private int hintCountdown = 250;
+        
         private SCUInputAction _scuInputAction;
 
         private void Awake()
@@ -42,8 +51,6 @@ namespace Subjects
         
         private void Update()
         {
-            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
@@ -52,6 +59,22 @@ namespace Subjects
                 KeepSpriteRelativeToMouse(middleLensReference, mouseWorldPos, offsetMiddleLensToMouse);
                 KeepSpriteRelativeToMouse(leftLensReference, mouseWorldPos, offsetLeftLensToMouse);
                 KeepSpriteRelativeToMouse(rightLensReference, mouseWorldPos, offsetRightLensToMouse);
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+            
+            hintCountdown--;
+            if (hintCountdown <= 0)
+            {
+                if (!usedOnce)
+                {
+                    handleHint.TriggerAnimation();
+                    usedOnce = true;
+                }
+                hintCountdown = 0;
             }
         }
 
@@ -76,6 +99,7 @@ namespace Subjects
         
         private void MouseLeftClick()
         {
+            usedOnce = true;
             followMouse = true;
             Vector3 mousepos =  MouseInput.WorldPosition(_scuInputAction);
             offsetGlassSpriteToMouse = (mousepos - transform.position);
