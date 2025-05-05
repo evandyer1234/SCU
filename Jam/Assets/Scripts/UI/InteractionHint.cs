@@ -6,8 +6,7 @@ namespace UI
     {
         [SerializeField] private SpriteRenderer interactionHint;
         [SerializeField] private float animationLength;
-        [SerializeField] private float animationOffset;
-        [SerializeField] private int totalAnimationTimes = 2;
+        [SerializeField] private int totalAnimationTimes = 3;
 
         private bool startAnimation = false;
         private int count = 0;
@@ -18,16 +17,11 @@ namespace UI
             interactionHint.enabled = false;
         }
 
-        private void Start()
-        {
-            Invoke(nameof(TriggerAnimation), animationOffset);
-        }
-
         private void FixedUpdate()
         {
             if (!startAnimation) return;
             if (animatedTimes >= totalAnimationTimes) return;
-
+            
             ExecuteAnimationCalc();
         }
 
@@ -63,8 +57,10 @@ namespace UI
             interactionHint.color = new Color(c.r, c.g, c.b, alpha);
         }
 
-        private void TriggerAnimation()
+        public void TriggerAnimation()
         {
+            animatedTimes = 0;
+            count = 0;
             startAnimation = true;
             var c = interactionHint.color;
             interactionHint.color = new Color(c.r, c.g, c.b, 0);

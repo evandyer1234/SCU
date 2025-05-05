@@ -1,7 +1,7 @@
 using System;
 using Helpers;
+using UI;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Subjects
 {
@@ -31,6 +31,9 @@ namespace Subjects
         [SerializeField, Tooltip("The organ layer")] 
         private GameObject organLayerReference;
         
+        [SerializeField, Tooltip("The switch hint if unused for a longer time")] 
+        private InteractionHint switchHint;
+        
         // Addressable sprite names to match
         private static string GLASS_SHADOW_OPEN = "glass_shadow_open";
         private static string GLASS_SHADOW_CLOSED = "glass_shadow_closed";
@@ -56,6 +59,10 @@ namespace Subjects
         private int scanMode = (int) ScanMode.NONE;
         private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;
         
+        // interaction hint
+        private bool usedOnce = false;
+        private int hintCountdown = 500;
+        
         private SCUInputAction _scuInputAction;
         
         private void Awake()
@@ -75,7 +82,23 @@ namespace Subjects
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             ListenForMouseWheel();
         }
-
+        
+        private void FixedUpdate()
+        {
+            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+            
+            hintCountdown--;
+            if (hintCountdown <= 0)
+            {
+                if (!usedOnce)
+                {
+                    switchHint.TriggerAnimation();
+                    usedOnce = true;
+                }
+                hintCountdown = 0;
+            }
+        }
+        
         private void OnMouseOver()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
@@ -88,6 +111,9 @@ namespace Subjects
         private void HandleLeftClick()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+
+            usedOnce = true;
+            
             magnifyingGlassOpen = !magnifyingGlassOpen;
             if (magnifyingGlassOpen)
             {
