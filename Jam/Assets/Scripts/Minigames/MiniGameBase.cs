@@ -35,6 +35,11 @@ public class MiniGameBase : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public bool IsMinigameRunning()
+    {
+        return gameObject.activeInHierarchy;
+    }
+    
     public void OnSuccess()
     {
         debugMessage.text = "Success";

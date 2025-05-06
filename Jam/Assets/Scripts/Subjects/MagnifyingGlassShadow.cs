@@ -33,6 +33,7 @@ namespace Subjects
         private Vector2 resetLeftLensPos;
         private Vector2 resetRightLensPos;
 
+        private MiniGameManager _miniGameManager;
         
         public void Awake()
         {
@@ -43,52 +44,16 @@ namespace Subjects
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
 
+            _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
+                .GetComponent<MiniGameManager>();
+            
             RememberOriginalMagnifyingGlassElementPositions();
         }
-
-
         
         private void FixedUpdate()
         {
             HandleInitialUsageHintAnimation();
-
-            if (spriteSwitchReference.transform.position.y < -11)
-            {
-                resetHintCountdown--;
-                if (resetHintCountdown <= 0)
-                {
-                    if (spriteSwitchReference.transform.position.y < -11)
-                    {
-                        shadowHint.TriggerAnimation();
-                        resetHintCountdown = 250;
-                    }
-                    else
-                    {
-                        resetHintCountdown = 0;
-                    }
-                }
-            }
-            else
-            {
-                resetHintCountdown = 250;
-            }
-        }
-
-        private void HandleInitialUsageHintAnimation()
-        {
-            hintCountdown--;
-            if (hintCountdown <= 0)
-            {
-                if (!IsMagnifyingGlassInUse)
-                {
-                    shadowHint.TriggerAnimation();
-                    hintCountdown = 350;
-                }
-                else
-                {
-                    hintCountdown = 0;
-                }
-            }
+            HandleResetHintAnimation();
         }
         
         private void OnMouseOver()
@@ -145,6 +110,54 @@ namespace Subjects
                 mg.middleLensReference.transform.position = resetMiddleLensPos;
                 mg.leftLensReference.transform.position = resetLeftLensPos;
                 mg.rightLensReference.transform.position = resetRightLensPos;
+            }
+        }
+        
+        private void HandleInitialUsageHintAnimation()
+        {
+            if (!IsMagnifyingGlassInUse && !_miniGameManager.IsAnyMinigameRunning())
+            {
+                hintCountdown--;
+                if (hintCountdown <= 0)
+                {
+                    if (!IsMagnifyingGlassInUse && !_miniGameManager.IsAnyMinigameRunning())
+                    {
+                        shadowHint.TriggerAnimation();
+                        hintCountdown = 350;
+                    }
+                    else
+                    {
+                        hintCountdown = 0;
+                    }
+                }
+            }
+            else
+            {
+                hintCountdown = 350;
+            }
+        }
+
+        private void HandleResetHintAnimation()
+        {
+            if (spriteSwitchReference.transform.position.y < -11)
+            {
+                resetHintCountdown--;
+                if (resetHintCountdown <= 0)
+                {
+                    if (spriteSwitchReference.transform.position.y < -11)
+                    {
+                        shadowHint.TriggerAnimation();
+                        resetHintCountdown = 250;
+                    }
+                    else
+                    {
+                        resetHintCountdown = 0;
+                    }
+                }
+            }
+            else
+            {
+                resetHintCountdown = 250;
             }
         }
     }
