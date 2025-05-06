@@ -7,11 +7,9 @@
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InteractionHint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InteractionHint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Magnifying Glass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringVein.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +206,8 @@
       <workItem from="1746125798784" duration="2143000" />
       <workItem from="1746202952286" duration="3267000" />
       <workItem from="1746374358684" duration="10804000" />
-      <workItem from="1746466112530" duration="8935000" />
+      <workItem from="1746466112530" duration="9495000" />
+      <workItem from="1746550440308" duration="1255000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -402,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746390465439</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add tooltips for magnifying glass">
+      <option name="closed" value="true" />
+      <created>1746475125357</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1746475125357</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,6 +461,7 @@
     <MESSAGE value="Refactor code for minigame scene state machine" />
     <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
-    <option name="LAST_COMMIT_MESSAGE" value="add animated InteractionHint" />
+    <MESSAGE value="Add tooltips for magnifying glass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tooltips for magnifying glass" />
   </component>
 </project>

@@ -16,20 +16,20 @@ namespace Minigames.HeartString
         
         private SCUInputAction _scuInputAction;
 
+        private float hoveredOutlineAlpha = 0.7f;
         
         private void Awake()
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
-            veinOutline.SetActive(false);
+            SetOutlineAlpha(0f);
         }
         
         void OnMouseOver()
         {
-            if (!veinOutline.activeInHierarchy)
-            {
-                veinOutline.SetActive(true);
-            }
+            if (!veinOutline.activeInHierarchy) return;
+            
+            SetOutlineAlpha(hoveredOutlineAlpha);
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();
@@ -43,10 +43,16 @@ namespace Minigames.HeartString
 
         void OnMouseExit()
         {
-            if (veinOutline.activeInHierarchy)
-            {
-                veinOutline.SetActive(false);
-            }
+            if (!veinOutline.activeInHierarchy) return;
+
+            SetOutlineAlpha(0f);
+        }
+
+        private void SetOutlineAlpha(float alpha)
+        {
+            var spriteRend = veinOutline.GetComponent<SpriteRenderer>();
+            var c = spriteRend.color;
+            spriteRend.color = new Color(c.r, c.g, c.b, alpha);
         }
     }
 }
