@@ -49,7 +49,7 @@ public class MiniGameManager : MonoBehaviour
             BackToMainMenu();
         }
     }
-
+    
     void FixedUpdate()
     {
         CurrentTime -= Time.fixedDeltaTime;
@@ -61,6 +61,15 @@ public class MiniGameManager : MonoBehaviour
         }
     }
 
+    public bool IsAnyMinigameRunning()
+    {
+        foreach (var miniGameBase in miniGames)
+        {
+            if (miniGameBase.IsMinigameRunning()) return true;
+        }
+        return false;
+    }
+    
     public void FinishMiniGame(MiniGameBase minigameBase)
     {
         string miniGameName = minigameBase.gameObject.name;
