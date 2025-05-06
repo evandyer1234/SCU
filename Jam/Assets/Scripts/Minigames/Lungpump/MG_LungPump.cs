@@ -1,4 +1,5 @@
 using Helpers;
+using UI;
 using UnityEngine;
 
 namespace Minigames.Lungpump
@@ -16,6 +17,15 @@ namespace Minigames.Lungpump
         
         [SerializeField, Tooltip("Amount of times to evaluate success. Evaluated each evaluation tick.")]
         private int ticksToSuccess;
+
+        [SerializeField, Tooltip("Left Pump Click hint.")]
+        private InteractionHint _hintLeft;
+        
+        [SerializeField, Tooltip("Right Pump Click hint.")]
+        private InteractionHint _hintRight;
+        
+        [SerializeField, Tooltip("Barometer Target Area hint.")]
+        private InteractionHint _barometerTargetAreaHint;
         
         // barometer needle
         private const float NEEDLE_MIN_ANGLE = 145;
@@ -39,6 +49,8 @@ namespace Minigames.Lungpump
         private static Vector2 _collOffsetRight = new Vector2(12.5f, 7f);
 
         private SCUInputAction _scuInputAction;
+
+        private bool _usedOnce = false;
         
         private void Awake()
         {
@@ -59,8 +71,9 @@ namespace Minigames.Lungpump
             colliderIsLeft = true;
             ResetBarometerNeedleToMinimum();
             InvokeRepeating(nameof(EvaluatePressure), 3f, 1f);
+            Invoke(nameof(AnimateClickHints), 2f);
         }
-
+        
         private void EvaluatePressure()
         {
             if (IsPressureWithinSuccessRange())
@@ -102,9 +115,15 @@ namespace Minigames.Lungpump
                 HandleLeftClick();
             }
         }
-
+        
         private void HandleLeftClick()
         {
+            if (!_usedOnce)
+            {
+                Invoke(nameof(AnimateBarometerTargetHint), 3f);
+            }
+            
+            _usedOnce = true;
             if (colliderIsLeft)
             {
                 lungPump.GetComponent<SpriteRenderer>().flipX = true;
@@ -166,5 +185,24 @@ namespace Minigames.Lungpump
         {
             lungs.GetComponent<SpriteRenderer>().sprite = sprite;
         }
+        
+        private void AnimateClickHints()
+        {
+            if (_usedOnce) return;
+            
+            _hintLeft.TriggerAnimation();
+            Invoke(nameof(AnimateRightClickHint), 0.6f);
+        }
+
+        private void AnimateRightClickHint()
+        {
+            _hintRight.TriggerAnimation();
+        }
+
+        private void AnimateBarometerTargetHint()
+        {
+            _barometerTargetAreaHint.TriggerAnimation();
+        }
+
     }
 }
