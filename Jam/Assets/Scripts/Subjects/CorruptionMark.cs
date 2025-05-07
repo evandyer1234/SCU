@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Helpers;
@@ -22,6 +23,10 @@ namespace Subjects
 
         private MagnifyingGlassShadow glassShadowRef;
         
+        private MiniGameManager _miniGameManager;
+        private Color inactiveColor = new Color32(70, 70, 70, 255);
+        private Color activeColor;
+        
         public void Awake()
         {
             corruptionOutline.SetActive(false);
@@ -30,6 +35,14 @@ namespace Subjects
             
             glassShadowRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAGNIFYING_GLASS_SHADOW)
                 .GetComponent<MagnifyingGlassShadow>();
+            _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
+                .GetComponent<MiniGameManager>();
+            activeColor = GetComponent<SpriteRenderer>().color;
+        }
+
+        public void FixedUpdate()
+        {
+            PaintCorruptionMarkByActivity();
         }
 
         void OnMouseOver()
@@ -84,6 +97,18 @@ namespace Subjects
             if (corruptionOutline.activeInHierarchy)
             {
                 corruptionOutline.SetActive(false);
+            }
+        }
+        
+        private void PaintCorruptionMarkByActivity()
+        {
+            if (_miniGameManager.IsAnyMinigameRunning())
+            {
+                GetComponent<SpriteRenderer>().color = inactiveColor;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().color = activeColor;
             }
         }
     }
