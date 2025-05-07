@@ -142,11 +142,11 @@ namespace Minigames.Lungpump
         
         private void FixedUpdate()
         {
-            float naturalPressureDrop = Random.Range(0.2f, 1f);
+            float naturalPressureDrop = Random.Range(0.2f, 0.8f);
             if (IsPressureWithinSuccessRange())
             {
                 // make it more difficult to keep within success range
-                naturalPressureDrop = Random.Range(0.5f, 1.5f);
+                naturalPressureDrop = Random.Range(0.4f, 1.3f);
             }
             
             barometerNeedle.transform.Rotate(0, 0, naturalPressureDrop);
