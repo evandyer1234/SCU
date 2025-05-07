@@ -7,8 +7,8 @@
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LungPump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LungPump.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMark.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +43,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/5a/ff6447a9/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -207,6 +207,7 @@
       <workItem from="1746374358684" duration="10804000" />
       <workItem from="1746466112530" duration="9495000" />
       <workItem from="1746550440308" duration="3135000" />
+      <workItem from="1746639503771" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -477,6 +478,5 @@
     <MESSAGE value="Add tooltips for magnifying glass" />
     <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug on animating click hints during running minigame" />
   </component>
 </project>

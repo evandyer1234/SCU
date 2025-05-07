@@ -1,4 +1,3 @@
-using System;
 using Helpers;
 using UI;
 using UnityEngine;
@@ -42,11 +41,15 @@ namespace Subjects
         private int hintCountdown = 250;
         
         private SCUInputAction _scuInputAction;
+        private MiniGameManager _miniGameManager;
+        private Color inactiveColor = new Color32(128, 128, 128, 255);
 
         private void Awake()
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
+            _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
+                .GetComponent<MiniGameManager>();
         }
         
         private void Update()
@@ -64,18 +67,11 @@ namespace Subjects
 
         private void FixedUpdate()
         {
+            PaintMagnifyingGlassByActivity();
+            
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             
-            hintCountdown--;
-            if (hintCountdown <= 0)
-            {
-                if (!usedOnce)
-                {
-                    handleHint.TriggerAnimation();
-                    usedOnce = true;
-                }
-                hintCountdown = 0;
-            }
+            AnimateClickHint();
         }
 
         private void OnMouseOver()
@@ -127,6 +123,32 @@ namespace Subjects
         public GameObject getRightLensReference()
         {
             return rightLensReference;
+        }
+        
+        private void AnimateClickHint()
+        {
+            hintCountdown--;
+            if (hintCountdown <= 0)
+            {
+                if (!usedOnce)
+                {
+                    handleHint.TriggerAnimation();
+                    usedOnce = true;
+                }
+                hintCountdown = 0;
+            }
+        }
+        
+        private void PaintMagnifyingGlassByActivity()
+        {
+            if (_miniGameManager.IsAnyMinigameRunning())
+            {
+                GetComponent<SpriteRenderer>().color = inactiveColor;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().color = Color.white;
+            }
         }
     }
 }
