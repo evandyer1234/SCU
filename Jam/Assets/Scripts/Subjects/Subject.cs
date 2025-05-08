@@ -1,26 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Subject", menuName = "ScriptableObjects/Subjects")]
-public class Subject : ScriptableObject
+public class Subject
 {
-    public List<MiniGameBase> miniGames;
-
     public string name;
 
-    public Sprite imageMain;
-    public Sprite imageOutLine;
+    public Sprite imageOutfit;
+    public Sprite imageUnder;
+    public Sprite imageOrgans;
     public Sprite imageSkeleton;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool isCured = false;
+    public bool isAdult = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<string> subjectMinigames = new();
 }

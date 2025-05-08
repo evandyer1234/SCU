@@ -1,3 +1,4 @@
+using Helpers;
 using UnityEngine;
 
 public class ClickandDrag : ClickEvent
@@ -11,13 +12,19 @@ public class ClickandDrag : ClickEvent
 
     private Vector3 _positionOffset;
 
-    
+    private SCUInputAction _scuInputAction;
+
+    private void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+
     public virtual void Update()
     {
-        if (Input.GetMouseButtonUp(0) && selected) 
+        if (MouseInput.LeftReleased(_scuInputAction) && selected) 
         {
             selected = false;
-            Release();
         }
         if (selected)
         {
@@ -25,11 +32,6 @@ public class ClickandDrag : ClickEvent
         }
     }
     
-    public virtual void Release()
-    {
-        //CustomCursor.instance.SetDefaultCursor();
-    }
-
     public virtual void FollowMouse()
     {
         Vector3 pos  = GetCameraPosition() - _positionOffset;
@@ -51,13 +53,11 @@ public class ClickandDrag : ClickEvent
     public virtual void OnSelected()
     {
         selected = true;
-        //CustomCursor.instance.SetPressedCursor();
         _positionOffset = GetCameraPosition() - transform.position;
     }
 
-
     Vector3 GetCameraPosition()
     {
-        return Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+        return MouseInput.WorldPosition(_scuInputAction);
     }
 }

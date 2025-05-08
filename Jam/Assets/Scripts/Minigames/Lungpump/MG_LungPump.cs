@@ -1,4 +1,5 @@
 using Helpers;
+using UI;
 using UnityEngine;
 
 namespace Minigames.Lungpump
@@ -16,6 +17,15 @@ namespace Minigames.Lungpump
         
         [SerializeField, Tooltip("Amount of times to evaluate success. Evaluated each evaluation tick.")]
         private int ticksToSuccess;
+
+        [SerializeField, Tooltip("Left Pump Click hint.")]
+        private InteractionHint _hintLeft;
+        
+        [SerializeField, Tooltip("Right Pump Click hint.")]
+        private InteractionHint _hintRight;
+        
+        [SerializeField, Tooltip("Barometer Target Area hint.")]
+        private InteractionHint _barometerTargetAreaHint;
         
         // barometer needle
         private const float NEEDLE_MIN_ANGLE = 145;
@@ -38,11 +48,17 @@ namespace Minigames.Lungpump
         private static Vector2 _collOffsetLeft = new Vector2(3f, 7f);
         private static Vector2 _collOffsetRight = new Vector2(12.5f, 7f);
 
+        private SCUInputAction _scuInputAction;
+
+        private bool _usedOnce = false;
+        
         private void Awake()
         {
             lungsSmallSprite = FileLoader.GetSpriteByName(LUNGS_SMALL);
             lungsMediumSprite = FileLoader.GetSpriteByName(LUNGS_MEDIUM);
             lungsBigSprite = FileLoader.GetSpriteByName(LUNGS_BIG);
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
         
         private void Start()
@@ -55,8 +71,9 @@ namespace Minigames.Lungpump
             colliderIsLeft = true;
             ResetBarometerNeedleToMinimum();
             InvokeRepeating(nameof(EvaluatePressure), 3f, 1f);
+            Invoke(nameof(AnimateClickHints), 2f);
         }
-
+        
         private void EvaluatePressure()
         {
             if (IsPressureWithinSuccessRange())
@@ -81,8 +98,8 @@ namespace Minigames.Lungpump
 
         private bool IsPressureWithinSuccessRange()
         {
-            return (barometerNeedle.transform.rotation.eulerAngles.z is >= NEEDLE_POINT_UP_0 and <= 20)
-                || (barometerNeedle.transform.rotation.eulerAngles.z is <= NEEDLE_POINT_UP_360 and >= 340);
+            return (barometerNeedle.transform.rotation.eulerAngles.z is >= NEEDLE_POINT_UP_0 and <= 36)
+                || (barometerNeedle.transform.rotation.eulerAngles.z is <= NEEDLE_POINT_UP_360 and >= 327);
         }
 
         private bool IsPressureWithinMediumRange()
@@ -93,11 +110,20 @@ namespace Minigames.Lungpump
         
         private void OnMouseOver()
         {
-            if(MouseInput.LeftClick()) HandleLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
         }
-
+        
         private void HandleLeftClick()
         {
+            if (!_usedOnce)
+            {
+                Invoke(nameof(AnimateBarometerTargetHint), 3f);
+            }
+            
+            _usedOnce = true;
             if (colliderIsLeft)
             {
                 lungPump.GetComponent<SpriteRenderer>().flipX = true;
@@ -116,13 +142,13 @@ namespace Minigames.Lungpump
         
         private void FixedUpdate()
         {
-            float naturalPressureDrop = Random.Range(0.2f, 1f);
+            float naturalPressureDrop = Random.Range(0.2f, 0.8f);
             if (IsPressureWithinSuccessRange())
             {
                 // make it more difficult to keep within success range
-                naturalPressureDrop = Random.Range(0.5f, 1.5f);
+                naturalPressureDrop = Random.Range(0.4f, 1.3f);
             }
-
+            
             barometerNeedle.transform.Rotate(0, 0, naturalPressureDrop);
             if (IsBarometerBelowLowest())
             {
@@ -159,5 +185,24 @@ namespace Minigames.Lungpump
         {
             lungs.GetComponent<SpriteRenderer>().sprite = sprite;
         }
+        
+        private void AnimateClickHints()
+        {
+            if (_usedOnce) return;
+            
+            _hintLeft.TriggerAnimation();
+            Invoke(nameof(AnimateRightClickHint), 0.6f);
+        }
+
+        private void AnimateRightClickHint()
+        {
+            _hintRight.TriggerAnimation();
+        }
+
+        private void AnimateBarometerTargetHint()
+        {
+            _barometerTargetAreaHint.TriggerAnimation();
+        }
+
     }
 }

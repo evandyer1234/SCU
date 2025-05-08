@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
@@ -30,7 +27,6 @@ public class MG_Pump : MiniGameBase
         base.Start();
         pressure.maxValue = 100f;
         currentvalue = goalnum;
-        gameModeManager = EventSystem.current.gameObject.GetComponent<GameModeManager>();
         timeremaining.maxValue = length;
         
         _audioSource = GetComponent<AudioSource>();
@@ -57,11 +53,11 @@ public class MG_Pump : MiniGameBase
 
         if (currentvalue > (goalnum + variance))
         {
-            gameModeManager.subtractTime(timepunishment);
+            //gameModeManager.subtractTime(timepunishment);
         }
         else if (currentvalue < (goalnum - variance)) 
         {
-            gameModeManager.subtractTime(timepunishment);
+            //gameModeManager.subtractTime(timepunishment);
         }
         else
         {

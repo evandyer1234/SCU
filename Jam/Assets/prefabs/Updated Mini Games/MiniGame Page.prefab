@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6246576664855515351}
   m_Layer: 0
   m_Name: MiniGame Page
-  m_TagString: Untagged
+  m_TagString: MinigameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +52,12 @@ MonoBehaviour:
   - {fileID: 1574750518147182946}
   - {fileID: 7965065728643618494}
   - {fileID: 2963477765614932825}
-  activeMiniGame: {fileID: 0}
+  StartTime: 0
+  timerText: {fileID: 0}
+  GameoverPanel: {fileID: 0}
+  GamewinPanel: {fileID: 0}
+  magnifyingGlassShadowRef: {fileID: 0}
+  postItIngredients: {fileID: 0}
 --- !u!1 &6246576665607146319
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +301,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6246576664855515350}
     m_Modifications:
+    - target: {fileID: 1262437561454695502, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262437561754478840, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262437561793809121, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262437562130819514, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262437562892417205, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1262437563243944676, guid: 3d38fe04edeaeb14e88b81e1cd917d38, type: 3}
       propertyPath: m_RootOrder
       value: 1

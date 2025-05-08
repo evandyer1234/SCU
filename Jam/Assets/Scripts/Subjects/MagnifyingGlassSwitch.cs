@@ -1,5 +1,6 @@
 using System;
 using Helpers;
+using UI;
 using UnityEngine;
 
 namespace Subjects
@@ -30,6 +31,9 @@ namespace Subjects
         [SerializeField, Tooltip("The organ layer")] 
         private GameObject organLayerReference;
         
+        [SerializeField, Tooltip("The switch hint if unused for a longer time")] 
+        private InteractionHint switchHint;
+        
         // Addressable sprite names to match
         private static string GLASS_SHADOW_OPEN = "glass_shadow_open";
         private static string GLASS_SHADOW_CLOSED = "glass_shadow_closed";
@@ -55,6 +59,12 @@ namespace Subjects
         private int scanMode = (int) ScanMode.NONE;
         private int scanStateLength = Enum.GetNames(typeof(ScanMode)).Length;
         
+        // interaction hint
+        private bool usedOnce = false;
+        private int hintCountdown = 500;
+        
+        private SCUInputAction _scuInputAction;
+        
         private void Awake()
         {
             glassShadowOpen = FileLoader.GetSpriteByName(GLASS_SHADOW_OPEN);
@@ -63,6 +73,8 @@ namespace Subjects
             glassClosed = FileLoader.GetSpriteByName(GLASS_CLOSED);
             switchOpen = FileLoader.GetSpriteByName(GLASS_SWITCH_OPEN);
             switchClosed = FileLoader.GetSpriteByName(GLASS_SWITCH_CLOSED);
+            _scuInputAction = new SCUInputAction();
+            _scuInputAction.UI.Enable();
         }
 
         private void Update()
@@ -70,15 +82,38 @@ namespace Subjects
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             ListenForMouseWheel();
         }
-
+        
+        private void FixedUpdate()
+        {
+            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+            
+            hintCountdown--;
+            if (hintCountdown <= 0)
+            {
+                if (!usedOnce)
+                {
+                    switchHint.TriggerAnimation();
+                    usedOnce = true;
+                }
+                hintCountdown = 0;
+            }
+        }
+        
         private void OnMouseOver()
         {
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
-            if(MouseInput.LeftClick()) HandleLeftClick();
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
         }
         
         private void HandleLeftClick()
         {
+            if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+
+            usedOnce = true;
+            
             magnifyingGlassOpen = !magnifyingGlassOpen;
             if (magnifyingGlassOpen)
             {
@@ -107,12 +142,12 @@ namespace Subjects
                 scanMode = (int) ScanMode.NONE;
                 return;
             }
-            if (MouseInput.ScrollForward())
+            if (MouseInput.ScrollForward(_scuInputAction))
             {
                 scanMode++;
                 UpdateLensByState();
             }
-            else if (MouseInput.ScrollBackward())
+            else if (MouseInput.ScrollBackward(_scuInputAction))
             {
                 scanMode--;
                 UpdateLensByState();

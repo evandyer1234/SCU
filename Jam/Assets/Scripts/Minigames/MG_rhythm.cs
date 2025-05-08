@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -90,6 +89,6 @@ public class MG_rhythm : MiniGameBase
     //runs when the player hits the button at the incorrect time or lets a note slip past
     public void miss()
     {
-        gameModeManager.subtractTime(penalty);
+        // gameModeManager.subtractTime(penalty);
     }
 }

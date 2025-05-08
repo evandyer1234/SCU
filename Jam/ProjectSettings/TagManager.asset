@@ -11,6 +11,12 @@ TagManager:
   - MagnifyingGlassShadow
   - MinigameManager
   - DebugMessageUserFeedback
+  - MainEventSystem
+  - PatientPage
+  - MinigameHeartstring
+  - MinigameDrain
+  - MinigameLungpump
+  - MagnifyingGlass
   layers:
   - Default
   - TransparentFX

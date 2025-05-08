@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 public class MG_AlchemyLeaf : ClickandDrag
@@ -9,9 +8,12 @@ public class MG_AlchemyLeaf : ClickandDrag
 
     public float pickDistance = 1.0f;
 
-    // Start is called before the first frame update
-    void Start()
+    private SCUInputAction _scuInputAction;
+    
+    private void Awake()
     {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
     }
 
     private void Update()
@@ -24,11 +26,10 @@ public class MG_AlchemyLeaf : ClickandDrag
         // Don't have the leaf follow mouse
     }
 
-    public override void Release()
+    public void Release()
     {
-        //Debug.Log("Released:");
-        //Debug.Log(Vector3.Distance(mouseClickPosition, Camera.main.ScreenToWorldPoint(Input.mousePosition)));
-        if (Vector3.Distance(mouseClickPosition, Camera.main.ScreenToWorldPoint(Input.mousePosition)) >= pickDistance)
+        Vector2 mousePos = MouseInput.WorldPosition(_scuInputAction);
+        if (Vector3.Distance(mouseClickPosition, mousePos) >= pickDistance)
         {
             Object.Destroy(this.gameObject);
         }
@@ -37,7 +38,6 @@ public class MG_AlchemyLeaf : ClickandDrag
     public override void OnSelected()
     {
         base.OnSelected();
-
-        mouseClickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseClickPosition = MouseInput.WorldPosition(_scuInputAction);
     }
 }

@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingredient : DragReset
+public class Ingredient
 {
     public enum ItemVal { HI, HowAreYou, Etc };
 
     public ItemVal value;
     bool inslot = false;
 
-    public override void Release()
+    public void Release()
     {
         
         if (inslot)
         {
-            FindObjectOfType<Pot>().drops.Add(value);
+            // FindObjectOfType<Pot>().drops.Add(value);
             Debug.Log("Yo");
         }
     }

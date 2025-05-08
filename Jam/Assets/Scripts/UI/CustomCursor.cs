@@ -1,3 +1,4 @@
+using Helpers;
 using UnityEngine;
 using UnityEditor;
 
@@ -12,20 +13,36 @@ public class CustomCursor : MonoBehaviour
 
     public static CustomCursor instance;
 
+    private SCUInputAction _scuInputAction;
+    
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+    
     void Start()
     {
         Cursor.visible = false;
-
-        DontDestroyOnLoad(gameObject);
-        //SetDefaultCursor();
+        SetDefaultCursor();
     }
 
     void Update()
     {
-        _targetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        _targetPos = MouseInput.WorldPosition(_scuInputAction);
         _targetPos = new Vector3 (_targetPos.x, _targetPos.y, 10f);
         transform.position = _targetPos;
 
+        if (MouseInput.IsLeftPressed(_scuInputAction))
+        {
+            SetPressedCursor();
+        }
+        else
+        {
+            SetDefaultCursor();
+        }
+        
         Cursor.visible = !MouseScreenCheck();
     }
 
@@ -33,15 +50,16 @@ public class CustomCursor : MonoBehaviour
     bool MouseScreenCheck()
     {
 
+        Vector2 mousePos = MouseInput.ScreenPosition(_scuInputAction);
         #if UNITY_EDITOR
-            if (Input.mousePosition.x <= 0 || Input.mousePosition.y <= 0 || Input.mousePosition.x >= Handles.GetMainGameViewSize().x - 1 || Input.mousePosition.y >= Handles.GetMainGameViewSize().y - 1)
+            if (mousePos.x <= 0 || mousePos.y <= 0 || mousePos.x >= Handles.GetMainGameViewSize().x - 1 || mousePos.y >= Handles.GetMainGameViewSize().y - 1)
             {
                 return false;
             }
         
         #else
             
-            if (Input.mousePosition.x <= 0 || Input.mousePosition.y <= 0 || Input.mousePosition.x >= Screen.width - 1 || Input.mousePosition.y >= Screen.height - 1)
+            if (mousePos.x <= 0 || mousePos.y <= 0 || mousePos.x >= Screen.width - 1 || mousePos.y >= Screen.height - 1)
             {
             return false;
             }
@@ -51,15 +69,13 @@ public class CustomCursor : MonoBehaviour
         return true;
     }
 
-    /*
-    public void SetDefaultCursor()
+    private void SetDefaultCursor()
     {
         _spriteRenderer.sprite = _defaultCursor;
     }
 
-    public void SetPressedCursor()
+    private void SetPressedCursor()
     {
         _spriteRenderer.sprite = _pressedCursor;
     }
-    */
 }

@@ -14,6 +14,14 @@ public class EyeClickAndDrag : ClickandDrag
     
     public MG_Eye _mgEye;
 
+    private SCUInputAction _scuInputAction;
+
+    void Awake()
+    {
+        _scuInputAction = new SCUInputAction();
+        _scuInputAction.UI.Enable();
+    }
+    
     public override void Update()
     {
         base.Update();
@@ -21,7 +29,7 @@ public class EyeClickAndDrag : ClickandDrag
 
     public override void FollowMouse()
     {
-        Vector3 pos  = Camera.main.ScreenToWorldPoint( new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+        Vector2 pos = MouseInput.WorldPosition(_scuInputAction);
         if (yonly)
         {
             if (pos.y <= maxY && pos.y >= minY)
@@ -49,9 +57,8 @@ public class EyeClickAndDrag : ClickandDrag
 
     }
 
-    public override void Release()
+    public void Release()
     {
-        base.Release();
 
         if (isInfectedEye)
         {
@@ -72,7 +79,7 @@ public class EyeClickAndDrag : ClickandDrag
                 }
                 else
                 {
-                    _mgEye.gameModeManager.subtractTime(_mgEye.penalty);
+                    // _mgEye.gameModeManager.subtractTime(_mgEye.penalty);
                 }
                 // CHECK IF IS CORRECT EYE
                 // IF SO, PLACE IN SLOT AND FINISH MINIGAME
