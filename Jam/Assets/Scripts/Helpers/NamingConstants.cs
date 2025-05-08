@@ -3,7 +3,8 @@ namespace Helpers
     public class NamingConstants
     {
         // SCENE RELATED
-        public const string SCENE_MAIN_MINIGAME = "MainMinigame";
+        public const string SCENE_MAIN_MINIGAME = "02_MainMinigame";
+        public const string SCENE_MAIN_ALCHEMY = "03_MainAlchemy";
         public const int SCENE_ID_MAIN_MENU = 1;
         
         //  Ingredient Ids = Names
