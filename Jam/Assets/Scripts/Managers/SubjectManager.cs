@@ -38,6 +38,10 @@ public class SubjectManager : MonoBehaviour
     private MiniGameManager _miniGameManager;
     /* **************************************************** */
     
+    /** ****************************************************
+     * **************** UNITY INTERFACE ********************
+     * *****************************************************
+     */
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);

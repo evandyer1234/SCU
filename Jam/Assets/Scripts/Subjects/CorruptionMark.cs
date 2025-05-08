@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Helpers;
@@ -27,6 +26,11 @@ namespace Subjects
         private Color inactiveColor = new Color32(70, 70, 70, 255);
         private Color activeColor;
         
+        /** ****************************************************
+         * **************** UNITY INTERFACE ********************
+         * *****************************************************
+         */
+        
         public void Awake()
         {
             corruptionOutline.SetActive(false);
@@ -44,7 +48,7 @@ namespace Subjects
         {
             PaintCorruptionMarkByActivity();
         }
-
+        
         void OnMouseOver()
         {
             if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
@@ -59,7 +63,20 @@ namespace Subjects
                 MouseLeftClick();
             }
         }
+        
+        void OnMouseExit()
+        {
+            if (corruptionOutline.activeInHierarchy)
+            {
+                corruptionOutline.SetActive(false);
+            }
+        }
 
+        /** ****************************************************
+         * **************** PRIVATE METHODS ********************
+         * *****************************************************
+         */
+        
         private void MouseLeftClick()
         {
             if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
@@ -90,14 +107,6 @@ namespace Subjects
             miniGameLaunched = true;
 
             glassShadowRef.SetMagnifyingGlassInUse(false);
-        }
-        
-        void OnMouseExit()
-        {
-            if (corruptionOutline.activeInHierarchy)
-            {
-                corruptionOutline.SetActive(false);
-            }
         }
         
         private void PaintCorruptionMarkByActivity()

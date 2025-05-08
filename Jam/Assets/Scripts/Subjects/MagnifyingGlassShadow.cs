@@ -35,6 +35,11 @@ namespace Subjects
 
         private MiniGameManager _miniGameManager;
         
+        /** ****************************************************
+         * **************** UNITY INTERFACE ********************
+         * *****************************************************
+         */
+        
         public void Awake()
         {
             SpriteRenderer magnifyingGlassSprite = spriteGlassReference.GetComponent<SpriteRenderer>();
@@ -80,6 +85,11 @@ namespace Subjects
             }
         }
 
+        /** ****************************************************
+         * **************** PUBLIC METHODS *********************
+         * *****************************************************
+         */
+        
         public bool GetMagnifyingGlassInUse()
         {
             return IsMagnifyingGlassInUse;
@@ -89,6 +99,11 @@ namespace Subjects
         {
             IsMagnifyingGlassInUse = value;
         }
+        
+        /** ****************************************************
+         * **************** PRIVATE METHODS ********************
+         * *****************************************************
+         */
         
         private void RememberOriginalMagnifyingGlassElementPositions()
         {
