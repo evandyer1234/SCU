@@ -18,6 +18,8 @@ public class MiniGameManager : MonoBehaviour
     private GameObject magnifyingGlassShadowRef;
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
     GameObject postItIngredients;
+
+    [SerializeField] private GameObject goToPotionSceneButton;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientNames = new();
@@ -34,6 +36,8 @@ public class MiniGameManager : MonoBehaviour
             miniGame.Disable();
             miniGamesFinishedState.Add(miniGame.name, false);
         }
+        
+        goToPotionSceneButton.SetActive(false);
     }
     
     void Start()
@@ -89,7 +93,8 @@ public class MiniGameManager : MonoBehaviour
 
         if (AllMinigamesFinished())
         {
-            Win();
+            goToPotionSceneButton.SetActive(true);
+            // Win();
         }
     }
     
@@ -129,6 +134,13 @@ public class MiniGameManager : MonoBehaviour
         _subjectManager.ResetMinigameState();
         _subjectManager.LaunchMinigames(subjectNameBefore);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToPotionMakingScene()
+    {
+        if (!AllMinigamesFinished()) return;
+        
+        SceneManager.LoadScene(NamingConstants.SCENE_MAIN_ALCHEMY);
     }
 
     /*
