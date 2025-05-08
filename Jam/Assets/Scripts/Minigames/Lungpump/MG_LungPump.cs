@@ -52,6 +52,11 @@ namespace Minigames.Lungpump
 
         private bool _usedOnce = false;
         
+        /** ****************************************************
+         * **************** UNITY INTERFACE ********************
+         * *****************************************************
+         */
+        
         private void Awake()
         {
             lungsSmallSprite = FileLoader.GetSpriteByName(LUNGS_SMALL);
@@ -73,6 +78,40 @@ namespace Minigames.Lungpump
             InvokeRepeating(nameof(EvaluatePressure), 3f, 1f);
             Invoke(nameof(AnimateClickHints), 2f);
         }
+        
+        private void FixedUpdate()
+        {
+            float naturalPressureDrop = Random.Range(0.2f, 0.8f);
+            if (IsPressureWithinSuccessRange())
+            {
+                // make it more difficult to keep within success range
+                naturalPressureDrop = Random.Range(0.4f, 1.3f);
+            }
+            
+            barometerNeedle.transform.Rotate(0, 0, naturalPressureDrop);
+            if (IsBarometerBelowLowest())
+            {
+                ResetBarometerNeedleToMinimum();
+            }
+
+            if (IsBarometerAboveHighest())
+            {
+                ResetBarometerNeedleToMaximum();
+            }
+        }
+        
+        private void OnMouseOver()
+        {
+            if (MouseInput.LeftClicked(_scuInputAction))
+            {
+                HandleLeftClick();
+            }
+        }
+        
+        /** ****************************************************
+         * **************** PRIVATE METHODS ********************
+         * *****************************************************
+         */
         
         private void EvaluatePressure()
         {
@@ -108,14 +147,6 @@ namespace Minigames.Lungpump
                    || (barometerNeedle.transform.rotation.eulerAngles.z is < 340 and >= 280);
         }
         
-        private void OnMouseOver()
-        {
-            if (MouseInput.LeftClicked(_scuInputAction))
-            {
-                HandleLeftClick();
-            }
-        }
-        
         private void HandleLeftClick()
         {
             if (!_usedOnce)
@@ -138,27 +169,6 @@ namespace Minigames.Lungpump
             colliderIsLeft = !colliderIsLeft;
             float variatingPumpIncrement = Random.Range(15f, 22f);
             barometerNeedle.transform.Rotate(0, 0, -variatingPumpIncrement);
-        }
-        
-        private void FixedUpdate()
-        {
-            float naturalPressureDrop = Random.Range(0.2f, 0.8f);
-            if (IsPressureWithinSuccessRange())
-            {
-                // make it more difficult to keep within success range
-                naturalPressureDrop = Random.Range(0.4f, 1.3f);
-            }
-            
-            barometerNeedle.transform.Rotate(0, 0, naturalPressureDrop);
-            if (IsBarometerBelowLowest())
-            {
-                ResetBarometerNeedleToMinimum();
-            }
-
-            if (IsBarometerAboveHighest())
-            {
-                ResetBarometerNeedleToMaximum();
-            }
         }
 
         private void ResetBarometerNeedleToMinimum()

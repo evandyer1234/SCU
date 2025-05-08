@@ -44,6 +44,11 @@ namespace Subjects
         private MiniGameManager _miniGameManager;
         private Color inactiveColor = new Color32(128, 128, 128, 255);
 
+        /** ****************************************************
+         * **************** UNITY INTERFACE ********************
+         * *****************************************************
+         */
+        
         private void Awake()
         {
             _scuInputAction = new SCUInputAction();
@@ -93,6 +98,31 @@ namespace Subjects
             hovered = false;
         }
         
+        /** ****************************************************
+         * **************** PUBLIC METHODS *********************
+         * *****************************************************
+         */
+        
+        public GameObject getMiddleLensReference()
+        {
+            return middleLensReference;
+        }
+
+        public GameObject getLeftLensReference()
+        {
+            return leftLensReference;
+        }
+
+        public GameObject getRightLensReference()
+        {
+            return rightLensReference;
+        }
+        
+        /** ****************************************************
+         * **************** PRIVATE METHODS ********************
+         * *****************************************************
+         */
+        
         private void MouseLeftClick()
         {
             usedOnce = true;
@@ -108,21 +138,6 @@ namespace Subjects
         private void KeepSpriteRelativeToMouse(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
         {
             spriteRefGo.transform.position = new Vector3(mousePos.x - offset.x, mousePos.y - offset.y, spriteRefGo.transform.position.z);
-        }
-        
-        public GameObject getMiddleLensReference()
-        {
-            return middleLensReference;
-        }
-
-        public GameObject getLeftLensReference()
-        {
-            return leftLensReference;
-        }
-
-        public GameObject getRightLensReference()
-        {
-            return rightLensReference;
         }
         
         private void AnimateClickHint()

@@ -65,6 +65,11 @@ namespace Subjects
         
         private SCUInputAction _scuInputAction;
         
+        /** ****************************************************
+         * **************** UNITY INTERFACE ********************
+         * *****************************************************
+         */
+        
         private void Awake()
         {
             glassShadowOpen = FileLoader.GetSpriteByName(GLASS_SHADOW_OPEN);
@@ -107,6 +112,11 @@ namespace Subjects
                 HandleLeftClick();
             }
         }
+        
+        /** ****************************************************
+         * **************** PRIVATE METHODS ********************
+         * *****************************************************
+         */
         
         private void HandleLeftClick()
         {
