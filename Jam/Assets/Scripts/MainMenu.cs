@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     private SubjectManager _subjectManager;
     
-    private void Awake()
+    private void Start()
     {
         _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
             .GetComponent<SubjectManager>();

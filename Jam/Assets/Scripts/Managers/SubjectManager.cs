@@ -78,6 +78,7 @@ public class SubjectManager : MonoBehaviour
     private void LoadMinigamesAndSceneStateMachine()
     {
         if (_minigamesFullyLoaded) return;
+        if (currentSubject == null) return;
         if (!IsMinigameSceneInitationComplete()) return;
         if (!IsMinigameSceneLoaded()) return;
         
