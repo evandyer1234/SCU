@@ -21,6 +21,7 @@ namespace Helpers
         // MANAGERS
         public const string TAG_MINIGAME_MANAGER = "MinigameManager";
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
+        public const string TAG_CUSTOM_CURSOR = "CustomCursor";
         
         // MINIGAMES
         public const string TAG_MINIGAME_HEARTSTRING = "MinigameHeartstring";
