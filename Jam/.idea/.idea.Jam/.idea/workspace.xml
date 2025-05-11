@@ -231,6 +231,8 @@
       <workItem from="1746466112530" duration="9495000" />
       <workItem from="1746550440308" duration="3135000" />
       <workItem from="1746639503771" duration="1292000" />
+      <workItem from="1746798659811" duration="708000" />
+      <workItem from="1746982189383" duration="1472000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -448,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746552556391</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add Alchemy Scene">
+      <option name="closed" value="true" />
+      <created>1746727679436</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746727679436</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +486,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Remove Magnifying glass from toffl Scene" />
     <MESSAGE value="Add Addressables and more interaction on Magnifying Glass" />
     <MESSAGE value="Add updated subject sprite layer files" />
     <MESSAGE value="Use Box Collider 2D" />
@@ -501,5 +510,7 @@
     <MESSAGE value="Add tooltips for magnifying glass" />
     <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
+    <MESSAGE value="Add Alchemy Scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Alchemy Scene" />
   </component>
 </project>

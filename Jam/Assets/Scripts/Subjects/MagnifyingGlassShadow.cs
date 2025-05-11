@@ -119,6 +119,7 @@ namespace Subjects
         {
             if (spriteSwitchReference.transform.position.y < -11)
             {
+                // TODO: this reset sometimes leads to the magnifying glass not triggering corruption marks anymore
                 spriteGlassReference.transform.position = resetGlassPos;
                 spriteSwitchReference.transform.position = resetSwitchPos;
                 var mg = spriteGlassReference.GetComponent<MagnifyingGlass>();
