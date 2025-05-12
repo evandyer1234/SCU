@@ -57,8 +57,6 @@ namespace Subjects
         
         private void FixedUpdate()
         {
-
-            
             HandleInitialUsageHintAnimation();
             HandleResetHintAnimation();
         }
