@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/proto_fluid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_fluid.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_mineral.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_mineral.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_picked_items.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_picked_items.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_plant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/proto_plant.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +59,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/5a/ff6447a9/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/NamingConstants.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/SubjectManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/UI/CustomCursor.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -449,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746727679436</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fixed bug on magnifying glass reset">
+      <option name="closed" value="true" />
+      <created>1747073569232</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747073569232</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +487,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Addressables and more interaction on Magnifying Glass" />
     <MESSAGE value="Add updated subject sprite layer files" />
     <MESSAGE value="Use Box Collider 2D" />
     <MESSAGE value="Cleanup Proto Scene" />
@@ -502,6 +511,7 @@
     <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
     <MESSAGE value="Add Alchemy Scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Alchemy Scene" />
+    <MESSAGE value="fixed bug on magnifying glass reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug on magnifying glass reset" />
   </component>
 </project>
