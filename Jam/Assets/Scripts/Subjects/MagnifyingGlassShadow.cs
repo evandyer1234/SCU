@@ -27,11 +27,11 @@ namespace Subjects
         private int resetHintCountdown = 250;
         
         // reset canvas
-        private Vector2 resetGlassPos;
-        private Vector2 resetSwitchPos;
-        private Vector2 resetMiddleLensPos;
-        private Vector2 resetLeftLensPos;
-        private Vector2 resetRightLensPos;
+        private Vector3 resetGlassPos;
+        private Vector3 resetSwitchPos;
+        private Vector3 resetMiddleLensPos;
+        private Vector3 resetLeftLensPos;
+        private Vector3 resetRightLensPos;
 
         private MiniGameManager _miniGameManager;
         
@@ -57,6 +57,8 @@ namespace Subjects
         
         private void FixedUpdate()
         {
+
+            
             HandleInitialUsageHintAnimation();
             HandleResetHintAnimation();
         }
@@ -119,7 +121,6 @@ namespace Subjects
         {
             if (spriteSwitchReference.transform.position.y < -11)
             {
-                // TODO: this reset sometimes leads to the magnifying glass not triggering corruption marks anymore
                 spriteGlassReference.transform.position = resetGlassPos;
                 spriteSwitchReference.transform.position = resetSwitchPos;
                 var mg = spriteGlassReference.GetComponent<MagnifyingGlass>();
