@@ -19,6 +19,7 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
     GameObject postItIngredients;
     [SerializeField] private GameObject goToPotionSceneButton;
+    [SerializeField] private GameObject minigameDoneText;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientsPerPatient = new();
@@ -37,6 +38,7 @@ public class MiniGameManager : MonoBehaviour
         }
         
         goToPotionSceneButton.SetActive(false);
+        minigameDoneText.SetActive(false);
     }
     
     void Start()
@@ -96,7 +98,7 @@ public class MiniGameManager : MonoBehaviour
         if (AllMinigamesFinished())
         {
             goToPotionSceneButton.SetActive(true);
-            // Win();
+            minigameDoneText.SetActive(true);
         }
     }
     
