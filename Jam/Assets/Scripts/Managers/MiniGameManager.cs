@@ -18,13 +18,13 @@ public class MiniGameManager : MonoBehaviour
     private GameObject magnifyingGlassShadowRef;
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
     GameObject postItIngredients;
-
     [SerializeField] private GameObject goToPotionSceneButton;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
-    private List<string> collectedIngredientNames = new();
+    private List<string> collectedIngredientsPerPatient = new();
     private float CurrentTime;
     private SCUInputAction _scuInputAction;
+    private SubjectManager _subjectManager;
     
     private void Awake()
     {
@@ -42,6 +42,9 @@ public class MiniGameManager : MonoBehaviour
     
     void Start()
     {
+        _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+            .GetComponent<SubjectManager>();
+        collectedIngredientsPerPatient = new();
         CurrentTime = StartTime;
         Time.timeScale = 1f;
     }
@@ -98,10 +101,11 @@ public class MiniGameManager : MonoBehaviour
     
     public void AddIngredient(string ingredientName)
     {
-        collectedIngredientNames.Add(ingredientName);
+        collectedIngredientsPerPatient.Add(ingredientName);
+        _subjectManager.AddUniqueIngredient(ingredientName);
 
         string ingredientsToDisplay = "Ingredients:\n";
-        foreach (var ingName in collectedIngredientNames)
+        foreach (var ingName in collectedIngredientsPerPatient)
         {
             ingredientsToDisplay += "\n* " + ingName;
         }

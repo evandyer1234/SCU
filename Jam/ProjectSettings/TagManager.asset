@@ -18,6 +18,7 @@ TagManager:
   - MinigameLungpump
   - MagnifyingGlass
   - CustomCursor
+  - AlchemyManager
   layers:
   - Default
   - TransparentFX
