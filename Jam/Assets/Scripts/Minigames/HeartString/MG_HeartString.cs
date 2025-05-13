@@ -20,7 +20,7 @@ public class MG_HeartString : MiniGameBase
     public override void Start()
     {
         base.Start();
-        ingredient = NamingConstants.INGREDIENT_ID_NETTLE;
+        ingredient = IngredientConstants.INGREDIENT_ID_NETTLE;
         
         _correctVeinNumber = Random.Range(0, _icons.Length);
         _icons[_correctVeinNumber].sprite = _corruptionIcon;

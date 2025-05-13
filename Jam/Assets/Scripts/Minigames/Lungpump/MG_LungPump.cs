@@ -66,10 +66,10 @@ namespace Minigames.Lungpump
             _scuInputAction.UI.Enable();
         }
         
-        private void Start()
+        public override void Start()
         {
             base.Start();
-            ingredient = NamingConstants.INGREDIENT_ID_PEARL_ASH;
+            ingredient = IngredientConstants.INGREDIENT_ID_PEARL_ASH;
             
             _onClickCollider = GetComponent<CircleCollider2D>();
             _onClickCollider.offset = _collOffsetLeft;
