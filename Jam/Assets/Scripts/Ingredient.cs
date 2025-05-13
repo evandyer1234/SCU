@@ -1,39 +1,25 @@
-using UnityEngine;
+using Minigames;
 
 public class Ingredient
 {
-    public enum ItemVal { HI, HowAreYou, Etc };
+    private string name;
+    private IngredientType type;
 
-    public ItemVal value;
-    bool inslot = false;
-
-    public void Release()
+    public Ingredient(string name, IngredientType type)
     {
-        
-        if (inslot)
-        {
-            // FindObjectOfType<Pot>().drops.Add(value);
-            Debug.Log("Yo");
-        }
+        this.name = name;
+        this.type = type;
+    }
+    
+    public string GetIngredientName()
+    {
+        return name;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public IngredientType GetIngredientType()
     {
-        Pot p = other.GetComponent<Pot>();
-        if (p != null)
-        {
-            inslot = true;
-            Debug.Log("In");
-        }
+        return type;
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        Pot p = other.GetComponent<Pot>();
-        if (p != null)
-        {
-            inslot = false;
-            Debug.Log("Out");
-        }
-    }
+    
+    
 }

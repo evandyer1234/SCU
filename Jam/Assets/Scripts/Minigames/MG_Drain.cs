@@ -38,7 +38,7 @@ public class MG_Drain : MiniGameBase
     public override void Start()
     {
         base.Start();
-        ingredient = NamingConstants.INGREDIENT_ID_SUNSTONE;
+        ingredient = IngredientConstants.INGREDIENT_ID_SUNSTONE;
         //set start value for blood
         bloodtoxicity = Random.Range(minstartvalue, maxstartvalue);
         SafeInd.SetActive(false);

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Helpers;
 using Managers;
+using Minigames;
 using Subjects;
 using UnityEngine;
 
@@ -10,9 +11,11 @@ public class SubjectManager : MonoBehaviour
     
     public Subject currentSubject;
 
-    // Subject progression state
+    // progression state
     private Dictionary<string, Subject> subjectsToCure = new();
-
+    private Dictionary<string, Ingredient> allIngredients = new();
+    private List<string> collectedIngredients = new();
+    
     // subject ids = names
     public const string SUBJECT_NAME_04 = "subject_04";
     public const string SUBJECT_NAME_14 = "subject_14";
@@ -39,6 +42,16 @@ public class SubjectManager : MonoBehaviour
     /* **************************************************** */
     
     /** ****************************************************
+     * *************** ALCHEMY SPECIFIC ********************
+     * *****************************************************
+     */
+    private AlchemyManager _alchemyManager;
+
+    private bool alchemyShelvesFilled = false;
+    
+    /* **************************************************** */
+    
+    /** ****************************************************
      * **************** UNITY INTERFACE ********************
      * *****************************************************
      */
@@ -46,11 +59,45 @@ public class SubjectManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         subjectsToCure = SubjectFactory.CreateSubjectMap();
+        allIngredients = IngredientFactory.CreateIngredients();
     }
 
     private void Update()
     {
         LoadMinigamesAndSceneStateMachine();
+        LoadAlchemyAndSceneStateMachine();
+    }
+
+    private void LoadAlchemyAndSceneStateMachine()
+    {
+        if (alchemyShelvesFilled) return;
+        if (!IsAlchemySceneLoaded()) return;
+
+        
+        _alchemyManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER)
+            .GetComponent<AlchemyManager>();
+        
+        _alchemyManager.FillShelvesWithRespectiveIngredients(
+            IngredientResolver.IngredientsToList(collectedIngredients, allIngredients));
+        alchemyShelvesFilled = true;
+    }
+    
+    private bool IsAlchemySceneLoaded()
+    {
+        return GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER) != null;
+    }
+
+    /** ****************************************************
+    * *************** GLOBAL PROGRESSION *******************
+    * *****************************************************+
+    */
+
+    public void AddUniqueIngredient(string ingredientName)
+    {
+        if (!collectedIngredients.Contains(ingredientName))
+        {
+            collectedIngredients.Add(ingredientName);    
+        }
     }
     
     /** ****************************************************

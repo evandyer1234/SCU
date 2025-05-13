@@ -7,11 +7,6 @@ namespace Helpers
         public const string SCENE_MAIN_ALCHEMY = "03_MainAlchemy";
         public const int SCENE_ID_MAIN_MENU = 1;
         
-        //  Ingredient Ids = Names
-        public const string INGREDIENT_ID_NETTLE = "Nettle";
-        public const string INGREDIENT_ID_PEARL_ASH = "Pearl Ash";
-        public const string INGREDIENT_ID_SUNSTONE = "Sunstone";
-        
         // MAGNIFYING GLASS
         public const string TAG_LENS_MIDDLE = "LensMiddle";
         public const string TAG_LENS_LEFT = "LensLeft";
@@ -21,6 +16,7 @@ namespace Helpers
         
         // MANAGERS
         public const string TAG_MINIGAME_MANAGER = "MinigameManager";
+        public const string TAG_ALCHEMY_MANAGER = "AlchemyManager";
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
         public const string TAG_CUSTOM_CURSOR = "CustomCursor";
         

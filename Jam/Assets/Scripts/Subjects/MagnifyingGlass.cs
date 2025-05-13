@@ -29,7 +29,6 @@ namespace Subjects
         
         // dragging state
         private bool followMouse = false;
-        private bool hovered = false;
         private Vector3 offsetGlassSpriteToMouse = Vector3.zero;
         private Vector3 offsetSwitchSpriteToMouse = Vector3.zero;
         private Vector3 offsetMiddleLensToMouse = Vector3.zero;
@@ -90,13 +89,8 @@ namespace Subjects
             {
                 followMouse = false;
             }
-            hovered = true;
         }
-
-        private void OnMouseExit()
-        {
-            hovered = false;
-        }
+        
         
         /** ****************************************************
          * **************** PUBLIC METHODS *********************
