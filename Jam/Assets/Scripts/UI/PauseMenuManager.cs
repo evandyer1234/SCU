@@ -8,6 +8,8 @@ public class PauseMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseMenu;
 
+    private bool _paused;
+
     private SCUInputAction _scuInputAction;
 
     private void Awake()
@@ -15,17 +17,36 @@ public class PauseMenuManager : MonoBehaviour
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
 
-        _pauseMenu.SetActive(false);
+        Resume();
     }
     
     private void Update()
     {
         if (KeyboardInput.EscapePressed(_scuInputAction))
         {
-            _pauseMenu.SetActive(!_pauseMenu.activeSelf);
-            //put in separate method
-            //add time scale etc
+            if(_paused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
+    }
+
+    public void Resume()
+    {
+        _pauseMenu.SetActive(false);
+        _paused = false;
+        Time.timeScale = 1;
+    }
+
+    private void Pause()
+    {
+        _pauseMenu.SetActive(true);
+        _paused = true;
+        Time.timeScale = 0;
     }
 
 }
