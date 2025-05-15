@@ -42,6 +42,7 @@ public class MiniGameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    /*
     private void Update()
     {
         if (KeyboardInput.EscapePressed(_scuInputAction))
@@ -49,6 +50,7 @@ public class MiniGameManager : MonoBehaviour
             BackToMainMenu();
         }
     }
+    */
     
     void FixedUpdate()
     {
@@ -129,6 +131,7 @@ public class MiniGameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    /*
     public void BackToMainMenu()
     {
         var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
@@ -136,6 +139,7 @@ public class MiniGameManager : MonoBehaviour
         _subjectManager.ResetMinigameState();
         SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
     }
+    */
     
     public void Win()
     {
