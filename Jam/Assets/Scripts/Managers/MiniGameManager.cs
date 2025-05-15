@@ -22,12 +22,12 @@ public class MiniGameManager : MonoBehaviour
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientNames = new();
     private float CurrentTime;
-    private SCUInputAction _scuInputAction;
+    //private SCUInputAction _scuInputAction;
     
     private void Awake()
     {
-        _scuInputAction = new SCUInputAction();
-        _scuInputAction.UI.Enable();
+        //_scuInputAction = new SCUInputAction();
+        //_scuInputAction.UI.Enable();
         
         foreach (var miniGame in miniGames)
         {
