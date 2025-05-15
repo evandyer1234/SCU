@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class PauseMenuManager : MonoBehaviour
@@ -11,11 +12,15 @@ public class PauseMenuManager : MonoBehaviour
     private bool _paused;
 
     private SCUInputAction _scuInputAction;
+    private EventSystem _eventSystem;
 
     private void Awake()
     {
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
+
+        //not sure how to reference the event system since it's not included in the scene as it is?
+        _eventSystem = GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem>();
 
         Resume();
     }
@@ -40,6 +45,8 @@ public class PauseMenuManager : MonoBehaviour
         _pauseMenu.SetActive(false);
         _paused = false;
         Time.timeScale = 1;
+
+        _eventSystem.SetSelectedGameObject(null);
     }
 
     private void Pause()
