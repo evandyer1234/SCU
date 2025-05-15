@@ -7,7 +7,7 @@ public class MenuSelect : MonoBehaviour
     [SerializeField, Tooltip("The top level Start Menu to load initially")] 
     private GameObject startMenu;
 
-    void Start()
+    void OnEnable()
     {
         //default state: only start menu enabled
         DisableAllMenus();
