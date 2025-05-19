@@ -31,7 +31,6 @@ public class SceneFade : MonoBehaviour
     [ContextMenu("Fade In")]
     void FadeIn()
     {
-        Debug.Log("fade in");
         _currentOpacity = 1f;
         _targetOpacity = 0f;
     }
