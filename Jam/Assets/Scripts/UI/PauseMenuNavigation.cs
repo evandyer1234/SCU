@@ -9,6 +9,8 @@ public class PauseMenuNavigation : MonoBehaviour
 {
     public void ReturnToMainMenu()
     {
+        Time.timeScale = 1;
+
         var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
             .GetComponent<SubjectManager>();
         _subjectManager.ResetMinigameState();
