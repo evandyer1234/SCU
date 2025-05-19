@@ -28,9 +28,17 @@ public class SceneFade : MonoBehaviour
         }
     }
 
+    [ContextMenu("Fade In")]
     void FadeIn()
     {
         _currentOpacity = 1f;
         _targetOpacity = 0f;
+    }
+
+    [ContextMenu("Fade Out")]
+    public void FadeOut()
+    {
+        _currentOpacity = 0f;
+        _targetOpacity = 1f;
     }
 }
