@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="GameStateSwitch" ID="{6A672885-D21C-4901-82F5-6AE962917A84}" ShortID="794027994">
+				<MusicSwitchContainer Name="Location Switch" ID="{6A672885-D21C-4901-82F5-6AE962917A84}" ShortID="794027994">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
