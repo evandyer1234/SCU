@@ -9,6 +9,35 @@
 							<ObjectRef Name="System" ID="{12A3A45B-DF80-4C71-ABAC-6CE88D50882C}" WorkUnitID="{BDFB181C-00B9-4737-9420-301ED133AC3D}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MX" ID="{211D27EB-BE11-40F5-9F1B-9A30F60DE252}">
+							<PropertyList>
+								<Property Name="HdrEnable" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}">
+							<PropertyList>
+								<Property Name="HdrEnable" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="DX" ID="{259637B8-7AAD-49E8-A59B-1AF896FE645A}">
+							<PropertyList>
+								<Property Name="HdrEnable" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
