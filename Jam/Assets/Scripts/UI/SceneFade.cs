@@ -22,7 +22,7 @@ public class SceneFade : MonoBehaviour
 
         _canvasGroup.alpha = _currentOpacity;
 
-        if(_currentOpacity == _targetOpacity)
+        if(Mathf.Approximately(_currentOpacity, _targetOpacity))
         {
             gameObject.SetActive(false);
         }
