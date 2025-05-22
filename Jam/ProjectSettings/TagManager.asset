@@ -64,3 +64,6 @@ TagManager:
   - name: Cursor
     uniqueID: 104009109
     locked: 0
+  - name: Tooltip
+    uniqueID: 996442211
+    locked: 0
