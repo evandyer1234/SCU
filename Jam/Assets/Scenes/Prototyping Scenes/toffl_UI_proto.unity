@@ -1175,7 +1175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6588570de72e0704bbd0a7cea8e0829e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _textToDisplay: 
   _tooltip: {fileID: 410039932}
+  _TMP: {fileID: 0}
   _canvasGroup: {fileID: 0}
 --- !u!1 &838750090
 GameObject:

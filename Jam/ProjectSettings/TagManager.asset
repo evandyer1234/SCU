@@ -67,3 +67,6 @@ TagManager:
   - name: Tooltip
     uniqueID: 996442211
     locked: 0
+  - name: Fade
+    uniqueID: 2763963145
+    locked: 0
