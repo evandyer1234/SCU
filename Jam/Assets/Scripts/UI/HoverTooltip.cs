@@ -6,6 +6,7 @@ using Unity.UI;
 public class HoverTooltip : MonoBehaviour
 {
     [SerializeField] private GameObject _tooltip;
+    [SerializeField] private GameObject _canvasGroup;
 
     private void Start()
     {
