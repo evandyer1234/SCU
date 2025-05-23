@@ -17,7 +17,7 @@ public class HoverTooltip : MonoBehaviour
 
     private void Start()
     {
-        _tooltip.SetActive(false);
+        ForceDisable();
     }
 
     private void Update()
@@ -57,5 +57,10 @@ public class HoverTooltip : MonoBehaviour
         _fading = true;
         _waitingToDisable = true;
         _canvasGroup.alpha = _currentOpacity;
+    }
+
+    public void ForceDisable()
+    {
+        _tooltip.SetActive(false);
     }
 }
