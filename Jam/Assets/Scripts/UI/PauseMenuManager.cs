@@ -52,6 +52,8 @@ public class PauseMenuManager : MonoBehaviour
         Time.timeScale = 1;
 
         _eventSystem.SetSelectedGameObject(null);
+
+        EnableAllTooltipsInScene(true);
     }
 
     private void Pause()
@@ -60,24 +62,16 @@ public class PauseMenuManager : MonoBehaviour
         _paused = true;
         Time.timeScale = 0;
 
-        DisableAllTooltipsInScene();
+        EnableAllTooltipsInScene(false);
     }
 
-    void DisableAllTooltipsInScene()
+    void EnableAllTooltipsInScene(bool b)
     {
-        /*
-        foreach (HoverTooltip tooltip in Resources.FindObjectsOfTypeAll(typeof(HoverTooltip)) as HoverTooltip[])
-        {
-            if (!EditorUtility.IsPersistent(tooltip.transform.root.gameObject) && !(tooltip.hideFlags == HideFlags.NotEditable || tooltip.hideFlags == HideFlags.HideAndDontSave))
-            {
-                tooltip.ForceDisable();
-            }
-        }
-        */
-
         foreach (HoverTooltip tooltip in _tooltipsInScene)
         {
             tooltip.ForceDisable();
+
+            tooltip.gameObject.SetActive(b);
         }
     }
 

@@ -15,6 +15,7 @@ public class HoverTooltip : MonoBehaviour
     private float _currentOpacity;
     private float _targetOpacity;
 
+
     private void Start()
     {
         ForceDisable();
