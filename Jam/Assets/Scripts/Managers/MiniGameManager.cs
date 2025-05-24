@@ -12,8 +12,6 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField] public List<MiniGameBase> miniGames;
     [SerializeField] float StartTime;
     [SerializeField] private TMP_Text timerText;
-    [SerializeField] GameObject GameoverPanel;
-    [SerializeField] GameObject GamewinPanel;
     [SerializeField, Tooltip("A reference to the magnifying Glass Shadow freezing/unfreezing usage")]
     private GameObject magnifyingGlassShadowRef;
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
@@ -24,13 +22,10 @@ public class MiniGameManager : MonoBehaviour
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientsPerPatient = new();
     private float CurrentTime;
-    //private SCUInputAction _scuInputAction;
+    private SubjectManager _subjectManager;
     
     private void Awake()
     {
-        //_scuInputAction = new SCUInputAction();
-        //_scuInputAction.UI.Enable();
-        
         foreach (var miniGame in miniGames)
         {
             miniGame.Disable();
@@ -49,16 +44,6 @@ public class MiniGameManager : MonoBehaviour
         CurrentTime = StartTime;
         Time.timeScale = 1f;
     }
-
-    /*
-    private void Update()
-    {
-        if (KeyboardInput.EscapePressed(_scuInputAction))
-        {
-            BackToMainMenu();
-        }
-    }
-    */
     
     void FixedUpdate()
     {
@@ -67,7 +52,6 @@ public class MiniGameManager : MonoBehaviour
         if (CurrentTime <= 0)
         {
             Time.timeScale = 0;
-            GameoverPanel.SetActive(true);
         }
     }
 
@@ -147,20 +131,9 @@ public class MiniGameManager : MonoBehaviour
         
         SceneManager.LoadScene(NamingConstants.SCENE_MAIN_ALCHEMY);
     }
-
-    /*
-    public void BackToMainMenu()
-    {
-        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
-            .GetComponent<SubjectManager>();
-        _subjectManager.ResetMinigameState();
-        SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
-    }
-    */
     
     public void Win()
     {
         Time.timeScale = 0;
-        GamewinPanel.SetActive(true);
     }
 }
