@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: as_cute_as__heavy__Brams_Handwriting
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 719777903
   material: {fileID: 5260314712989409379}
-  materialHashCode: 0
+  materialHashCode: 1647175023
   m_Version: 1.1.0
   m_SourceFontFileGUID: c943b3ca14e078144917703bddf63fcd
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: c943b3ca14e078144917703bddf63fcd, type: 3}
@@ -2347,9 +2347,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
