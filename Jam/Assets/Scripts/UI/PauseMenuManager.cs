@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEditor;
-
 
 public class PauseMenuManager : MonoBehaviour
 {
@@ -13,18 +10,12 @@ public class PauseMenuManager : MonoBehaviour
     private bool _paused;
 
     private SCUInputAction _scuInputAction;
-    private EventSystem _eventSystem;
-
     private List<HoverTooltip> _tooltipsInScene;
-
 
     private void Awake()
     {
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
-
-        _eventSystem = FindObjectOfType<EventSystem>();
-
         _tooltipsInScene = GetAllTooltipsInScene();
 
         Resume();
@@ -50,8 +41,6 @@ public class PauseMenuManager : MonoBehaviour
         _pauseMenu.SetActive(false);
         _paused = false;
         Time.timeScale = 1;
-
-        _eventSystem.SetSelectedGameObject(null);
 
         EnableAllTooltipsInScene(true);
     }
@@ -89,5 +78,4 @@ public class PauseMenuManager : MonoBehaviour
 
         return tooltipsList;
     }
-
 }
