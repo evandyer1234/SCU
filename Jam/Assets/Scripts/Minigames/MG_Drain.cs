@@ -2,6 +2,8 @@ using System.Collections;
 using Helpers;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class MG_Drain : MiniGameBase
 {
@@ -35,6 +37,16 @@ public class MG_Drain : MiniGameBase
     [Tooltip("number of leeches currently on the patient")]
     public int leeches = 0;
 
+    
+    [SerializeField, Tooltip(" minimum value of the syringe slider (can help make the syringe look good")]
+    float minsyringe;
+
+    [SerializeField, Tooltip("speed the syringe goes up")] float pumpspeed;
+    [SerializeField] Slider syringe;
+    [SerializeField, Tooltip("sprite renderer for the toxic spirt thats overlayed on the blood sprite")]
+    SpriteRenderer toxicsp;
+
+    bool syringego = false;
     public override void Start()
     {
         base.Start();
@@ -55,6 +67,11 @@ public class MG_Drain : MiniGameBase
         {
             gameModeManager.subtractTime(penalty);
             OnSuccess();
+        }
+
+        if (syringego)
+        {
+            syringe.value += pumpspeed * Time.fixedDeltaTime;
         }
     }
 
@@ -77,6 +94,7 @@ public class MG_Drain : MiniGameBase
 
     }
     //loads the info for the player and checks for a game success
+    //outdated, now acts as finish button
     public void updatetox()
     {
         buttoncollider.enabled = true;
@@ -90,6 +108,18 @@ public class MG_Drain : MiniGameBase
         if (leeches == 0 && bloodtoxicity < safebloodlevel)
         {
             OnSuccess();
+        }
+    }
+
+    //updates syringe with current blood
+    public void PullSyringe()
+    {
+        
+        syringego = true;
+        syringe.value = minsyringe;
+        if (bloodtoxicity < safebloodlevel )
+        {
+            toxicsp.gameObject.SetActive(false);
         }
     }
 
