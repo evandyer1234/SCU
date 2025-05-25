@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
-using UnityEditor;
 
 public class PauseMenuManager : MonoBehaviour
 {
@@ -58,9 +57,11 @@ public class PauseMenuManager : MonoBehaviour
     {
         foreach (HoverTooltip tooltip in _tooltipsInScene)
         {
-            tooltip.ForceDisable();
-
-            tooltip.gameObject.SetActive(b);
+            if (tooltip != null)
+            {
+                tooltip.ForceDisable();
+                tooltip.gameObject.SetActive(b);
+            }
         }
     }
 
@@ -70,7 +71,7 @@ public class PauseMenuManager : MonoBehaviour
 
         foreach (HoverTooltip tooltip in Resources.FindObjectsOfTypeAll(typeof(HoverTooltip)) as HoverTooltip[])
         {
-            if (!EditorUtility.IsPersistent(tooltip.transform.root.gameObject) && !(tooltip.hideFlags == HideFlags.NotEditable || tooltip.hideFlags == HideFlags.HideAndDontSave))
+            if (!(tooltip.hideFlags == HideFlags.NotEditable || tooltip.hideFlags == HideFlags.HideAndDontSave))
             {
                 tooltipsList.Add(tooltip);
             }
