@@ -40,9 +40,11 @@ namespace Minigames.Alchemy
             {
                 if (ingredientsInShelf.Count > i)
                 {
+                    var currIngredient = ingredientsInShelf[i];
                     var ingrSlot = Instantiate(ingredientSlotPrefab, shelfInventory.transform);
                     ingrSlot.transform.localScale *= (1/parentCanvas.scaleFactor);
-                    switch (ingredientsInShelf[i].GetIngredientType())
+                    ingrSlot.GetComponent<IngredientSlot>().SetIngredient(currIngredient);
+                    switch (currIngredient.GetIngredientType())
                     {
                         case IngredientType.PLANT:
                             ingrSlot.GetComponent<SpriteRenderer>().sprite = FileLoader.GetSpriteByName("proto_plant");

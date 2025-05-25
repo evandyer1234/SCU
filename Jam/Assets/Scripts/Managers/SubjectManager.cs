@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Helpers;
 using Managers;
 using Minigames;
@@ -72,13 +73,11 @@ public class SubjectManager : MonoBehaviour
     {
         if (alchemyShelvesFilled) return;
         if (!IsAlchemySceneLoaded()) return;
-
         
         _alchemyManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER)
             .GetComponent<AlchemyManager>();
-        
-        _alchemyManager.FillShelvesWithRespectiveIngredients(
-            IngredientResolver.IngredientsToList(collectedIngredients, allIngredients));
+
+        _alchemyManager.FillShelvesWithRespectiveIngredients(allIngredients.Values.ToList());
         alchemyShelvesFilled = true;
     }
     

@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 
 public class HoverTooltip : MonoBehaviour
-{   
+{
     [SerializeField] private GameObject _tooltip;
-    [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private TMPro.TMP_Text _tooltipText;
+    private CanvasGroup _canvasGroup;
     public float fadeSpeed;
 
     private bool _fading = false;
@@ -15,6 +13,11 @@ public class HoverTooltip : MonoBehaviour
     private float _currentOpacity;
     private float _targetOpacity;
 
+
+    private void Awake()
+    {
+        _canvasGroup = _tooltip.GetComponent<CanvasGroup>();
+    }
 
     private void Start()
     {
@@ -40,6 +43,16 @@ public class HoverTooltip : MonoBehaviour
             }
         }
     }
+    
+    public void ForceDisable()
+    {
+        _tooltip.SetActive(false);
+    }
+
+    public void SetTooltipText(string tooltipText)
+    {
+        _tooltipText.text = tooltipText;
+    }
 
     private void OnMouseEnter()
     {
@@ -58,10 +71,5 @@ public class HoverTooltip : MonoBehaviour
         _fading = true;
         _waitingToDisable = true;
         _canvasGroup.alpha = _currentOpacity;
-    }
-
-    public void ForceDisable()
-    {
-        _tooltip.SetActive(false);
     }
 }
