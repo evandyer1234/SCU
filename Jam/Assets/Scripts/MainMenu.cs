@@ -1,6 +1,7 @@
 using Helpers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MainMenu : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class MainMenu : MonoBehaviour
     private void StartLevel(string subjectName)
     {
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene(NamingConstants.SCENE_MAIN_MINIGAME);
+        _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_MAIN_MINIGAME);
         _subjectManager.LaunchMinigames(subjectName);
     }
 
@@ -46,7 +47,7 @@ public class MainMenu : MonoBehaviour
 
     public void Scene0()
     {
-        SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
+        _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_ID_MAIN_MENU);
         Time.timeScale = 1.0f;
     }
 }

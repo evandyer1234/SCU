@@ -10,6 +10,7 @@ public class PauseMenuManager : MonoBehaviour
 
     private SCUInputAction _scuInputAction;
     private List<HoverTooltip> _tooltipsInScene;
+    private SubjectManager _subjectManager;
 
     private void Awake()
     {
@@ -19,9 +20,15 @@ public class PauseMenuManager : MonoBehaviour
 
         Resume();
     }
+
+    private void Start()
+    {
+        _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM).GetComponent<SubjectManager>();
+    }
     
     private void Update()
     {
+        if (_subjectManager.GetSCUSceneManager().IsMainMenuScene()) return;
         if (KeyboardInput.EscapePressed(_scuInputAction))
         {
             if(_paused)

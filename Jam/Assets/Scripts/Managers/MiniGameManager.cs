@@ -6,6 +6,7 @@ using Subjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -122,14 +123,13 @@ public class MiniGameManager : MonoBehaviour
         var subjectNameBefore = _subjectManager.currentSubject.name;
         _subjectManager.ResetMinigameState();
         _subjectManager.LaunchMinigames(subjectNameBefore);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        _subjectManager.GetSCUSceneManager().TransitionToScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToPotionMakingScene()
     {
         if (!AllMinigamesFinished()) return;
-        
-        SceneManager.LoadScene(NamingConstants.SCENE_MAIN_ALCHEMY);
+        _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_MAIN_ALCHEMY);
     }
     
     public void Win()

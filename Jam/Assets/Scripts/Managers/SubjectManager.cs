@@ -120,6 +120,11 @@ public class SubjectManager : MonoBehaviour
         _miniGameManager = null;
         _corruptionMarksPlaced = false;
     }
+
+    public SCUSceneManager GetSCUSceneManager()
+    {
+        return GetComponent<SCUSceneManager>();
+    }
     
     private void LoadMinigamesAndSceneStateMachine()
     {

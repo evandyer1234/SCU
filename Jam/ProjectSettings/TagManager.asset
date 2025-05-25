@@ -19,6 +19,7 @@ TagManager:
   - MagnifyingGlass
   - CustomCursor
   - AlchemyManager
+  - SceneFade
   layers:
   - Default
   - TransparentFX

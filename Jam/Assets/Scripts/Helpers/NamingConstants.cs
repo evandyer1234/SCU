@@ -19,6 +19,7 @@ namespace Helpers
         public const string TAG_ALCHEMY_MANAGER = "AlchemyManager";
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
         public const string TAG_CUSTOM_CURSOR = "CustomCursor";
+        public const string TAG_SCENE_FADE = "SceneFade";
         
         // MINIGAMES
         public const string TAG_MINIGAME_HEARTSTRING = "MinigameHeartstring";
