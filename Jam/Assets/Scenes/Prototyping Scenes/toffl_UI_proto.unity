@@ -332,6 +332,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4160979457095453698, guid: 282c0da2403a90648950841119b9225b, type: 3}
   m_PrefabInstance: {fileID: 8599491487773500992}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &457181194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8852675058637197604, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
+  m_PrefabInstance: {fileID: 8852675058297021878}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &593300089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1421,9 +1432,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1901633235}
     m_Modifications:
+    - target: {fileID: 8852675058024789381, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
+      propertyPath: _tooltipText
+      value: 
+      objectReference: {fileID: 457181194}
     - target: {fileID: 8852675058024789382, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_Name
       value: Tooltip
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852675058024789382, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8852675058024789383, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_RootOrder

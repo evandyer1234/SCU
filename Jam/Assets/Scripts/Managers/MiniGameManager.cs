@@ -12,45 +12,38 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField] public List<MiniGameBase> miniGames;
     [SerializeField] float StartTime;
     [SerializeField] private TMP_Text timerText;
-    [SerializeField] GameObject GameoverPanel;
-    [SerializeField] GameObject GamewinPanel;
     [SerializeField, Tooltip("A reference to the magnifying Glass Shadow freezing/unfreezing usage")]
     private GameObject magnifyingGlassShadowRef;
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
     GameObject postItIngredients;
+    [SerializeField] private GameObject goToPotionSceneButton;
+    [SerializeField] private GameObject minigameDoneText;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
-    private List<string> collectedIngredientNames = new();
+    private List<string> collectedIngredientsPerPatient = new();
     private float CurrentTime;
-    //private SCUInputAction _scuInputAction;
+    private SubjectManager _subjectManager;
     
     private void Awake()
     {
-        //_scuInputAction = new SCUInputAction();
-        //_scuInputAction.UI.Enable();
-        
         foreach (var miniGame in miniGames)
         {
             miniGame.Disable();
             miniGamesFinishedState.Add(miniGame.name, false);
         }
+        
+        goToPotionSceneButton.SetActive(false);
+        minigameDoneText.SetActive(false);
     }
     
     void Start()
     {
+        _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+            .GetComponent<SubjectManager>();
+        collectedIngredientsPerPatient = new();
         CurrentTime = StartTime;
         Time.timeScale = 1f;
     }
-
-    /*
-    private void Update()
-    {
-        if (KeyboardInput.EscapePressed(_scuInputAction))
-        {
-            BackToMainMenu();
-        }
-    }
-    */
     
     void FixedUpdate()
     {
@@ -59,7 +52,6 @@ public class MiniGameManager : MonoBehaviour
         if (CurrentTime <= 0)
         {
             Time.timeScale = 0;
-            GameoverPanel.SetActive(true);
         }
     }
 
@@ -89,16 +81,18 @@ public class MiniGameManager : MonoBehaviour
 
         if (AllMinigamesFinished())
         {
-            Win();
+            goToPotionSceneButton.SetActive(true);
+            minigameDoneText.SetActive(true);
         }
     }
     
     public void AddIngredient(string ingredientName)
     {
-        collectedIngredientNames.Add(ingredientName);
+        collectedIngredientsPerPatient.Add(ingredientName);
+        _subjectManager.AddUniqueIngredient(ingredientName);
 
         string ingredientsToDisplay = "Ingredients:\n";
-        foreach (var ingName in collectedIngredientNames)
+        foreach (var ingName in collectedIngredientsPerPatient)
         {
             ingredientsToDisplay += "\n* " + ingName;
         }
@@ -131,19 +125,15 @@ public class MiniGameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    /*
-    public void BackToMainMenu()
+    public void GoToPotionMakingScene()
     {
-        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
-            .GetComponent<SubjectManager>();
-        _subjectManager.ResetMinigameState();
-        SceneManager.LoadScene(NamingConstants.SCENE_ID_MAIN_MENU);
+        if (!AllMinigamesFinished()) return;
+        
+        SceneManager.LoadScene(NamingConstants.SCENE_MAIN_ALCHEMY);
     }
-    */
     
     public void Win()
     {
         Time.timeScale = 0;
-        GamewinPanel.SetActive(true);
     }
 }
