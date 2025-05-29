@@ -1,6 +1,5 @@
 using Helpers;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Minigames.Abdomen
 {
@@ -9,12 +8,18 @@ namespace Minigames.Abdomen
         [SerializeField] private GameObject stomachConnection;
         [SerializeField] private bool isConnected;
         
-        private Vector3 offsetStomach;
-        private bool followMouse;
         private SCUInputAction _scuInputAction;
-        private float yMoveArea = 0.8f;
+        
+        // movement related
+        private Vector3 offsetStomach;
         private Vector3 yRootPosition;
+        private bool followMouse;
+        private float yMoveArea = 0.8f;
         private float yConnToStomachDiff;
+
+        // state related
+        private bool isTopConnectionCut = false;
+        private bool isBottomConnectionCut = false;
         
         private void Awake()
         {
@@ -52,6 +57,24 @@ namespace Minigames.Abdomen
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();
+            }
+        }
+
+        public void CutTopConnection()
+        {
+            isTopConnectionCut = true;
+            if (isBottomConnectionCut)
+            {
+                isConnected = false;
+            }
+        }
+
+        public void CutBottomConnection()
+        {
+            isBottomConnectionCut = true;
+            if (isTopConnectionCut)
+            {
+                isConnected = false;
             }
         }
         

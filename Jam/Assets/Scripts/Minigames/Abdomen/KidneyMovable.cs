@@ -41,6 +41,11 @@ namespace Minigames.Abdomen
             }
         }
         
+        public void CutConnection()
+        {
+            isConnected = false;
+        }
+        
         private void MouseLeftClick()
         {
             Vector3 mousepos =  MouseInput.WorldPosition(_scuInputAction);

@@ -8,7 +8,7 @@ namespace Minigames.Abdomen
         [SerializeField] private bool isConnected;
         
         private Vector3 offsetLiver;
-        private float yMoveArea = 1f;
+        private float yMoveArea = 0.3f;
         private bool followMouse;
         private SCUInputAction _scuInputAction;
         private Vector3 yRootPosition;
@@ -48,6 +48,11 @@ namespace Minigames.Abdomen
             {
                 MouseLeftClick();
             }
+        }
+
+        public void CutConnection()
+        {
+            isConnected = false;
         }
         
         private void MouseLeftClick()

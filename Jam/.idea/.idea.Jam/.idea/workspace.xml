@@ -5,38 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyCutArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyCutArea.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverCutArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverCutArea.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachCutArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachCutArea.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/BodyBg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/BodyBg.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/CircleWriting.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/CircleWriting.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Intestine.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Intestine.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyLCorrupt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyLCorrupt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyLHealthy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyLHealthy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyRCorrupt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyRCorrupt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyRHealthy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneyRHealthy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneysConnection.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/KidneysConnection.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverConnection.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverConnection.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverCorrupt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverCorrupt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverHealthy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/LiverHealthy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/MagicBox.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/MagicBox.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Pancreas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Pancreas.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Ribs.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/Ribs.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachConnection.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachConnection.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachCorrupt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachCorrupt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachHealthy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Abdomen game/StomachHealthy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,22 +111,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "alex-abdomen-minigame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-abdomen-minigame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
@@ -286,6 +265,7 @@
       <workItem from="1746639503771" duration="1292000" />
       <workItem from="1746798659811" duration="708000" />
       <workItem from="1746982189383" duration="1472000" />
+      <workItem from="1748512286972" duration="3606000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -543,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748196621144</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Align and make replaceable body parts movable">
+      <option name="closed" value="true" />
+      <created>1748464327791</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748464327791</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +559,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add Scene and Tag Constants" />
     <MESSAGE value="Add corruption mark in organ layer and transition to HeartString Minigame" />
     <MESSAGE value="Add MainMinigame Scene and remove corrupt markers on finished minigame" />
     <MESSAGE value="Connect Main Menu to Minigame Scene" />
@@ -596,5 +583,7 @@
     <MESSAGE value="Prototype Alchemy Inventory WIP" />
     <MESSAGE value="Add AlchemyManager to manage ingredient inventory" />
     <MESSAGE value="After build fixes" />
+    <MESSAGE value="Align and make replaceable body parts movable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Align and make replaceable body parts movable" />
   </component>
 </project>
