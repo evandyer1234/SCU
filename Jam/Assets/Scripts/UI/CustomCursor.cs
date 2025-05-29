@@ -24,9 +24,9 @@ public class CustomCursor : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
-        scalpelSprite = FileLoader.GetSpriteByName(AddressableConstants.SPR_CURSOR_SCALPEL);
-        gloveSprite = FileLoader.GetSpriteByName(AddressableConstants.SPR_CURSOR_GLOVE);
-        glovePressedSprite = FileLoader.GetSpriteByName(AddressableConstants.SPR_CURSOR_GLOVE_PRESSED);
+        scalpelSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_SCALPEL);
+        gloveSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_GLOVE);
+        glovePressedSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_GLOVE_PRESSED);
 
         SetGloveSprite();
     }

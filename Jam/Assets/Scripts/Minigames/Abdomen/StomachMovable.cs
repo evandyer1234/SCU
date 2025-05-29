@@ -8,6 +8,9 @@ namespace Minigames.Abdomen
         [SerializeField] private GameObject stomachConnection;
         [SerializeField] private bool isConnected;
         
+        private Sprite healthyStomachSprite;
+        private Sprite corruptStomachSprite;
+        
         private SCUInputAction _scuInputAction;
         
         // movement related
@@ -27,6 +30,9 @@ namespace Minigames.Abdomen
             _scuInputAction.UI.Enable();
             yRootPosition = gameObject.transform.position;
             yConnToStomachDiff = stomachConnection.transform.position.y - gameObject.transform.position.y;
+            healthyStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_HEALTHY);
+            corruptStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_CORRUPT);
+            GetComponent<SpriteRenderer>().sprite = healthyStomachSprite;
         }
         
         private void Update()
@@ -76,6 +82,11 @@ namespace Minigames.Abdomen
             {
                 isConnected = false;
             }
+        }
+        
+        public void SetCorruptSprite()
+        {
+            GetComponent<SpriteRenderer>().sprite = corruptStomachSprite;
         }
         
         private void MouseLeftClick()

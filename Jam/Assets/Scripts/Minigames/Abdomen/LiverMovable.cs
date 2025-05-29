@@ -6,6 +6,9 @@ namespace Minigames.Abdomen
     public class LiverMovable : MonoBehaviour
     {
         [SerializeField] private bool isConnected;
+
+        private Sprite healthyLiverSprite;
+        private Sprite corruptLiverSprite;
         
         private Vector3 offsetLiver;
         private float yMoveArea = 0.3f;
@@ -18,6 +21,9 @@ namespace Minigames.Abdomen
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
             yRootPosition = gameObject.transform.position;
+            healthyLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_HEALTHY);
+            corruptLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_CORRUPT);
+            GetComponent<SpriteRenderer>().sprite = healthyLiverSprite;
         }
         
         private void Update()
@@ -53,6 +59,11 @@ namespace Minigames.Abdomen
         public void CutConnection()
         {
             isConnected = false;
+        }
+
+        public void SetCorruptSprite()
+        {
+            GetComponent<SpriteRenderer>().sprite = corruptLiverSprite;
         }
         
         private void MouseLeftClick()

@@ -5,7 +5,6 @@ using Helpers;
 using Subjects;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MiniGameManager : MonoBehaviour

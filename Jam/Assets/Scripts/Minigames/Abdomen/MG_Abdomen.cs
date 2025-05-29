@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Minigames.Abdomen
 {
-    public class MG_Abdomen : MonoBehaviour
+    public class MG_Abdomen : MiniGameBase
     {
         [SerializeField] private StomachMovable stomach;
         [SerializeField] private LiverMovable liver;

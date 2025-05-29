@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MG_Abdomen
       objectReference: {fileID: 0}
+    - target: {fileID: 2165770286739372366, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
 --- !u!4 &2682308428835761518 stripped
