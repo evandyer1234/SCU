@@ -40,7 +40,7 @@ namespace Minigames.Abdomen
                 MouseLeftClick();
             }
         }
-        
+
         public void CutConnection()
         {
             isConnected = false;
