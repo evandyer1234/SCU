@@ -382,6 +382,12 @@ MonoBehaviour:
   skeletonLayerReference: {fileID: 0}
   organLayerReference: {fileID: 0}
   switchHint: {fileID: 1553555696061604906}
+  _outlineGlassShadowSpriteRenderer: {fileID: 4951867169829872914}
+  _outlineGlassSpriteRenderer: {fileID: 1476047038449209625}
+  _outlineGlassShadowOpen: {fileID: 21300000, guid: 60e1a9e285a8cde4ba7e318597d211d6, type: 3}
+  _outlineGlassShadowClosed: {fileID: 21300000, guid: 0b3a6330473fe4841979b75115649f76, type: 3}
+  _outlineGlassOpen: {fileID: 21300000, guid: 015c9530e9166074f812aa05ffb9a111, type: 3}
+  _outlineGlassClosed: {fileID: 21300000, guid: 264127dce4d3e364c943af4c11bed698, type: 3}
 --- !u!1 &8556360274567979574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1410,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3634189846164599778, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
   m_PrefabInstance: {fileID: 2860537596863145064}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &4951867169829872914 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+  m_PrefabInstance: {fileID: 2860537596863145064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8606875642371625059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1477,6 +1488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+--- !u!212 &1476047038449209625 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+  m_PrefabInstance: {fileID: 8606875642371625059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4980699311911019393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3634189846164599778, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
