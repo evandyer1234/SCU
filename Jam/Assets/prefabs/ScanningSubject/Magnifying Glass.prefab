@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.98, y: -9.42}
+  m_AnchoredPosition: {x: -0.08412361, y: -8.869779}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &6019024928159524254
@@ -275,7 +275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.4, y: 2.6}
+  m_AnchoredPosition: {x: -37.1, y: 17.42}
   m_SizeDelta: {x: 3, y: 3}
   m_Pivot: {x: 0, y: 0}
 --- !u!212 &8556360274414955134
@@ -507,18 +507,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.053488, y: 5.666079}
+  m_Offset: {x: 10.075693, y: 9.26629}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
-    oldSize: {x: 18.17, y: 25.64587}
+    oldSize: {x: 20.001955, y: 28.000002}
     newSize: {x: 18.17, y: 25.64587}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7667942, y: 11.047313}
+  m_Size: {x: 4.006816, y: 18.247732}
   m_EdgeRadius: 0
 --- !u!1 &8556360274858712634
 GameObject:
@@ -1458,6 +1458,22 @@ PrefabInstance:
     - target: {fileID: 3634189846164599778, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+      propertyPath: m_Size.x
+      value: 20.001955
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+      propertyPath: m_Size.y
+      value: 28.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 264127dce4d3e364c943af4c11bed698, type: 3}
+    - target: {fileID: 7136581695637913978, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
