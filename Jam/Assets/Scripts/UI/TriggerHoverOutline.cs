@@ -17,7 +17,7 @@ public class TriggerHoverOutline : MonoBehaviour
         else
         {
             Debug.LogError("Missing Sprite Renderer: " + transform.name);
-            this.enabled = false;
+            gameObject.SetActive(false);
         }
     }
 
