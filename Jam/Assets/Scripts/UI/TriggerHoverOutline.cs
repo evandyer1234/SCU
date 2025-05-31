@@ -10,6 +10,8 @@ public class TriggerHoverOutline : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private SCUInputAction _scuInputAction;
 
+    private bool _pressed = false;
+
 
     void Start()
     {
@@ -28,19 +30,14 @@ public class TriggerHoverOutline : MonoBehaviour
     }
 
 
-    void OnMouseEnter()
+    void Update()
     {
-        if(_spriteRenderer.enabled == true)
-        {
-            hoverOutline.Hover();
-        }
-    }
+        if (!_pressed) return;
 
-
-    void OnMouseExit()
-    {
-        if(_spriteRenderer.enabled == true)
+        //check if left is released while NOT hovering over the sprite for objects that don't follow the mouse, e.g. glass shadow
+        if(MouseInput.LeftReleased(_scuInputAction))
         {
+            _pressed = false;
             hoverOutline.Idle();
         }
     }
@@ -50,6 +47,39 @@ public class TriggerHoverOutline : MonoBehaviour
     {
         if (MouseInput.LeftClicked(_scuInputAction))
         {
+            OnPressed();
+        }
+        else if(MouseInput.LeftReleased(_scuInputAction))
+        {
+            _pressed = false;
+            hoverOutline.Hover();
+        }
+    }
+
+
+    void OnMouseEnter()
+    {
+        if(_spriteRenderer.enabled == true && !_pressed)
+        {
+            hoverOutline.Hover();
+        }
+    }
+
+
+    void OnMouseExit()
+    {
+        if(_spriteRenderer.enabled == true && !_pressed)
+        {
+            hoverOutline.Idle();
+        }
+    }
+
+
+    void OnPressed()
+    {
+        if(_spriteRenderer.enabled == true && !_pressed)
+        {
+            _pressed = true;
             hoverOutline.Pressed();
         }
     }
