@@ -87,6 +87,7 @@ namespace Minigames.Abdomen
                             InitializeStomachOffsets(stomachPlaceholder.GetLastKnownStomachRootPosition());
                             abdomenRef.AssignNewStomach(this);
                             isConnected = true;
+                            stomachPlaceholder.isEmpty = false;
                         }
 
                         break;
@@ -145,7 +146,7 @@ namespace Minigames.Abdomen
         private float KeepSpriteRelativeToMouseY(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
         {
             var spritePos = spriteRefGo.transform.position;
-            var yDiffFromRoot = yRootPosition.y - mousePos.y + offsetStomach.y;
+            var yDiffFromRoot = yRootPosition.y - mousePos.y + offset.y;
             var newY = yDiffFromRoot < -yMoveArea ? (yRootPosition.y + yMoveArea) : (yDiffFromRoot > yMoveArea ? (yRootPosition.y - yMoveArea) : ((mousePos.y) - offset.y));
             spriteRefGo.transform.position = new Vector3(spritePos.x, newY, spritePos.z);
             return newY;

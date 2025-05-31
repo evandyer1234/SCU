@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d898da81c6f442d8eb2cec9d7c97c7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liverMovableRef: {fileID: 6125949926776546096}
+  abdomenRef: {fileID: 8491439503950256908}
   hoverOutlineRef: {fileID: 6287696068446352176}
 --- !u!1 &1966375876766249188
 GameObject:
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c876172a49ed4300aaa16dd36357a269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stomachMovableRef: {fileID: 958912206049125584}
+  abdomenRef: {fileID: 8491439503950256908}
   hoverOutlineRef: {fileID: 713105170236766240}
   isTopCutArea: 0
 --- !u!1 &4535825016234175537
@@ -1856,7 +1856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c876172a49ed4300aaa16dd36357a269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stomachMovableRef: {fileID: 958912206049125584}
+  abdomenRef: {fileID: 8491439503950256908}
   hoverOutlineRef: {fileID: 8704226425538798691}
   isTopCutArea: 1
 --- !u!1 &6366090713159777074

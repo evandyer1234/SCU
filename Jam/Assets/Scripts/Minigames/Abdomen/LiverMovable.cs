@@ -80,6 +80,7 @@ namespace Minigames.Abdomen
                             yRootPosition = _liverPlaceholder.GetLastKnownLiverRootPosition();
                             abdomenRef.AssignNewLiver(this);
                             isConnected = true;
+                            _liverPlaceholder.isEmpty = false;
                         }
 
                         break;

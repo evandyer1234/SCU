@@ -5,13 +5,12 @@ namespace Minigames.Abdomen
 {
     public class LiverCutArea : MonoBehaviour
     {
-        [SerializeField] private LiverMovable liverMovableRef;
+        [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private SpriteRenderer hoverOutlineRef;
 
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         private CustomCursor cursorRef;
-        private MG_Abdomen abdomenRef;
         
         private void Awake()
         {
@@ -23,8 +22,6 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
-            abdomenRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_ABDOMEN)
-                .GetComponent<MG_Abdomen>();
         }
         
         private void OnMouseOver()
@@ -49,6 +46,7 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
+            var liverMovableRef = abdomenRef.GetLiverRef();
             if (liverMovableRef.IsCorrupted())
             {
                 liverMovableRef.CutConnection();

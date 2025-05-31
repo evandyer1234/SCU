@@ -79,14 +79,24 @@ namespace Minigames.Abdomen
             }
         }
 
-        public KidneyMovable GetLeftKidney()
+        public KidneyMovable GetLeftKidneyRef()
         {
             return this.leftKidney;
         }
         
-        public KidneyMovable GetRightKidney()
+        public KidneyMovable GetRightKidneyRef()
         {
             return this.rightKidney;
+        }
+
+        public LiverMovable GetLiverRef()
+        {
+            return this.liver;
+        }
+
+        public StomachMovable GetStomachRef()
+        {
+            return this.stomach;
         }
         
         private void AssignRandomCorruptedOrgans()

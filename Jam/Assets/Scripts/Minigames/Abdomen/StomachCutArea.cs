@@ -5,12 +5,11 @@ namespace Minigames.Abdomen
 {
     public class StomachCutArea : MonoBehaviour
     {
-        [SerializeField] private StomachMovable stomachMovableRef;
+        [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private SpriteRenderer hoverOutlineRef;
         [SerializeField] private bool isTopCutArea;
         
         private CustomCursor cursorRef;
-        private MG_Abdomen abdomenRef;
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         
@@ -24,8 +23,6 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
-            abdomenRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_ABDOMEN)
-                .GetComponent<MG_Abdomen>();
         }
         
         private void OnMouseOver()
@@ -50,6 +47,7 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
+            var stomachMovableRef = abdomenRef.GetStomachRef();
             if (stomachMovableRef.IsCorrupted())
             {
                 if (isTopCutArea)

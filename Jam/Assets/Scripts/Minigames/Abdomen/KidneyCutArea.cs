@@ -47,7 +47,7 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
-            var kidneyMovable = this.isLeftKidney ? abdomenRef.GetLeftKidney() : abdomenRef.GetRightKidney();
+            var kidneyMovable = this.isLeftKidney ? abdomenRef.GetLeftKidneyRef() : abdomenRef.GetRightKidneyRef();
             if (kidneyMovable.IsCorrupted())
             {
                 kidneyMovable.CutConnection();    
