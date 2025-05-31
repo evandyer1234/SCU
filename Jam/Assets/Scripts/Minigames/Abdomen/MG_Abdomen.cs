@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Helpers;
 using UnityEngine;
 
 namespace Minigames.Abdomen
@@ -20,6 +21,7 @@ namespace Minigames.Abdomen
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
             AssignRandomCorruptedOrgans();
+            ingredient = IngredientConstants.INGREDIENT_ID_DRAGONS_BLOOD;
         }
 
         private void FixedUpdate()

@@ -107,7 +107,7 @@ public class MiniGameManager : MonoBehaviour
     private bool AllMinigamesFinished()
     {
         return miniGamesFinishedState.Where(state => state.Value)
-            .ToList().Count() == miniGames.Count;
+            .ToList().Count() == _subjectManager.currentSubject.subjectMinigames.Count();
     }
     
     private void SetTimerText(string _inText)
