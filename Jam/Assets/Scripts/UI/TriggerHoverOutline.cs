@@ -6,13 +6,35 @@ public class TriggerHoverOutline : MonoBehaviour
 {
     public HoverOutline hoverOutline;
 
+    private SpriteRenderer _spriteRenderer;
+
+    void Start()
+    {
+        if(gameObject.TryGetComponent<SpriteRenderer>(out SpriteRenderer sr))
+        {
+            _spriteRenderer = sr;
+        }
+        else
+        {
+            Debug.LogError("Missing Sprite Renderer: " + transform.name);
+            this.enabled = false;
+        }
+    }
+
     void OnMouseEnter()
     {
-        hoverOutline.StartHover();
+        if(_spriteRenderer.enabled == true)
+        {
+            hoverOutline.StartHover();
+        }
     }
 
     void OnMouseExit()
     {
-        hoverOutline.EndHover();
+        
+        if(_spriteRenderer.enabled == true)
+        {
+            hoverOutline.EndHover();
+        }
     }
 }
