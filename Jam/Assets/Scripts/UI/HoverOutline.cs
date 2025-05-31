@@ -16,12 +16,19 @@ public class HoverOutline : MonoBehaviour
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _spriteRenderer.color = _defaultColor;
 
-        if(_spriteRenderer.sprite == null)
+        GameObject parentGO = transform.parent.gameObject;
+
+        //update sorting order according to parent
+        if(parentGO.TryGetComponent<SpriteRenderer>(out SpriteRenderer parentSR))
         {
-            Debug.LogError("Sprite missing for HoverOutline: " + transform.parent.name);
+            _spriteRenderer.sortingLayerName = parentSR.sortingLayerName;
+            _spriteRenderer.sortingOrder = parentSR.sortingOrder - 1;
         }
 
-        GameObject parentGO = transform.parent.gameObject;
+        if(_spriteRenderer.sprite == null)
+        {
+            Debug.LogError("Sprite missing for HoverOutline: " + parentGO.transform.name);
+        }
 
         if(!parentGO.TryGetComponent<TriggerHoverOutline>(out TriggerHoverOutline t))
         {
