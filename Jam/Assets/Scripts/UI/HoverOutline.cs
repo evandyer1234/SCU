@@ -10,6 +10,7 @@ public class HoverOutline : MonoBehaviour
 
     [SerializeField] private Color _defaultColor = new Color(1f, 1f, 1f, 0f);
     [SerializeField] private Color _hoverColor = new Color(1f, 1f, 1f, 1f);
+    [SerializeField] private Color _pressedColor;
 
     void Start()
     {
@@ -39,13 +40,20 @@ public class HoverOutline : MonoBehaviour
     }
 
 
-    public void StartHover()
+    public void Hover()
     {
         _spriteRenderer.color = _hoverColor;
     }
 
-    public void EndHover()
+
+    public void Idle()
     {
         _spriteRenderer.color = _defaultColor;
+    }
+
+
+    public void Pressed()
+    {
+        _spriteRenderer.color = _pressedColor;
     }
 }
