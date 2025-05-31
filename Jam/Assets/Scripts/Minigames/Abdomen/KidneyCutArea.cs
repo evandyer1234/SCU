@@ -11,6 +11,7 @@ namespace Minigames.Abdomen
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         private CustomCursor cursorRef;
+        private MG_Abdomen abdomenRef;
         
         private void Awake()
         {
@@ -22,6 +23,8 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
+            abdomenRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_ABDOMEN)
+                .GetComponent<MG_Abdomen>();
         }
         
         private void OnMouseOver()
@@ -46,9 +49,16 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
-            kidneyMovableRef.CutConnection();    
-            isConnected = false;
-            hoverOutlineRef.enabled = false;
+            if (kidneyMovableRef.IsCorrupted())
+            {
+                kidneyMovableRef.CutConnection();    
+                isConnected = false;
+                hoverOutlineRef.enabled = false;
+            }
+            else
+            {
+                abdomenRef.OnPenalty();
+            }
         }
     }
 }

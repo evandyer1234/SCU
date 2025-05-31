@@ -6,16 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/AddressableConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/FileConstants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/AddressableConstants.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/FileConstants.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManagerMinigameResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManagerMinigameResolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyCutArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyCutArea.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverCutArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverCutArea.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/LiverMovable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachCutArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachCutArea.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/StomachMovable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CustomCursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CustomCursor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMarkPositions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/CorruptionMarkPositions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +55,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/5a/ff6447a9/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/ClickandDrag.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/NamingConstants.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/SubjectManagerMinigameResolver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -220,7 +230,9 @@
       <workItem from="1746982189383" duration="1472000" />
       <workItem from="1748512286972" duration="3606000" />
       <workItem from="1748515949694" duration="53000" />
-      <workItem from="1748539403942" duration="8268000" />
+      <workItem from="1748539403942" duration="9118000" />
+      <workItem from="1748641014174" duration="2684000" />
+      <workItem from="1748673967420" duration="4053000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -502,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748542683329</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="prepare corrupt sprites for parts">
+      <option name="closed" value="true" />
+      <created>1748550714978</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550714978</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +550,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Connect Main Menu to Minigame Scene" />
     <MESSAGE value="Show Game win and lose overlay in Minigame Scene" />
     <MESSAGE value="ESC to quit to main menu" />
     <MESSAGE value="Use new Input System" />
@@ -555,6 +574,7 @@
     <MESSAGE value="Align and make replaceable body parts movable" />
     <MESSAGE value="define cut areas" />
     <MESSAGE value="use scalpel cursor for cut areas" />
-    <option name="LAST_COMMIT_MESSAGE" value="use scalpel cursor for cut areas" />
+    <MESSAGE value="prepare corrupt sprites for parts" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare corrupt sprites for parts" />
   </component>
 </project>

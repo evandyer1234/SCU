@@ -7,8 +7,8 @@ namespace Minigames.Abdomen
     {
         [SerializeField] private StomachMovable stomach;
         [SerializeField] private LiverMovable liver;
-        [SerializeField] private GameObject leftKidney;
-        [SerializeField] private GameObject rightKidney;
+        [SerializeField] private KidneyMovable leftKidney;
+        [SerializeField] private KidneyMovable rightKidney;
         
         // offsets on drag
         private Vector3 offsetLeftKidney;
@@ -21,6 +21,7 @@ namespace Minigames.Abdomen
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
+            AssignRandomCorruptedOrgans();
         }
 
         private void Update()
@@ -28,8 +29,8 @@ namespace Minigames.Abdomen
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
-                KeepSpriteRelativeToMouse(leftKidney, mouseWorldPos, offsetLeftKidney);
-                KeepSpriteRelativeToMouse(rightKidney, mouseWorldPos, offsetRightKidney);
+                KeepSpriteRelativeToMouse(leftKidney.gameObject, mouseWorldPos, offsetLeftKidney);
+                KeepSpriteRelativeToMouse(rightKidney.gameObject, mouseWorldPos, offsetRightKidney);
             }
         }
 
@@ -55,6 +56,30 @@ namespace Minigames.Abdomen
         private void KeepSpriteRelativeToMouse(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
         {
             spriteRefGo.transform.position = new Vector3(mousePos.x - offset.x, mousePos.y - offset.y, spriteRefGo.transform.position.z);
+        }
+
+        private void AssignRandomCorruptedOrgans()
+        {
+            var corruptLiver = Random.Range(0, 1f) > .5f;
+            var corruptLeftKidney = Random.Range(0, 1f) > .5f;
+
+            if (corruptLiver)
+            {
+                liver.SetCorrupted();
+            }
+            else
+            {
+                stomach.SetCorrupted();
+            }
+
+            if (corruptLeftKidney)
+            {
+                leftKidney.SetCorrupted();
+            }
+            else
+            {
+                rightKidney.SetCorrupted();
+            }
         }
     }
 }

@@ -7,14 +7,16 @@ namespace Minigames.Abdomen
     {
         [SerializeField] private bool isConnected;
 
+        private SCUInputAction _scuInputAction;
+        
         private Sprite healthyLiverSprite;
         private Sprite corruptLiverSprite;
+        private bool isCorrupted = false;
         
         private Vector3 offsetLiver;
+        private Vector3 yRootPosition;
         private float yMoveArea = 0.3f;
         private bool followMouse;
-        private SCUInputAction _scuInputAction;
-        private Vector3 yRootPosition;
         
         private void Awake()
         {
@@ -61,9 +63,15 @@ namespace Minigames.Abdomen
             isConnected = false;
         }
 
-        public void SetCorruptSprite()
+        public void SetCorrupted()
         {
             GetComponent<SpriteRenderer>().sprite = corruptLiverSprite;
+            isCorrupted = true;
+        }
+
+        public bool IsCorrupted()
+        {
+            return isCorrupted;
         }
         
         private void MouseLeftClick()

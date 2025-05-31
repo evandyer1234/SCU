@@ -16,6 +16,7 @@ namespace Minigames.Abdomen
         private Sprite corruptRightKidneySprite;
         private Sprite healthyLeftKidneySprite;
         private Sprite corruptLeftKidneySprite;
+        private bool isCorrupted = false;
         
         private void Awake()
         {
@@ -64,7 +65,7 @@ namespace Minigames.Abdomen
             isConnected = false;
         }
 
-        public void SetCorruptSprite()
+        public void SetCorrupted()
         {
             if (isLefKidney)
             {
@@ -74,6 +75,13 @@ namespace Minigames.Abdomen
             {
                 GetComponent<SpriteRenderer>().sprite = corruptRightKidneySprite;
             }
+
+            isCorrupted = true;
+        }
+        
+        public bool IsCorrupted()
+        {
+            return isCorrupted;
         }
         
         private void MouseLeftClick()

@@ -65,7 +65,7 @@ namespace Subjects
             {
                 NamingConstants.TAG_MINIGAME_HEARTSTRING,
                 NamingConstants.TAG_MINIGAME_LUNGPUMP,
-                NamingConstants.TAG_MINIGAME_DRAIN,
+                NamingConstants.TAG_MINIGAME_ABDOMEN,
             };
             Subject subject14 = CreateSubject(
                 SubjectManager.SUBJECT_NAME_14, 

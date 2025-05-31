@@ -53,6 +53,7 @@ MonoBehaviour:
   - {fileID: 1574750518147182946}
   - {fileID: 7965065728643618494}
   - {fileID: 2963477765614932825}
+  - {fileID: 5683686668730896175}
   StartTime: 0
   timerText: {fileID: 0}
   magnifyingGlassShadowRef: {fileID: 0}
@@ -605,6 +606,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2165770286739372366, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
+      propertyPath: m_TagString
+      value: MinigameAbdomen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
 --- !u!4 &2682308428835761518 stripped
@@ -612,3 +617,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2165770286739372365, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
   m_PrefabInstance: {fileID: 4266920765107508259}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5683686668730896175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8491439503950256908, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
+  m_PrefabInstance: {fileID: 4266920765107508259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d352535980964a6e82e9947423efd1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -55,6 +55,20 @@ namespace Subjects
             new (1.5f, 10.5f),
             new (1.5f, 9f),
         };
+
+        private static List<Vector2> abdomenAdultPositions = new List<Vector2>()
+        {
+            new(3.8f, 12.2f),
+            new(3.4f, 11.7f),
+            new(4.4f, 11.7f),
+        };
+        
+        private static List<Vector2> abdomenChildPositions = new List<Vector2>()
+        {
+            new(3.8f, 11.6f),
+            new(3.4f, 11.1f),
+            new(4.4f, 11.1f),
+        };
         
         public static Vector2 GetPositionByMinigameId(string minigameId, bool isAdult)
         {
@@ -66,6 +80,8 @@ namespace Subjects
                     return GetRandomPosition(isAdult ? lungPumpAdultPositions : lungPumpChildPositions);
                 case NamingConstants.TAG_MINIGAME_DRAIN:
                     return GetRandomPosition(isAdult ? drainAdultPositions : drainChildPositions);
+                case NamingConstants.TAG_MINIGAME_ABDOMEN:
+                    return GetRandomPosition(isAdult ? abdomenAdultPositions : abdomenChildPositions);
             }
         
             Debug.LogWarning($"Failed to match Corruption Mark Position for minigameId {minigameId}");

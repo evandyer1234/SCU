@@ -10,6 +10,7 @@ namespace Minigames.Abdomen
         [SerializeField] private bool isTopCutArea;
         
         private CustomCursor cursorRef;
+        private MG_Abdomen abdomenRef;
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         
@@ -23,6 +24,8 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
+            abdomenRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_ABDOMEN)
+                .GetComponent<MG_Abdomen>();
         }
         
         private void OnMouseOver()
@@ -47,17 +50,24 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
-            if (isTopCutArea)
+            if (stomachMovableRef.IsCorrupted())
             {
-                stomachMovableRef.CutTopConnection();    
+                if (isTopCutArea)
+                {
+                    stomachMovableRef.CutTopConnection();    
+                }
+                else
+                {
+                    stomachMovableRef.CutBottomConnection();
+                }
+
+                isConnected = false;
+                hoverOutlineRef.enabled = false;
             }
             else
             {
-                stomachMovableRef.CutBottomConnection();
+                abdomenRef.OnPenalty();
             }
-
-            isConnected = false;
-            hoverOutlineRef.enabled = false;
         }
     }
 }

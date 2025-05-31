@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 8491439503950256908}
   m_Layer: 0
   m_Name: MG_Abdomen
-  m_TagString: Untagged
+  m_TagString: MinigameAbdomen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -462,10 +462,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d352535980964a6e82e9947423efd1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredient: 
+  penalty: 0
+  miniGameStage: 0
   stomach: {fileID: 958912206049125584}
   liver: {fileID: 6125949926776546096}
-  leftKidney: {fileID: 3049045294640819430}
-  rightKidney: {fileID: 6366090713159777074}
+  leftKidney: {fileID: 8797995025320253859}
+  rightKidney: {fileID: 8699774028989056669}
 --- !u!1 &2165770286797647069
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isConnected: 0
+  isLefKidney: 0
 --- !u!1 &3049045294640819430
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isConnected: 1
+  isLefKidney: 1
 --- !u!1 &3571090534475281453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isConnected: 0
+  isLefKidney: 0
 --- !u!1 &4289643695643911202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isConnected: 1
+  isLefKidney: 0
 --- !u!1 &6689508701739073572
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ namespace Minigames.Abdomen
         
         private Sprite healthyStomachSprite;
         private Sprite corruptStomachSprite;
+        private bool isCorrupted = false;
         
         private SCUInputAction _scuInputAction;
         
@@ -84,9 +85,15 @@ namespace Minigames.Abdomen
             }
         }
         
-        public void SetCorruptSprite()
+        public void SetCorrupted()
         {
             GetComponent<SpriteRenderer>().sprite = corruptStomachSprite;
+            isCorrupted = true;
+        }
+        
+        public bool IsCorrupted()
+        {
+            return isCorrupted;
         }
         
         private void MouseLeftClick()
