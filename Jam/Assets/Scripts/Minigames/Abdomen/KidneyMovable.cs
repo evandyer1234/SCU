@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
 
@@ -5,8 +6,10 @@ namespace Minigames.Abdomen
 {
     public class KidneyMovable : MonoBehaviour
     {
+        [SerializeField] private KidneyPlaceholder kidneyPlaceholder;
+        [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private bool isConnected;
-        [SerializeField] private bool isLefKidney;
+        [SerializeField] public bool isLefKidney;
         
         private Vector3 offsetKidney;
         private bool followMouse;
@@ -58,11 +61,41 @@ namespace Minigames.Abdomen
             {
                 MouseLeftClick();
             }
+
+            if (MouseInput.LeftReleased(_scuInputAction))
+            {
+                followMouse = false;
+                if (!kidneyPlaceholder.isEmpty) return;
+                
+                var coll = gameObject.GetComponent<PolygonCollider2D>();
+                var allColliders = new List<Collider2D>();
+                Physics2D.OverlapCollider(coll, new ContactFilter2D(), allColliders);
+                
+                foreach (var currColl in allColliders)
+                {
+                    if (currColl.GetComponent<KidneyPlaceholder>() != null)
+                    {
+                        var collPlaceholder = currColl.GetComponent<KidneyPlaceholder>();
+                        if (!isCorrupted && (isLefKidney == collPlaceholder.isLeftKidneyPlaceholder))
+                        {
+                            transform.position = kidneyPlaceholder.GetLastKnownKidneyPosition();
+                            abdomenRef.AssignNewKidney(this);
+                            isConnected = true;
+                            kidneyPlaceholder.isEmpty = false;
+                        }
+
+                        break;
+                    }
+                }
+            }
         }
 
         public void CutConnection()
         {
             isConnected = false;
+            kidneyPlaceholder.SetLastKnownKidneyPosition(gameObject.transform.position);
+            kidneyPlaceholder.isLeftKidneyPlaceholder = isLefKidney;
+            kidneyPlaceholder.isEmpty = true;
         }
 
         public void SetCorrupted()

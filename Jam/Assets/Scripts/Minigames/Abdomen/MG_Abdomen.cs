@@ -1,4 +1,4 @@
-using Helpers;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Minigames.Abdomen
@@ -9,13 +9,11 @@ namespace Minigames.Abdomen
         [SerializeField] private LiverMovable liver;
         [SerializeField] private KidneyMovable leftKidney;
         [SerializeField] private KidneyMovable rightKidney;
+        [SerializeField] private GameObject outputTray;
         
-        // offsets on drag
-        private Vector3 offsetLeftKidney;
-        private Vector3 offsetRightKidney;
-        
-        private bool followMouse;
         private SCUInputAction _scuInputAction;
+        private bool allCorruptedOnTrayCondition = false;
+        private bool allOrgansConnectedAreHealthyCondition = false;
         
         private void Awake()
         {
@@ -24,40 +22,73 @@ namespace Minigames.Abdomen
             AssignRandomCorruptedOrgans();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            if (followMouse)
+            if (allCorruptedOnTrayCondition && allOrgansConnectedAreHealthyCondition)
             {
-                Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
-                KeepSpriteRelativeToMouse(leftKidney.gameObject, mouseWorldPos, offsetLeftKidney);
-                KeepSpriteRelativeToMouse(rightKidney.gameObject, mouseWorldPos, offsetRightKidney);
+                OnSuccess();
+                return;
             }
-        }
+            
+            if (!liver.IsCorrupted()
+                && !stomach.IsCorrupted()
+                && !leftKidney.IsCorrupted()
+                && !rightKidney.IsCorrupted())
+            {
+                allOrgansConnectedAreHealthyCondition = true;
+            }
+            
+            var outputElements = Physics2D.OverlapCircleAll(outputTray.transform.position, 2.5f);
+            if (outputElements.Length <= 0) return;
+            if (allCorruptedOnTrayCondition) return;
+            
+            var outputSet = new HashSet<string>();
+            foreach (var outputElement in outputElements)
+            {
+                outputSet.Add(IsCorruptedLiverOnTray(outputElement));
+                outputSet.Add(IsCorruptedStomachOnTray(outputElement));
+                outputSet.Add(IsCorruptedKidneyOnTray(outputElement));
+            }
 
-        private void OnMouseOver()
-        {
-            if (MouseInput.LeftClicked(_scuInputAction))
+            // null, (liver/stomach), (leftKidney/rightKidney)
+            if (outputSet.Count == 3)
             {
-                MouseLeftClick();
+                allCorruptedOnTrayCondition = true;
             }
-            if (MouseInput.LeftReleased(_scuInputAction))
-            {
-                followMouse = false;
-            }
-        }
-
-        private void MouseLeftClick()
-        {
-            Vector3 mousepos =  MouseInput.WorldPosition(_scuInputAction);
-            offsetLeftKidney = (mousepos - leftKidney.transform.position);
-            offsetRightKidney = (mousepos - rightKidney.transform.position);
         }
         
-        private void KeepSpriteRelativeToMouse(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
+        public void AssignNewStomach(StomachMovable stomachMovable)
         {
-            spriteRefGo.transform.position = new Vector3(mousePos.x - offset.x, mousePos.y - offset.y, spriteRefGo.transform.position.z);
+            this.stomach = stomachMovable;
+        }
+        
+        public void AssignNewLiver(LiverMovable liverMovable)
+        {
+            this.liver = liverMovable;
+        }
+        
+        public void AssignNewKidney(KidneyMovable kidneyMovable)
+        {
+            if (kidneyMovable.isLefKidney)
+            {
+                this.leftKidney = kidneyMovable;
+            }
+            else
+            {
+                this.rightKidney = kidneyMovable;
+            }
         }
 
+        public KidneyMovable GetLeftKidney()
+        {
+            return this.leftKidney;
+        }
+        
+        public KidneyMovable GetRightKidney()
+        {
+            return this.rightKidney;
+        }
+        
         private void AssignRandomCorruptedOrgans()
         {
             var corruptLiver = Random.Range(0, 1f) > .5f;
@@ -65,7 +96,7 @@ namespace Minigames.Abdomen
 
             if (corruptLiver)
             {
-                liver.SetCorrupted();
+                liver.SetCorrupted(); 
             }
             else
             {
@@ -80,6 +111,48 @@ namespace Minigames.Abdomen
             {
                 rightKidney.SetCorrupted();
             }
+        }
+        
+        private string IsCorruptedLiverOnTray(Collider2D outputElement)
+        {
+            if (outputElement.gameObject.GetComponent<LiverMovable>() != null)
+            {
+                var liverComp = outputElement.gameObject.GetComponent<LiverMovable>();
+                if (liverComp.IsCorrupted())
+                {
+                    return liverComp.gameObject.name;
+                }
+            }
+
+            return null;
+        }
+        
+        private string IsCorruptedStomachOnTray(Collider2D outputElement)
+        {
+            if (outputElement.gameObject.GetComponent<StomachMovable>() != null)
+            {
+                var stomachComp = outputElement.gameObject.GetComponent<StomachMovable>();
+                if (stomachComp.IsCorrupted())
+                {
+                    return stomachComp.gameObject.name;
+                }
+            }
+
+            return null;
+        }
+        
+        private string IsCorruptedKidneyOnTray(Collider2D outputElement)
+        {
+            if (outputElement.gameObject.GetComponent<KidneyMovable>() != null)
+            {
+                var kidneyComp = outputElement.gameObject.GetComponent<KidneyMovable>();
+                if (kidneyComp.IsCorrupted())
+                {
+                    return kidneyComp.gameObject.name;
+                }
+            }
+
+            return null;
         }
     }
 }

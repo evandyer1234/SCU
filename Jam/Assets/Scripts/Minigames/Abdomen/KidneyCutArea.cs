@@ -5,13 +5,13 @@ namespace Minigames.Abdomen
 {
     public class KidneyCutArea : MonoBehaviour
     {
-        [SerializeField] private KidneyMovable kidneyMovableRef;
+        [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private SpriteRenderer hoverOutlineRef;
+        [SerializeField] private bool isLeftKidney;
 
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         private CustomCursor cursorRef;
-        private MG_Abdomen abdomenRef;
         
         private void Awake()
         {
@@ -23,8 +23,6 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
-            abdomenRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_ABDOMEN)
-                .GetComponent<MG_Abdomen>();
         }
         
         private void OnMouseOver()
@@ -49,9 +47,10 @@ namespace Minigames.Abdomen
         
         private void MouseLeftClick()
         {
-            if (kidneyMovableRef.IsCorrupted())
+            var kidneyMovable = this.isLeftKidney ? abdomenRef.GetLeftKidney() : abdomenRef.GetRightKidney();
+            if (kidneyMovable.IsCorrupted())
             {
-                kidneyMovableRef.CutConnection();    
+                kidneyMovable.CutConnection();    
                 isConnected = false;
                 hoverOutlineRef.enabled = false;
             }

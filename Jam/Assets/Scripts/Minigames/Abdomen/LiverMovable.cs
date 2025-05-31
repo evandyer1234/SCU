@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
 
@@ -5,6 +6,8 @@ namespace Minigames.Abdomen
 {
     public class LiverMovable : MonoBehaviour
     {
+        [SerializeField] private MG_Abdomen abdomenRef;
+        [SerializeField] private LiverPlaceholder _liverPlaceholder;
         [SerializeField] private bool isConnected;
 
         private SCUInputAction _scuInputAction;
@@ -23,6 +26,7 @@ namespace Minigames.Abdomen
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
             yRootPosition = gameObject.transform.position;
+            _liverPlaceholder.SetLastKnownLiverRootPosition(yRootPosition);
             healthyLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_HEALTHY);
             corruptLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyLiverSprite;
@@ -56,11 +60,39 @@ namespace Minigames.Abdomen
             {
                 MouseLeftClick();
             }
+
+            if (MouseInput.LeftReleased(_scuInputAction))
+            {
+                followMouse = false;
+                if (!_liverPlaceholder.isEmpty) return;
+                
+                var coll = gameObject.GetComponent<PolygonCollider2D>();
+                var allColliders = new List<Collider2D>();
+                Physics2D.OverlapCollider(coll, new ContactFilter2D(), allColliders);
+                
+                foreach (var currColl in allColliders)
+                {
+                    if (currColl.GetComponent<LiverPlaceholder>() != null)
+                    {
+                        if (!isCorrupted)
+                        {
+                            transform.position = _liverPlaceholder.GetLastKnownLiverPosition();
+                            yRootPosition = _liverPlaceholder.GetLastKnownLiverRootPosition();
+                            abdomenRef.AssignNewLiver(this);
+                            isConnected = true;
+                        }
+
+                        break;
+                    }
+                }
+            }
         }
 
         public void CutConnection()
         {
             isConnected = false;
+            _liverPlaceholder.SetLastKnownLiverPosition(gameObject.transform.position);
+            _liverPlaceholder.isEmpty = true;
         }
 
         public void SetCorrupted()
@@ -84,7 +116,7 @@ namespace Minigames.Abdomen
         private void KeepSpriteRelativeToMouseY(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
         {
             var spritePos = spriteRefGo.transform.position;
-            var yDiffFromRoot = yRootPosition.y - mousePos.y;
+            var yDiffFromRoot = yRootPosition.y - mousePos.y + offsetLiver.y;
             var newY = yDiffFromRoot < -yMoveArea ? (yRootPosition.y + yMoveArea) : (yDiffFromRoot > yMoveArea ? (yRootPosition.y - yMoveArea) : ((mousePos.y) - offset.y));
             spriteRefGo.transform.position = new Vector3(spritePos.x, newY, spritePos.z);
         }

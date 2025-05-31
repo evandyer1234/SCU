@@ -116,7 +116,7 @@ Transform:
   m_Children:
   - {fileID: 6350103147947845993}
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &999149674140775309
 CircleCollider2D:
@@ -148,6 +148,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   liverMovableRef: {fileID: 6125949926776546096}
   hoverOutlineRef: {fileID: 6287696068446352176}
+--- !u!1 &1966375876766249188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3221274173428452381}
+  - component: {fileID: 8901703270463612915}
+  - component: {fileID: 3941554225874475104}
+  m_Layer: 0
+  m_Name: RightKidneyPlaceholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3221274173428452381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966375876766249188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.43, y: 0.39, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2165770286739372365}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8901703270463612915
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966375876766249188}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!114 &3941554225874475104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966375876766249188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b692b1cada417381fa63fe609ffc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLeftKidneyPlaceholder: 0
+  isEmpty: 0
 --- !u!1 &2165770285747023856
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +390,7 @@ GameObject:
   - component: {fileID: 2165770286625872470}
   - component: {fileID: 2165770286625872469}
   m_Layer: 0
-  m_Name: CircleWriting
+  m_Name: OutputTray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -435,18 +498,22 @@ Transform:
   - {fileID: 2165770286625872470}
   - {fileID: 2165770286797647068}
   - {fileID: 3973186453657517753}
+  - {fileID: 4083080521391346816}
   - {fileID: 8891408679016773803}
   - {fileID: 78803645365875888}
   - {fileID: 6684085092615107036}
+  - {fileID: 2526575061226657271}
   - {fileID: 5190923272132353847}
+  - {fileID: 3221274173428452381}
   - {fileID: 2526583138111642547}
   - {fileID: 6149640996884970678}
   - {fileID: 2614419690624781774}
+  - {fileID: 8629233888180053265}
   - {fileID: 4819518995422186499}
   - {fileID: 516105155466727244}
   - {fileID: 743126729685317454}
-  - {fileID: 3824443354227921789}
   - {fileID: 7104756884764119574}
+  - {fileID: 3824443354227921789}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -469,6 +536,7 @@ MonoBehaviour:
   liver: {fileID: 6125949926776546096}
   leftKidney: {fileID: 8797995025320253859}
   rightKidney: {fileID: 8699774028989056669}
+  outputTray: {fileID: 2165770286625872471}
 --- !u!1 &2165770286797647069
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +653,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 16
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2307038033389453176
 SpriteRenderer:
@@ -690,6 +758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903e832ec727462d80061fc0b89a97fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kidneyPlaceholder: {fileID: 3941554225874475104}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 0
   isLefKidney: 0
 --- !u!1 &3049045294640819430
@@ -724,7 +794,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &871795361230445062
 SpriteRenderer:
@@ -828,8 +898,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903e832ec727462d80061fc0b89a97fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kidneyPlaceholder: {fileID: 8632235589559158443}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 1
   isLefKidney: 1
+--- !u!1 &3424605320813694822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4083080521391346816}
+  - component: {fileID: 8675658234987493671}
+  - component: {fileID: 7664949341865244356}
+  m_Layer: 0
+  m_Name: LiverPlaceholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4083080521391346816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424605320813694822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.42, y: 2.63, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2165770286739372365}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8675658234987493671
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424605320813694822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!114 &7664949341865244356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424605320813694822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad0aeda9a7844f0a9cab63205375cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEmpty: 0
 --- !u!1 &3571090534475281453
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,12 +991,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3571090534475281453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6999998, y: 1.3400006, z: 4}
+  m_LocalPosition: {x: 3.6999998, y: 1.3, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8613147079116184441
 SpriteRenderer:
@@ -963,6 +1097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stomachConnection: {fileID: 4999966891594846212}
+  stomachPlaceholder: {fileID: 7943432565150902491}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 1
 --- !u!1 &3685248241121114679
 GameObject:
@@ -996,7 +1132,7 @@ Transform:
   - {fileID: 7301004486577775914}
   - {fileID: 5292520357484803081}
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4652101032019580393
 SpriteRenderer:
@@ -1082,7 +1218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7071663084354113151
 SpriteRenderer:
@@ -1186,8 +1322,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903e832ec727462d80061fc0b89a97fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kidneyPlaceholder: {fileID: 8632235589559158443}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 0
-  isLefKidney: 0
+  isLefKidney: 1
 --- !u!1 &4289643695643911202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1421,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1312205719181992892
 SpriteRenderer:
@@ -1369,7 +1507,7 @@ Transform:
   - {fileID: 6514684331278885976}
   - {fileID: 8940979805310833583}
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1085142997266382550
 SpriteRenderer:
@@ -1469,8 +1607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2409175db34f949ce0f7de8c9bc806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidneyMovableRef: {fileID: 8699774028989056669}
+  abdomenRef: {fileID: 8491439503950256908}
   hoverOutlineRef: {fileID: 7814706964017720767}
+  isLeftKidney: 0
 --- !u!58 &1083603893554537216
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1752,7 +1891,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5181140849331251656
 SpriteRenderer:
@@ -1857,6 +1996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903e832ec727462d80061fc0b89a97fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kidneyPlaceholder: {fileID: 3941554225874475104}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 1
   isLefKidney: 0
 --- !u!1 &6689508701739073572
@@ -1905,8 +2046,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2409175db34f949ce0f7de8c9bc806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidneyMovableRef: {fileID: 8797995025320253859}
+  abdomenRef: {fileID: 8491439503950256908}
   hoverOutlineRef: {fileID: 8993973479227439171}
+  isLeftKidney: 1
 --- !u!58 &4328139292419561068
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2037,7 +2179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4869590844499127635
 SpriteRenderer:
@@ -2189,6 +2331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa20bffcc7be4968ab46e07c5e0f557b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abdomenRef: {fileID: 8491439503950256908}
+  _liverPlaceholder: {fileID: 7664949341865244356}
   isConnected: 1
 --- !u!60 &4446168288724997251
 PolygonCollider2D:
@@ -2226,6 +2370,68 @@ PolygonCollider2D:
       - {x: -1.32, y: -1.3}
       - {x: -2.17, y: -1.69}
       - {x: -2.65, y: -1.59}
+--- !u!1 &8160535902504718385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8629233888180053265}
+  - component: {fileID: 4104568467810073140}
+  - component: {fileID: 7943432565150902491}
+  m_Layer: 0
+  m_Name: StomachPlaceholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8629233888180053265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160535902504718385}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7, y: 1.3, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2165770286739372365}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4104568467810073140
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160535902504718385}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!114 &7943432565150902491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160535902504718385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e773c0f53f417eb00f1daf3d8e9823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEmpty: 0
 --- !u!1 &8488772534624674164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2464,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 15
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5573777186710535887
 SpriteRenderer:
@@ -2324,6 +2530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa20bffcc7be4968ab46e07c5e0f557b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abdomenRef: {fileID: 8491439503950256908}
+  _liverPlaceholder: {fileID: 7664949341865244356}
   isConnected: 0
 --- !u!60 &4960867981763718583
 PolygonCollider2D:
@@ -2361,6 +2569,69 @@ PolygonCollider2D:
       - {x: -1.32, y: -1.3}
       - {x: -2.17, y: -1.69}
       - {x: -2.65, y: -1.59}
+--- !u!1 &8526239325826138521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2526575061226657271}
+  - component: {fileID: 5958864737745529262}
+  - component: {fileID: 8632235589559158443}
+  m_Layer: 0
+  m_Name: LeftKidneyPlaceholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2526575061226657271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526239325826138521}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.84, y: 0.62, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2165770286739372365}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &5958864737745529262
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526239325826138521}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.75
+--- !u!114 &8632235589559158443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8526239325826138521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b692b1cada417381fa63fe609ffc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLeftKidneyPlaceholder: 1
+  isEmpty: 0
 --- !u!1 &8961077905494390644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2748,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2165770286739372365}
-  m_RootOrder: 14
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8620568576538108870
 SpriteRenderer:
@@ -2578,6 +2849,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stomachConnection: {fileID: 4999966891594846212}
+  stomachPlaceholder: {fileID: 7943432565150902491}
+  abdomenRef: {fileID: 8491439503950256908}
   isConnected: 0
 --- !u!1 &9143956447369212984
 GameObject:

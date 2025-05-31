@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ namespace Minigames.Abdomen
     public class StomachMovable : MonoBehaviour
     {
         [SerializeField] private GameObject stomachConnection;
+        [SerializeField] private StomachPlaceholder stomachPlaceholder;
+        [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private bool isConnected;
         
         private Sprite healthyStomachSprite;
@@ -29,13 +32,12 @@ namespace Minigames.Abdomen
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
-            yRootPosition = gameObject.transform.position;
-            yConnToStomachDiff = stomachConnection.transform.position.y - gameObject.transform.position.y;
+            InitializeStomachOffsets(gameObject.transform.position);
             healthyStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_HEALTHY);
             corruptStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyStomachSprite;
         }
-        
+
         private void Update()
         {
             if (followMouse)
@@ -65,6 +67,32 @@ namespace Minigames.Abdomen
             {
                 MouseLeftClick();
             }
+
+            if (MouseInput.LeftReleased(_scuInputAction))
+            {
+                followMouse = false;
+                if (!stomachPlaceholder.isEmpty) return;
+                
+                var coll = gameObject.GetComponent<PolygonCollider2D>();
+                var allColliders = new List<Collider2D>();
+                Physics2D.OverlapCollider(coll, new ContactFilter2D(), allColliders);
+
+                foreach (var currColl in allColliders)
+                {
+                    if (currColl.GetComponent<StomachPlaceholder>() != null)
+                    {
+                        if (!isCorrupted)
+                        {
+                            transform.position = stomachPlaceholder.GetLastKnownStomachPosition();
+                            InitializeStomachOffsets(stomachPlaceholder.GetLastKnownStomachRootPosition());
+                            abdomenRef.AssignNewStomach(this);
+                            isConnected = true;
+                        }
+
+                        break;
+                    }
+                }
+            }
         }
 
         public void CutTopConnection()
@@ -72,6 +100,8 @@ namespace Minigames.Abdomen
             isTopConnectionCut = true;
             if (isBottomConnectionCut)
             {
+                stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
+                stomachPlaceholder.isEmpty = true;
                 isConnected = false;
             }
         }
@@ -81,6 +111,8 @@ namespace Minigames.Abdomen
             isBottomConnectionCut = true;
             if (isTopConnectionCut)
             {
+                stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
+                stomachPlaceholder.isEmpty = true;
                 isConnected = false;
             }
         }
@@ -103,10 +135,17 @@ namespace Minigames.Abdomen
             followMouse = true;
         }
         
+        private void InitializeStomachOffsets(Vector3 rootPos)
+        {
+            yRootPosition = rootPos;
+            yConnToStomachDiff = stomachConnection.transform.position.y - gameObject.transform.position.y;
+            stomachPlaceholder.SetLastKnownStomachRootPosition(yRootPosition);
+        }
+        
         private float KeepSpriteRelativeToMouseY(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
         {
             var spritePos = spriteRefGo.transform.position;
-            var yDiffFromRoot = yRootPosition.y - mousePos.y;
+            var yDiffFromRoot = yRootPosition.y - mousePos.y + offsetStomach.y;
             var newY = yDiffFromRoot < -yMoveArea ? (yRootPosition.y + yMoveArea) : (yDiffFromRoot > yMoveArea ? (yRootPosition.y - yMoveArea) : ((mousePos.y) - offset.y));
             spriteRefGo.transform.position = new Vector3(spritePos.x, newY, spritePos.z);
             return newY;
