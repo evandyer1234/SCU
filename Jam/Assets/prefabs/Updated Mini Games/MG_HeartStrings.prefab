@@ -293,6 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1361644184394679769}
+  - component: {fileID: 3920592919435704779}
   m_Layer: 0
   m_Name: Pattern05
   m_TagString: Untagged
@@ -320,6 +321,24 @@ Transform:
   m_Father: {fileID: 1262437563243944676}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3920592919435704779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118174029657035072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1350526f54116bc5a5c84651cecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _veinOutlineHints:
+  - {fileID: 8831105003174334537}
+  - {fileID: 6869890900633644624}
+  - {fileID: 3101170071287747998}
+  - {fileID: 1572753664676272676}
+  - {fileID: 5800588709873561180}
 --- !u!1 &223109865260713493
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6891861057943926763}
+  - component: {fileID: 3032356225731895104}
   m_Layer: 0
   m_Name: Pattern01
   m_TagString: Untagged
@@ -356,6 +376,24 @@ Transform:
   m_Father: {fileID: 1262437563243944676}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3032356225731895104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223109865260713493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1350526f54116bc5a5c84651cecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _veinOutlineHints:
+  - {fileID: 5056482686581280657}
+  - {fileID: 9113714230507704113}
+  - {fileID: 8729511021502555071}
+  - {fileID: 1056964716567864844}
+  - {fileID: 158716730030066503}
 --- !u!1 &230729394664220912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 3129823702297698910}
-  iconIndex: 0
+  iconIndex: 4
 --- !u!1 &699392997949629562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 7156542791857382760}
-  iconIndex: 0
+  iconIndex: 2
 --- !u!1 &759224796223061691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,12 +2802,12 @@ MonoBehaviour:
   - {fileID: 1262437562453536439}
   - {fileID: 1262437562036361252}
   - {fileID: 1262437562052188235}
-  _veinOutlineHints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _heartStringPatterns:
+  - {fileID: 3032356225731895104}
+  - {fileID: 131249893701659030}
+  - {fileID: 6150189503273178799}
+  - {fileID: 8392102558073584602}
+  - {fileID: 3920592919435704779}
   _corruptionIcon: {fileID: 21300000, guid: 7745dca01ceeb574c90cdb800c89dbbf, type: 3}
 --- !u!1 &1325993934165066106
 GameObject:
@@ -3526,7 +3564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 5646408588073107293}
-  iconIndex: 0
+  iconIndex: 1
 --- !u!1 &1979410434666466959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,7 +4200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 3158381786408514727}
-  iconIndex: 0
+  iconIndex: 4
 --- !u!1 &2754903276420081324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,7 +4300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 5522085237304425748}
-  iconIndex: 0
+  iconIndex: 3
 --- !u!1 &3095511959558554587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,7 +4968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 3663987000722615733}
-  iconIndex: 0
+  iconIndex: 2
 --- !u!1 &3592108354854866251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,7 +5236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 2425432189967001819}
-  iconIndex: 0
+  iconIndex: 3
 --- !u!1 &3948430008280035390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,7 +5300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 3095511959558554587}
-  iconIndex: 0
+  iconIndex: 1
 --- !u!1 &3972288866324981532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,7 +5632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 8162992395635698990}
-  iconIndex: 0
+  iconIndex: 1
 --- !u!1 &4111405020128743672
 GameObject:
   m_ObjectHideFlags: 0
@@ -6204,6 +6242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7076321418148958564}
+  - component: {fileID: 6150189503273178799}
   m_Layer: 0
   m_Name: Pattern03
   m_TagString: Untagged
@@ -6231,6 +6270,24 @@ Transform:
   m_Father: {fileID: 1262437563243944676}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6150189503273178799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4930238612213029737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1350526f54116bc5a5c84651cecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _veinOutlineHints:
+  - {fileID: 256401688773420317}
+  - {fileID: 3850858049328526692}
+  - {fileID: 9036401291439801158}
+  - {fileID: 2981278189566482619}
+  - {fileID: 8635328278627187545}
 --- !u!1 &4957070947366312241
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,7 +6471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 3735222200602170576}
-  iconIndex: 0
+  iconIndex: 1
 --- !u!1 &5389377952273600725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,7 +7155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 6236426957100676420}
-  iconIndex: 0
+  iconIndex: 2
 --- !u!1 &5702029419088742930
 GameObject:
   m_ObjectHideFlags: 0
@@ -7246,7 +7303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 5468787423417486705}
-  iconIndex: 0
+  iconIndex: 4
 --- !u!1 &5766222996500427979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7424,6 +7481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 435968579282410514}
+  - component: {fileID: 131249893701659030}
   m_Layer: 0
   m_Name: Pattern02
   m_TagString: Untagged
@@ -7451,6 +7509,24 @@ Transform:
   m_Father: {fileID: 1262437563243944676}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &131249893701659030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864088473740915590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1350526f54116bc5a5c84651cecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _veinOutlineHints:
+  - {fileID: 1069222753083626104}
+  - {fileID: 4681828925378207597}
+  - {fileID: 7225713825997600820}
+  - {fileID: 8919609101174617490}
+  - {fileID: 4776123059039226342}
 --- !u!1 &5951763647037689291
 GameObject:
   m_ObjectHideFlags: 0
@@ -8790,7 +8866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 8930883196885826768}
-  iconIndex: 0
+  iconIndex: 3
 --- !u!1 &7156542791857382760
 GameObject:
   m_ObjectHideFlags: 0
@@ -9446,7 +9522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 6448699816447243302}
-  iconIndex: 0
+  iconIndex: 1
 --- !u!1 &7586399134366276229
 GameObject:
   m_ObjectHideFlags: 0
@@ -10270,7 +10346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 5766222996500427979}
-  iconIndex: 0
+  iconIndex: 2
 --- !u!1 &8068386003529902004
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,7 +10410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 759224796223061691}
-  iconIndex: 0
+  iconIndex: 4
 --- !u!1 &8146736688712123104
 GameObject:
   m_ObjectHideFlags: 0
@@ -10398,7 +10474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 4837672950684563802}
-  iconIndex: 0
+  iconIndex: 3
 --- !u!1 &8162992395635698990
 GameObject:
   m_ObjectHideFlags: 0
@@ -10646,7 +10722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 7435283975765111881}
-  iconIndex: 0
+  iconIndex: 4
 --- !u!1 &8366630707757748644
 GameObject:
   m_ObjectHideFlags: 0
@@ -10930,7 +11006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 504185657827064974}
-  iconIndex: 0
+  iconIndex: 2
 --- !u!1 &8594144178590790795
 GameObject:
   m_ObjectHideFlags: 0
@@ -11040,6 +11116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8374881732974007682}
+  - component: {fileID: 8392102558073584602}
   m_Layer: 0
   m_Name: Pattern04
   m_TagString: Untagged
@@ -11067,6 +11144,24 @@ Transform:
   m_Father: {fileID: 1262437563243944676}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8392102558073584602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8634287445308782179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb1350526f54116bc5a5c84651cecfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _veinOutlineHints:
+  - {fileID: 2334831661860220199}
+  - {fileID: 3223471604217922276}
+  - {fileID: 7705362343724204614}
+  - {fileID: 7021245932619745710}
+  - {fileID: 6890168907647149501}
 --- !u!1 &8715643271607436038
 GameObject:
   m_ObjectHideFlags: 0
@@ -11650,7 +11745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartStringMinigameRef: {fileID: 1262437563243944678}
   veinOutline: {fileID: 5599945589967410886}
-  iconIndex: 0
+  iconIndex: 3
 --- !u!1 &9063356445114358253
 GameObject:
   m_ObjectHideFlags: 0

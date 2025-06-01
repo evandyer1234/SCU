@@ -5,88 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)1-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)1-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)2-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)2-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)3-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)3-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)4-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)4-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)5-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)5-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 1/(1)layout.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)1-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)1-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)2-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)2-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)3-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)3-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)4-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)4-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)5-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)5-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 2/(2)layout.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)1-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)1-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)2-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)3-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)3-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)4-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)4-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)5-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)5-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 3/(3)layout.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)1-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)1-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)2-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)2-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)3-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)3-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)4-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)4-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)5-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)5-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 4/(4)layout.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)1-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)1-5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)2-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)2-3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)3-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)3-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)4-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)4-4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)5-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)5-1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/pattern 5/(5)layout.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/corruption.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/corruption.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/heart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/heart.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/small-heart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/small-heart.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Heart strings game/vein5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,15 +50,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/c2/553e5f81/PolygonCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/KidneyMovable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/Updated Mini Games/MG_Abdomen.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
@@ -147,22 +63,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "alex-heartstring-extension",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-heartstring-extension&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
@@ -306,7 +222,8 @@
       <workItem from="1748539403942" duration="9118000" />
       <workItem from="1748641014174" duration="2684000" />
       <workItem from="1748673967420" duration="33975000" />
-      <workItem from="1748770004065" duration="2218000" />
+      <workItem from="1748770004065" duration="3336000" />
+      <workItem from="1748799268327" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -628,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748714761999</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Add Sprites for new Heartstring Patterns">
+      <option name="closed" value="true" />
+      <created>1748775168876</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1748775168876</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +581,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Load Patient specific sprite by patient order" />
     <MESSAGE value="Patient parameterizing sprites" />
     <MESSAGE value="Add intro and seperate launchable Patients" />
     <MESSAGE value="Place corruption mark and launch minigames per patient" />
@@ -681,6 +605,7 @@
     <MESSAGE value="Placeholders and win condition" />
     <MESSAGE value="Fix bug constant re-assign healthy element" />
     <MESSAGE value="Fixing curing condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing curing condition" />
+    <MESSAGE value="Add Sprites for new Heartstring Patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Sprites for new Heartstring Patterns" />
   </component>
 </project>
