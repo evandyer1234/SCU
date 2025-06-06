@@ -117,6 +117,50 @@ MonoBehaviour:
     m_Address: proto_plant
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: d30f39f77f318234188889acc5b78356
+    m_Address: cursor_scalpel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b7e849651733de740bae16f70106278b
+    m_Address: cursor_glove
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 84e603cd939d34f4589c13b9cf1f8d00
+    m_Address: cursor_glove_pressed
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7afc230c66f56ec4992bcead3ef68c00
+    m_Address: liver_healthy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb403e0a9558b1c4daad0e25f6b9a082
+    m_Address: liver_corrupt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4d64cf540524a9746a1ed1efedc1beb9
+    m_Address: stomach_healthy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a2e24d810a58d4b408b17f28c4eaf208
+    m_Address: stomach_corrupt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9968d6480232c814eb5a8cb5e0cdddad
+    m_Address: kidney_r_healthy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 361ca9c53da946f4ca1575139882b930
+    m_Address: kidney_r_corrupt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9ca59ec4a43c5ee4ab5dfc025529ff7c
+    m_Address: kidney_l_healthy
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5f4dadffa2e67d346856e24a402cf2d6
+    m_Address: kidney_l_corrupt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
   m_SchemaSet:

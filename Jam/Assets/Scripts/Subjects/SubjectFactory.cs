@@ -78,11 +78,11 @@ namespace Subjects
             List<string> minigames15 = new List<string>()
             {
                 NamingConstants.TAG_MINIGAME_HEARTSTRING,
-                NamingConstants.TAG_MINIGAME_LUNGPUMP,
+                NamingConstants.TAG_MINIGAME_ABDOMEN,
                 NamingConstants.TAG_MINIGAME_DRAIN,
             };
             Subject subject15 = CreateSubject(
-                SubjectManager.SUBJECT_NAME_15, 
+                SubjectManager.SUBJECT_NAME_15,
                 SUBJECT_SPRITENAME_OUTFIT_15, 
                 SUBJECT_SPRITENAME_UNDER_15, 
                 SUBJECT_SPRITENAME_ORGANS_15, 

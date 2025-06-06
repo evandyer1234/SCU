@@ -5,7 +5,6 @@ using Helpers;
 using Subjects;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MiniGameManager : MonoBehaviour
@@ -108,7 +107,7 @@ public class MiniGameManager : MonoBehaviour
     private bool AllMinigamesFinished()
     {
         return miniGamesFinishedState.Where(state => state.Value)
-            .ToList().Count() == miniGames.Count;
+            .ToList().Count() == _subjectManager.currentSubject.subjectMinigames.Count();
     }
     
     private void SetTimerText(string _inText)

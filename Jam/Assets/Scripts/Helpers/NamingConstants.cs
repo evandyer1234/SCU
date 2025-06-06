@@ -25,6 +25,7 @@ namespace Helpers
         public const string TAG_MINIGAME_HEARTSTRING = "MinigameHeartstring";
         public const string TAG_MINIGAME_LUNGPUMP = "MinigameLungpump";
         public const string TAG_MINIGAME_DRAIN = "MinigameDrain";
+        public const string TAG_MINIGAME_ABDOMEN = "MinigameAbdomen";
         
         // OTHER
         public const string TAG_PLAYER = "Player";

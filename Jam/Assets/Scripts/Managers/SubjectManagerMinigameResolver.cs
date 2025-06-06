@@ -28,6 +28,8 @@ namespace Managers
                     return magnifyingGlass.leftLensReference;
                 case NamingConstants.TAG_MINIGAME_DRAIN:
                     return magnifyingGlass.middleLensReference;
+                case NamingConstants.TAG_MINIGAME_ABDOMEN:
+                    return magnifyingGlass.leftLensReference;
             }
         
             Debug.LogWarning($"Failed to match Magnifying Glass Lens for minigameId {minigameId}");
@@ -44,6 +46,8 @@ namespace Managers
                     return patientPage.organLayer;
                 case NamingConstants.TAG_MINIGAME_DRAIN:
                     return patientPage.underClothLayer;
+                case NamingConstants.TAG_MINIGAME_ABDOMEN:
+                    return patientPage.organLayer;
             }
 
             Debug.LogWarning($"Failed to match Patient Scan Layer for minigameId {minigameId}");

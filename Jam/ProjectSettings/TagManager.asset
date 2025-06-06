@@ -20,6 +20,7 @@ TagManager:
   - CustomCursor
   - AlchemyManager
   - SceneFade
+  - MinigameAbdomen
   layers:
   - Default
   - TransparentFX
