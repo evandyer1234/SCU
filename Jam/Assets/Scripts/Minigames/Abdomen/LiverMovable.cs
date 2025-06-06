@@ -26,12 +26,11 @@ namespace Minigames.Abdomen
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
             yRootPosition = gameObject.transform.position;
-            _liverPlaceholder.SetLastKnownLiverRootPosition(yRootPosition);
             healthyLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_HEALTHY);
             corruptLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyLiverSprite;
         }
-        
+
         private void Update()
         {
             if (followMouse)
@@ -93,6 +92,7 @@ namespace Minigames.Abdomen
         {
             isConnected = false;
             _liverPlaceholder.SetLastKnownLiverPosition(gameObject.transform.position);
+            _liverPlaceholder.SetLastKnownLiverRootPosition(yRootPosition);
             _liverPlaceholder.isEmpty = true;
         }
 

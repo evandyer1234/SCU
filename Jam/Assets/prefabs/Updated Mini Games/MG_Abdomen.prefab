@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stomachConnection: {fileID: 4999966891594846212}
-  stomachPlaceholder: {fileID: 7943432565150902491}
+  _stomachPlaceholder: {fileID: 7943432565150902491}
   abdomenRef: {fileID: 8491439503950256908}
   isConnected: 1
 --- !u!1 &3685248241121114679
@@ -2849,7 +2849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stomachConnection: {fileID: 4999966891594846212}
-  stomachPlaceholder: {fileID: 7943432565150902491}
+  _stomachPlaceholder: {fileID: 7943432565150902491}
   abdomenRef: {fileID: 8491439503950256908}
   isConnected: 0
 --- !u!1 &9143956447369212984

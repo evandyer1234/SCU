@@ -7,7 +7,7 @@ namespace Minigames.Abdomen
     public class StomachMovable : MonoBehaviour
     {
         [SerializeField] private GameObject stomachConnection;
-        [SerializeField] private StomachPlaceholder stomachPlaceholder;
+        [SerializeField] private StomachPlaceholder _stomachPlaceholder;
         [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private bool isConnected;
         
@@ -37,7 +37,7 @@ namespace Minigames.Abdomen
             corruptStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyStomachSprite;
         }
-
+        
         private void Update()
         {
             if (followMouse)
@@ -71,7 +71,7 @@ namespace Minigames.Abdomen
             if (MouseInput.LeftReleased(_scuInputAction))
             {
                 followMouse = false;
-                if (!stomachPlaceholder.isEmpty) return;
+                if (!_stomachPlaceholder.isEmpty) return;
                 
                 var coll = gameObject.GetComponent<PolygonCollider2D>();
                 var allColliders = new List<Collider2D>();
@@ -83,11 +83,11 @@ namespace Minigames.Abdomen
                     {
                         if (!isCorrupted)
                         {
-                            transform.position = stomachPlaceholder.GetLastKnownStomachPosition();
-                            InitializeStomachOffsets(stomachPlaceholder.GetLastKnownStomachRootPosition());
+                            transform.position = _stomachPlaceholder.GetLastKnownStomachPosition();
+                            InitializeStomachOffsets(_stomachPlaceholder.GetLastKnownStomachRootPosition());
                             abdomenRef.AssignNewStomach(this);
                             isConnected = true;
-                            stomachPlaceholder.isEmpty = false;
+                            _stomachPlaceholder.isEmpty = false;
                         }
 
                         break;
@@ -101,8 +101,9 @@ namespace Minigames.Abdomen
             isTopConnectionCut = true;
             if (isBottomConnectionCut)
             {
-                stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
-                stomachPlaceholder.isEmpty = true;
+                _stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
+                _stomachPlaceholder.SetLastKnownStomachRootPosition(yRootPosition);
+                _stomachPlaceholder.isEmpty = true;
                 isConnected = false;
             }
         }
@@ -112,8 +113,9 @@ namespace Minigames.Abdomen
             isBottomConnectionCut = true;
             if (isTopConnectionCut)
             {
-                stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
-                stomachPlaceholder.isEmpty = true;
+                _stomachPlaceholder.SetLastKnownStomachPosition(transform.position);
+                _stomachPlaceholder.SetLastKnownStomachRootPosition(yRootPosition);
+                _stomachPlaceholder.isEmpty = true;
                 isConnected = false;
             }
         }
@@ -140,7 +142,6 @@ namespace Minigames.Abdomen
         {
             yRootPosition = rootPos;
             yConnToStomachDiff = stomachConnection.transform.position.y - gameObject.transform.position.y;
-            stomachPlaceholder.SetLastKnownStomachRootPosition(yRootPosition);
         }
         
         private float KeepSpriteRelativeToMouseY(GameObject spriteRefGo, Vector3 mousePos, Vector3 offset)
