@@ -13,6 +13,7 @@ namespace Minigames.Abdomen
         
         private Vector3 offsetKidney;
         private bool followMouse;
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
         
         private Sprite healthyRightKidneySprite;
@@ -37,10 +38,15 @@ namespace Minigames.Abdomen
             {
                 GetComponent<SpriteRenderer>().sprite = healthyRightKidneySprite;
             }
+            
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
         }
         
         private void Update()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
@@ -57,6 +63,8 @@ namespace Minigames.Abdomen
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();

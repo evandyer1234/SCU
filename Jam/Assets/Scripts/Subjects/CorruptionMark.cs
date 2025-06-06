@@ -18,6 +18,7 @@ namespace Subjects
         
         private bool miniGameLaunched = false;
         
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
 
         private MagnifyingGlassShadow glassShadowRef;
@@ -41,16 +42,21 @@ namespace Subjects
                 .GetComponent<MagnifyingGlassShadow>();
             _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
                 .GetComponent<MiniGameManager>();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
             activeColor = GetComponent<SpriteRenderer>().color;
         }
 
         public void FixedUpdate()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             PaintCorruptionMarkByActivity();
         }
         
         void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!glassShadowRef.GetMagnifyingGlassInUse()) return;
             if (miniGameLaunched) return;
             

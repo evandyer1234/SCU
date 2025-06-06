@@ -10,6 +10,7 @@ namespace Minigames.Abdomen
         [SerializeField] private LiverPlaceholder _liverPlaceholder;
         [SerializeField] private bool isConnected;
 
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
         
         private Sprite healthyLiverSprite;
@@ -29,10 +30,14 @@ namespace Minigames.Abdomen
             healthyLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_HEALTHY);
             corruptLiverSprite = FileLoader.GetSpriteByName(FileConstants.SPR_LIVER_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyLiverSprite;
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
         }
 
         private void Update()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
@@ -55,6 +60,8 @@ namespace Minigames.Abdomen
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();

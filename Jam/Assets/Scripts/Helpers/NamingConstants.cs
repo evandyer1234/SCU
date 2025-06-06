@@ -20,6 +20,7 @@ namespace Helpers
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
         public const string TAG_CUSTOM_CURSOR = "CustomCursor";
         public const string TAG_SCENE_FADE = "SceneFade";
+        public const string TAG_PAUSE_MENU_MANAGER = "PauseMenuManager";
         
         // MINIGAMES
         public const string TAG_MINIGAME_HEARTSTRING = "MinigameHeartstring";

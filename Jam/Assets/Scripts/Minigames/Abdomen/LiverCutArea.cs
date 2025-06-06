@@ -8,6 +8,7 @@ namespace Minigames.Abdomen
         [SerializeField] private MG_Abdomen abdomenRef;
         [SerializeField] private SpriteRenderer hoverOutlineRef;
 
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
         private bool isConnected = true;
         private CustomCursor cursorRef;
@@ -22,10 +23,14 @@ namespace Minigames.Abdomen
         {
             cursorRef = GameObject.FindGameObjectWithTag(NamingConstants.TAG_CUSTOM_CURSOR)
                 .GetComponent<CustomCursor>();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
         }
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();

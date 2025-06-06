@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PauseMenuManager : MonoBehaviour
 {
@@ -49,6 +50,11 @@ public class PauseMenuManager : MonoBehaviour
         Time.timeScale = 1;
 
         EnableAllTooltipsInScene(true);
+    }
+
+    public bool isGamePaused()
+    {
+        return _paused;
     }
 
     private void Pause()

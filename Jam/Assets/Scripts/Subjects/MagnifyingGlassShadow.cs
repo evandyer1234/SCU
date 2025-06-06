@@ -34,6 +34,7 @@ namespace Subjects
         private Vector3 resetRightLensPos;
 
         private MiniGameManager _miniGameManager;
+        private PauseMenuManager _pauseMenuManager;
         
         /** ****************************************************
          * **************** UNITY INTERFACE ********************
@@ -51,18 +52,24 @@ namespace Subjects
 
             _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
                 .GetComponent<MiniGameManager>();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
             
             RememberOriginalMagnifyingGlassElementPositions();
         }
         
         private void FixedUpdate()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             HandleInitialUsageHintAnimation();
             HandleResetHintAnimation();
         }
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 HandleLeftClick();

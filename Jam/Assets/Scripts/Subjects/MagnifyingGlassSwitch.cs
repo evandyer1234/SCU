@@ -63,6 +63,7 @@ namespace Subjects
         private bool usedOnce = false;
         private int hintCountdown = 500;
         
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
         
         /** ****************************************************
@@ -80,16 +81,20 @@ namespace Subjects
             switchClosed = FileLoader.GetSpriteByName(GLASS_SWITCH_CLOSED);
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
         }
 
         private void Update()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             ListenForMouseWheel();
         }
         
         private void FixedUpdate()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             
             hintCountdown--;
@@ -106,6 +111,7 @@ namespace Subjects
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             if (MouseInput.LeftClicked(_scuInputAction))
             {

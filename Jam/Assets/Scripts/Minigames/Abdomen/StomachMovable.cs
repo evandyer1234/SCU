@@ -15,6 +15,7 @@ namespace Minigames.Abdomen
         private Sprite corruptStomachSprite;
         private bool isCorrupted = false;
         
+        private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;
         
         // movement related
@@ -36,10 +37,14 @@ namespace Minigames.Abdomen
             healthyStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_HEALTHY);
             corruptStomachSprite = FileLoader.GetSpriteByName(FileConstants.SPR_STOMACH_CORRUPT);
             GetComponent<SpriteRenderer>().sprite = healthyStomachSprite;
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
         }
         
         private void Update()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
@@ -63,6 +68,8 @@ namespace Minigames.Abdomen
         
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();

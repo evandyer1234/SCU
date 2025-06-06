@@ -41,6 +41,7 @@ namespace Subjects
         
         private SCUInputAction _scuInputAction;
         private MiniGameManager _miniGameManager;
+        private PauseMenuManager _pauseMenuManager;
         private Color inactiveColor = new Color32(128, 128, 128, 255);
 
         /** ****************************************************
@@ -54,10 +55,14 @@ namespace Subjects
             _scuInputAction.UI.Enable();
             _miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
                 .GetComponent<MiniGameManager>();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                    .GetComponent<PauseMenuManager>();
         }
         
         private void Update()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             if (followMouse)
             {
                 Vector3 mouseWorldPos =  MouseInput.WorldPosition(_scuInputAction);
@@ -71,6 +76,8 @@ namespace Subjects
 
         private void FixedUpdate()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            
             PaintMagnifyingGlassByActivity();
             
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
@@ -80,7 +87,9 @@ namespace Subjects
 
         private void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
+            
             if (MouseInput.LeftClicked(_scuInputAction))
             {
                 MouseLeftClick();

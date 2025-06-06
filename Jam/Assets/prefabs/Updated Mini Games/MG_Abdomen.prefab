@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredient: 
-  penalty: 0
+  penalty: 5
   miniGameStage: 0
   stomach: {fileID: 958912206049125584}
   liver: {fileID: 6125949926776546096}

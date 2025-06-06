@@ -51,6 +51,7 @@ public class MiniGameBase : MonoBehaviour
     public void OnPenalty()
     {
         debugMessage.text = "Failure";
+        miniGameManager.subtractTime(penalty);
     }
     
     public void SwapStage(int num)

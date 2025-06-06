@@ -21,6 +21,7 @@ TagManager:
   - AlchemyManager
   - SceneFade
   - MinigameAbdomen
+  - PauseMenuManager
   layers:
   - Default
   - TransparentFX

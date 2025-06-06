@@ -14,11 +14,14 @@ public class MG_HeartString : MiniGameBase
     [SerializeField, Tooltip("A reference to the corruption icon")] 
     private Sprite _corruptionIcon;
 
-    
+    private PauseMenuManager _pauseMenuManager;
     private int _correctVeinNumber;
 
     public override void Start()
     {
+        _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+            .GetComponent<PauseMenuManager>();
+        
         base.Start();
         ingredient = IngredientConstants.INGREDIENT_ID_NETTLE;
         
@@ -31,6 +34,8 @@ public class MG_HeartString : MiniGameBase
 
     public void Selection(int index)
     {
+        if (_pauseMenuManager.isGamePaused()) return;
+        
         if (index == _correctVeinNumber)
         {
             OnSuccess();

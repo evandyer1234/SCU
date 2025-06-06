@@ -15,6 +15,7 @@ namespace Minigames.HeartString
         private int iconIndex;
         
         private SCUInputAction _scuInputAction;
+        private PauseMenuManager _pauseMenuManager;
 
         private float hoveredOutlineAlpha = 0.7f;
         
@@ -22,11 +23,14 @@ namespace Minigames.HeartString
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
             SetOutlineAlpha(0f);
         }
         
         void OnMouseOver()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
             if (!veinOutline.activeInHierarchy) return;
             
             SetOutlineAlpha(hoveredOutlineAlpha);
