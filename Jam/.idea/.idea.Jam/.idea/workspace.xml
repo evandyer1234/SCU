@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SCUSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SCUSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MiniGame Page.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,8 @@
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/UI/PauseMenuManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/BaseLevelComponents/---UI---.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/BaseLevelComponents/---UI---.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/BaseLevelComponents/---UI---.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/UI/CustomCursor.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />

@@ -45,8 +45,8 @@ namespace Minigames.Lungpump
         // alternating on click collider
         private static bool colliderIsLeft = true;
         private static CircleCollider2D _onClickCollider;
-        private static Vector2 _collOffsetLeft = new Vector2(3f, 7f);
-        private static Vector2 _collOffsetRight = new Vector2(12.5f, 7f);
+        private static Vector2 _collOffsetLeft = new Vector2(3.2f, 7f);
+        private static Vector2 _collOffsetRight = new Vector2(12.2f, 7f);
 
         private PauseMenuManager _pauseMenuManager;
         private SCUInputAction _scuInputAction;

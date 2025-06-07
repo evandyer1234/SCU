@@ -1610,6 +1610,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1165064622865447997, guid: 282c0da2403a90648950841119b9225b, type: 3}
+      propertyPath: m_text
+      value: 'The Shadow Corruption is withdrawn. Now, the final step is crafting
+        an alchemical masterpiece: a potent potion.'
+      objectReference: {fileID: 0}
     - target: {fileID: 3821023867906361759, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

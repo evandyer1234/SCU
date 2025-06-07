@@ -15,7 +15,7 @@ public class SubjectManager : MonoBehaviour
     // progression state
     private Dictionary<string, Subject> subjectsToCure = new();
     private Dictionary<string, Ingredient> allIngredients = new();
-    private List<string> collectedIngredients = new();
+    private List<string> collectedIngredientHints = new();
     
     // subject ids = names
     public const string SUBJECT_NAME_04 = "subject_04";
@@ -93,9 +93,9 @@ public class SubjectManager : MonoBehaviour
 
     public void AddUniqueIngredient(string ingredientName)
     {
-        if (!collectedIngredients.Contains(ingredientName))
+        if (!collectedIngredientHints.Contains(ingredientName))
         {
-            collectedIngredients.Add(ingredientName);    
+            collectedIngredientHints.Add(ingredientName);    
         }
     }
     

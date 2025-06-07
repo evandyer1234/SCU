@@ -477,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6246576664855515350}
     m_Modifications:
+    - target: {fileID: 3914261225192150584, guid: 2d198244178cafb4f81f7a03bbace203, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3914261225192150590, guid: 2d198244178cafb4f81f7a03bbace203, type: 3}
       propertyPath: m_Name
       value: MG_LungPump
@@ -604,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165770286739372366, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2165770286739372366, guid: 349faeea624519b4bb173c9d5dcea372, type: 3}
       propertyPath: m_TagString
