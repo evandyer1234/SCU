@@ -54,6 +54,16 @@ namespace Subjects
         private Sprite switchOpen;
         private Sprite switchClosed;
 
+        //outlines
+        [Space(20)]
+        [Header("Outlines")]
+        [SerializeField] private SpriteRenderer _outlineGlassShadowSpriteRenderer;
+        [SerializeField] private SpriteRenderer _outlineGlassSpriteRenderer;
+        [SerializeField] private Sprite _outlineGlassShadowOpen;
+        [SerializeField] private Sprite _outlineGlassShadowClosed;
+        [SerializeField] private Sprite _outlineGlassOpen;
+        [SerializeField] private Sprite _outlineGlassClosed;
+
         // State Management
         private bool magnifyingGlassOpen = false;
         private int scanMode = (int) ScanMode.NONE;
@@ -134,8 +144,13 @@ namespace Subjects
             if (magnifyingGlassOpen)
             {
                 glassShadowSpriteRenderer.sprite = glassShadowOpen;
+                _outlineGlassShadowSpriteRenderer.sprite = _outlineGlassShadowOpen;
+
                 glassMainSpriteRenderer.sprite = glassOpen;
+                _outlineGlassSpriteRenderer.sprite = _outlineGlassOpen;
+
                 glassSwitchSpriteRenderer.sprite = switchOpen;
+
                 scanMode = (int) ScanMode.SKIN;
                 SetAllLensesActive(true);
                 UnfocusAllLensesAndLayers();
@@ -144,8 +159,13 @@ namespace Subjects
             else
             {
                 glassShadowSpriteRenderer.sprite = glassShadowClosed;
+                _outlineGlassShadowSpriteRenderer.sprite = _outlineGlassShadowClosed;
+
                 glassMainSpriteRenderer.sprite = glassClosed;
+                _outlineGlassSpriteRenderer.sprite = _outlineGlassClosed;
+                
                 glassSwitchSpriteRenderer.sprite = switchClosed;
+
                 UnfocusAllLensesAndLayers();
                 SetAllLensesActive(false);
             }
