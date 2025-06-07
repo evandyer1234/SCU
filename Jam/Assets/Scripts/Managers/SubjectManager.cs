@@ -108,6 +108,11 @@ public class SubjectManager : MonoBehaviour
     {
         _minigameSceneInitiationCountDown = 3;
         currentSubject = GetCurrentSubjectByName(subjectName);
+        LoadMinigameManager();
+        if (_miniGameManager != null)
+        {
+            _miniGameManager.InitializeTimer();
+        }
     }
 
     public void ResetMinigameState()

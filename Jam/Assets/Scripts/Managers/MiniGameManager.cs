@@ -23,9 +23,13 @@ public class MiniGameManager : MonoBehaviour
     private List<string> collectedIngredientsPerPatient = new();
     private float CurrentTime;
     private SubjectManager _subjectManager;
+    private PauseMenuManager _pauseMenuManager;
     
     private void Awake()
     {
+        _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+            .GetComponent<PauseMenuManager>();
+        
         foreach (var miniGame in miniGames)
         {
             miniGame.Disable();
@@ -41,18 +45,24 @@ public class MiniGameManager : MonoBehaviour
         _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
             .GetComponent<SubjectManager>();
         collectedIngredientsPerPatient = new();
-        CurrentTime = StartTime;
-        Time.timeScale = 1f;
+        InitializeTimer();
     }
     
     void FixedUpdate()
     {
         CurrentTime -= Time.fixedDeltaTime;
-        SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
-        if (CurrentTime <= 0)
+        UpdateTimerText();
+        if (CurrentTime <= 0 && !_pauseMenuManager.isGamePaused())
         {
-            Time.timeScale = 0;
+            _pauseMenuManager.SetGameOver();
+            _pauseMenuManager.Pause();
+            CurrentTime = 0;
         }
+    }
+
+    private void UpdateTimerText()
+    {
+        SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
     }
 
     public bool IsAnyMinigameRunning()
@@ -102,6 +112,19 @@ public class MiniGameManager : MonoBehaviour
     public void subtractTime(float amount)
     {
         CurrentTime -= amount;
+        if (CurrentTime <= 0)
+        {
+            CurrentTime = 0;
+            _pauseMenuManager.SetGameOver();
+            _pauseMenuManager.Pause();
+        }
+        UpdateTimerText();
+    }
+
+    public void InitializeTimer()
+    {
+        CurrentTime = StartTime;
+        Time.timeScale = 1f;
     }
     
     private bool AllMinigamesFinished()
@@ -113,16 +136,6 @@ public class MiniGameManager : MonoBehaviour
     private void SetTimerText(string _inText)
     {
         timerText.text = _inText;
-    }
-
-    public void ReloadCurrentScene()
-    {
-        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
-            .GetComponent<SubjectManager>();
-        var subjectNameBefore = _subjectManager.currentSubject.name;
-        _subjectManager.ResetMinigameState();
-        _subjectManager.LaunchMinigames(subjectNameBefore);
-        _subjectManager.GetSCUSceneManager().TransitionToScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToPotionMakingScene()

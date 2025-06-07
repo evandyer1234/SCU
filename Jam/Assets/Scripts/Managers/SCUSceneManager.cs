@@ -11,10 +11,10 @@ namespace Managers
             return SceneManager.GetActiveScene().buildIndex == NamingConstants.SCENE_ID_MAIN_MENU;
         }
         
-        public void TransitionToScene(int sceneIndex)
+        public void TransitionToScene(int sceneIndex, bool skipFade = false)
         {
             var sceneFade = ResolveSceneFadeSafely();
-            if (sceneFade != null)
+            if (sceneFade != null && !skipFade)
             {
                 sceneFade.FadeOut(() =>
                 {
@@ -27,10 +27,10 @@ namespace Managers
             }
         }
 
-        public void TransitionToScene(string sceneName)
+        public void TransitionToScene(string sceneName, bool skipFade = false)
         {
             var sceneFade = ResolveSceneFadeSafely();
-            if (sceneFade != null)
+            if (sceneFade != null && !skipFade)
             {
                 sceneFade.FadeOut(() =>
                 {

@@ -1,13 +1,17 @@
 using System.Collections.Generic;
 using Helpers;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _resumeButton;
+    [SerializeField] private GameObject _restartButton;
+    [SerializeField] private GameObject _gameOverPanel;
 
     private bool _paused;
+    private bool _gameOver;
 
     private SCUInputAction _scuInputAction;
     private List<HoverTooltip> _tooltipsInScene;
@@ -47,9 +51,15 @@ public class PauseMenuManager : MonoBehaviour
     {
         _pauseMenu.SetActive(false);
         _paused = false;
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
 
         EnableAllTooltipsInScene(true);
+    }
+
+    public void Restart()
+    {
+        Resume();
+        ReloadCurrentScene();
     }
 
     public bool isGamePaused()
@@ -57,13 +67,42 @@ public class PauseMenuManager : MonoBehaviour
         return _paused;
     }
 
-    private void Pause()
+    public void SetGameOver()
+    {
+        _gameOver = true;
+        Pause();
+    }
+
+    public void Pause()
     {
         _pauseMenu.SetActive(true);
         _paused = true;
         Time.timeScale = 0;
 
+        if (_gameOver)
+        {
+            _resumeButton.SetActive(false);
+            _restartButton.SetActive(true);
+            _gameOverPanel.SetActive(true);
+        }
+        else
+        {
+            _resumeButton.SetActive(true);
+            _restartButton.SetActive(false);
+            _gameOverPanel.SetActive(false);
+        }
+        
         EnableAllTooltipsInScene(false);
+    }
+    
+    public void ReloadCurrentScene()
+    {
+        var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+            .GetComponent<SubjectManager>();
+        var subjectNameBefore = _subjectManager.currentSubject.name;
+        _subjectManager.ResetMinigameState();
+        _subjectManager.GetSCUSceneManager().TransitionToScene(SceneManager.GetActiveScene().name, true);
+        _subjectManager.LaunchMinigames(subjectNameBefore);
     }
 
     void EnableAllTooltipsInScene(bool b)
