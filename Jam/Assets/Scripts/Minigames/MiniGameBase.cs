@@ -14,6 +14,7 @@ public class MiniGameBase : MonoBehaviour
 
     public virtual void Start()
     {
+        //miniGameManager = GameObject.FindObjectOfType<MiniGameManager>();
         miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER).GetComponent<MiniGameManager>();
         debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
         debugMessage.text = "";
@@ -45,7 +46,10 @@ public class MiniGameBase : MonoBehaviour
         debugMessage.text = "Success";
         gameObject.SetActive(false);
         corruptionMarkRef.SetActive(false);
-        miniGameManager.FinishMiniGame(this);
+        //if (miniGameManager != null)
+        //{
+            miniGameManager.FinishMiniGame(this);
+        //}
     }
 
     public void OnPenalty()
