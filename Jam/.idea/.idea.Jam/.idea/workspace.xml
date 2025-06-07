@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GlobalDependencyManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GlobalDependencyManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/HeartStringPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_HeartStrings.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="alex-inputsystem" />
+        <entry key="$PROJECT_DIR$/.." value="alex-abdomen-minigame" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -44,31 +37,22 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11d97693183d4a6bb35c29ae7882c66b81b600/5e/d8a8eeae/EditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46da9ce57a644141b0e40d2e12db7dd57400/99/e6ee5032/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/1b/aba48e58/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/2b/9e3b569d/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/2f/8eeb76cb/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/5a/ff6447a9/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4746c126b0b54f3b834845974d1a9190159000/e2/e3aec9ea/Time.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/45/93287273/Collider2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/45/fa1e6f14/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/9f/616da6ed/PhysicsScene2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/c2/553e5f81/PolygonCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/00_LauncherScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/MainMinigame.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Helpers/NamingConstants.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/MainMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Managers/SubjectManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/MagnifyingGlassShadow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/prefabs/UI/CustomCursor.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/ProjectSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -85,7 +69,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-heartstring-extension&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -231,6 +215,15 @@
       <workItem from="1746466112530" duration="9495000" />
       <workItem from="1746550440308" duration="3135000" />
       <workItem from="1746639503771" duration="1292000" />
+      <workItem from="1746798659811" duration="708000" />
+      <workItem from="1746982189383" duration="1472000" />
+      <workItem from="1748512286972" duration="3606000" />
+      <workItem from="1748515949694" duration="53000" />
+      <workItem from="1748539403942" duration="9118000" />
+      <workItem from="1748641014174" duration="2684000" />
+      <workItem from="1748673967420" duration="33975000" />
+      <workItem from="1748770004065" duration="3336000" />
+      <workItem from="1748799268327" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -448,7 +441,119 @@
       <option name="project" value="LOCAL" />
       <updated>1746552556391</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add Alchemy Scene">
+      <option name="closed" value="true" />
+      <created>1746727679436</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746727679436</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fixed bug on magnifying glass reset">
+      <option name="closed" value="true" />
+      <created>1747073569232</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747073569232</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Prototype Alchemy Inventory WIP">
+      <option name="closed" value="true" />
+      <created>1747081787952</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747081787952</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add AlchemyManager to manage ingredient inventory">
+      <option name="closed" value="true" />
+      <created>1747163974156</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747163974156</updated>
+    </task>
+    <task id="LOCAL-00032" summary="After build fixes">
+      <option name="closed" value="true" />
+      <created>1748196621144</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1748196621144</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Align and make replaceable body parts movable">
+      <option name="closed" value="true" />
+      <created>1748464327791</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748464327791</updated>
+    </task>
+    <task id="LOCAL-00034" summary="define cut areas">
+      <option name="closed" value="true" />
+      <created>1748515964057</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1748515964057</updated>
+    </task>
+    <task id="LOCAL-00035" summary="use scalpel cursor for cut areas">
+      <option name="closed" value="true" />
+      <created>1748542683329</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1748542683329</updated>
+    </task>
+    <task id="LOCAL-00036" summary="prepare corrupt sprites for parts">
+      <option name="closed" value="true" />
+      <created>1748550714978</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1748550714978</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Assign random corruption on organs">
+      <option name="closed" value="true" />
+      <created>1748678070073</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1748678070073</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Placeholders and win condition">
+      <option name="closed" value="true" />
+      <created>1748707459817</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1748707459817</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix bug constant re-assign healthy element">
+      <option name="closed" value="true" />
+      <created>1748712557943</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1748712557943</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Fixing curing condition">
+      <option name="closed" value="true" />
+      <created>1748714761999</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1748714761999</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add Sprites for new Heartstring Patterns">
+      <option name="closed" value="true" />
+      <created>1748775168876</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1748775168876</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,21 +581,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Remove Magnifying glass from toffl Scene" />
-    <MESSAGE value="Add Addressables and more interaction on Magnifying Glass" />
-    <MESSAGE value="Add updated subject sprite layer files" />
-    <MESSAGE value="Use Box Collider 2D" />
-    <MESSAGE value="Cleanup Proto Scene" />
-    <MESSAGE value="Add Scene and Tag Constants" />
-    <MESSAGE value="Add corruption mark in organ layer and transition to HeartString Minigame" />
-    <MESSAGE value="Add MainMinigame Scene and remove corrupt markers on finished minigame" />
-    <MESSAGE value="Connect Main Menu to Minigame Scene" />
-    <MESSAGE value="Show Game win and lose overlay in Minigame Scene" />
-    <MESSAGE value="ESC to quit to main menu" />
-    <MESSAGE value="Use new Input System" />
-    <MESSAGE value="remove unused Debug Log statements" />
-    <MESSAGE value="Fixes LungPump thresholds to fit the sprite" />
-    <MESSAGE value="Load Patient specific sprite by patient order" />
     <MESSAGE value="Patient parameterizing sprites" />
     <MESSAGE value="Add intro and seperate launchable Patients" />
     <MESSAGE value="Place corruption mark and launch minigames per patient" />
@@ -501,5 +591,21 @@
     <MESSAGE value="Add tooltips for magnifying glass" />
     <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
+    <MESSAGE value="Add Alchemy Scene" />
+    <MESSAGE value="fixed bug on magnifying glass reset" />
+    <MESSAGE value="Prototype Alchemy Inventory WIP" />
+    <MESSAGE value="Add AlchemyManager to manage ingredient inventory" />
+    <MESSAGE value="After build fixes" />
+    <MESSAGE value="Align and make replaceable body parts movable" />
+    <MESSAGE value="define cut areas" />
+    <MESSAGE value="use scalpel cursor for cut areas" />
+    <MESSAGE value="prepare corrupt sprites for parts" />
+    <MESSAGE value="Assign random corruption on organs" />
+    <MESSAGE value="Placerholders and win condition" />
+    <MESSAGE value="Placeholders and win condition" />
+    <MESSAGE value="Fix bug constant re-assign healthy element" />
+    <MESSAGE value="Fixing curing condition" />
+    <MESSAGE value="Add Sprites for new Heartstring Patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Sprites for new Heartstring Patterns" />
   </component>
 </project>

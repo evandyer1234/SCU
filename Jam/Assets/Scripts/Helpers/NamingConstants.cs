@@ -3,13 +3,9 @@ namespace Helpers
     public class NamingConstants
     {
         // SCENE RELATED
-        public const string SCENE_MAIN_MINIGAME = "MainMinigame";
+        public const string SCENE_MAIN_MINIGAME = "02_MainMinigame";
+        public const string SCENE_MAIN_ALCHEMY = "03_MainAlchemy";
         public const int SCENE_ID_MAIN_MENU = 1;
-        
-        //  Ingredient Ids = Names
-        public const string INGREDIENT_ID_NETTLE = "Nettle";
-        public const string INGREDIENT_ID_PEARL_ASH = "Pearl Ash";
-        public const string INGREDIENT_ID_SUNSTONE = "Sunstone";
         
         // MAGNIFYING GLASS
         public const string TAG_LENS_MIDDLE = "LensMiddle";
@@ -20,13 +16,16 @@ namespace Helpers
         
         // MANAGERS
         public const string TAG_MINIGAME_MANAGER = "MinigameManager";
+        public const string TAG_ALCHEMY_MANAGER = "AlchemyManager";
         public const string TAG_MAIN_EVENT_SYSTEM = "MainEventSystem";
         public const string TAG_CUSTOM_CURSOR = "CustomCursor";
+        public const string TAG_SCENE_FADE = "SceneFade";
         
         // MINIGAMES
         public const string TAG_MINIGAME_HEARTSTRING = "MinigameHeartstring";
         public const string TAG_MINIGAME_LUNGPUMP = "MinigameLungpump";
         public const string TAG_MINIGAME_DRAIN = "MinigameDrain";
+        public const string TAG_MINIGAME_ABDOMEN = "MinigameAbdomen";
         
         // OTHER
         public const string TAG_PLAYER = "Player";

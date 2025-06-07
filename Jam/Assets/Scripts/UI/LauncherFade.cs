@@ -1,3 +1,4 @@
+using Helpers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ namespace UI
         [SerializeField] private GameObject soundTrackToHide;
         [SerializeField] private GameObject playerToHide;
 
+        private SubjectManager _subjectManager;        
         private SpriteRenderer logoRenderer;
         private int frame;
         private float fadeDivider = 500f;
@@ -22,6 +24,8 @@ namespace UI
             cursorToHide.SetActive(false);
             soundTrackToHide.SetActive(false);
             playerToHide.SetActive(false);
+            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+                .GetComponent<SubjectManager>();
         }
 
         void Start()
@@ -70,7 +74,7 @@ namespace UI
             cursorToHide.SetActive(true);
             soundTrackToHide.SetActive(true);
             playerToHide.SetActive(true);
-            SceneManager.LoadScene(1);
+            _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_ID_MAIN_MENU);
         }
     }
 }

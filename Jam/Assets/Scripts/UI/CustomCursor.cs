@@ -4,28 +4,36 @@ using UnityEditor;
 
 public class CustomCursor : MonoBehaviour
 {
-    [SerializeField] private Sprite _defaultCursor;
-    [SerializeField] private Sprite _pressedCursor;
-
-    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private GameObject gloveRef;
+    [SerializeField] private GameObject scalpelRef;
+    
+    private SpriteRenderer _currentSpriteRenderer;
 
     private Vector3 _targetPos;
-
     public static CustomCursor instance;
 
     private SCUInputAction _scuInputAction;
+    private Sprite scalpelSprite;
+    private Sprite gloveSprite;
+    private Sprite glovePressedSprite;
+    private Sprite _defaultCursor;
+    private Sprite _pressedCursor;
     
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
+        scalpelSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_SCALPEL);
+        gloveSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_GLOVE);
+        glovePressedSprite = FileLoader.GetSpriteByName(FileConstants.SPR_CURSOR_GLOVE_PRESSED);
+
+        SetGloveSprite();
     }
     
     void Start()
     {
         Cursor.visible = false;
-        SetDefaultCursor();
     }
 
     void Update()
@@ -46,6 +54,32 @@ public class CustomCursor : MonoBehaviour
         Cursor.visible = !MouseScreenCheck();
     }
 
+    public void SetScalpelSprite()
+    {
+        DisableAllCursorRefs();
+        scalpelRef.SetActive(true);
+        _defaultCursor = scalpelSprite;
+        _pressedCursor = scalpelSprite;
+        _currentSpriteRenderer = scalpelRef.GetComponent<SpriteRenderer>();
+        SetDefaultCursor();
+    }
+
+    public void SetGloveSprite()
+    {
+        DisableAllCursorRefs();
+        gloveRef.SetActive(true);
+        _defaultCursor = gloveSprite;
+        _pressedCursor = glovePressedSprite;
+        _currentSpriteRenderer = gloveRef.GetComponent<SpriteRenderer>();
+        SetDefaultCursor();
+    }
+
+    private void DisableAllCursorRefs()
+    {
+        gloveRef.SetActive(false);
+        scalpelRef.SetActive(false);
+    }
+    
     //https://discussions.unity.com/t/detect-when-mouse-leaves-the-screen-area/630801/3
     bool MouseScreenCheck()
     {
@@ -71,11 +105,11 @@ public class CustomCursor : MonoBehaviour
 
     private void SetDefaultCursor()
     {
-        _spriteRenderer.sprite = _defaultCursor;
+        _currentSpriteRenderer.sprite = _defaultCursor;
     }
 
     private void SetPressedCursor()
     {
-        _spriteRenderer.sprite = _pressedCursor;
+        _currentSpriteRenderer.sprite = _pressedCursor;
     }
 }
