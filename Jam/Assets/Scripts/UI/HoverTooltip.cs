@@ -65,6 +65,16 @@ public class HoverTooltip : MonoBehaviour
     {
         if (_pauseMenuManager.isGamePaused()) return;
         
+        ShowTooltip();
+    }
+
+    private void OnMouseExit()
+    {
+        HideTooltip();
+    }
+
+    public void ShowTooltip()
+    {
         _tooltip.SetActive(true);
         _targetOpacity = 1f;
         _currentOpacity = 0f;
@@ -73,7 +83,7 @@ public class HoverTooltip : MonoBehaviour
         _canvasGroup.alpha = _currentOpacity;
     }
 
-    private void OnMouseExit()
+    public void HideTooltip()
     {
         _targetOpacity = 0f;
         _currentOpacity = 1f;

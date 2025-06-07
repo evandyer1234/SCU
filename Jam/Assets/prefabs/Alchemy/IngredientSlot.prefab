@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3090274662440037855}
   - component: {fileID: 1623713741723627288}
   - component: {fileID: 4707918331703420474}
+  - component: {fileID: 2975141952085724342}
   m_Layer: 0
   m_Name: IngredientSlot
   m_TagString: Untagged
@@ -113,6 +114,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverTooltip: {fileID: 1719064186605138385}
+--- !u!61 &2975141952085724342
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274662440037826}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.34, y: 2.61}
+    newSize: {x: 2.34, y: 2.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.34, y: 2.61}
+  m_EdgeRadius: 0
 --- !u!1001 &7854368781382370388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8852675058024789382, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8852675058024789383, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_RootOrder
@@ -162,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8852675058024789383, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8852675058024789383, guid: e95321c19390c2c4a833cccbfd2a5cf5, type: 3}
       propertyPath: m_LocalRotation.w

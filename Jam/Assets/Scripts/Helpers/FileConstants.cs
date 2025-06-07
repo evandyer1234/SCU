@@ -7,6 +7,11 @@ namespace Helpers
         public const string SPR_CURSOR_GLOVE = "cursor_glove";
         public const string SPR_CURSOR_GLOVE_PRESSED = "cursor_glove_pressed";
         
+        // alchemy
+        public const string SPR_PROTO_PLANT = "proto_plant";
+        public const string SPR_PROTO_LIQUID = "proto_liquid";
+        public const string SPR_PROTO_MINERAL = "proto_mineral";
+        
         // abdomen minigame
         public const string SPR_LIVER_HEALTHY = "liver_healthy";
         public const string SPR_LIVER_CORRUPT = "liver_corrupt";
