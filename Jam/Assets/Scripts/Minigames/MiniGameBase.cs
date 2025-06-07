@@ -14,8 +14,8 @@ public class MiniGameBase : MonoBehaviour
 
     public virtual void Start()
     {
-        //miniGameManager = GameObject.FindObjectOfType<MiniGameManager>();
-        miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER).GetComponent<MiniGameManager>();
+        miniGameManager = GameObject.FindObjectOfType<MiniGameManager>();
+        //miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER).GetComponent<MiniGameManager>();
         debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
         debugMessage.text = "";
     }
@@ -45,17 +45,37 @@ public class MiniGameBase : MonoBehaviour
     {
         debugMessage.text = "Success";
         gameObject.SetActive(false);
-        corruptionMarkRef.SetActive(false);
-        //if (miniGameManager != null)
-        //{
+
+        if (corruptionMarkRef != null)
+        {
+            corruptionMarkRef.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("No corruptionmark found");
+        }
+
+        if (miniGameManager != null)
+        {
             miniGameManager.FinishMiniGame(this);
-        //}
+        }
+        else
+        {
+            Debug.Log("No minigamemananger found");
+        }
     }
 
     public void OnPenalty()
     {
         debugMessage.text = "Failure";
-        miniGameManager.subtractTime(penalty);
+        if (miniGameManager == null)
+        {
+            miniGameManager.subtractTime(penalty);
+        }
+        else
+        {
+            Debug.Log("No minigamemananger found");
+        }
     }
     
     public void SwapStage(int num)
