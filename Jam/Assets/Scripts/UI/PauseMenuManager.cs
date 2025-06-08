@@ -51,7 +51,8 @@ public class PauseMenuManager : MonoBehaviour
     {
         _pauseMenu.SetActive(false);
         _paused = false;
-        Time.timeScale = 1f;
+        //AkSoundEngine.SetRTPCValue("isPaused", 0, null);
+        Time.timeScale = 1;
 
         EnableAllTooltipsInScene(true);
     }
@@ -77,6 +78,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         _pauseMenu.SetActive(true);
         _paused = true;
+        //AkSoundEngine.SetRTPCValue("isPaused", 1, null);
         Time.timeScale = 0;
 
         if (_gameOver)

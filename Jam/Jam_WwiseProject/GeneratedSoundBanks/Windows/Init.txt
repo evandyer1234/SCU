@@ -1,0 +1,33 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Default Work Unit\Location	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Location			
+	1438324778	Alchemy	Location			
+	3310578182	MiniGame	Location			
+	3604647259	MainMenu	Location			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1664846544	MusicFaderLevel			\Default Work Unit\MusicFaderLevel	
+	3195687121	MasterFaderLevel			\Default Work Unit\MasterFaderLevel	
+	3847619804	SoundFaderLevel			\Default Work Unit\SoundFaderLevel	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\SFX\AMB	
+	1685527054	MX			\Default Work Unit\Master Audio Bus\MX	
+	1836525785	DX			\Default Work Unit\Master Audio Bus\SFX\DX	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	117523933	SmallVerb			\Default Work Unit\Master Audio Bus\SmallVerb	
+	202757255	MediumVerb			\Default Work Unit\Master Audio Bus\MediumVerb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2791153688	Hall_Small	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{C64578C4-D21A-6D65-34D9-9E378E24FFAA}">
+			<ShortName>MainSoundBank</ShortName>
+			<Path>MainSoundBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E486A075-3166-32CD-AED8-3C0C3E8DE688}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2791153688" Name="Hall_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1685527054" Name="MX"/>
+				<Bus Id="1836525785" Name="DX"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<AuxBusses>
+				<AuxBus Id="117523933" Name="SmallVerb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="202757255" Name="MediumVerb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2791153688"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="1664846544" Name="MusicFaderLevel"/>
+				<GameParameter Id="2443794319" Name="IsPaused"/>
+				<GameParameter Id="3195687121" Name="MasterFaderLevel"/>
+				<GameParameter Id="3847619804" Name="SoundFaderLevel"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1176052424" Name="Location">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1438324778" Name="Alchemy"/>
+						<State Id="3310578182" Name="MiniGame"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{A3DDBF7C-1BC6-5DB0-C56D-8F521B3757F2}</FileHash>
+</SoundBanksInfo>
