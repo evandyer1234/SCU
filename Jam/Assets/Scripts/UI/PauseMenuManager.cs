@@ -30,7 +30,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM).GetComponent<SubjectManager>();
     }
-    
+
     private void Update()
     {
         if (_subjectManager.GetSCUSceneManager().IsMainMenuScene()) return;
@@ -51,6 +51,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         _pauseMenu.SetActive(false);
         _paused = false;
+        //AkSoundEngine.SetRTPCValue("isPaused", 0, null);
         Time.timeScale = 1f;
 
         EnableAllTooltipsInScene(true);
@@ -77,7 +78,8 @@ public class PauseMenuManager : MonoBehaviour
     {
         _pauseMenu.SetActive(true);
         _paused = true;
-        Time.timeScale = 0;
+        //AkSoundEngine.SetRTPCValue("isPaused", 1, null);
+        Time.timeScale = 0f;
 
         if (_gameOver)
         {
@@ -91,10 +93,10 @@ public class PauseMenuManager : MonoBehaviour
             _restartButton.SetActive(false);
             _gameOverPanel.SetActive(false);
         }
-        
+
         EnableAllTooltipsInScene(false);
     }
-    
+
     public void ReloadCurrentScene()
     {
         var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)

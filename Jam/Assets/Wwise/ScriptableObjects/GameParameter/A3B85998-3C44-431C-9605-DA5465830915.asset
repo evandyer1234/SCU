@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53319dce9e6314f218eff36fe7210e0a, type: 3}
+  m_Name: A3B85998-3C44-431C-9605-DA5465830915
+  m_EditorClassIdentifier: 
+  objectName: MasterFaderLevel
+  id: 3195687121
+  guid: A3B85998-3C44-431C-9605-DA5465830915

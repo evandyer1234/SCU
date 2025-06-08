@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E7162F05-5EC0-44EC-ABA0-595AFA2A390F}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{E7162F05-5EC0-44EC-ABA0-595AFA2A390F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Location" ID="{87133521-81E2-4B76-8067-248AAE1F79C0}">
+					<ChildrenList>
+						<State Name="None" ID="{347B450A-0698-4DEE-AF74-176EE2CB8B19}"/>
+						<State Name="MainMenu" ID="{C8F5BEF2-9739-4366-A06E-248CC1063EB6}"/>
+						<State Name="Alchemy" ID="{22FD449A-2804-402B-92B5-D2EE115835C4}"/>
+						<State Name="MiniGame" ID="{1A0A5231-285D-452F-9175-010C476159CD}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
