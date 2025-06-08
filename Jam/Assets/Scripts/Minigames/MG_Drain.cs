@@ -120,6 +120,11 @@ public class MG_Drain : MiniGameBase
         if (bloodtoxicity < safebloodlevel )
         {
             toxicsp.gameObject.SetActive(false);
+
+            if (leeches == 0 && bloodtoxicity < safebloodlevel)
+            {
+                OnSuccess();
+            }
         }
     }
 

@@ -20,9 +20,11 @@ public class ClickandDrag : ClickEvent
 
     public virtual void Update()
     {
+        Debug.Log("yo");
         if (MouseInput.LeftReleased(_scuInputAction) && selected) 
         {
             selected = false;
+            Released();
         }
         if (selected)
         {
@@ -50,6 +52,7 @@ public class ClickandDrag : ClickEvent
 
     public virtual void OnSelected()
     {
+        Debug.Log("hi");
         selected = true;
         _positionOffset = GetCameraPosition() - transform.position;
     }
