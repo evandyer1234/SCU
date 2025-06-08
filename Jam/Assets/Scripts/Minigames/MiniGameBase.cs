@@ -52,7 +52,7 @@ public class MiniGameBase : MonoBehaviour
         }
         else
         {
-            Debug.Log("No corruptionmark found");
+            Debug.LogWarning("No corruptionmark found");
         }
 
         if (miniGameManager != null)
@@ -61,7 +61,7 @@ public class MiniGameBase : MonoBehaviour
         }
         else
         {
-            Debug.Log("No minigamemananger found");
+            Debug.LogWarning("No minigamemananger found");
         }
     }
 
@@ -74,7 +74,7 @@ public class MiniGameBase : MonoBehaviour
         }
         else
         {
-            Debug.Log("No minigamemananger found");
+            Debug.LogWarning("No minigamemananger found");
         }
     }
     

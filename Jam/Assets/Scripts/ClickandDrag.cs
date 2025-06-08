@@ -20,7 +20,6 @@ public class ClickandDrag : ClickEvent
 
     public virtual void Update()
     {
-        Debug.Log("yo");
         if (MouseInput.LeftReleased(_scuInputAction) && selected) 
         {
             selected = false;
