@@ -52,7 +52,7 @@ public class TriggerHoverOutline : MonoBehaviour
         else if(MouseInput.LeftReleased(_scuInputAction))
         {
             _pressed = false;
-            hoverOutline.Hover();
+            OnMouseEnter();
         }
     }
 
