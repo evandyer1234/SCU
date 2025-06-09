@@ -15,6 +15,7 @@ public class PauseMenuManager : MonoBehaviour
 
     private SCUInputAction _scuInputAction;
     private List<HoverTooltip> _tooltipsInScene;
+    private List<HoverOutline> _outlinesInScene;
     private SubjectManager _subjectManager;
 
     private void Awake()
@@ -22,6 +23,7 @@ public class PauseMenuManager : MonoBehaviour
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
         _tooltipsInScene = GetAllTooltipsInScene();
+        _outlinesInScene = GetAllOutlinesInScene();
 
         Resume();
     }
@@ -55,6 +57,7 @@ public class PauseMenuManager : MonoBehaviour
         Time.timeScale = 1f;
 
         EnableAllTooltipsInScene(true);
+        EnableAllOutlinesInScene(true);
     }
 
     public void Restart()
@@ -95,6 +98,7 @@ public class PauseMenuManager : MonoBehaviour
         }
         
         EnableAllTooltipsInScene(false);
+        EnableAllOutlinesInScene(false);
     }
     
     public void ReloadCurrentScene()
@@ -107,6 +111,7 @@ public class PauseMenuManager : MonoBehaviour
         _subjectManager.LaunchMinigames(subjectNameBefore);
     }
 
+
     void EnableAllTooltipsInScene(bool b)
     {
         foreach (HoverTooltip tooltip in _tooltipsInScene)
@@ -118,6 +123,19 @@ public class PauseMenuManager : MonoBehaviour
             }
         }
     }
+
+
+    void EnableAllOutlinesInScene(bool b)
+    {
+        foreach (HoverOutline outline in _outlinesInScene)
+        {
+            if (outline != null)
+            {
+                outline.gameObject.SetActive(b);
+            }
+        }
+    }
+
 
     List<HoverTooltip> GetAllTooltipsInScene()
     {
@@ -132,5 +150,24 @@ public class PauseMenuManager : MonoBehaviour
         }
 
         return tooltipsList;
+    }
+
+
+    //this method does pretty much the same thing as the previous one
+    //it would be nice to use a single method with variable type instead
+    //however using variable types looks pretty complicated and not worth the time for a minor issue like this imo
+    List<HoverOutline> GetAllOutlinesInScene()
+    {
+        List<HoverOutline> outlineList = new List<HoverOutline>();
+
+        foreach (HoverOutline outline in Resources.FindObjectsOfTypeAll(typeof(HoverOutline)) as HoverOutline[])
+        {
+            if (!(outline.hideFlags == HideFlags.NotEditable || outline.hideFlags == HideFlags.HideAndDontSave))
+            {
+                outlineList.Add(outline);
+            }
+        }
+
+        return outlineList;
     }
 }
