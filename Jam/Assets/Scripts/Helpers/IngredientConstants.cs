@@ -28,5 +28,9 @@ namespace Helpers
         public const string INGREDIENT_ID_BRIMSTONE = "Brimstone";
         public const string INGREDIENT_ID_BLUESTONE = "Bluestone";
         public const string INGREDIENT_ID_SILVER = "Silver";
+        
+        // OPERATION TYPES
+        public const string OPERATION_BOIL = "Boiled";
+        public const string OPERATION_GRIND = "Grinded";
     }
 }

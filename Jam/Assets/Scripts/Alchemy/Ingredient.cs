@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using Minigames;
 
 public class Ingredient
 {
     private string name;
     private IngredientType type;
+    private List<string> ingredientOperations = new();
 
     public Ingredient(string name, IngredientType type)
     {
@@ -20,6 +22,14 @@ public class Ingredient
     {
         return type;
     }
-    
-    
+
+    public void AddIngredientOperation(string operation)
+    {
+        this.ingredientOperations.Add(operation);
+    }
+
+    public List<string> GetIngredientOperations()
+    {
+        return ingredientOperations;
+    }
 }
