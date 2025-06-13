@@ -11,6 +11,11 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID STARTMUSIC = 3827058668U;
+    } // namespace EVENTS
+
     namespace STATES
     {
         namespace LOCATION
@@ -30,6 +35,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ISLEVELSELECT = 3176837105U;
         static const AkUniqueID ISPAUSED = 2443794319U;
         static const AkUniqueID MASTERFADERLEVEL = 3195687121U;
         static const AkUniqueID MUSICFADERLEVEL = 1664846544U;

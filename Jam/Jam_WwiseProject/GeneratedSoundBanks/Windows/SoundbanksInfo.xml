@@ -9,11 +9,47 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{C64578C4-D21A-6D65-34D9-9E378E24FFAA}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{2077ADEA-D4BB-A734-CFFC-C212B183B660}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
+			<Media>
+				<File Id="85893998" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU MMT Pizz (Level Selection) Fine Cut.wav</ShortName>
+					<CachePath>SFX/SCU MMT Pizz (Level Selection) Fine Cut_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="927775762" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU MMT Legato (Main Menu) Fine Cut.wav</ShortName>
+					<CachePath>SFX/SCU MMT Legato (Main Menu) Fine Cut_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3827058668" Name="StartMusic" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1176052424" Id="3604647259"/>
+							<MediaRefs>
+								<MediaRef Id="85893998"/>
+								<MediaRef Id="927775762"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3176837105" Name="IsLevelSelect"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1176052424" Name="Location">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1438324778" Name="Alchemy"/>
+						<State Id="3310578182" Name="MiniGame"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E486A075-3166-32CD-AED8-3C0C3E8DE688}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C918D1FF-814C-8168-1215-814FAB1C3749}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -52,6 +88,7 @@
 			<GameParameters>
 				<GameParameter Id="1664846544" Name="MusicFaderLevel"/>
 				<GameParameter Id="2443794319" Name="IsPaused"/>
+				<GameParameter Id="3176837105" Name="IsLevelSelect"/>
 				<GameParameter Id="3195687121" Name="MasterFaderLevel"/>
 				<GameParameter Id="3847619804" Name="SoundFaderLevel"/>
 			</GameParameters>
@@ -67,5 +104,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A3DDBF7C-1BC6-5DB0-C56D-8F521B3757F2}</FileHash>
+	<FileHash>{81816133-F4D9-3A24-AE36-5B93A426CB9B}</FileHash>
 </SoundBanksInfo>
