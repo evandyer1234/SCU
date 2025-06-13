@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{AB48CFBA-24AA-4A43-BD67-9C18B69C0674}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="MainSoundBank" ID="{9E53535E-F5FB-4F71-B92A-2B48C2C50CBC}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="StartMusic" ID="{5CCB75F0-5642-457A-94A3-5581B10AA7C7}" WorkUnitID="{F046847A-8C3B-44A8-98E9-8AD5BAC04714}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

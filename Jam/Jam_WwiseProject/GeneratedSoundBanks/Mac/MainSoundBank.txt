@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3827058668	StartMusic			\Default Work Unit\StartMusic	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Default Work Unit\Location	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Location			
+	1438324778	Alchemy	Location			
+	3310578182	MiniGame	Location			
+	3604647259	MainMenu	Location			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3176837105	IsLevelSelect			\Default Work Unit\IsLevelSelect	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	85893998	SCU MMT Pizz (Level Selection) Fine Cut	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Mac\SFX\SCU MMT Pizz (Level Selection) Fine Cut_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Main Menu Playlist\Main Menu Segment\SCU MMT Pizz (Level Selection) Fine Cut		13381080
+	927775762	SCU MMT Legato (Main Menu) Fine Cut	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Mac\SFX\SCU MMT Legato (Main Menu) Fine Cut_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Main Menu Playlist\Main Menu Segment\SCU MMT Legato (Main Menu) Fine Cut		13381080
+

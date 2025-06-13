@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{291633D2-752A-4C9E-B3D7-2EB4EA627961}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{291633D2-752A-4C9E-B3D7-2EB4EA627961}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{291633D2-752A-4C9E-B3D7-2EB4EA627961}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main Soundcaster Session" ID="{C042E0DA-C43D-4844-BB48-BE9DB7A2D4C1}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicFaderLevel" ID="{F99F4A12-8679-42B3-A08E-A0F01689EB1A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterFaderLevel" ID="{A3B85998-3C44-431C-9605-DA5465830915}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SoundFaderLevel" ID="{8F649FE9-CA2D-4343-A764-CAF395550DE1}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="IsLevelSelect" ID="{10EAEA41-F41A-4853-8B32-9B62D15F40ED}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="MainMenu" ID="{C8F5BEF2-9739-4366-A06E-248CC1063EB6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
