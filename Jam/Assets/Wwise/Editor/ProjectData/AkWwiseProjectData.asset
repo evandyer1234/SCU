@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6a99581d09d6374f97086e893f306926
     GuidInternal: 
-    m_lastTime: -8584521417717165410
+    m_lastTime: -8584517811062294141
     List:
     - name: AMB
       guid: 402e4812c70fb64a803ca2e547300499
@@ -174,7 +174,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
     GuidInternal: 
-    m_lastTime: -8584521417717144846
+    m_lastTime: -8584517807762496942
     List:
     - name: MainSoundBank
       guid: 5e53539efbf5714fb92a2b48c2c50cbc
@@ -202,8 +202,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
     GuidInternal: 
-    m_lastTime: -8584521417718968098
-    List: []
+    m_lastTime: -8584517807765147208
+    List:
+    - name: StartMusic
+      guid: f075cb5c42567a4594a35581b10aa7c7
+      id: 3827058668
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a8446f03b8ca84498e98ad5bac04714
+      - ElementName: StartMusic
+        ObjectType: 3
+        guid: f075cb5c42567a4594a35581b10aa7c7
+      Path: Events\Default Work Unit\StartMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -216,8 +233,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a69f641c3bab2248acdb7be4b41d4c51
     GuidInternal: 
-    m_lastTime: -8584521417718958032
+    m_lastTime: -8584517807765147208
     List:
+    - name: IsLevelSelect
+      guid: 41eaea101af453488b329b62d15f40ed
+      id: 3176837105
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a69f641c3bab2248acdb7be4b41d4c51
+      - ElementName: IsLevelSelect
+        ObjectType: 13
+        guid: 41eaea101af453488b329b62d15f40ed
+      Path: Game Parameters\Default Work Unit\IsLevelSelect
     - name: IsPaused
       guid: 8453a215b6cd004986130f1baa485b33
       id: 2443794319
@@ -286,7 +317,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 052f16e7c05eec44aba0595afa2a390f
     GuidInternal: 
-    m_lastTime: -8584521417717139648
+    m_lastTime: -8584517811060499517
     List:
     - name: Location
       guid: 21351387e281764b8067248aae1f79c0

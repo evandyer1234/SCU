@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Helpers;
 using Managers;
 using Minigames;
@@ -48,10 +47,6 @@ public class SubjectManager : MonoBehaviour
      */
     private AlchemyManager _alchemyManager;
 
-    private bool alchemyShelvesFilled = false;
-    
-    /* **************************************************** */
-    
     /** ****************************************************
      * **************** UNITY INTERFACE ********************
      * *****************************************************
@@ -66,24 +61,6 @@ public class SubjectManager : MonoBehaviour
     private void Update()
     {
         LoadMinigamesAndSceneStateMachine();
-        LoadAlchemyAndSceneStateMachine();
-    }
-
-    private void LoadAlchemyAndSceneStateMachine()
-    {
-        if (alchemyShelvesFilled) return;
-        if (!IsAlchemySceneLoaded()) return;
-        
-        _alchemyManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER)
-            .GetComponent<AlchemyManager>();
-
-        _alchemyManager.FillShelvesWithRespectiveIngredients(allIngredients.Values.ToList());
-        alchemyShelvesFilled = true;
-    }
-    
-    private bool IsAlchemySceneLoaded()
-    {
-        return GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER) != null;
     }
 
     /** ****************************************************
@@ -97,6 +74,16 @@ public class SubjectManager : MonoBehaviour
         {
             collectedIngredientHints.Add(ingredientName);    
         }
+    }
+
+    public List<string> GetIngredientHints()
+    {
+        return collectedIngredientHints;
+    }
+
+    public Dictionary<string, Ingredient> GetAllIngredients()
+    {
+        return allIngredients;
     }
     
     /** ****************************************************
