@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Helpers;
 using Managers;
-using Minigames;
 using Subjects;
 using UnityEngine;
 
@@ -13,7 +12,6 @@ public class SubjectManager : MonoBehaviour
 
     // progression state
     private Dictionary<string, Subject> subjectsToCure = new();
-    private Dictionary<string, Ingredient> allIngredients = new();
     private List<string> collectedIngredientHints = new();
     
     // subject ids = names
@@ -57,7 +55,6 @@ public class SubjectManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         subjectsToCure = SubjectFactory.CreateSubjectMap();
-        allIngredients = IngredientFactory.CreateIngredients();
     }
 
     private void Update()
@@ -81,11 +78,6 @@ public class SubjectManager : MonoBehaviour
     public List<string> GetIngredientHints()
     {
         return collectedIngredientHints;
-    }
-
-    public Dictionary<string, Ingredient> GetAllIngredients()
-    {
-        return allIngredients;
     }
 
     /** ****************************************************

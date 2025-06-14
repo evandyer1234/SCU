@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Helpers;
-using Minigames;
 
 namespace Subjects
 {
@@ -66,9 +65,9 @@ namespace Subjects
                 minigames04,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, IngredientType.PLANT, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_WINE_OF_THE_SAGES, IngredientType.LIQUID, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, IngredientType.MINERAL, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
                 });
             List<string> minigames14 = new List<string>()
             {
@@ -86,9 +85,9 @@ namespace Subjects
                 minigames14,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, IngredientType.PLANT, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_WINE_OF_THE_SAGES, IngredientType.LIQUID, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, IngredientType.MINERAL, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
                 });
             List<string> minigames15 = new List<string>()
             {
@@ -106,9 +105,9 @@ namespace Subjects
                 minigames15,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, IngredientType.PLANT, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_WINE_OF_THE_SAGES, IngredientType.LIQUID, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, IngredientType.MINERAL, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
                 });
         
             subjectMap.Add(subject04.name, subject04);

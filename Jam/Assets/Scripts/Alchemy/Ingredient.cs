@@ -1,33 +1,26 @@
 using System.Collections.Generic;
-using Minigames;
+using Helpers;
+using UnityEngine;
 
 public class Ingredient
 {
     private string name;
-    private IngredientType type;
     private List<string> ingredientOperations = new();
 
-    public Ingredient(string name, IngredientType type)
+    public Ingredient(string name)
     {
         this.name = name;
-        this.type = type;
     }
 
 
-    public Ingredient(string name, IngredientType type, List<string> ingredientOperations)
+    public Ingredient(string name, List<string> ingredientOperations)
     {
         this.name = name;
-        this.type = type;
         this.ingredientOperations = ingredientOperations;
     }
     public string GetIngredientName()
     {
         return name;
-    }
-
-    public IngredientType GetIngredientType()
-    {
-        return type;
     }
 
     public void AddIngredientOperation(string operation)
@@ -38,5 +31,26 @@ public class Ingredient
     public List<string> GetIngredientOperations()
     {
         return ingredientOperations;
+    }
+    
+    public Sprite ResolveSpriteByIngredientName()
+    {
+        if (IngredientConstants.PLANT_INGREDIENT_TO_SPRITE_LIST.Contains(name))
+        {
+            return FileLoader.GetSpriteByName("proto_plant");
+        }
+
+        if (IngredientConstants.LIQUID_INGREDIENT_TO_SPRITE_LIST.Contains(name))
+        {
+            return FileLoader.GetSpriteByName("proto_liquid");
+        }
+
+        if (IngredientConstants.MINERAL_INGREDIENT_TO_SPRITE_LIST.Contains(name))
+        {
+            return FileLoader.GetSpriteByName("proto_mineral");
+        }
+            
+        Debug.LogWarning("FAILED TO MATCH INGREDIENT NAME TO SPRITE TYPE");
+        return null;
     }
 }

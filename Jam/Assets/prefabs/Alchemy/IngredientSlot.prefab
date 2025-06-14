@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b339c55901f147698feca91f8618afdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientName: 
   hoverTooltip: {fileID: 1719064186605138385}
 --- !u!61 &2975141952085724342
 BoxCollider2D:

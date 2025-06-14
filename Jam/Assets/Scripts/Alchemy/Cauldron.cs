@@ -65,18 +65,7 @@ namespace Minigames.Alchemy
             foreach (var inputIngredient in _inputIngredients)
             {
                 var addedIngrGO = Instantiate(_addedIngredientPrefab, _addedIngredientContainer.transform);
-                switch (inputIngredient.GetIngredientType())
-                {
-                    case IngredientType.PLANT:
-                        addedIngrGO.GetComponent<Image>().sprite = FileLoader.GetSpriteByName("proto_plant");
-                        break;
-                    case IngredientType.LIQUID:
-                        addedIngrGO.GetComponent<Image>().sprite = FileLoader.GetSpriteByName("proto_liquid");
-                        break;
-                    case IngredientType.MINERAL:
-                        addedIngrGO.GetComponent<Image>().sprite = FileLoader.GetSpriteByName("proto_mineral");
-                        break;
-                }
+                addedIngrGO.GetComponent<Image>().sprite = inputIngredient.ResolveSpriteByIngredientName();
             }
         }
     }

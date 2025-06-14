@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Production Scenes/02_MainMinigame.unity
     guid: ae8635386f7aac34fbccb20268f9c301
   - enabled: 1
-    path: Assets/Scenes/Prototyping Scenes/03_MainAlchemy.unity
-    guid: 8b1602cef94800747bdbd4a01e18a501
+    path: Assets/Scenes/Production Scenes/03_MainAlchemy.unity
+    guid: a67548811d1c86548bce6279f3cce30b
   - enabled: 0
     path: Assets/Scenes/Case1.unity
     guid: 2cda990e2423bbf4892e6590ba056729

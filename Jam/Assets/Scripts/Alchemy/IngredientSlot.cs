@@ -6,6 +6,7 @@ namespace Minigames.Alchemy
 {
     public class IngredientSlot : MonoBehaviour
     {
+        [SerializeField] string ingredientName;
         [SerializeField] HoverTooltip hoverTooltip;
 
         private AlchemyManager _alchemyManager;
@@ -21,6 +22,19 @@ namespace Minigames.Alchemy
             _alchemyManager = FindObjectOfType<AlchemyManager>();
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
+
+            if (ingredientName == null || ingredientName == "")
+            {
+                Debug.LogError("FAILED TO IDENTIFY INGREDIENT NAME! PLEASE PROVIDE A MATCHING NAME FROM INGREDIENT CONSTANTS!");
+                return;
+            }
+            ingredient = new Ingredient(ingredientName);
+            if (ingredient.ResolveSpriteByIngredientName() == null)
+            {
+                Debug.LogError("FAILED TO IDENTIFY INGREDIENT SPRITE BY NAME! DO YOU HAVE A TYPO IN YOUR INGREDIENT?");
+                return;
+            }
+            hoverTooltip.SetTooltipText(ingredient.GetIngredientName());
         }
 
         private void OnMouseOver()
@@ -43,12 +57,6 @@ namespace Minigames.Alchemy
         private void OnMouseExit()
         {
             hoverTooltip.HideTooltip();
-        }
-
-        public void SetIngredient(Ingredient ingredient)
-        {
-            this.ingredient = ingredient;
-            hoverTooltip.SetTooltipText(ingredient.GetIngredientName());
         }
 
         private void MouseLeftClick()
