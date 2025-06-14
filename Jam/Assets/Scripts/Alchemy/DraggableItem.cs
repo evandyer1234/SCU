@@ -1,15 +1,18 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Helpers;
 using TMPro;
 using UnityEngine;
 
 namespace Minigames.Alchemy
 {
-    public class DraggableUndefinedItem : MonoBehaviour
+    public class DraggableItem : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _itemName;
         
         private PauseMenuManager _pauseMenuManager;
+        private SubjectManager _subjectManager;
         private SCUInputAction _scuInputAction;
         
         private List<Ingredient> _ingredients;
@@ -23,6 +26,8 @@ namespace Minigames.Alchemy
             _scuInputAction.UI.Enable();
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
+            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+                .GetComponent<SubjectManager>();
             _itemName.text = "";
         }
 
@@ -61,30 +66,80 @@ namespace Minigames.Alchemy
                 var allColliders = new List<Collider2D>();
                 Physics2D.OverlapCollider(coll, new ContactFilter2D(), allColliders);
 
-                foreach (var currColl in allColliders)
+                CheckCollisionWithOtherDraggableItem(allColliders);
+                CheckCollisionWithPatient(allColliders);
+            }
+        }
+
+        private void CheckCollisionWithPatient(List<Collider2D> colliders)
+        {
+            foreach (var currColl in colliders)
+            {
+                if (currColl.gameObject.name == "ClothLayer")
                 {
-                    if (currColl.GetComponent<DraggableUndefinedItem>() != null)
+                    var currentSubject = _subjectManager.currentSubject;
+                    if (currentSubject != null)
                     {
-                        var draggableItem = currColl.GetComponent<DraggableUndefinedItem>();
-                        foreach (var draggableItemIngredient in draggableItem.GetIngredients())
+                        var matchedIngredientCounter = 0;
+                        var neededIngredients = currentSubject.neededIngredientsFromPotion;
+                        foreach (var potionIngredient in _ingredients)
                         {
-                            _ingredients.Add(draggableItemIngredient);
-                        }
-                        
-                        Destroy(draggableItem.gameObject);
-                        string itemConsistenceText = "";
-                        foreach (var ingredient in _ingredients)
-                        {
-                            itemConsistenceText += ingredient.GetIngredientName() +  " (";
-                            foreach (var op in ingredient.GetIngredientOperations())
+                            if (neededIngredients.Find(ing => ing.GetIngredientName() == potionIngredient.GetIngredientName()) != null)
                             {
-                                itemConsistenceText += op + " ";
+                                var ingredientNeeded = neededIngredients.Find(ing =>
+                                    ing.GetIngredientName() == potionIngredient.GetIngredientName());
+
+                                var ingredientOperationsCovered = ingredientNeeded.GetIngredientOperations().All(op =>
+                                        potionIngredient.GetIngredientOperations().Contains(op));
+                                if (ingredientOperationsCovered)
+                                {
+                                    matchedIngredientCounter++;
+                                }
                             }
-                            itemConsistenceText += ") \n";
                         }
 
-                        SetItemText(itemConsistenceText);
+                        if (matchedIngredientCounter == 3)
+                        {
+                            // SUCCESS
+                            Debug.Log("SUCCESS");
+                            Destroy(gameObject);
+                        }
+                        else
+                        {
+                            // FAILURE
+                            Debug.Log("FAILURE");
+                            Destroy(gameObject);
+                        }
                     }
+                }
+            }
+        }
+
+        private void CheckCollisionWithOtherDraggableItem(List<Collider2D> colliders)
+        {
+            foreach (var currColl in colliders)
+            {
+                if (currColl.GetComponent<DraggableItem>() != null)
+                {
+                    var draggableItem = currColl.GetComponent<DraggableItem>();
+                    foreach (var draggableItemIngredient in draggableItem.GetIngredients())
+                    {
+                        _ingredients.Add(draggableItemIngredient);
+                    }
+                       
+                    Destroy(draggableItem.gameObject);
+                    string itemConsistenceText = "";
+                    foreach (var ingredient in _ingredients)
+                    {
+                        itemConsistenceText += ingredient.GetIngredientName() +  " (";
+                        foreach (var op in ingredient.GetIngredientOperations())
+                        {
+                            itemConsistenceText += op + " ";
+                        }
+                        itemConsistenceText += ") \n";
+                    }
+
+                    SetItemText(itemConsistenceText);
                 }
             }
         }

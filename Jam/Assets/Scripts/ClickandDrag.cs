@@ -51,7 +51,6 @@ public class ClickandDrag : ClickEvent
 
     public virtual void OnSelected()
     {
-        Debug.Log("hi");
         selected = true;
         _positionOffset = GetCameraPosition() - transform.position;
     }

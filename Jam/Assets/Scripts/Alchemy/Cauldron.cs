@@ -48,8 +48,8 @@ namespace Minigames.Alchemy
             var undefinedLiquid = Instantiate(_producedUndefinedItemPrefab);
             var orgPos = transform.position;
             undefinedLiquid.transform.position = new Vector3(orgPos.x, orgPos.y - 5, 10);
-            undefinedLiquid.GetComponent<DraggableUndefinedItem>().MakeUndefinedLiquid();
-            undefinedLiquid.GetComponent<DraggableUndefinedItem>().SetIngredients(_inputIngredients);
+            undefinedLiquid.GetComponent<DraggableItem>().MakeUndefinedLiquid();
+            undefinedLiquid.GetComponent<DraggableItem>().SetIngredients(_inputIngredients);
             
             _inputIngredients = new();
             RenderIngredientPrefabs();

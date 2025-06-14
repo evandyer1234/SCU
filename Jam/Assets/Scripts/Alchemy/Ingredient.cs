@@ -12,7 +12,14 @@ public class Ingredient
         this.name = name;
         this.type = type;
     }
-    
+
+
+    public Ingredient(string name, IngredientType type, List<string> ingredientOperations)
+    {
+        this.name = name;
+        this.type = type;
+        this.ingredientOperations = ingredientOperations;
+    }
     public string GetIngredientName()
     {
         return name;

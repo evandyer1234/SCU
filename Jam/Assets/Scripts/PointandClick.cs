@@ -30,7 +30,6 @@ public class PointandClick : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(mousePos);
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("Hit " + hit.collider.gameObject.name);
                 ClickEvent ce = hit.collider.gameObject.GetComponent<ClickEvent>();
                 if (ce != null)
                 {

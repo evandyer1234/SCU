@@ -5,7 +5,6 @@ using Helpers;
 using Subjects;
 using TMPro;
 using UnityEngine;
-using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class MiniGameManager : MonoBehaviour
     GameObject postItIngredients;
     [SerializeField] private GameObject goToPotionSceneButton;
     [SerializeField] private GameObject minigameDoneText;
+    [SerializeField] private GameObject clothLayerPatient;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientsPerPatient = new();
@@ -38,6 +38,8 @@ public class MiniGameManager : MonoBehaviour
         
         goToPotionSceneButton.SetActive(false);
         minigameDoneText.SetActive(false);
+        
+
     }
     
     void Start()
@@ -46,10 +48,25 @@ public class MiniGameManager : MonoBehaviour
             .GetComponent<SubjectManager>();
         collectedIngredientsPerPatient = new();
         InitializeTimer();
+
+        if (_subjectManager.IsPotionMode())
+        {
+            clothLayerPatient.GetComponent<Collider2D>().enabled = true;
+        }
+        else
+        {
+            clothLayerPatient.GetComponent<Collider2D>().enabled = false;
+        }
     }
     
     void FixedUpdate()
     {
+        if (_subjectManager.IsPotionMode())
+        {
+            SetTimerText("");
+            return;
+        }
+        
         CurrentTime -= Time.fixedDeltaTime;
         UpdateTimerText();
         if (CurrentTime <= 0 && !_pauseMenuManager.isGamePaused())

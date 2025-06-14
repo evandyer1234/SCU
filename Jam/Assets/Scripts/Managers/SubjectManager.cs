@@ -47,6 +47,8 @@ public class SubjectManager : MonoBehaviour
      */
     private AlchemyManager _alchemyManager;
 
+    private bool _potionMode = false;
+
     /** ****************************************************
      * **************** UNITY INTERFACE ********************
      * *****************************************************
@@ -85,7 +87,7 @@ public class SubjectManager : MonoBehaviour
     {
         return allIngredients;
     }
-    
+
     /** ****************************************************
     * *************** MINIGAME SPECIFIC *******************
     * *****************************************************
@@ -102,6 +104,13 @@ public class SubjectManager : MonoBehaviour
         }
     }
 
+    public void LaunchPatientPageInPotionMode(string subjectName)
+    {
+        ResetMinigameState();
+        currentSubject = GetCurrentSubjectByName(subjectName);
+        _potionMode = true;
+    }
+    
     public void ResetMinigameState()
     {
         currentSubject = null;
@@ -111,11 +120,17 @@ public class SubjectManager : MonoBehaviour
         _magnifyingGlass = null;
         _miniGameManager = null;
         _corruptionMarksPlaced = false;
+        _potionMode = false;
     }
 
     public SCUSceneManager GetSCUSceneManager()
     {
         return GetComponent<SCUSceneManager>();
+    }
+
+    public bool IsPotionMode()
+    {
+        return _potionMode;
     }
     
     private void LoadMinigamesAndSceneStateMachine()
