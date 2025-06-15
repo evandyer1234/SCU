@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 08d789519cd18c7419b2ebbce2f3219d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Angelina
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b21b923ee06ecde4fbc5d4f1f7fd81d8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

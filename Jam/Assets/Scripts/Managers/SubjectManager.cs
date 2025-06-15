@@ -105,6 +105,11 @@ public class SubjectManager : MonoBehaviour
     {
         return _potionMode;
     }
+
+    public void SetPotionMode(bool PotionMode)
+    {
+        _potionMode = PotionMode;
+    }
     
     private void LoadMinigamesAndSceneStateMachine()
     {

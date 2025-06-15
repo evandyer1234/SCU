@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="alex-abdomen-minigame" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -68,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "alex-journals",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -594,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749984145870</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Lay out Journals Scene">
+      <option name="closed" value="true" />
+      <created>1750006382415</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1750006382415</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +639,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
     <MESSAGE value="Add tooltips for magnifying glass" />
     <MESSAGE value="Add click hints for heartstring minigame" />
@@ -647,6 +663,7 @@
     <MESSAGE value="Use scattered ingredients, no more ingredient types" />
     <MESSAGE value="Enable items to be boiled/grinded multiple times" />
     <MESSAGE value="Align ingredient hints, minigames and allergy info per patient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Align ingredient hints, minigames and allergy info per patient" />
+    <MESSAGE value="Lay out Journals Scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lay out Journals Scene" />
   </component>
 </project>

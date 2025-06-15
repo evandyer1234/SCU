@@ -3,9 +3,10 @@ namespace Helpers
     public class NamingConstants
     {
         // SCENE RELATED
+        public const int SCENE_ID_MAIN_MENU = 1;
         public const string SCENE_MAIN_MINIGAME = "02_MainMinigame";
         public const string SCENE_MAIN_ALCHEMY = "03_MainAlchemy";
-        public const int SCENE_ID_MAIN_MENU = 1;
+        public const string SCENE_JOURNALS = "04_Journals";
         
         // MAGNIFYING GLASS
         public const string TAG_LENS_MIDDLE = "LensMiddle";

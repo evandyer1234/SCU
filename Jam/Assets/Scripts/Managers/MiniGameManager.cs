@@ -16,7 +16,9 @@ public class MiniGameManager : MonoBehaviour
     [SerializeField, Tooltip("A reference to the post it ingredients displaying progress")] 
     GameObject postItIngredients;
     [SerializeField] private GameObject goToPotionSceneButton;
+    [SerializeField] private GameObject goToJournalsSceneButton;
     [SerializeField] private GameObject minigameDoneText;
+    [SerializeField] private GameObject potionSuccessfulText;
     [SerializeField] private GameObject clothLayerPatient;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
@@ -37,9 +39,8 @@ public class MiniGameManager : MonoBehaviour
         }
         
         goToPotionSceneButton.SetActive(false);
+        goToJournalsSceneButton.SetActive(false);
         minigameDoneText.SetActive(false);
-        
-
     }
     
     void Start()
@@ -145,6 +146,12 @@ public class MiniGameManager : MonoBehaviour
         CurrentTime = StartTime;
         Time.timeScale = 1f;
     }
+
+    public void MakeJournalSceneButtonAppear()
+    {
+        goToJournalsSceneButton.SetActive(true);
+        potionSuccessfulText.SetActive(true);
+    }
     
     private bool AllMinigamesFinished()
     {
@@ -161,6 +168,11 @@ public class MiniGameManager : MonoBehaviour
     {
         if (!AllMinigamesFinished()) return;
         _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_MAIN_ALCHEMY);
+    }
+    
+    public void GoToJournalScene()
+    {
+        _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_JOURNALS);
     }
     
     public void Win()

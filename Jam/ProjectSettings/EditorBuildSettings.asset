@@ -17,12 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Production Scenes/03_MainAlchemy.unity
     guid: a67548811d1c86548bce6279f3cce30b
-  - enabled: 0
-    path: Assets/Scenes/Case1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/EvantestScene.unity
-    guid: 703fe3a819564ed49ab58a9bbbb96662
+  - enabled: 1
+    path: Assets/Scenes/Production Scenes/04_Journals.unity
+    guid: ec057537655f8d248b6a84bc65e96bd6
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 208a9629b1c60514e94efc8516d20039, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 862688fc810f83340a4159a5d6c1e508, type: 2}
