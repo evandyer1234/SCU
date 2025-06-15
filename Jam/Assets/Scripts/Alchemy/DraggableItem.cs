@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Helpers;
@@ -14,11 +13,12 @@ namespace Minigames.Alchemy
         private PauseMenuManager _pauseMenuManager;
         private SubjectManager _subjectManager;
         private SCUInputAction _scuInputAction;
-        
-        private List<Ingredient> _ingredients;
+
+        [HideInInspector] public Ingredient starterIngredient;
+        [HideInInspector] public List<Ingredient> ingredients = new();
         
         private Vector3 offsetItem;
-        private bool followMouse;
+        public bool followMouse;
 
         void Awake()
         {
@@ -26,11 +26,16 @@ namespace Minigames.Alchemy
             _scuInputAction.UI.Enable();
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
-            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
-                .GetComponent<SubjectManager>();
+
             _itemName.text = "";
         }
 
+        void Start()
+        {
+            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+                .GetComponent<SubjectManager>();
+        }
+        
         void Update()
         {
             if (_pauseMenuManager.isGamePaused()) return;
@@ -82,16 +87,19 @@ namespace Minigames.Alchemy
                     {
                         var matchedIngredientCounter = 0;
                         var neededIngredients = currentSubject.neededIngredientsFromPotion;
-                        foreach (var potionIngredient in _ingredients)
+                        foreach (var potionIngredient in ingredients)
                         {
-                            if (neededIngredients.Find(ing => ing.GetIngredientName() == potionIngredient.GetIngredientName()) != null)
+                            if (neededIngredients.Find(ing => ing.GetName() == potionIngredient.GetName()) != null)
                             {
                                 var ingredientNeeded = neededIngredients.Find(ing =>
-                                    ing.GetIngredientName() == potionIngredient.GetIngredientName());
+                                    ing.GetName() == potionIngredient.GetName());
 
-                                var ingredientOperationsCovered = ingredientNeeded.GetIngredientOperations().All(op =>
-                                        potionIngredient.GetIngredientOperations().Contains(op));
-                                if (ingredientOperationsCovered)
+                                if (ingredientNeeded == null) continue;
+                                var ingredientOperationsCovered = ingredientNeeded.GetOperations().All(op =>
+                                        potionIngredient.GetOperations().Contains(op));
+                                var matchingOperationCount = ingredientNeeded.GetOperations().Count() ==
+                                                             potionIngredient.GetOperations().Count();
+                                if (ingredientOperationsCovered && matchingOperationCount)
                                 {
                                     matchedIngredientCounter++;
                                 }
@@ -124,15 +132,15 @@ namespace Minigames.Alchemy
                     var draggableItem = currColl.GetComponent<DraggableItem>();
                     foreach (var draggableItemIngredient in draggableItem.GetIngredients())
                     {
-                        _ingredients.Add(draggableItemIngredient);
+                        ingredients.Add(draggableItemIngredient);
                     }
                        
                     Destroy(draggableItem.gameObject);
                     string itemConsistenceText = "";
-                    foreach (var ingredient in _ingredients)
+                    foreach (var ingredient in ingredients)
                     {
-                        itemConsistenceText += ingredient.GetIngredientName() +  " (";
-                        foreach (var op in ingredient.GetIngredientOperations())
+                        itemConsistenceText += ingredient.GetName() +  " (";
+                        foreach (var op in ingredient.GetOperations())
                         {
                             itemConsistenceText += op + " ";
                         }
@@ -146,12 +154,12 @@ namespace Minigames.Alchemy
 
         public void SetIngredients(List<Ingredient> ingredients)
         {
-            _ingredients = ingredients;
+            this.ingredients = ingredients;
         }
 
         public List<Ingredient> GetIngredients()
         {
-            return _ingredients;
+            return ingredients;
         }
         
         public void MakeUndefinedLiquid()
@@ -164,6 +172,14 @@ namespace Minigames.Alchemy
         {
             _itemName.text = "Undefined Powder";
             GetComponent<SpriteRenderer>().sprite = FileLoader.GetSpriteByName(FileConstants.SPR_PROTO_MINERAL);
+        }
+        
+        public void SetDraggableIngredient(Ingredient selectedIngredient)
+        {
+            starterIngredient = selectedIngredient;
+            ingredients.Add(starterIngredient);
+            _itemName.text = starterIngredient.GetName();
+            GetComponent<SpriteRenderer>().sprite = starterIngredient.ResolveSpriteByIngredientName();
         }
 
         private void SetItemText(string itemText)

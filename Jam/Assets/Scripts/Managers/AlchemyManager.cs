@@ -1,14 +1,15 @@
 using Helpers;
 using Minigames.Alchemy;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 namespace Managers
 {
     public class AlchemyManager : MonoBehaviour
     {
-        [SerializeField] private DraggableIngredient _draggableFirstIngredient;
-        [SerializeField] private DraggableIngredient _draggableSecondIngredient;
-        [SerializeField] private DraggableIngredient _draggableThirdIngredient;
+        [SerializeField] private DraggableItem _draggableFirstIngredient;
+        [SerializeField] private DraggableItem _draggableSecondIngredient;
+        [SerializeField] private DraggableItem _draggableThirdIngredient;
         [SerializeField] private GameObject _treatPatientButton;
         [SerializeField] private GameObject _resetPreparationButton;
 
@@ -38,6 +39,7 @@ namespace Managers
             var items = FindObjectsOfType<DraggableItem>();
             foreach (var item in items)
             {
+                if (item.GetIngredients() == null) continue;
                 if (item.GetIngredients().Count >= 3)
                 {
                     DontDestroyOnLoad(item.gameObject);

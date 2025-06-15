@@ -10,6 +10,7 @@ namespace Managers
         [SerializeField] private GameObject _recipe01;
         [SerializeField] private GameObject _recipe02;
         [SerializeField] private GameObject _recipe03;
+        [SerializeField] private GameObject _recipe04;
         [SerializeField] private GameObject _buttonNextPage;
         [SerializeField] private GameObject _buttonPreviousPage;
         [SerializeField] private TMPro.TMP_Text _patientInfoText;
@@ -53,7 +54,7 @@ namespace Managers
         public void NextPage()
         {
             _pageIndex++;
-            if (_pageIndex >= 2) _pageIndex = 2;
+            if (_pageIndex >= 3) _pageIndex = 3;
             SetRecipeActiveByIndex(_pageIndex);
         }
 
@@ -69,6 +70,7 @@ namespace Managers
             _recipe01.SetActive(false);
             _recipe02.SetActive(false);
             _recipe03.SetActive(false);
+            _recipe04.SetActive(false);
         }
 
         private void SetRecipeActiveByIndex(int index)
@@ -87,6 +89,9 @@ namespace Managers
                     break;
                 case 2:
                     _recipe03.SetActive(true);
+                    break;
+                case 3:
+                    _recipe04.SetActive(true);
                     _buttonNextPage.SetActive(false);
                     break;
                 default:

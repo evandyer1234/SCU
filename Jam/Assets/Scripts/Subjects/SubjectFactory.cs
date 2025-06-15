@@ -65,9 +65,9 @@ namespace Subjects
                 minigames04,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_AMARANTH, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
                     new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
                 });
             List<string> minigames14 = new List<string>()
             {
@@ -85,9 +85,9 @@ namespace Subjects
                 minigames14,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_FAIRY_DUST, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_AMARANTH, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                    new (IngredientConstants.INGREDIENT_ID_102_PURE_TEA, new List<string>{IngredientConstants.OPERATION_BOIL}),
                 });
             List<string> minigames15 = new List<string>()
             {
@@ -105,9 +105,9 @@ namespace Subjects
                 minigames15,
                 new List<Ingredient>
                 {
-                    new (IngredientConstants.INGREDIENT_ID_NETTLE, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
-                    new (IngredientConstants.INGREDIENT_ID_PEARL_ASH, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_MOONSTONE, new List<string>{IngredientConstants.OPERATION_GRIND}),
+                    new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{}),
                 });
         
             subjectMap.Add(subject04.name, subject04);

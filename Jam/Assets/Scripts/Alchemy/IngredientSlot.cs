@@ -34,7 +34,7 @@ namespace Minigames.Alchemy
                 Debug.LogError("FAILED TO IDENTIFY INGREDIENT SPRITE BY NAME! DO YOU HAVE A TYPO IN YOUR INGREDIENT?");
                 return;
             }
-            hoverTooltip.SetTooltipText(ingredient.GetIngredientName());
+            hoverTooltip.SetTooltipText(ingredient.GetName());
         }
 
         private void OnMouseOver()

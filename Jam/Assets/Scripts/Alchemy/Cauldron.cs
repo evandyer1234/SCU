@@ -23,13 +23,16 @@ namespace Minigames.Alchemy
 
             foreach (var currColl in allColliders)
             {
-                if (currColl.GetComponent<DraggableIngredient>() != null)
+                if (currColl.GetComponent<DraggableItem>() != null)
                 {
-                    var draggableIng = currColl.GetComponent<DraggableIngredient>();
-                    if (draggableIng.ingredient != null && !draggableIng.followMouse)
+                    var draggableItem = currColl.GetComponent<DraggableItem>();
+                    if (draggableItem != null && !draggableItem.followMouse)
                     {
-                        _inputIngredients.Add(draggableIng.ingredient);
-                        Destroy(draggableIng.gameObject);
+                        foreach (var ing in draggableItem.ingredients)
+                        {
+                            _inputIngredients.Add(ing);
+                        }
+                        Destroy(draggableItem.gameObject);
                         RenderIngredientPrefabs();
                     }
                 }

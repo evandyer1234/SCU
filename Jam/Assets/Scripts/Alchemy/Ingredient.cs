@@ -18,17 +18,18 @@ public class Ingredient
         this.name = name;
         this.ingredientOperations = ingredientOperations;
     }
-    public string GetIngredientName()
+    public string GetName()
     {
         return name;
     }
 
     public void AddIngredientOperation(string operation)
     {
-        this.ingredientOperations.Add(operation);
+        if (ingredientOperations.Contains(operation)) return;
+        ingredientOperations.Add(operation);
     }
 
-    public List<string> GetIngredientOperations()
+    public List<string> GetOperations()
     {
         return ingredientOperations;
     }
