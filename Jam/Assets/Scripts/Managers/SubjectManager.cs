@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
 using Helpers;
 using Managers;
-using Minigames;
 using Subjects;
 using UnityEngine;
 
@@ -14,8 +12,6 @@ public class SubjectManager : MonoBehaviour
 
     // progression state
     private Dictionary<string, Subject> subjectsToCure = new();
-    private Dictionary<string, Ingredient> allIngredients = new();
-    private List<string> collectedIngredientHints = new();
     
     // subject ids = names
     public const string SUBJECT_NAME_04 = "subject_04";
@@ -48,10 +44,8 @@ public class SubjectManager : MonoBehaviour
      */
     private AlchemyManager _alchemyManager;
 
-    private bool alchemyShelvesFilled = false;
-    
-    /* **************************************************** */
-    
+    private bool _potionMode = false;
+
     /** ****************************************************
      * **************** UNITY INTERFACE ********************
      * *****************************************************
@@ -60,45 +54,13 @@ public class SubjectManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         subjectsToCure = SubjectFactory.CreateSubjectMap();
-        allIngredients = IngredientFactory.CreateIngredients();
     }
 
     private void Update()
     {
         LoadMinigamesAndSceneStateMachine();
-        LoadAlchemyAndSceneStateMachine();
     }
 
-    private void LoadAlchemyAndSceneStateMachine()
-    {
-        if (alchemyShelvesFilled) return;
-        if (!IsAlchemySceneLoaded()) return;
-        
-        _alchemyManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER)
-            .GetComponent<AlchemyManager>();
-
-        _alchemyManager.FillShelvesWithRespectiveIngredients(allIngredients.Values.ToList());
-        alchemyShelvesFilled = true;
-    }
-    
-    private bool IsAlchemySceneLoaded()
-    {
-        return GameObject.FindGameObjectWithTag(NamingConstants.TAG_ALCHEMY_MANAGER) != null;
-    }
-
-    /** ****************************************************
-    * *************** GLOBAL PROGRESSION *******************
-    * *****************************************************+
-    */
-
-    public void AddUniqueIngredient(string ingredientName)
-    {
-        if (!collectedIngredientHints.Contains(ingredientName))
-        {
-            collectedIngredientHints.Add(ingredientName);    
-        }
-    }
-    
     /** ****************************************************
     * *************** MINIGAME SPECIFIC *******************
     * *****************************************************
@@ -115,6 +77,13 @@ public class SubjectManager : MonoBehaviour
         }
     }
 
+    public void LaunchPatientPageInPotionMode(string subjectName)
+    {
+        ResetMinigameState();
+        currentSubject = GetCurrentSubjectByName(subjectName);
+        _potionMode = true;
+    }
+    
     public void ResetMinigameState()
     {
         currentSubject = null;
@@ -124,11 +93,17 @@ public class SubjectManager : MonoBehaviour
         _magnifyingGlass = null;
         _miniGameManager = null;
         _corruptionMarksPlaced = false;
+        _potionMode = false;
     }
 
     public SCUSceneManager GetSCUSceneManager()
     {
         return GetComponent<SCUSceneManager>();
+    }
+
+    public bool IsPotionMode()
+    {
+        return _potionMode;
     }
     
     private void LoadMinigamesAndSceneStateMachine()

@@ -72,7 +72,6 @@ public class EyeClickAndDrag : ClickandDrag
            
             if (isOverEyeSlot)
             {
-                Debug.Log("hi");
                 if (_mgEye.correctsprite == irisRenderer.sprite)
                 {
                     _mgEye.OnSuccess();

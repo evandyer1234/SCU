@@ -28,7 +28,6 @@ public class MG_Gear : MiniGameBase
         {
             float dis = Vector3.Distance(handle.position, root.position);
             
-            Debug.Log(dis);
             if (dis > 0.2f)
             {
                 //pullstrength -= dis * Time.fixedDeltaTime;

@@ -29,7 +29,6 @@ public class PQ<DataType>
                 
                 if (node.Value.priority >= aPriority)
                 {
-                    Debug.Log("LOL");
                     PQElement newelement = new PQElement();
                     newelement.data = aData;
                     newelement.priority = aPriority;
@@ -64,7 +63,7 @@ public class PQ<DataType>
     {
         for (LinkedListNode<PQElement> node = linkedList.First; node != null; node = node.Next)
         {       
-            Debug.Log(node.Value.priority);
+            // Debug.Log(node.Value.priority);
         }
     }
 

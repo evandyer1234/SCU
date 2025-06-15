@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickandDrag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkMotion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkMotion.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSoundSeedGrain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSoundSeedGrain.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSynthOne.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkSynthOne.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/Auro.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/Auro.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/MasteringSuite.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/MasteringSuite.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/McDSP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/McDSP.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/iZotope.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/iZotope.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Debug/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Debug/AkSoundEngine.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkMotion.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkMotion.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSoundSeedGrain.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSoundSeedGrain.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSynthOne.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkSynthOne.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/Auro.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/Auro.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/MasteringSuite.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/MasteringSuite.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/McDSP.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/McDSP.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/iZotope.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/iZotope.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Release/AkSoundEngine.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/Release/AkSoundEngine.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/CustomCursor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,8 +44,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/be89b0030d794d8697e5c049fc1090e21f800/c2/553e5f81/PolygonCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e5b1d4d7071a4b08a2c352e4980e4bc41a000/34/7d458b36/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Alchemy/DraggableItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/Subject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
@@ -84,22 +60,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-alchemy-select&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
@@ -245,6 +221,8 @@
       <workItem from="1748673967420" duration="33975000" />
       <workItem from="1748770004065" duration="3336000" />
       <workItem from="1748799268327" duration="4194000" />
+      <workItem from="1749896944702" duration="22124000" />
+      <workItem from="1749976790047" duration="7524000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -574,7 +552,47 @@
       <option name="project" value="LOCAL" />
       <updated>1748775168876</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Recipe Book in Alchemy">
+      <option name="closed" value="true" />
+      <created>1749851717011</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1749851717011</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Apply potion to patient with checking success condition">
+      <option name="closed" value="true" />
+      <created>1749915361635</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1749915361635</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Use scattered ingredients, no more ingredient types">
+      <option name="closed" value="true" />
+      <created>1749936124168</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1749936124168</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Enable items to be boiled/grinded multiple times">
+      <option name="closed" value="true" />
+      <created>1749982392758</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1749982392758</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Align ingredient hints, minigames and allergy info per patient">
+      <option name="closed" value="true" />
+      <created>1749984145870</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749984145870</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,11 +620,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Patient parameterizing sprites" />
-    <MESSAGE value="Add intro and seperate launchable Patients" />
-    <MESSAGE value="Place corruption mark and launch minigames per patient" />
-    <MESSAGE value="refactor some code" />
-    <MESSAGE value="Refactor code for minigame scene state machine" />
     <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
     <MESSAGE value="Add tooltips for magnifying glass" />
@@ -627,6 +640,11 @@
     <MESSAGE value="Fix bug constant re-assign healthy element" />
     <MESSAGE value="Fixing curing condition" />
     <MESSAGE value="Add Sprites for new Heartstring Patterns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Sprites for new Heartstring Patterns" />
+    <MESSAGE value="Recipe Book in Alchemy" />
+    <MESSAGE value="Apply potion to patient with checking success condition" />
+    <MESSAGE value="Use scattered ingredients, no more ingredient types" />
+    <MESSAGE value="Enable items to be boiled/grinded multiple times" />
+    <MESSAGE value="Align ingredient hints, minigames and allergy info per patient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Align ingredient hints, minigames and allergy info per patient" />
   </component>
 </project>

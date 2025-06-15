@@ -72,8 +72,6 @@ namespace Minigames.Lungpump
         public override void Start()
         {
             base.Start();
-            ingredient = IngredientConstants.INGREDIENT_ID_PEARL_ASH;
-            
             _onClickCollider = GetComponent<CircleCollider2D>();
             _onClickCollider.offset = _collOffsetLeft;
             colliderIsLeft = true;

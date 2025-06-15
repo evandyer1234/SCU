@@ -23,7 +23,6 @@ public class MG_HeartString : MiniGameBase
             .GetComponent<PauseMenuManager>();
         
         base.Start();
-        ingredient = IngredientConstants.INGREDIENT_ID_NETTLE;
         
         _correctVeinNumber = Random.Range(0, _icons.Length);
         _icons[_correctVeinNumber].sprite = _corruptionIcon;

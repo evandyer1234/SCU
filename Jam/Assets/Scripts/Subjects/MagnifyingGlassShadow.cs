@@ -21,6 +21,7 @@ namespace Subjects
         private bool IsMagnifyingGlassInUse = false;
         
         private SCUInputAction _scuInputAction;
+        private SubjectManager _subjectManager;
         
         // interaction hint
         private int hintCountdown = 250;
@@ -57,10 +58,17 @@ namespace Subjects
             
             RememberOriginalMagnifyingGlassElementPositions();
         }
+
+        void Start()
+        {
+            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+                .GetComponent<SubjectManager>();
+        }
         
         private void FixedUpdate()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_subjectManager.IsPotionMode()) return;
             
             HandleInitialUsageHintAnimation();
             HandleResetHintAnimation();
@@ -69,6 +77,7 @@ namespace Subjects
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_subjectManager.IsPotionMode()) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {

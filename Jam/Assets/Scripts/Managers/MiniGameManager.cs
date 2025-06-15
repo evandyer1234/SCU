@@ -5,7 +5,6 @@ using Helpers;
 using Subjects;
 using TMPro;
 using UnityEngine;
-using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class MiniGameManager : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class MiniGameManager : MonoBehaviour
     GameObject postItIngredients;
     [SerializeField] private GameObject goToPotionSceneButton;
     [SerializeField] private GameObject minigameDoneText;
+    [SerializeField] private GameObject clothLayerPatient;
     
     Dictionary<string, bool> miniGamesFinishedState = new();
     private List<string> collectedIngredientsPerPatient = new();
@@ -38,6 +38,8 @@ public class MiniGameManager : MonoBehaviour
         
         goToPotionSceneButton.SetActive(false);
         minigameDoneText.SetActive(false);
+        
+
     }
     
     void Start()
@@ -46,10 +48,25 @@ public class MiniGameManager : MonoBehaviour
             .GetComponent<SubjectManager>();
         collectedIngredientsPerPatient = new();
         InitializeTimer();
+
+        if (_subjectManager.IsPotionMode())
+        {
+            clothLayerPatient.GetComponent<Collider2D>().enabled = true;
+        }
+        else
+        {
+            clothLayerPatient.GetComponent<Collider2D>().enabled = false;
+        }
     }
     
     void FixedUpdate()
     {
+        if (_subjectManager.IsPotionMode())
+        {
+            SetTimerText("");
+            return;
+        }
+        
         CurrentTime -= Time.fixedDeltaTime;
         UpdateTimerText();
         if (CurrentTime <= 0 && !_pauseMenuManager.isGamePaused())
@@ -83,7 +100,7 @@ public class MiniGameManager : MonoBehaviour
             if (miniGameState.Key == miniGameName)
             {
                 miniGamesFinishedState[miniGameName] = true;
-                AddIngredient(minigameBase.ingredient);
+                RevealIngredientHintsBasedOnFinishedMinigames();
                 magnifyingGlassShadowRef.GetComponent<MagnifyingGlassShadow>().SetMagnifyingGlassInUse(true);
                 break;
             }
@@ -96,15 +113,16 @@ public class MiniGameManager : MonoBehaviour
         }
     }
     
-    public void AddIngredient(string ingredientName)
+    public void RevealIngredientHintsBasedOnFinishedMinigames()
     {
-        collectedIngredientsPerPatient.Add(ingredientName);
-        _subjectManager.AddUniqueIngredient(ingredientName);
+        var finishedMinigamesCount = miniGamesFinishedState.Where(state => state.Value)
+            .ToList().Count();
+        var totalIngrHints = _subjectManager.currentSubject.ingredientHints;
 
-        string ingredientsToDisplay = "Ingredients:\n";
-        foreach (var ingName in collectedIngredientsPerPatient)
+        string ingredientsToDisplay = "Ingredient Hints:\n";
+        for (int i = 0; i < finishedMinigamesCount; i++)
         {
-            ingredientsToDisplay += "\n* " + ingName;
+            ingredientsToDisplay += "\n* " + totalIngrHints[i];
         }
         postItIngredients.GetComponent<TextMeshPro>().text = ingredientsToDisplay;
     }

@@ -1,9 +1,7 @@
 using System.Collections;
-using Helpers;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using Unity.VisualScripting;
 
 public class MG_Drain : MiniGameBase
 {
@@ -50,7 +48,6 @@ public class MG_Drain : MiniGameBase
     public override void Start()
     {
         base.Start();
-        ingredient = IngredientConstants.INGREDIENT_ID_SUNSTONE;
         //set start value for blood
         bloodtoxicity = Random.Range(minstartvalue, maxstartvalue);
         SafeInd.SetActive(false);

@@ -95,7 +95,6 @@ public class MG_Whack : MiniGameBase
     public void Miss()
     {
         // gameModeManager.subtractTime(penalty);
-        Debug.Log("Miss");
 
         _audioSource.PlayOneShot(_missSound);
     }
@@ -110,8 +109,6 @@ public class MG_Whack : MiniGameBase
             OnSuccess();
         }
 
-        Debug.Log("Hit");
-        
         _audioSource.PlayOneShot(_hitSound);
 
     }
