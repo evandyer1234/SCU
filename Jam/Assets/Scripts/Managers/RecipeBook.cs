@@ -15,6 +15,7 @@ namespace Managers
         [SerializeField] private GameObject _buttonPreviousPage;
         [SerializeField] private TMPro.TMP_Text _patientInfoText;
         [SerializeField] private TMPro.TMP_Text _ingredientHintsText;
+        [SerializeField] private TMPro.TMP_Text _allergiesInfo;
         
         private Vector3 _closedPosition;
         private Vector3 _openPosition;
@@ -106,13 +107,21 @@ namespace Managers
             if (currentSubject == null) return;
             
             _patientInfoText.text = "Patient Info: " + currentSubject.name;
-            var ingredientHints = _subjectManager.GetIngredientHints();
-            string ingredientsToDisplay = "Ingredients:\n";
+            var ingredientHints = _subjectManager.currentSubject.ingredientHints;
+            string ingredientsToDisplay = "Ingredient Hints:\n";
             foreach (var ingName in ingredientHints)
             {
                 ingredientsToDisplay += "\n* " + ingName;
             }
             _ingredientHintsText.text = ingredientsToDisplay;
+
+            var allergies = _subjectManager.currentSubject.allergies;
+            string allergiesToDisplay = "Allergies:\n";
+            foreach (var allergy in allergies)
+            {
+                allergiesToDisplay += "\n* " + allergy;
+            }
+            _allergiesInfo.text = allergiesToDisplay;
         }
     }
 }

@@ -12,7 +12,6 @@ public class SubjectManager : MonoBehaviour
 
     // progression state
     private Dictionary<string, Subject> subjectsToCure = new();
-    private List<string> collectedIngredientHints = new();
     
     // subject ids = names
     public const string SUBJECT_NAME_04 = "subject_04";
@@ -60,24 +59,6 @@ public class SubjectManager : MonoBehaviour
     private void Update()
     {
         LoadMinigamesAndSceneStateMachine();
-    }
-
-    /** ****************************************************
-    * *************** GLOBAL PROGRESSION *******************
-    * *****************************************************+
-    */
-
-    public void AddUniqueIngredient(string ingredientName)
-    {
-        if (!collectedIngredientHints.Contains(ingredientName))
-        {
-            collectedIngredientHints.Add(ingredientName);    
-        }
-    }
-
-    public List<string> GetIngredientHints()
-    {
-        return collectedIngredientHints;
     }
 
     /** ****************************************************

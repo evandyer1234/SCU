@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableItem.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableItem.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/Cauldron.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/Cauldron.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableIngredient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableIngredient.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/Ingredient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/IngredientSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/IngredientSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/MortarPestle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/MortarPestle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AlchemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AlchemyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableIngredient.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableIngredient.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableUndefinedItem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/DraggableUndefinedItem.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +233,7 @@
       <workItem from="1748770004065" duration="3336000" />
       <workItem from="1748799268327" duration="4194000" />
       <workItem from="1749896944702" duration="22124000" />
-      <workItem from="1749976790047" duration="4835000" />
+      <workItem from="1749976790047" duration="6684000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -594,7 +587,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749936124168</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Enable items to be boiled/grinded multiple times">
+      <option name="closed" value="true" />
+      <created>1749982392758</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1749982392758</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +623,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="refactor some code" />
     <MESSAGE value="Refactor code for minigame scene state machine" />
     <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
@@ -647,6 +647,7 @@
     <MESSAGE value="Recipe Book in Alchemy" />
     <MESSAGE value="Apply potion to patient with checking success condition" />
     <MESSAGE value="Use scattered ingredients, no more ingredient types" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use scattered ingredients, no more ingredient types" />
+    <MESSAGE value="Enable items to be boiled/grinded multiple times" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable items to be boiled/grinded multiple times" />
   </component>
 </project>

@@ -20,7 +20,6 @@ namespace Minigames.Abdomen
         {
             _scuInputAction = new SCUInputAction();
             _scuInputAction.UI.Enable();
-            ingredient = IngredientConstants.INGREDIENT_ID_DRAGONS_BLOOD;
         }
 
         public override void Start()

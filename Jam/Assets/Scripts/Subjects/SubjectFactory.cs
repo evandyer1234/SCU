@@ -32,7 +32,9 @@ namespace Subjects
             string skeleton,
             bool isAdult,
             List<string> minigames,
-            List<Ingredient> neededIngredients)
+            List<Ingredient> neededIngredients,
+            List<string> ingredientHints,
+            List<string> allergies)
         {
             Subject subject = new Subject();
             subject.name = name;
@@ -43,6 +45,8 @@ namespace Subjects
             subject.isAdult = isAdult;
             subject.subjectMinigames = minigames;
             subject.neededIngredientsFromPotion = neededIngredients;
+            subject.ingredientHints = ingredientHints;
+            subject.allergies = allergies;
             return subject;
         }
         
@@ -51,9 +55,8 @@ namespace Subjects
             Dictionary<string, Subject> subjectMap = new();
             List<string> minigames04 = new List<string>()
             {
-                NamingConstants.TAG_MINIGAME_HEARTSTRING,
-                NamingConstants.TAG_MINIGAME_LUNGPUMP,
                 NamingConstants.TAG_MINIGAME_DRAIN,
+                NamingConstants.TAG_MINIGAME_ABDOMEN,
             };
             Subject subject04 = CreateSubject(
                 SubjectManager.SUBJECT_NAME_04, 
@@ -68,12 +71,21 @@ namespace Subjects
                     new (IngredientConstants.INGREDIENT_ID_AMARANTH, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
                     new (IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
                     new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_AMARANTH,
+                    IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW,
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_MOON_MUSHROOM,
+                    IngredientConstants.INGREDIENT_ID_FAIRY_DUST,
                 });
             List<string> minigames14 = new List<string>()
             {
-                NamingConstants.TAG_MINIGAME_HEARTSTRING,
                 NamingConstants.TAG_MINIGAME_LUNGPUMP,
-                NamingConstants.TAG_MINIGAME_DRAIN,
+                NamingConstants.TAG_MINIGAME_ABDOMEN,
             };
             Subject subject14 = CreateSubject(
                 SubjectManager.SUBJECT_NAME_14, 
@@ -88,11 +100,19 @@ namespace Subjects
                     new (IngredientConstants.INGREDIENT_ID_FAIRY_DUST, new List<string>{IngredientConstants.OPERATION_GRIND, IngredientConstants.OPERATION_BOIL}),
                     new (IngredientConstants.INGREDIENT_ID_AMARANTH, new List<string>{IngredientConstants.OPERATION_BOIL}),
                     new (IngredientConstants.INGREDIENT_ID_102_PURE_TEA, new List<string>{IngredientConstants.OPERATION_BOIL}),
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_FAIRY_DUST,
+                    IngredientConstants.INGREDIENT_ID_MYRRH,
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_MYRRH,
                 });
             List<string> minigames15 = new List<string>()
             {
                 NamingConstants.TAG_MINIGAME_HEARTSTRING,
-                NamingConstants.TAG_MINIGAME_ABDOMEN,
                 NamingConstants.TAG_MINIGAME_DRAIN,
             };
             Subject subject15 = CreateSubject(
@@ -108,6 +128,16 @@ namespace Subjects
                     new (IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW, new List<string>{IngredientConstants.OPERATION_GRIND}),
                     new (IngredientConstants.INGREDIENT_ID_MOONSTONE, new List<string>{IngredientConstants.OPERATION_GRIND}),
                     new (IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES, new List<string>{}),
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_DEATHS_FLOWER,
+                    IngredientConstants.INGREDIENT_ID_MOONSTONE,
+                },
+                new List<string>
+                {
+                    IngredientConstants.INGREDIENT_ID_DEATHS_FLOWER,
+                    IngredientConstants.INGREDIENT_ID_FAIRY_DUST,
                 });
         
             subjectMap.Add(subject04.name, subject04);

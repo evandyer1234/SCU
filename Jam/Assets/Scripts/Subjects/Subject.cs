@@ -14,4 +14,6 @@ public class Subject
 
     public List<string> subjectMinigames = new();
     public List<Ingredient> neededIngredientsFromPotion = new();
+    public List<string> ingredientHints = new();
+    public List<string> allergies = new();
 }

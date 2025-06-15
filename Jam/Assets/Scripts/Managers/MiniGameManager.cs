@@ -100,7 +100,7 @@ public class MiniGameManager : MonoBehaviour
             if (miniGameState.Key == miniGameName)
             {
                 miniGamesFinishedState[miniGameName] = true;
-                AddIngredient(minigameBase.ingredient);
+                RevealIngredientHintsBasedOnFinishedMinigames();
                 magnifyingGlassShadowRef.GetComponent<MagnifyingGlassShadow>().SetMagnifyingGlassInUse(true);
                 break;
             }
@@ -113,15 +113,16 @@ public class MiniGameManager : MonoBehaviour
         }
     }
     
-    public void AddIngredient(string ingredientName)
+    public void RevealIngredientHintsBasedOnFinishedMinigames()
     {
-        collectedIngredientsPerPatient.Add(ingredientName);
-        _subjectManager.AddUniqueIngredient(ingredientName);
+        var finishedMinigamesCount = miniGamesFinishedState.Where(state => state.Value)
+            .ToList().Count();
+        var totalIngrHints = _subjectManager.currentSubject.ingredientHints;
 
-        string ingredientsToDisplay = "Ingredients:\n";
-        foreach (var ingName in collectedIngredientsPerPatient)
+        string ingredientsToDisplay = "Ingredient Hints:\n";
+        for (int i = 0; i < finishedMinigamesCount; i++)
         {
-            ingredientsToDisplay += "\n* " + ingName;
+            ingredientsToDisplay += "\n* " + totalIngrHints[i];
         }
         postItIngredients.GetComponent<TextMeshPro>().text = ingredientsToDisplay;
     }

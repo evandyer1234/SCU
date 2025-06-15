@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MiniGameBase : MonoBehaviour
 {
-    [HideInInspector] public string ingredient;
     public float penalty;
 
     [SerializeField] internal Stage miniGameStage;
@@ -15,7 +14,6 @@ public class MiniGameBase : MonoBehaviour
     public virtual void Start()
     {
         miniGameManager = GameObject.FindObjectOfType<MiniGameManager>();
-        //miniGameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER).GetComponent<MiniGameManager>();
         debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
         debugMessage.text = "";
     }

@@ -3001,6 +3001,7 @@ MonoBehaviour:
   _buttonPreviousPage: {fileID: 1495165662}
   _patientInfoText: {fileID: 774596052}
   _ingredientHintsText: {fileID: 1167372643}
+  _allergiesInfo: {fileID: 845390707}
 --- !u!224 &858296327
 RectTransform:
   m_ObjectHideFlags: 0
