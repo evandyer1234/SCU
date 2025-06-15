@@ -8,7 +8,8 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private GameObject _resumeButton;
     [SerializeField] private GameObject _restartButton;
-    [SerializeField] private GameObject _gameOverPanel;
+    [SerializeField] private GameObject _gameOverMinigamePanel;
+    [SerializeField] private GameObject _gameOverPotionPanel;
 
     private bool _paused;
     private bool _gameOver;
@@ -83,18 +84,25 @@ public class PauseMenuManager : MonoBehaviour
         _paused = true;
         //AkSoundEngine.SetRTPCValue("isPaused", 1, null);
         Time.timeScale = 0f;
-
         if (_gameOver)
         {
             _resumeButton.SetActive(false);
             _restartButton.SetActive(true);
-            _gameOverPanel.SetActive(true);
+            if (_subjectManager.IsPotionMode())
+            {
+                _gameOverPotionPanel.SetActive(true);
+            }
+            else
+            {
+                _gameOverMinigamePanel.SetActive(true);
+            }
         }
         else
         {
             _resumeButton.SetActive(true);
             _restartButton.SetActive(false);
-            _gameOverPanel.SetActive(false);
+            _gameOverMinigamePanel.SetActive(false);
+            _gameOverPotionPanel.SetActive(false);
         }
 
         EnableAllTooltipsInScene(false);
@@ -105,6 +113,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         var _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
             .GetComponent<SubjectManager>();
+        _subjectManager.SetPotionMode(false);
         var subjectNameBefore = _subjectManager.currentSubject.name;
         _subjectManager.ResetMinigameState();
         _subjectManager.GetSCUSceneManager().TransitionToScene(SceneManager.GetActiveScene().name, true);

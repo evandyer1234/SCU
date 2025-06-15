@@ -12,6 +12,7 @@ namespace Minigames.Alchemy
         
         private PauseMenuManager _pauseMenuManager;
         private SubjectManager _subjectManager;
+        private MiniGameManager _minigameManager;
         private SCUInputAction _scuInputAction;
 
         [HideInInspector] public Ingredient starterIngredient;
@@ -109,17 +110,18 @@ namespace Minigames.Alchemy
                         if (matchedIngredientCounter == 3)
                         {
                             // SUCCESS
-                            Debug.Log("SUCCESS");
-                            TextMeshProUGUI debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
-                            debugMessage.text = "CORRECT POTION";
+                            _minigameManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MINIGAME_MANAGER)
+                                .GetComponent<MiniGameManager>();
+                            _minigameManager.MakeJournalSceneButtonAppear();
                             Destroy(gameObject);
                         }
                         else
                         {
                             // FAILURE
-                            Debug.Log("FAILURE");
-                            TextMeshProUGUI debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
-                            debugMessage.text = "WRONG POTION";
+                            // need to reload the current pause menu manager, because of previous scene change
+                            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                                .GetComponent<PauseMenuManager>();
+                            _pauseMenuManager.SetGameOver();
                             Destroy(gameObject);
                         }
                     }

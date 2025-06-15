@@ -5,95 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Excellentia SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Excellentia SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Excellentia.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Excellentia.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd It SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd It SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd It.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd It.otf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Kenyan Coffee Bd.otf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/OldNewspaperTypes SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/OldNewspaperTypes SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/OldNewspaperTypes.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/OldNewspaperTypes.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter-LAYy SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter-LAYy SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter-LAYy.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Typewriter-LAYy.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/TypewriterBold-PZ2P SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/TypewriterBold-PZ2P SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/TypewriterBold-PZ2P.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/TypewriterBold-PZ2P.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Verve SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Verve SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Verve.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Verve.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/XTypewriter-Bold SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/XTypewriter-Bold SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/XTypewriter-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/XTypewriter-Bold.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/angelina SDF.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/angelina SDF.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/angelina.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/angelina.TTF.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Journals.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/MinigameJournal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/MinigameJournal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/PropsBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/PropsBG.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/WoodBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Background/WoodBG.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Layout.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letter NLMI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letter NLMI.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letter-Bram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letter-Bram.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letterb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letterb.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letterc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Letterc.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/NewsAd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/NewsAd.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper1b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper1b.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper2b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Newspaper2b.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Scribble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/Scribble.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/SilasJournal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/SilasJournal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/SimpleNote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/SimpleNote.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/StewardNote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Journal/StewardNote.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototyping Scenes/alex_Proto.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/TypewriterBold_SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/TypewriterBold_SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/NamingConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Journals/JournalsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -682,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749984145870</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Lay out Journals Scene">
+      <option name="closed" value="true" />
+      <created>1750006382415</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1750006382415</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,7 +639,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
     <MESSAGE value="Add tooltips for magnifying glass" />
     <MESSAGE value="Add click hints for heartstring minigame" />
@@ -735,6 +663,7 @@
     <MESSAGE value="Use scattered ingredients, no more ingredient types" />
     <MESSAGE value="Enable items to be boiled/grinded multiple times" />
     <MESSAGE value="Align ingredient hints, minigames and allergy info per patient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Align ingredient hints, minigames and allergy info per patient" />
+    <MESSAGE value="Lay out Journals Scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lay out Journals Scene" />
   </component>
 </project>
