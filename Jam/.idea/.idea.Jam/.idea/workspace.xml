@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SubjectManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Abdomen/MG_Abdomen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/HeartString/MG_HeartString.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Lungpump/MG_LungPump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Drain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MiniGameBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/SubjectFactory.cs" afterDir="false" />
-    </list>
+    <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +48,7 @@
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Alchemy/DraggableItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scripts/Subjects/Subject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
@@ -233,7 +222,7 @@
       <workItem from="1748770004065" duration="3336000" />
       <workItem from="1748799268327" duration="4194000" />
       <workItem from="1749896944702" duration="22124000" />
-      <workItem from="1749976790047" duration="6684000" />
+      <workItem from="1749976790047" duration="7524000" />
     </task>
     <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
       <option name="closed" value="true" />
@@ -595,7 +584,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749982392758</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Align ingredient hints, minigames and allergy info per patient">
+      <option name="closed" value="true" />
+      <created>1749984145870</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749984145870</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +620,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Refactor code for minigame scene state machine" />
     <MESSAGE value="fix launching multiple corruption marks and resize magnifying glass" />
     <MESSAGE value="add animated InteractionHint" />
     <MESSAGE value="Add tooltips for magnifying glass" />
@@ -648,6 +644,7 @@
     <MESSAGE value="Apply potion to patient with checking success condition" />
     <MESSAGE value="Use scattered ingredients, no more ingredient types" />
     <MESSAGE value="Enable items to be boiled/grinded multiple times" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable items to be boiled/grinded multiple times" />
+    <MESSAGE value="Align ingredient hints, minigames and allergy info per patient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Align ingredient hints, minigames and allergy info per patient" />
   </component>
 </project>

@@ -110,12 +110,16 @@ namespace Minigames.Alchemy
                         {
                             // SUCCESS
                             Debug.Log("SUCCESS");
+                            TextMeshProUGUI debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
+                            debugMessage.text = "CORRECT POTION";
                             Destroy(gameObject);
                         }
                         else
                         {
                             // FAILURE
                             Debug.Log("FAILURE");
+                            TextMeshProUGUI debugMessage = GameObject.FindGameObjectWithTag(NamingConstants.TAG_DEBUG_MESSAGE_USER_FEEDBACK).GetComponent<TextMeshProUGUI>();
+                            debugMessage.text = "WRONG POTION";
                             Destroy(gameObject);
                         }
                     }
