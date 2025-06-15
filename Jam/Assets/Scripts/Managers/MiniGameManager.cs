@@ -52,6 +52,7 @@ public class MiniGameManager : MonoBehaviour
         if (_subjectManager.IsPotionMode())
         {
             clothLayerPatient.GetComponent<Collider2D>().enabled = true;
+            postItIngredients.SetActive(false);
         }
         else
         {
