@@ -11,6 +11,8 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] private GameObject _gameOverMinigamePanel;
     [SerializeField] private GameObject _gameOverPotionPanel;
 
+    private List<GameObject> gameObjectsToCleanup = new();
+
     private bool _paused;
     private bool _gameOver;
 
@@ -118,6 +120,20 @@ public class PauseMenuManager : MonoBehaviour
         _subjectManager.ResetMinigameState();
         _subjectManager.GetSCUSceneManager().TransitionToScene(SceneManager.GetActiveScene().name, true);
         _subjectManager.LaunchMinigames(subjectNameBefore);
+    }
+
+    public void AddGameObjectToCleanup(GameObject gameObject)
+    {
+        gameObjectsToCleanup.Add(gameObject);
+    }
+
+    public void CleanupGameObjects()
+    {
+        foreach (var go in gameObjectsToCleanup)
+        {
+            Destroy(go);
+        }
+        gameObjectsToCleanup.Clear();
     }
 
 

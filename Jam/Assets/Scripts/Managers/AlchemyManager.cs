@@ -1,6 +1,5 @@
 using Helpers;
 using Minigames.Alchemy;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 namespace Managers
@@ -14,12 +13,14 @@ namespace Managers
         [SerializeField] private GameObject _resetPreparationButton;
 
         private SubjectManager _subjectManager;
+        private PauseMenuManager _pauseMenuManager;
         
         private bool finalPotionBrewed = false;
         private int rotatingSelectedIngredientSlot = 0;
         
         void Awake()
         {
+            _pauseMenuManager = FindObjectOfType<PauseMenuManager>();
             _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
                 .GetComponent<SubjectManager>();
             _treatPatientButton.SetActive(false);
@@ -43,6 +44,7 @@ namespace Managers
                 if (item.GetIngredients().Count >= 3)
                 {
                     DontDestroyOnLoad(item.gameObject);
+                    _pauseMenuManager.AddGameObjectToCleanup(item.gameObject);
                     _treatPatientButton.SetActive(true);
                     _resetPreparationButton.SetActive(false);
                     finalPotionBrewed = true;
