@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{2077ADEA-D4BB-A734-CFFC-C212B183B660}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{72E52238-42E8-F4BD-6975-26C1399AC933}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -33,6 +33,9 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="1176052424" Id="748895195" Name="None"/>
+					</ActionSetState>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -49,7 +52,11 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{47CE6A4C-A6D2-E570-1A05-5E83E43004AC}">
+		<SoundBank Id="584226713" Type="User" Language="SFX" Hash="{8D29C8C7-993A-ADD7-1B83-2C5643FCB133}">
+			<ShortName>MainMenuBank</ShortName>
+			<Path>MainMenuBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{385F6566-4F63-DBDD-07EA-4ADE6F2C0A11}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -103,6 +110,14 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
+		<SoundBank Id="3567142168" Type="User" Language="SFX" Hash="{5342C9C0-F625-CD6E-BFC6-01ECAC27DAF8}">
+			<ShortName>AlchemyBank</ShortName>
+			<Path>AlchemyBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4138422396" Type="User" Language="SFX" Hash="{B0A1F76B-CD53-E45B-D0FB-B920B37D6740}">
+			<ShortName>MinigameBank</ShortName>
+			<Path>MinigameBank.bnk</Path>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{371B2956-2A37-DE30-2833-5F5AAC265D78}</FileHash>
+	<FileHash>{51E72090-5AD1-4485-5CB1-8F2E3FE3783B}</FileHash>
 </SoundBanksInfo>

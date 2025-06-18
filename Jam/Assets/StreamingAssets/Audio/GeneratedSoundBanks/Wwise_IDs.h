@@ -45,7 +45,10 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ALCHEMYBANK = 3567142168U;
+        static const AkUniqueID MAINMENUBANK = 584226713U;
         static const AkUniqueID MAINSOUNDBANK = 534561221U;
+        static const AkUniqueID MINIGAMEBANK = 4138422396U;
     } // namespace BANKS
 
     namespace BUSSES

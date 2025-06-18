@@ -8,7 +8,6 @@ namespace UI
     {
         [SerializeField] private int playDuration;
         [SerializeField] private GameObject cursorToHide;
-        [SerializeField] private GameObject soundTrackToHide;
         [SerializeField] private GameObject playerToHide;
 
         private SubjectManager _subjectManager;        
@@ -22,7 +21,6 @@ namespace UI
             var c = logoRenderer.color;
             logoRenderer.color = new Color(c.r, c.g, c.b, 0);
             cursorToHide.SetActive(false);
-            soundTrackToHide.SetActive(false);
             playerToHide.SetActive(false);
             _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
                 .GetComponent<SubjectManager>();
@@ -72,7 +70,6 @@ namespace UI
         private void InitiateGame()
         {
             cursorToHide.SetActive(true);
-            soundTrackToHide.SetActive(true);
             playerToHide.SetActive(true);
             _subjectManager.GetSCUSceneManager().TransitionToScene(NamingConstants.SCENE_ID_MAIN_MENU);
         }

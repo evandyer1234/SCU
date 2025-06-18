@@ -255,6 +255,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="SCU MMT Legato (Main Menu) Fine Cut" ID="{A182C756-8DE5-4DDA-AE0B-BA6520937882}" ShortID="835905720">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
@@ -305,7 +312,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -417,7 +424,7 @@
 													<MusicCue Name="Exit Cue" ID="{2CA8DB5C-BDF3-4BA7-84C9-50B2F7782BFA}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="66000"/>
+															<Property Name="TimeMs" Type="Real64" Value="67384.6153846154"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
