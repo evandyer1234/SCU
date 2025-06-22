@@ -1422,7 +1422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Patient 14</b>\n\nName: Milo Whittock\r\nAge: 5\r\nOccupation: Chimney
+  m_text: "<b>Patient 14</b>\nName: Milo Whittock\r\nAge: 5\r\nOccupation: Chimney
     Sweep\r\nAllergies: Myrrh\r\n\r\nShort Description:\r\nA pitiable waif from the
     lower class.\r\nThe child can hardly stop fidgeting.\r\n\r\nCurrent Health Status\r\nPatient
     complaints\r\n\u2013 Trouble breathing\r\nAny relevant pre-existing info or dietary
@@ -2434,7 +2434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Patient 15</b>\n\nName: Levi Wylie\r\nAge: 35\r\nOccupation: Butcher\r\nAllergies:
+  m_text: "<b>Patient 15</b>\nName: Levi Wylie\r\nAge: 35\r\nOccupation: Butcher\r\nAllergies:
     Death\u2019s Flower, Fairy Dust\r\n\r\n<b>Short Description</b>\nA contemptible
     man from the lower class.\r\nHis solemn stare betrays the fear in his eye.\r\n\r\n<b>Current
     Health Status\r</b>\nPatient complaints\r\n\u2013 Severe pain of the heart\r\nAny
