@@ -1423,13 +1423,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>Patient 14</b>\nName: Milo Whittock\r\nAge: 5\r\nOccupation: Chimney
-    Sweep\r\nAllergies: Myrrh\r\n\r\nShort Description:\r\nA pitiable waif from the
-    lower class.\r\nThe child can hardly stop fidgeting.\r\n\r\nCurrent Health Status\r\nPatient
-    complaints\r\n\u2013 Trouble breathing\r\nAny relevant pre-existing info or dietary
-    habits\r\n\u2013 \n\n"
+    Sweep\r\nAllergies: Myrrh\r\n\r\n<b>Short Description</b>\nA pitiable waif from
+    the lower class.\r\nThe child can hardly stop fidgeting.\r\n\r\n<b>Current Health
+    Status\r</b>\nPatient complaints\r\n\u2013 Trouble breathing\r\nAny relevant
+    pre-existing info or dietary habits\r\n\u2013 \n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
+  m_sharedMaterial: {fileID: 8424620514008398344, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 30
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2440,8 +2440,8 @@ MonoBehaviour:
     Health Status\r</b>\nPatient complaints\r\n\u2013 Severe pain of the heart\r\nAny
     relevant pre-existing info or dietary habits\r\n\u2013\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
+  m_sharedMaterial: {fileID: 8424620514008398344, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2477,7 +2477,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 30
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3926,8 +3926,8 @@ MonoBehaviour:
     body that gets worse when her heart pumps rapidly\r\n\u2013 A cough\r\nAny relevant
     pre-existing info or dietary habits\n\u2013\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
+  m_sharedMaterial: {fileID: 8424620514008398344, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3963,7 +3963,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 30
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

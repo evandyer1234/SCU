@@ -2530,6 +2530,71 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1001 &1152476437
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6213087836744880385, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6698153560004963676, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567336, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082073346161567342, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
+      propertyPath: m_Name
+      value: MG_LeechesBloodDrain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea9b0372eb7ce984ca382fa69c73d91a, type: 3}
 --- !u!1001 &1157558273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3351,7 +3416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d46d9e057f32a049bfd4e14e0f6aa83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: 
   penalty: 0
   miniGameStage: 0
   selectableEyes:
@@ -4267,6 +4331,10 @@ PrefabInstance:
     - target: {fileID: 3914261225192150590, guid: 2d198244178cafb4f81f7a03bbace203, type: 3}
       propertyPath: m_Name
       value: MG_LungPump
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914261225192150590, guid: 2d198244178cafb4f81f7a03bbace203, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3914261225192150591, guid: 2d198244178cafb4f81f7a03bbace203, type: 3}
       propertyPath: m_RootOrder
