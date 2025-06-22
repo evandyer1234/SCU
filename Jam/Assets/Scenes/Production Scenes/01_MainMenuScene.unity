@@ -791,7 +791,7 @@ RectTransform:
   - {fileID: 1377691704}
   - {fileID: 1880738016}
   m_Father: {fileID: 1778161695}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1081,7 +1081,7 @@ RectTransform:
   - {fileID: 1508521599}
   - {fileID: 1992548826}
   m_Father: {fileID: 1778161695}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1422,14 +1422,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Patient 14</b>
-
-
-    Name:
-
-    Age:
-
-    Occupation:'
+  m_text: "<b>Patient 14</b>\n\nName: Milo Whittock\r\nAge: 5\r\nOccupation: Chimney
+    Sweep\r\nAllergies: Myrrh\r\n\r\nShort Description:\r\nA pitiable waif from the
+    lower class.\r\nThe child can hardly stop fidgeting.\r\n\r\nCurrent Health Status\r\nPatient
+    complaints\r\n\u2013 Trouble breathing\r\nAny relevant pre-existing info or dietary
+    habits\r\n\u2013 \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1456,8 +1453,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2437,14 +2434,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Patient 15</b>
-
-
-    Name:
-
-    Age:
-
-    Occupation:'
+  m_text: "<b>Patient 15</b>\n\nName: Levi Wylie\r\nAge: 35\r\nOccupation: Butcher\r\nAllergies:
+    Death\u2019s Flower, Fairy Dust\r\n\r\n<b>Short Description</b>\nA contemptible
+    man from the lower class.\r\nHis solemn stare betrays the fear in his eye.\r\n\r\n<b>Current
+    Health Status\r</b>\nPatient complaints\r\n\u2013 Severe pain of the heart\r\nAny
+    relevant pre-existing info or dietary habits\r\n\u2013\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2471,8 +2465,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3514,9 +3508,9 @@ RectTransform:
   - {fileID: 1622575161}
   - {fileID: 1200623978}
   - {fileID: 2041887056}
-  - {fileID: 479402910}
-  - {fileID: 946413634}
   - {fileID: 664728914}
+  - {fileID: 946413634}
+  - {fileID: 479402910}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3925,14 +3919,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Patient 04</b>
-
-
-    Name:
-
-    Age:
-
-    Occupation:'
+  m_text: "<b>Patient 04</b>\nName: Lavinia Fernsby\r\nAge: 25\r\nOccupation: Accountant\r\nAllergies:
+    Moon Mushroom, Fairy Dust\r\n\r\n<b>Short Description</b>\nA positively dauntless,
+    upper class individual.\r\nHer prosthetic eyes are awe inspiring.\r\n\r\n<b>Current
+    Health Status\r</b>\nPatient complaints\r\n\u2013 Consistent pain all over her
+    body that gets worse when her heart pumps rapidly\r\n\u2013 A cough\r\nAny relevant
+    pre-existing info or dietary habits\n\u2013\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3959,8 +3951,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
