@@ -38,7 +38,7 @@ namespace Managers
         
         private void LoadWwiseGlobalSafely()
         {
-            var _wwiseGlobal = GameObject.FindObjectOfType<AkInitializer>();
+            var _wwiseGlobal = GameObject.FindObjectOfType<SoundtrackStateManager>();
             if (_wwiseGlobal == null)
             {
                 Instantiate(wwiseGlobalPrefab);

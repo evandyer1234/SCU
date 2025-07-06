@@ -345,6 +345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1879121180041505349, guid: ed7382d039aac4e989227348d014f80f, type: 3}
+      propertyPath: m_listeners.useDefaultListeners
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1635293774440406041, guid: ed7382d039aac4e989227348d014f80f, type: 3}
       propertyPath: m_Name
       value: WwiseGlobal
@@ -499,7 +503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playDuration: 300
   cursorToHide: {fileID: 752517757}
-  soundTrackToHide: {fileID: 1982110583}
   playerToHide: {fileID: 71246692}
 --- !u!1 &1131745501
 GameObject:
@@ -677,11 +680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1982110583 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1810476158420694373, guid: 8b6b22e4850e8a14b85543bfa18f4da9, type: 3}
-  m_PrefabInstance: {fileID: 7735965327753243779}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7735965327753243779
 PrefabInstance:
   m_ObjectHideFlags: 0

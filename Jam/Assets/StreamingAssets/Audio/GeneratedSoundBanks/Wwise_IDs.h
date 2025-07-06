@@ -25,6 +25,7 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID ALCHEMY = 1438324778U;
+                static const AkUniqueID JOURNALS = 1117481573U;
                 static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID MINIGAME = 3310578182U;
                 static const AkUniqueID NONE = 748895195U;

@@ -7,7 +7,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="MusicFaderLevel" ID="{F99F4A12-8679-42B3-A08E-A0F01689EB1A}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MasterFaderLevel" ID="{A3B85998-3C44-431C-9605-DA5465830915}"/>
@@ -19,6 +19,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="IsLevelSelect" ID="{10EAEA41-F41A-4853-8B32-9B62D15F40ED}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="IsPaused" ID="{15A25384-CDB6-4900-8613-0F1BAA485B33}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>

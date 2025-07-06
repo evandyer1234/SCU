@@ -12,16 +12,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{38802ED4-5BB0-414B-A170-6571A4EF8806}" ShortID="806711580">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="None" ID="{347B450A-0698-4DEE-AF74-176EE2CB8B19}" WorkUnitID="{E7162F05-5EC0-44EC-ABA0-595AFA2A390F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

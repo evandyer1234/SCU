@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bb5279c5ff904fec9bd5e37bbf780bc, type: 3}
   m_Name: AkWwiseProjectData
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
@@ -23,7 +23,7 @@ MonoBehaviour:
       guid: b8eb6506fb98214dbf3f83e006d9fd35
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: b8eb6506fb98214dbf3f83e006d9fd35
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136925740
     List: []
   AuxBusWwu:
@@ -37,7 +37,7 @@ MonoBehaviour:
       guid: 6a99581d09d6374f97086e893f306926
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6a99581d09d6374f97086e893f306926
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607137166358
     List:
     - name: AMB
@@ -173,8 +173,8 @@ MonoBehaviour:
       guid: bacf48abaa24434abd679c18b69c0674
     ParentPath: SoundBanks/Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
-    GuidInternal:
-    m_lastTime: -8584513348347060290
+    GuidInternal: 
+    m_lastTime: -8584513284069474785
     List:
     - name: AlchemyBank
       guid: 4ed66a313c58a240936895c0b769258f
@@ -243,8 +243,8 @@ MonoBehaviour:
       guid: 7a8446f03b8ca84498e98ad5bac04714
     ParentPath: Events/Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
-    GuidInternal:
-    m_lastTime: -8584513346274884962
+    GuidInternal: 
+    m_lastTime: -8584497665533051029
     List:
     - name: StartMusic
       guid: f075cb5c42567a4594a35581b10aa7c7
@@ -274,8 +274,8 @@ MonoBehaviour:
       guid: a69f641c3bab2248acdb7be4b41d4c51
     ParentPath: Game Parameters/Default Work Unit
     guid: a69f641c3bab2248acdb7be4b41d4c51
-    GuidInternal:
-    m_lastTime: -8584513334893321205
+    GuidInternal: 
+    m_lastTime: -8584513284071652913
     List:
     - name: IsLevelSelect
       guid: 41eaea101af453488b329b62d15f40ed
@@ -358,8 +358,8 @@ MonoBehaviour:
       guid: 052f16e7c05eec44aba0595afa2a390f
     ParentPath: States/Default Work Unit
     guid: 052f16e7c05eec44aba0595afa2a390f
-    GuidInternal:
-    m_lastTime: -8584522607136992912
+    GuidInternal: 
+    m_lastTime: -8584513249820340153
     List:
     - name: Location
       guid: 21351387e281764b8067248aae1f79c0
@@ -392,6 +392,22 @@ MonoBehaviour:
         - ElementName: Alchemy
           ObjectType: 8
           guid: 9a44fd2204282b4092b5d2ee115835c4
+      - name: Journals
+        guid: 87b7a5eedc13d04e9f83742b00106edb
+        id: 1117481573
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 052f16e7c05eec44aba0595afa2a390f
+        - ElementName: Location
+          ObjectType: 9
+          guid: 21351387e281764b8067248aae1f79c0
+        - ElementName: Journals
+          ObjectType: 8
+          guid: 87b7a5eedc13d04e9f83742b00106edb
       - name: MainMenu
         guid: f2bef5c839976643a06e248cc1063eb6
         id: 3604647259
@@ -454,7 +470,7 @@ MonoBehaviour:
       guid: f54625fefc1a474e83fb6e6d2c4d5e7f
     ParentPath: Switches/Default Work Unit
     guid: f54625fefc1a474e83fb6e6d2c4d5e7f
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136980618
     List: []
   TriggerWwu:
@@ -468,12 +484,12 @@ MonoBehaviour:
       guid: fbd7788a64caa34b81f44395cdfe2aba
     ParentPath: Triggers/Default Work Unit
     guid: fbd7788a64caa34b81f44395cdfe2aba
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136947195
     List: []
-  ExpandedFileSystemItemIds:
-  ExpandedWaapiItemIds: 050000000600000008000000090000000a000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 050000000600000008000000090000000a0000001700000018000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
-  CurrentPluginConfig:
+  CurrentPluginConfig: 
