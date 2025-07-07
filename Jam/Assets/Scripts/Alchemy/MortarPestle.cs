@@ -68,7 +68,7 @@ namespace Minigames.Alchemy
             foreach (var inputIngredient in _inputIngredients)
             {
                 var addedIngrGO = Instantiate(_addedIngredientPrefab, _addedIngredientContainer.transform);
-                addedIngrGO.GetComponent<Image>().sprite = inputIngredient.ResolveSpriteByIngredientName();
+                addedIngrGO.GetComponent<Image>().sprite = inputIngredient.ResolveSpriteIconByIngredientName();
             }
         }
     }

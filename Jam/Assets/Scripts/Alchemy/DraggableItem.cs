@@ -185,7 +185,7 @@ namespace Minigames.Alchemy
             starterIngredient = selectedIngredient;
             ingredients.Add(starterIngredient);
             _itemName.text = starterIngredient.GetName();
-            GetComponent<SpriteRenderer>().sprite = starterIngredient.ResolveSpriteByIngredientName();
+            GetComponent<SpriteRenderer>().sprite = starterIngredient.ResolveSpriteIconByIngredientName();
         }
 
         private void SetItemText(string itemText)
