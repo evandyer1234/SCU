@@ -34,23 +34,38 @@ public class Ingredient
         return ingredientOperations;
     }
     
-    public Sprite ResolveSpriteByIngredientName()
+    public Sprite ResolveSpriteIconByIngredientName()
     {
-        if (IngredientConstants.PLANT_INGREDIENT_TO_SPRITE_LIST.Contains(name))
-        {
-            return FileLoader.GetSpriteByName("proto_plant");
-        }
-
-        if (IngredientConstants.LIQUID_INGREDIENT_TO_SPRITE_LIST.Contains(name))
-        {
-            return FileLoader.GetSpriteByName("proto_liquid");
-        }
-
-        if (IngredientConstants.MINERAL_INGREDIENT_TO_SPRITE_LIST.Contains(name))
-        {
-            return FileLoader.GetSpriteByName("proto_mineral");
-        }
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_CHIMERA_CLAW))
+            return FileLoader.GetSpriteByName("chimera_claw_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_102_PURE_TEA))
+            return FileLoader.GetSpriteByName("102_pure_tea_icon");
             
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_SUN_BATHED_IVY))
+            return FileLoader.GetSpriteByName("sunbathed_ivy_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_MOON_MUSHROOM))
+            return FileLoader.GetSpriteByName("moon_mushroom_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_MOONSTONE))
+            return FileLoader.GetSpriteByName("moon_stone_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_AMARANTH))
+            return FileLoader.GetSpriteByName("amaranth_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_SPIRIT_OF_THE_SAGES))
+            return FileLoader.GetSpriteByName("spirit_of_the_sages_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_FAIRY_DUST))
+            return FileLoader.GetSpriteByName("fairy_dust_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_MYRRH))
+            return FileLoader.GetSpriteByName("myrrh_icon");
+        
+        if (name.Equals(IngredientConstants.INGREDIENT_ID_DEATHS_FLOWER))
+            return FileLoader.GetSpriteByName("death_flower_icon");
+        
         Debug.LogWarning("FAILED TO MATCH INGREDIENT NAME TO SPRITE TYPE");
         return null;
     }

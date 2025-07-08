@@ -161,6 +161,58 @@ MonoBehaviour:
     m_Address: kidney_l_corrupt
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: a745b2a3c7b9a7d459178a1bb9f1ca77
+    m_Address: 102_pure_tea_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b9c52a248c8b37349ba00ae3bf0a4846
+    m_Address: amaranth_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e6991c415eec481419e517df61191ccd
+    m_Address: chimera_claw_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9aedc897757e1254cb92c4d0e66d70d8
+    m_Address: death_flower_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c74b5ebe0aee5834e9c805cd1d30f556
+    m_Address: fairy_dust_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7af9803d556bf4a42aba4cb759f8c5aa
+    m_Address: moon_mushroom_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 24264b4a180c92b44b72b1a032a0b218
+    m_Address: moon_stone_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6c598988bbe8def47919867961dcff2c
+    m_Address: myrrh_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8a1a9d702237441409a70c8033c05ba3
+    m_Address: spirit_of_the_sages_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d8ce4359bd9e3244b7dc4beb3c91a85
+    m_Address: sunbathed_ivy_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0e3188e75736cdf4f9e7b209f5f1259c
+    m_Address: undefined_powder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9239387011ad30a46b2fbe1b2726cc1b
+    m_Address: undefined_liquid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 879d932bd6d19b647a89ac50dc54d1bd
+    m_Address: potion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
   m_SchemaSet:

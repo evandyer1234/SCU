@@ -6,7 +6,7 @@ namespace Helpers
     {
         //  PLANTS
         public const string INGREDIENT_ID_NETTLE = "Nettle";
-        public const string INGREDIENT_ID_SUN_BATHED_IVY = "Sun Bathed Ivy";
+        public const string INGREDIENT_ID_SUN_BATHED_IVY = "Sunbathed Ivy";
         public const string INGREDIENT_ID_DEATHS_FLOWER = "Deaths Flower";
         public const string INGREDIENT_ID_SUSPENDED_ROSE = "Suspended Rose";
         public const string INGREDIENT_ID_MANDRAKE = "Mandrake";

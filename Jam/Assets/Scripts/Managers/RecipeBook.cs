@@ -24,13 +24,13 @@ namespace Managers
         
         private SubjectManager _subjectManager;
 
-        private void Awake()
+        private void Start()
         {
             _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
                 .GetComponent<SubjectManager>();
             _closedPosition = transform.position;
             var clp = _closedPosition;
-            _openPosition = new Vector3(clp.x, clp.y + 10f, clp.z);
+            _openPosition = new Vector3(clp.x - 23f, clp.y + 14f, clp.z);
             _openCloseButtonText.text = "Open Recipe Book";
             _pageIndex = 0;
             SetRecipeActiveByIndex(_pageIndex);

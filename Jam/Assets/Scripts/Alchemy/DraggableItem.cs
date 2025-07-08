@@ -9,6 +9,7 @@ namespace Minigames.Alchemy
     public class DraggableItem : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _itemName;
+        [SerializeField] private SpriteRenderer _itemSprite;
         
         private PauseMenuManager _pauseMenuManager;
         private SubjectManager _subjectManager;
@@ -20,6 +21,7 @@ namespace Minigames.Alchemy
         
         private Vector3 offsetItem;
         public bool followMouse;
+        private bool isInteractable = false;
 
         void Awake()
         {
@@ -40,6 +42,7 @@ namespace Minigames.Alchemy
         void Update()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (!isInteractable) return;
             
             if (followMouse)
             {
@@ -56,6 +59,7 @@ namespace Minigames.Alchemy
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (!isInteractable) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {
@@ -142,18 +146,7 @@ namespace Minigames.Alchemy
                     }
                        
                     Destroy(draggableItem.gameObject);
-                    string itemConsistenceText = "";
-                    foreach (var ingredient in ingredients)
-                    {
-                        itemConsistenceText += ingredient.GetName() +  " (";
-                        foreach (var op in ingredient.GetOperations())
-                        {
-                            itemConsistenceText += op + " ";
-                        }
-                        itemConsistenceText += ") \n";
-                    }
-
-                    SetItemText(itemConsistenceText);
+                    RenderItem();
                 }
             }
         }
@@ -170,24 +163,51 @@ namespace Minigames.Alchemy
         
         public void MakeUndefinedLiquid()
         {
-            _itemName.text = "Undefined Liquid";
-            GetComponent<SpriteRenderer>().sprite = FileLoader.GetSpriteByName(FileConstants.SPR_PROTO_LIQUID);
+            _itemSprite.sprite = FileLoader.GetSpriteByName(FileConstants.SPR_UNDEFINED_LIQUID);
+            isInteractable = true;
+            RenderItem();
         }
 
         public void MakeUndefinedPowder()
         {
-            _itemName.text = "Undefined Powder";
-            GetComponent<SpriteRenderer>().sprite = FileLoader.GetSpriteByName(FileConstants.SPR_PROTO_MINERAL);
+            _itemSprite.sprite = FileLoader.GetSpriteByName(FileConstants.SPR_UNDEFINED_POWDER);
+            isInteractable = true;
+            RenderItem();
         }
         
         public void SetDraggableIngredient(Ingredient selectedIngredient)
         {
             starterIngredient = selectedIngredient;
+            ingredients = new List<Ingredient>();
             ingredients.Add(starterIngredient);
             _itemName.text = starterIngredient.GetName();
-            GetComponent<SpriteRenderer>().sprite = starterIngredient.ResolveSpriteByIngredientName();
+            _itemSprite.sprite = starterIngredient.ResolveSpriteIconByIngredientName();
+            isInteractable = true;
         }
 
+        private void RenderItem()
+        {
+            if (ingredients.Count >= 3 && ingredients.Any(ingr => ingr.GetOperations().Contains(IngredientConstants.OPERATION_BOIL)))
+            {
+                _itemSprite.sprite = FileLoader.GetSpriteByName(FileConstants.SPR_POTION);
+            } else if (ingredients.Count >= 3)
+            {
+                _itemSprite.sprite = FileLoader.GetSpriteByName(FileConstants.SPR_UNDEFINED_POWDER);
+            }
+            
+            string itemConsistenceText = "";
+            foreach (var ingredient in ingredients)
+            {
+                itemConsistenceText += ingredient.GetName() +  " (";
+                foreach (var op in ingredient.GetOperations())
+                {
+                    itemConsistenceText += op + " ";
+                }
+                itemConsistenceText += ") \n";
+            }
+            SetItemText(itemConsistenceText);
+        }
+        
         private void SetItemText(string itemText)
         {
             _itemName.text = itemText;

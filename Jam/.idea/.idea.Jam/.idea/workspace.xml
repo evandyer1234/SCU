@@ -6,28 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/MainMenuAudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/MainMenuAudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/SetFaderLevels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SetFaderLevels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GlobalDependencyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GlobalDependencyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/SettingsPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/SettingsPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/WwiseGlobal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/WwiseGlobal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/States/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/States/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +36,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/projects/UnityProjects/AlchemyGameJam/Jam/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SoundtrackStateManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Subjects/Subject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/RectMask2DReparentedToDifferentCanvas.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ethan-audio&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alex-alchemy-assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,6 +83,22 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\projects\BUILD\SCU" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam -debugCodeOptimization" />
@@ -112,6 +110,14 @@
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\kealm\Documents\Programming\Games\GMTK2024\AlchemyGameJam\Jam" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -147,6 +153,32 @@
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -233,14 +265,7 @@
       <workItem from="1749976790047" duration="7524000" />
       <workItem from="1750094632877" duration="814000" />
       <workItem from="1751839067878" duration="1538000" />
-    </task>
-    <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
-      <option name="closed" value="true" />
-      <created>1744743977837</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1744743977837</updated>
+      <workItem from="1751961136866" duration="10033000" />
     </task>
     <task id="LOCAL-00002" summary="Drag and drop Magnifying Glass on Handly only">
       <option name="closed" value="true" />
@@ -610,7 +635,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750006382415</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add first alchemy assets">
+      <option name="closed" value="true" />
+      <created>1751921113934</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1751921113934</updated>
+    </task>
+    <task id="LOCAL-00049" summary="finish using new ingredient Sprites">
+      <option name="closed" value="true" />
+      <created>1751969018898</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1751969018898</updated>
+    </task>
+    <task id="LOCAL-00050" summary="new recipe book">
+      <option name="closed" value="true" />
+      <created>1751977793766</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1751977793766</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,9 +687,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add animated InteractionHint" />
-    <MESSAGE value="Add tooltips for magnifying glass" />
-    <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
     <MESSAGE value="Add Alchemy Scene" />
     <MESSAGE value="fixed bug on magnifying glass reset" />
@@ -663,6 +709,9 @@
     <MESSAGE value="Enable items to be boiled/grinded multiple times" />
     <MESSAGE value="Align ingredient hints, minigames and allergy info per patient" />
     <MESSAGE value="Lay out Journals Scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lay out Journals Scene" />
+    <MESSAGE value="add first alchemy assets" />
+    <MESSAGE value="finish using new ingredient Sprites" />
+    <MESSAGE value="new recipe book" />
+    <option name="LAST_COMMIT_MESSAGE" value="new recipe book" />
   </component>
 </project>
