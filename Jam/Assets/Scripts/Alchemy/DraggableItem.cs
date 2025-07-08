@@ -178,6 +178,7 @@ namespace Minigames.Alchemy
         public void SetDraggableIngredient(Ingredient selectedIngredient)
         {
             starterIngredient = selectedIngredient;
+            ingredients = new List<Ingredient>();
             ingredients.Add(starterIngredient);
             _itemName.text = starterIngredient.GetName();
             _itemSprite.sprite = starterIngredient.ResolveSpriteIconByIngredientName();

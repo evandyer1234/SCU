@@ -667,6 +667,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6423284638662669830, guid: 282c0da2403a90648950841119b9225b, type: 3}
+      propertyPath: m_text
+      value: Go to Journals
+      objectReference: {fileID: 0}
     - target: {fileID: 6702406666113170403, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

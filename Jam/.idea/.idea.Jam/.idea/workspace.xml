@@ -5,37 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Boil_Glyph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Boil_Glyph.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Grind_Glyph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Grind_Glyph.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Herbs_Glyph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Herbs_Glyph.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/HintNote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/HintNote.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Liquids_Glyph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Liquids_Glyph.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/PatientPaper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/PatientPaper.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Powders_Glyph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/Powders_Glyph.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/RecipeCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Alchemy/recipes/RecipeCard.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/SCU.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/RecipeBook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/Cauldron.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Alchemy/Cauldron.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Alchemy/Mortar_Pestle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Alchemy/Mortar_Pestle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Alchemy/DraggableItem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,15 +265,7 @@
       <workItem from="1749976790047" duration="7524000" />
       <workItem from="1750094632877" duration="814000" />
       <workItem from="1751839067878" duration="1538000" />
-      <workItem from="1751961136866" duration="8953000" />
-    </task>
-    <task id="LOCAL-00001" summary="Fix Warnings, missing Scripts in Prefabs, etc...">
-      <option name="closed" value="true" />
-      <created>1744743977837</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1744743977837</updated>
+      <workItem from="1751961136866" duration="10033000" />
     </task>
     <task id="LOCAL-00002" summary="Drag and drop Magnifying Glass on Handly only">
       <option name="closed" value="true" />
@@ -686,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751969018898</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="new recipe book">
+      <option name="closed" value="true" />
+      <created>1751977793766</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1751977793766</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +687,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add click hints for heartstring minigame" />
     <MESSAGE value="Fix bug on animating click hints during running minigame" />
     <MESSAGE value="Add Alchemy Scene" />
     <MESSAGE value="fixed bug on magnifying glass reset" />
@@ -739,6 +711,7 @@
     <MESSAGE value="Lay out Journals Scene" />
     <MESSAGE value="add first alchemy assets" />
     <MESSAGE value="finish using new ingredient Sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish using new ingredient Sprites" />
+    <MESSAGE value="new recipe book" />
+    <option name="LAST_COMMIT_MESSAGE" value="new recipe book" />
   </component>
 </project>
