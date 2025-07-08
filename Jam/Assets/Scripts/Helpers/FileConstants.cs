@@ -11,6 +11,9 @@ namespace Helpers
         public const string SPR_PROTO_PLANT = "proto_plant";
         public const string SPR_PROTO_LIQUID = "proto_liquid";
         public const string SPR_PROTO_MINERAL = "proto_mineral";
+        public const string SPR_UNDEFINED_POWDER = "undefined_powder";
+        public const string SPR_UNDEFINED_LIQUID = "undefined_liquid";
+        public const string SPR_POTION = "potion";
         
         // abdomen minigame
         public const string SPR_LIVER_HEALTHY = "liver_healthy";

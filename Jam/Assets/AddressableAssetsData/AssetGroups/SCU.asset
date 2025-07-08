@@ -201,6 +201,18 @@ MonoBehaviour:
     m_Address: sunbathed_ivy_icon
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 0e3188e75736cdf4f9e7b209f5f1259c
+    m_Address: undefined_powder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9239387011ad30a46b2fbe1b2726cc1b
+    m_Address: undefined_liquid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 879d932bd6d19b647a89ac50dc54d1bd
+    m_Address: Assets/Sprites/Alchemy/CurePotion.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f136511223162f459ec590b5586e003, type: 2}
   m_SchemaSet:
