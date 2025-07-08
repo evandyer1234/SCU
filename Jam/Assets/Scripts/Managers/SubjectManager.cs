@@ -14,9 +14,9 @@ public class SubjectManager : MonoBehaviour
     private Dictionary<string, Subject> subjectsToCure = new();
     
     // subject ids = names
-    public const string SUBJECT_NAME_04 = "subject_04";
-    public const string SUBJECT_NAME_14 = "subject_14";
-    public const string SUBJECT_NAME_15 = "subject_15";
+    public const string SUBJECT_NAME_04 = "Lavinia Fernsby";
+    public const string SUBJECT_NAME_14 = "Milo Whittock";
+    public const string SUBJECT_NAME_15 = "Levi Wylie";
     
     private List<string> subjectCureOrder = new List<string>
     {
