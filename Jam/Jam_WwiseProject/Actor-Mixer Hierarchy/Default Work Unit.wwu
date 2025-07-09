@@ -1,6 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="General Tapping" ID="{73276DE6-2EE9-44BD-8E66-053C15DD8A78}" ShortID="105113139">
+					<ChildrenList>
+						<ActorMixer Name="New Actor-Mixer" ID="{567D0E17-34C5-400B-999E-9009B4E76173}" ShortID="527188885">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="general tap" ID="{59C3D885-18B8-46E2-B742-45F8B60F71AD}" ShortID="117461600">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="general tap 1" ID="{6B683998-AFFE-4FD9-B1A3-786EEF28257D}" ShortID="370863245">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general tap 1" ID="{4A3C83F4-9973-4574-ACDF-8CDA543AD41A}">
+													<Language>SFX</Language>
+													<AudioFile>general tap 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="995581028"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general tap 1" ID="{4A3C83F4-9973-4574-ACDF-8CDA543AD41A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="general tap 2" ID="{EF448416-37AF-4F92-84B8-C17AFC68DBDA}" ShortID="273222792">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general tap 2" ID="{141601FD-71B1-4DB0-A364-0D458244E30A}">
+													<Language>SFX</Language>
+													<AudioFile>general tap 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="466926915"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general tap 2" ID="{141601FD-71B1-4DB0-A364-0D458244E30A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="general tap 3" ID="{7C28CD32-48A9-4FC1-8EDD-CC90477485E9}" ShortID="1000584029">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general tap 3" ID="{CE81161C-496E-4AFE-9169-269A76B44635}">
+													<Language>SFX</Language>
+													<AudioFile>general tap 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="398285550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general tap 3" ID="{CE81161C-496E-4AFE-9169-269A76B44635}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="general release" ID="{809F5C6E-6499-491D-B8A8-332850B2127F}" ShortID="1058179040">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="general release 1" ID="{5C32EA59-8BCD-4283-AD66-A8AF704E86C7}" ShortID="844444811">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general release 1" ID="{EA4EFEF9-B1D0-41EA-9894-FBDC6055CC5D}">
+													<Language>SFX</Language>
+													<AudioFile>general release 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="778838935"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general release 1" ID="{EA4EFEF9-B1D0-41EA-9894-FBDC6055CC5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="general release 2" ID="{586B8D80-1C37-49E0-B8CB-28A79079CEA6}" ShortID="587698899">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general release 2" ID="{61B52EF5-F2C4-44A7-AE38-CC2227D22765}">
+													<Language>SFX</Language>
+													<AudioFile>general release 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565461563"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general release 2" ID="{61B52EF5-F2C4-44A7-AE38-CC2227D22765}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="general release 3" ID="{6B5CD50D-3B4C-4813-9177-C75092A554B2}" ShortID="775595589">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="general release 3" ID="{1D2C2A8A-2AC7-49DE-8C04-5E5D336FD2FF}">
+													<Language>SFX</Language>
+													<AudioFile>general release 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="988877813"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="general release 3" ID="{1D2C2A8A-2AC7-49DE-8C04-5E5D336FD2FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

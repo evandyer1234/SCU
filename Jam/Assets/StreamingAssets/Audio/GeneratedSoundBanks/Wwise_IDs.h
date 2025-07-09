@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_GENERAL_RELEASE = 1729406560U;
+        static const AkUniqueID PLAY_GENERAL_TAP = 3018165852U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
     } // namespace EVENTS
 
@@ -46,10 +48,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID ALCHEMYBANK = 3567142168U;
-        static const AkUniqueID MAINMENUBANK = 584226713U;
         static const AkUniqueID MAINSOUNDBANK = 534561221U;
-        static const AkUniqueID MINIGAMEBANK = 4138422396U;
     } // namespace BANKS
 
     namespace BUSSES

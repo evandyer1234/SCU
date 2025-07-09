@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3827058668	StartMusic			\Default Work Unit\StartMusic	
+	1729406560	Play_general_release			\Default Work Unit\SFX\Play_general_release	
+	3018165852	Play_general_tap			\Default Work Unit\SFX\Play_general_tap	
+	3827058668	StartMusic			\Default Work Unit\Music\StartMusic	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1176052424	Location			\Default Work Unit\Location	
@@ -13,6 +15,14 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3176837105	IsLevelSelect			\Default Work Unit\IsLevelSelect	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	398285550	general tap 3	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general tap 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general tap\general tap 3		28896
+	466926915	general tap 2	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general tap 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general tap\general tap 2		30318
+	565461563	general release 2	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general release 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general release\general release 2		54656
+	778838935	general release 1	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general release 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general release\general release 1		41276
+	988877813	general release 3	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general release 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general release\general release 3		40888
+	995581028	general tap 1	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\general tap 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\General Tapping\New Actor-Mixer\general tap\general tap 1		24760
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	338466883	Legato	Y:\Int Working Media Drive\mishMASH Studios\Shadow Corruption Unit\Alchemy Jam Repository\Jam\Jam_WwiseProject\.cache\Windows\SFX\title_legato_full_3_4_L51_FBC78EF0.wem	338466883.wem	\Interactive Music Hierarchy\Default Work Unit\Location Switch\Main Menu Playlist\Main Menu Segment\Legato	

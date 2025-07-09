@@ -1,12 +1,8 @@
 using Helpers;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class PointandClick : MonoBehaviour
 {
-    private AudioSource _audioSource;
-    [SerializeField] private AudioClip[] genericClickSounds = new AudioClip[8];
-
     private SCUInputAction _scuInputAction;
     
     void Awake()
@@ -14,11 +10,6 @@ public class PointandClick : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         _scuInputAction = new SCUInputAction();
         _scuInputAction.UI.Enable();
-    }
-    
-    void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
     }
     
     void Update()
