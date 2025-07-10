@@ -174,7 +174,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
     GuidInternal:
-    m_lastTime: -8584495153271820483
+    m_lastTime: -8584494352559585675
     List:
     - name: MainSoundBank
       guid: 5e53539efbf5714fb92a2b48c2c50cbc
@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
     GuidInternal:
-    m_lastTime: -8584495153748595514
+    m_lastTime: -8584494324520371837
     List:
     - name: Music
       guid: 00760bf8827a6043826c2986c442e961
@@ -221,6 +221,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_button_hover_2
+      guid: 7311273d7073254e98b46410fcefdc48
+      id: 1252961102
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a8446f03b8ca84498e98ad5bac04714
+      - ElementName: Play_button_hover_2
+        ObjectType: 3
+        guid: 7311273d7073254e98b46410fcefdc48
+      Path: Events/Default Work Unit/Play_button_hover_2
+      maxAttenuation: 0
+      maxDuration: 0.130875
+      minDuration: 0.130875
     - name: Play_general_release
       guid: 6db1129ff2f88246b45d0b052ed1f0ba
       id: 1729406560
@@ -240,7 +257,7 @@ MonoBehaviour:
       Path: Events/Default Work Unit/SFX/Play_general_release
       maxAttenuation: 0
       maxDuration: 0.5683333
-      minDuration: 0.42491665
+      minDuration: 0.19052084
     - name: Play_general_tap
       guid: efa0a6e1aa958d49819c0470f4f5a036
       id: 3018165852
@@ -259,8 +276,8 @@ MonoBehaviour:
         guid: efa0a6e1aa958d49819c0470f4f5a036
       Path: Events/Default Work Unit/SFX/Play_general_tap
       maxAttenuation: 0
-      maxDuration: 0.3148125
-      minDuration: 0.25691667
+      maxDuration: 0.5683333
+      minDuration: 0.5683333
     - name: SFX
       guid: cc5afe51be4efe40ac56711b3bb381d6
       id: 393239870

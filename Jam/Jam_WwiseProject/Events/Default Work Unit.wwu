@@ -44,6 +44,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_button_hover_2" ID="{3D271173-7370-4E25-98B4-6410FCEFDC48}">
+					<ChildrenList>
+						<Action Name="" ID="{BD0A39AE-69A4-4B29-A143-DD6C3E7BB58F}" ShortID="267415612">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="button hover 2" ID="{CE16B852-85D1-4D63-896D-3F5D129192A5}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
