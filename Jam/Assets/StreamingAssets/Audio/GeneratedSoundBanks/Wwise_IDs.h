@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BUTTON_HOVER_2 = 1252961102U;
         static const AkUniqueID PLAY_GENERAL_RELEASE = 1729406560U;
         static const AkUniqueID PLAY_GENERAL_TAP = 3018165852U;
         static const AkUniqueID STARTMUSIC = 3827058668U;

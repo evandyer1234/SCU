@@ -5,60 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/CacheVersion" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/SCU MMT Legato (Main Menu) Fine Cut_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/SCU MMT Pizz (Level Selection) Fine Cut_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/Wwise.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/title_legato_full_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/title_legato_piano_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/title_pizz_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/SCU MMT Legato (Main Menu) Fine Cut_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/SCU MMT Pizz (Level Selection) Fine Cut_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/Wwise.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/title_legato_full_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/title_legato_piano_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/title_pizz_3_4_L51_FBC78EF0.wem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.validationcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/ProfilingSession1.prof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/ProfilingSession2.prof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/ProfilingSession3.prof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/ProfilingSession4.prof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam_WwiseProject/ProfilingSession5.prof" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WwiseUnityIntegration_Mac_Src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WwiseUnityIntegration_Windows_Src.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/00_LauncherScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/MG_Pump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointandClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/LeftClickAudioEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/LeftClickAudioEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Pump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Mini Games/Pump.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/WwiseGlobal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/WwiseGlobal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/HoverOutline.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/HoverOutline.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/UI_Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/UI_Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/Wwise.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 1_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 1_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 2_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 2_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 3_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general release 3_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 1_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 1_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 2_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 2_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 3_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/general tap 3_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/Wwise.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 1_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 1_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 2_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 2_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 3_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general release 3_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 1_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 1_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 2_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 2_818F3B66.wem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 3_818F3B66.wem" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/general tap 3_818F3B66.wem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/AlchemyBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/AlchemyBank.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainMenuBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainMenuBank.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MinigameBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MinigameBank.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/AlchemyBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/AlchemyBank.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainMenuBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainMenuBank.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MinigameBank.bnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MinigameBank.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general release 3.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 1.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 2.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/general tap 3.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/SoundBanks/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/SoundBanks/Default Work Unit.wwu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +298,7 @@
       <workItem from="1751839067878" duration="1538000" />
       <workItem from="1751961136866" duration="10033000" />
       <workItem from="1752091711806" duration="1168000" />
-      <workItem from="1752093312792" duration="3417000" />
+      <workItem from="1752093312792" duration="4898000" />
     </task>
     <task id="LOCAL-00002" summary="Drag and drop Magnifying Glass on Handly only">
       <option name="closed" value="true" />
