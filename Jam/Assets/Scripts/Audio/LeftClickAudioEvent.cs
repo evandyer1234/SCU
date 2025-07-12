@@ -1,7 +1,6 @@
 using Helpers;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class LeftClickAudioEvent : MonoBehaviour
 {
     private PauseMenuManager _pauseMenuManager;
@@ -19,13 +18,9 @@ public class LeftClickAudioEvent : MonoBehaviour
             .GetComponent<PauseMenuManager>();
     }
 
-    void Start()
+    private void OnEnable()
     {
-        if (_pauseMenuManager == null)
-        {
-            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
-                .GetComponent<PauseMenuManager>();
-        }
+        Physics.SyncTransforms();
     }
 
     private void OnMouseOver()
@@ -45,6 +40,7 @@ public class LeftClickAudioEvent : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        Debug.Log("Mouse Enter: " + gameObject.name);
         if (_pauseMenuManager.isGamePaused() && !playDuringPause) return;
         
         if (mouseOverEvent != null)
