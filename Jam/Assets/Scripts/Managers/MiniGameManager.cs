@@ -26,11 +26,15 @@ public class MiniGameManager : MonoBehaviour
     private float CurrentTime;
     private SubjectManager _subjectManager;
     private PauseMenuManager _pauseMenuManager;
+    private Hourglass hourglass;
     
     private void Awake()
     {
+        Debug.Log("Yo");
         _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
             .GetComponent<PauseMenuManager>();
+        hourglass = FindObjectOfType<Hourglass>();
+       
         
         foreach (var miniGame in miniGames)
         {
@@ -49,6 +53,7 @@ public class MiniGameManager : MonoBehaviour
             .GetComponent<SubjectManager>();
         collectedIngredientsPerPatient = new();
         InitializeTimer();
+        hourglass.SetupHourglass(CurrentTime);
 
         if (_subjectManager.IsPotionMode())
         {
@@ -81,6 +86,8 @@ public class MiniGameManager : MonoBehaviour
 
     private void UpdateTimerText()
     {
+        Debug.Log("ey");
+        hourglass.Glassvalue = CurrentTime;
         SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
     }
 
