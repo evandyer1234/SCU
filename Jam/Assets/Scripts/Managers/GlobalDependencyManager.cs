@@ -7,11 +7,13 @@ namespace Managers
     {
         [SerializeField] private GameObject eventSystemPrefab;
         [SerializeField] private GameObject customCursorPrefab;
+        [SerializeField] private GameObject wwiseGlobalPrefab;
         
         private void Awake()
         {
             LoadSubjectManagerSafely();
             LoadCustomCursorSafely();
+            LoadWwiseGlobalSafely();
         }
         
         private void LoadCustomCursorSafely()
@@ -31,6 +33,15 @@ namespace Managers
             if (_eventSystem == null)
             {
                 Instantiate(eventSystemPrefab);
+            }
+        }
+        
+        private void LoadWwiseGlobalSafely()
+        {
+            var _wwiseGlobal = GameObject.FindObjectOfType<SoundtrackStateManager>();
+            if (_wwiseGlobal == null)
+            {
+                Instantiate(wwiseGlobalPrefab);
             }
         }
     }

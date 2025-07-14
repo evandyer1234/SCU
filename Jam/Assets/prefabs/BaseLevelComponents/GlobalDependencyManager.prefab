@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventSystemPrefab: {fileID: 7735965328557940685, guid: 8b6b22e4850e8a14b85543bfa18f4da9, type: 3}
   customCursorPrefab: {fileID: 7591816654968479814, guid: 674455f53e493cb4fb68fd53f5ab46a9, type: 3}
+  wwiseGlobalPrefab: {fileID: 1635293774440406041, guid: ed7382d039aac4e989227348d014f80f, type: 3}

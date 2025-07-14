@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: b8eb6506fb98214dbf3f83e006d9fd35
     GuidInternal: 
-    m_lastTime: -8584492758332415182
+    m_lastTime: -8584521417717128444
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6a99581d09d6374f97086e893f306926
     GuidInternal: 
-    m_lastTime: -8584492758376022387
+    m_lastTime: -8584517811062294141
     List:
     - name: AMB
       guid: 402e4812c70fb64a803ca2e547300499
@@ -174,8 +174,36 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
     GuidInternal: 
-    m_lastTime: -8584492758332445186
+    m_lastTime: -8584496909495053303
     List:
+    - name: AlchemyBank
+      guid: 4ed66a313c58a240936895c0b769258f
+      id: 3567142168
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bacf48abaa24434abd679c18b69c0674
+      - ElementName: AlchemyBank
+        ObjectType: 7
+        guid: 4ed66a313c58a240936895c0b769258f
+      Path: SoundBanks\Default Work Unit\AlchemyBank
+    - name: MainMenuBank
+      guid: b9a069c2602bcb489b5704964f379eeb
+      id: 584226713
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bacf48abaa24434abd679c18b69c0674
+      - ElementName: MainMenuBank
+        ObjectType: 7
+        guid: b9a069c2602bcb489b5704964f379eeb
+      Path: SoundBanks\Default Work Unit\MainMenuBank
     - name: MainSoundBank
       guid: 5e53539efbf5714fb92a2b48c2c50cbc
       id: 534561221
@@ -190,6 +218,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 5e53539efbf5714fb92a2b48c2c50cbc
       Path: SoundBanks\Default Work Unit\MainSoundBank
+    - name: MinigameBank
+      guid: 1fc97925a84b994ca4b192b25d93cea1
+      id: 4138422396
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bacf48abaa24434abd679c18b69c0674
+      - ElementName: MinigameBank
+        ObjectType: 7
+        guid: 1fc97925a84b994ca4b192b25d93cea1
+      Path: SoundBanks\Default Work Unit\MinigameBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -202,7 +244,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
     GuidInternal: 
-    m_lastTime: -8584492758380133104
+    m_lastTime: -8584517807765147208
     List:
     - name: StartMusic
       guid: f075cb5c42567a4594a35581b10aa7c7
@@ -233,7 +275,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a69f641c3bab2248acdb7be4b41d4c51
     GuidInternal: 
-    m_lastTime: -8584492758380133104
+    m_lastTime: -8584496909502657964
     List:
     - name: IsLevelSelect
       guid: 41eaea101af453488b329b62d15f40ed
@@ -317,7 +359,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 052f16e7c05eec44aba0595afa2a390f
     GuidInternal: 
-    m_lastTime: -8584492758332425183
+    m_lastTime: -8584496909495053303
     List:
     - name: Location
       guid: 21351387e281764b8067248aae1f79c0
@@ -350,6 +392,22 @@ MonoBehaviour:
         - ElementName: Alchemy
           ObjectType: 8
           guid: 9a44fd2204282b4092b5d2ee115835c4
+      - name: Journals
+        guid: 87b7a5eedc13d04e9f83742b00106edb
+        id: 1117481573
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 052f16e7c05eec44aba0595afa2a390f
+        - ElementName: Location
+          ObjectType: 9
+          guid: 21351387e281764b8067248aae1f79c0
+        - ElementName: Journals
+          ObjectType: 8
+          guid: 87b7a5eedc13d04e9f83742b00106edb
       - name: MainMenu
         guid: f2bef5c839976643a06e248cc1063eb6
         id: 3604647259
@@ -413,7 +471,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: f54625fefc1a474e83fb6e6d2c4d5e7f
     GuidInternal: 
-    m_lastTime: -8584492758332420183
+    m_lastTime: -8584521417717134582
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -427,7 +485,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: fbd7788a64caa34b81f44395cdfe2aba
     GuidInternal: 
-    m_lastTime: -8584492758332420183
+    m_lastTime: -8584521417717134582
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

@@ -51,9 +51,9 @@ namespace Minigames.Alchemy
             var undefinedLiquid = Instantiate(_producedUndefinedItemPrefab);
             var orgPos = transform.position;
             undefinedLiquid.transform.position = new Vector3(orgPos.x, orgPos.y - 5, 10);
-            undefinedLiquid.GetComponent<DraggableItem>().MakeUndefinedLiquid();
             undefinedLiquid.GetComponent<DraggableItem>().SetIngredients(_inputIngredients);
-            
+            undefinedLiquid.GetComponent<DraggableItem>().MakeUndefinedLiquid();
+
             _inputIngredients = new();
             RenderIngredientPrefabs();
         }
@@ -68,7 +68,7 @@ namespace Minigames.Alchemy
             foreach (var inputIngredient in _inputIngredients)
             {
                 var addedIngrGO = Instantiate(_addedIngredientPrefab, _addedIngredientContainer.transform);
-                addedIngrGO.GetComponent<Image>().sprite = inputIngredient.ResolveSpriteByIngredientName();
+                addedIngrGO.GetComponent<AddedIngredient>().itemSprite.sprite = inputIngredient.ResolveSpriteIconByIngredientName();
             }
         }
     }

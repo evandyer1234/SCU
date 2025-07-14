@@ -9,17 +9,24 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{2077ADEA-D4BB-A734-CFFC-C212B183B660}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{EE500256-12CE-EFA4-BA11-0438827B806B}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
-				<File Id="85893998" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SCU MMT Pizz (Level Selection) Fine Cut.wav</ShortName>
-					<CachePath>SFX/SCU MMT Pizz (Level Selection) Fine Cut_FBC78EF0.wem</CachePath>
+				<File Id="338466883" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>title_legato_full_3_4_L51.wav</ShortName>
+					<Path>Media/338466883.wem</Path>
+					<CachePath>SFX/title_legato_full_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="927775762" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SCU MMT Legato (Main Menu) Fine Cut.wav</ShortName>
-					<CachePath>SFX/SCU MMT Legato (Main Menu) Fine Cut_FBC78EF0.wem</CachePath>
+				<File Id="513198213" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>title_pizz_3_4_L51.wav</ShortName>
+					<Path>Media/513198213.wem</Path>
+					<CachePath>SFX/title_pizz_3_4_L51_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="753671719" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>title_legato_piano_3_4_L51.wav</ShortName>
+					<Path>Media/753671719.wem</Path>
+					<CachePath>SFX/title_legato_piano_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -28,8 +35,9 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1176052424" Id="3604647259"/>
 							<MediaRefs>
-								<MediaRef Id="85893998"/>
-								<MediaRef Id="927775762"/>
+								<MediaRef Id="338466883"/>
+								<MediaRef Id="513198213"/>
+								<MediaRef Id="753671719"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -42,6 +50,7 @@
 				<StateGroup Id="1176052424" Name="Location">
 					<States>
 						<State Id="748895195" Name="None"/>
+						<State Id="1117481573" Name="Journals"/>
 						<State Id="1438324778" Name="Alchemy"/>
 						<State Id="3310578182" Name="MiniGame"/>
 						<State Id="3604647259" Name="MainMenu"/>
@@ -49,7 +58,11 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{47CE6A4C-A6D2-E570-1A05-5E83E43004AC}">
+		<SoundBank Id="584226713" Type="User" Language="SFX" Hash="{8D29C8C7-993A-ADD7-1B83-2C5643FCB133}">
+			<ShortName>MainMenuBank</ShortName>
+			<Path>MainMenuBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{385F6566-4F63-DBDD-07EA-4ADE6F2C0A11}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -96,6 +109,7 @@
 				<StateGroup Id="1176052424" Name="Location">
 					<States>
 						<State Id="748895195" Name="None"/>
+						<State Id="1117481573" Name="Journals"/>
 						<State Id="1438324778" Name="Alchemy"/>
 						<State Id="3310578182" Name="MiniGame"/>
 						<State Id="3604647259" Name="MainMenu"/>
@@ -103,6 +117,14 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
+		<SoundBank Id="3567142168" Type="User" Language="SFX" Hash="{5342C9C0-F625-CD6E-BFC6-01ECAC27DAF8}">
+			<ShortName>AlchemyBank</ShortName>
+			<Path>AlchemyBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4138422396" Type="User" Language="SFX" Hash="{B0A1F76B-CD53-E45B-D0FB-B920B37D6740}">
+			<ShortName>MinigameBank</ShortName>
+			<Path>MinigameBank.bnk</Path>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{371B2956-2A37-DE30-2833-5F5AAC265D78}</FileHash>
+	<FileHash>{D5CEA544-143C-1F32-2FD6-4D4620036E57}</FileHash>
 </SoundBanksInfo>

@@ -1,41 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SetFaderLevels : MonoBehaviour
 {
-    // RTPCs
-    [SerializeField] private AK.Wwise.RTPC masterFader;
-    [SerializeField] private AK.Wwise.RTPC musicFader;
-    [SerializeField] private AK.Wwise.RTPC soundFader;
+    // RTPC
+    [SerializeField] private AK.Wwise.RTPC fader;
     
-    // Sliders
-    [SerializeField] private Slider masterSlider;
-    [SerializeField] private Slider musicSlider;
-    [SerializeField] private Slider soundSlider;
-    
+    // Slider
+    private Slider _slider;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        masterFader.SetGlobalValue(100f);
-        musicFader.SetGlobalValue(100f);
-        soundFader.SetGlobalValue(100f);
+       _slider = gameObject.GetComponent<Slider>();
+       
+       if (SceneManager.GetActiveScene().buildIndex == 0)
+       {
+           _slider.value = 100f;
+       }
+       else
+       {
+           _slider.value = fader.GetValue(null);
+           SetFader();
+       }
     }
 
-    public void SetMasterFader()
+    public void SetFader()
     {
-        masterFader.SetGlobalValue(masterSlider.value);
-    }
-
-    public void SetMusicFader()
-    {
-        musicFader.SetGlobalValue(musicSlider.value);
-    }
-
-    public void SetSoundFader()
-    {
-        soundFader.SetGlobalValue(soundSlider.value);
+        fader.SetGlobalValue(_slider.value);
     }
 }

@@ -25,6 +25,7 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID ALCHEMY = 1438324778U;
+                static const AkUniqueID JOURNALS = 1117481573U;
                 static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID MINIGAME = 3310578182U;
                 static const AkUniqueID NONE = 748895195U;
@@ -45,7 +46,10 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ALCHEMYBANK = 3567142168U;
+        static const AkUniqueID MAINMENUBANK = 584226713U;
         static const AkUniqueID MAINSOUNDBANK = 534561221U;
+        static const AkUniqueID MINIGAMEBANK = 4138422396U;
     } // namespace BANKS
 
     namespace BUSSES
