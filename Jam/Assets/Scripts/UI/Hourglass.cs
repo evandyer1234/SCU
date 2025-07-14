@@ -30,7 +30,7 @@ public class Hourglass : MonoBehaviour
     {
         Top.value = Glassvalue;
         Bottom.value = Maxvalue - Glassvalue;
-        Debug.Log(Maxvalue - Glassvalue);
+        //Debug.Log(Maxvalue - Glassvalue);
         //Glassvalue += Time.fixedDeltaTime * .5f;
         if (Top.value <= 0)
         {
