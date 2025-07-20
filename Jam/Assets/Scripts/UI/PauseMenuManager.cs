@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Helpers;
+using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,7 +39,7 @@ public class PauseMenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (_subjectManager.GetSCUSceneManager().IsMainMenuScene()) return;
+        if (SCUSceneManager.IsMainMenuScene()) return;
         if (KeyboardInput.EscapePressed(_scuInputAction))
         {
             if(_paused)

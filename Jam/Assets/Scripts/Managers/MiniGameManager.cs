@@ -34,7 +34,6 @@ public class MiniGameManager : MonoBehaviour
         _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
             .GetComponent<PauseMenuManager>();
         hourglass = FindObjectOfType<Hourglass>();
-       
         
         foreach (var miniGame in miniGames)
         {
@@ -53,17 +52,19 @@ public class MiniGameManager : MonoBehaviour
             .GetComponent<SubjectManager>();
         collectedIngredientsPerPatient = new();
         InitializeTimer();
-        if (hourglass != null)
-            hourglass.SetupHourglass(CurrentTime);
 
         if (_subjectManager.IsPotionMode())
         {
             clothLayerPatient.GetComponent<Collider2D>().enabled = true;
             postItIngredients.SetActive(false);
+            if (hourglass != null)
+                hourglass.gameObject.SetActive(false);
         }
         else
         {
             clothLayerPatient.GetComponent<Collider2D>().enabled = false;
+            if (hourglass != null)
+                hourglass.SetupHourglass(CurrentTime);
         }
     }
     

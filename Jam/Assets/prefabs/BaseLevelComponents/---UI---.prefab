@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 4160979456608169709}
   - component: {fileID: 8599491488913434636}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ScreenSpaceCanvas
   m_TagString: PauseMenuManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,7 +2326,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 8599491487197408672}
     m_Modifications:
     - target: {fileID: 812539630353595192, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630353595192, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630353595192, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630380945522, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 812539630380945522, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
@@ -2334,11 +2346,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 812539630558498469, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630558498469, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 812539630580819439, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630580819439, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 812539630580819439, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 812539631247261388, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
@@ -2390,11 +2414,23 @@ PrefabInstance:
       value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 5266466606224382546, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266466606224382546, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5266466606284599247, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266466606284599247, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266466606284599247, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5266466606596219678, guid: 237c667289332ba41a0a14a08f98824c, type: 3}
@@ -2986,7 +3022,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 3050129540837830321, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

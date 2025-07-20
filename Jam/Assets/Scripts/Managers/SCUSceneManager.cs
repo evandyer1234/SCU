@@ -6,9 +6,19 @@ namespace Managers
 {
     public class SCUSceneManager : MonoBehaviour
     {
-        public bool IsMainMenuScene()
+        public static bool IsMainMenuScene()
         {
             return SceneManager.GetActiveScene().buildIndex == NamingConstants.SCENE_ID_MAIN_MENU;
+        }
+        
+        public static bool IsMinigameScene()
+        {
+            return SceneManager.GetActiveScene().name == NamingConstants.SCENE_MAIN_MINIGAME;
+        }
+        
+        public static bool IsAlchemyScene()
+        {
+            return SceneManager.GetActiveScene().name == NamingConstants.SCENE_MAIN_ALCHEMY;
         }
         
         public void TransitionToScene(int sceneIndex, bool skipFade = false)

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,6 +28,7 @@ public class SetFaderLevels : MonoBehaviour
 
     public void SetFader()
     {
-        fader.SetGlobalValue(_slider.value);
+        if (fader != null && _slider != null)
+            fader.SetGlobalValue(_slider.value);
     }
 }

@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/UI/Hourglass.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/prefabs/UI/Hourglass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HelpInstructions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HelpInstructions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/HELP.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/HELP.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/SetFaderLevels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/SetFaderLevels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MiniGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SCUSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SCUSceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/Patient Page.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/Patient Page.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/BaseLevelComponents/---UI---.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "#31 on evan-timer",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -269,14 +277,6 @@
       <workItem from="1750094632877" duration="814000" />
       <workItem from="1751839067878" duration="1538000" />
       <workItem from="1751961136866" duration="10033000" />
-    </task>
-    <task id="LOCAL-00002" summary="Drag and drop Magnifying Glass on Handly only">
-      <option name="closed" value="true" />
-      <created>1744750888955</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1744750888955</updated>
     </task>
     <task id="LOCAL-00003" summary="Remove Magnifying glass from toffl Scene">
       <option name="closed" value="true" />
@@ -662,7 +662,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751977793766</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Make independant Hourglass prefab and drag into production">
+      <option name="closed" value="true" />
+      <created>1753000276759</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1753000276759</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,7 +698,6 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fix bug on animating click hints during running minigame" />
     <MESSAGE value="Add Alchemy Scene" />
     <MESSAGE value="fixed bug on magnifying glass reset" />
     <MESSAGE value="Prototype Alchemy Inventory WIP" />
@@ -715,6 +722,7 @@
     <MESSAGE value="add first alchemy assets" />
     <MESSAGE value="finish using new ingredient Sprites" />
     <MESSAGE value="new recipe book" />
-    <option name="LAST_COMMIT_MESSAGE" value="new recipe book" />
+    <MESSAGE value="Make independant Hourglass prefab and drag into production" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make independant Hourglass prefab and drag into production" />
   </component>
 </project>
