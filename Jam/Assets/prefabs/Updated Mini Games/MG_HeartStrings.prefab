@@ -2793,8 +2793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338123644835c5349ab217f5e5ac62d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: 
-  penalty: 1
+  penalty: 15
   miniGameStage: 0
   _icons:
   - {fileID: 1262437561832193054}

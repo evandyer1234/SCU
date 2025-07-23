@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace;
 using Helpers;
 using UnityEngine;
 
@@ -16,6 +17,9 @@ namespace Minigames.Abdomen
         private bool allCorruptedOnTrayCondition = false;
         private bool allOrgansConnectedAreHealthyCondition = false;
         
+        private PauseMenuManager _pauseMenuManager;
+        private HelpInstructions _helpInstructions;
+        
         private void Awake()
         {
             _scuInputAction = new SCUInputAction();
@@ -26,10 +30,16 @@ namespace Minigames.Abdomen
         {
             base.Start();
             AssignRandomCorruptedOrgans();
+            _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+                .GetComponent<PauseMenuManager>();
+            _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         }
 
         private void FixedUpdate()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             if (allCorruptedOnTrayCondition && allOrgansConnectedAreHealthyCondition)
             {
                 OnSuccess();
@@ -65,16 +75,25 @@ namespace Minigames.Abdomen
         
         public void AssignNewStomach(StomachMovable stomachMovable)
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             this.stomach = stomachMovable;
         }
         
         public void AssignNewLiver(LiverMovable liverMovable)
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             this.liver = liverMovable;
         }
         
         public void AssignNewKidney(KidneyMovable kidneyMovable)
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             if (kidneyMovable.isLefKidney)
             {
                 this.leftKidney = kidneyMovable;

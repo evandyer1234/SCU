@@ -687,13 +687,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22244cbe5bc4ac386eda29762d8843b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: 
   penalty: 0
   miniGameStage: 0
   barometerNeedle: {fileID: 3914261223380901623}
   lungPump: {fileID: 3914261223423513630}
   lungs: {fileID: 3914261224564634057}
-  ticksToSuccess: 10
+  ticksToSuccess: 5
   _hintLeft: {fileID: 1849653566522678085}
   _hintRight: {fileID: 5308261894389706812}
   _barometerTargetAreaHint: {fileID: 5135593127285461777}

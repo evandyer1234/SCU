@@ -70,12 +70,12 @@ public class MiniGameManager : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (_subjectManager.IsPotionMode())
+        if (_subjectManager.IsPotionMode() || AllMinigamesFinished())
         {
             SetTimerText("");
             return;
         }
-        
+
         CurrentTime -= Time.fixedDeltaTime;
         UpdateTimerText();
         if (CurrentTime <= 0 && !_pauseMenuManager.isGamePaused())
@@ -121,6 +121,8 @@ public class MiniGameManager : MonoBehaviour
         {
             goToPotionSceneButton.SetActive(true);
             minigameDoneText.SetActive(true);
+            if (hourglass != null)
+                hourglass.gameObject.SetActive(false);
         }
     }
     
@@ -164,6 +166,8 @@ public class MiniGameManager : MonoBehaviour
     
     private bool AllMinigamesFinished()
     {
+        if (_subjectManager == null || _subjectManager.currentSubject == null) return false;
+        
         return miniGamesFinishedState.Where(state => state.Value)
             .ToList().Count() == _subjectManager.currentSubject.subjectMinigames.Count();
     }

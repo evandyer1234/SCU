@@ -12,9 +12,11 @@ namespace Minigames.Alchemy
         [SerializeField] private GameObject _producedUndefinedItemPrefab;
         
         private List<Ingredient> _inputIngredients = new();
-
+        private bool _active = true;
+        
         private void FixedUpdate()
         {
+            if (!_active) return;
             if (_inputIngredients.Count >= 3) return;
             
             var coll = gameObject.GetComponent<Collider2D>();
@@ -56,6 +58,11 @@ namespace Minigames.Alchemy
             
             _inputIngredients = new();
             RenderIngredientPrefabs();
+        }
+        
+        public void SetInactive()
+        {
+            this._active = false;
         }
         
         private void RenderIngredientPrefabs()

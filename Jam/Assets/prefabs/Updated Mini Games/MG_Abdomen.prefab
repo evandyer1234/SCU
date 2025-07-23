@@ -529,8 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d352535980964a6e82e9947423efd1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: 
-  penalty: 5
+  penalty: 15
   miniGameStage: 0
   stomach: {fileID: 958912206049125584}
   liver: {fileID: 6125949926776546096}

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace;
 using Helpers;
 using Managers;
 using UnityEngine;
@@ -21,6 +22,7 @@ public class PauseMenuManager : MonoBehaviour
     private List<HoverTooltip> _tooltipsInScene;
     private List<HoverOutline> _outlinesInScene;
     private SubjectManager _subjectManager;
+    private HelpInstructions _helpInstructions;
 
     private void Awake()
     {
@@ -35,11 +37,13 @@ public class PauseMenuManager : MonoBehaviour
     private void Start()
     {
         _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM).GetComponent<SubjectManager>();
+        _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
     }
 
     private void Update()
     {
         if (SCUSceneManager.IsMainMenuScene()) return;
+        if (_helpInstructions.isHelpOpen()) return;
         if (KeyboardInput.EscapePressed(_scuInputAction))
         {
             if(_paused)

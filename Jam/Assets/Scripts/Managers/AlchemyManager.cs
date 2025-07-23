@@ -14,6 +14,8 @@ namespace Managers
 
         private SubjectManager _subjectManager;
         private PauseMenuManager _pauseMenuManager;
+        private MortarPestle _mortarPestle;
+        private Cauldron _cauldron;
         
         private bool finalPotionBrewed = false;
         private int rotatingSelectedIngredientSlot = 0;
@@ -28,6 +30,12 @@ namespace Managers
             finalPotionBrewed = false;
         }
 
+        void Start()
+        {
+            _mortarPestle = GameObject.FindObjectOfType<MortarPestle>();
+            _cauldron = GameObject.FindObjectOfType<Cauldron>();
+        }
+        
         private void FixedUpdate()
         {
             CheckBrewedPotionCondition();
@@ -48,6 +56,8 @@ namespace Managers
                     _treatPatientButton.SetActive(true);
                     _resetPreparationButton.SetActive(false);
                     finalPotionBrewed = true;
+                    _mortarPestle.SetInactive();
+                    _cauldron.SetInactive();
                     break;
                 }
             }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace;
 using Helpers;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ namespace Minigames.Abdomen
         private bool isCorrupted = false;
         
         private PauseMenuManager _pauseMenuManager;
+        private HelpInstructions _helpInstructions;
         private SCUInputAction _scuInputAction;
         
         // movement related
@@ -39,11 +41,13 @@ namespace Minigames.Abdomen
             GetComponent<SpriteRenderer>().sprite = healthyStomachSprite;
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
+            _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         }
         
         private void Update()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (followMouse)
             {
@@ -69,6 +73,7 @@ namespace Minigames.Abdomen
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {
@@ -105,6 +110,9 @@ namespace Minigames.Abdomen
 
         public void CutTopConnection()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             isTopConnectionCut = true;
             if (isBottomConnectionCut)
             {
@@ -117,6 +125,9 @@ namespace Minigames.Abdomen
 
         public void CutBottomConnection()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             isBottomConnectionCut = true;
             if (isTopConnectionCut)
             {

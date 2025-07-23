@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace;
 using Helpers;
 using Minigames.HeartString;
 using UnityEngine;
@@ -15,12 +16,14 @@ public class MG_HeartString : MiniGameBase
     private Sprite _corruptionIcon;
 
     private PauseMenuManager _pauseMenuManager;
+    private HelpInstructions _helpInstructions;
     private int _correctVeinNumber;
 
     public override void Start()
     {
         _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
             .GetComponent<PauseMenuManager>();
+        _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         
         base.Start();
         
@@ -34,6 +37,7 @@ public class MG_HeartString : MiniGameBase
     public void Selection(int index)
     {
         if (_pauseMenuManager.isGamePaused()) return;
+        if (_helpInstructions.isHelpOpen()) return;
         
         if (index == _correctVeinNumber)
         {

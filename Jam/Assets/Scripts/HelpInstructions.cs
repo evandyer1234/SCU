@@ -8,10 +8,12 @@ namespace DefaultNamespace
     {
 
         [SerializeField] private GameObject minigameHelp;
+        [SerializeField] private GameObject minigamePotionHelp;
         [SerializeField] private GameObject alchemyHelp;
         [SerializeField] private GameObject helpShadow;
         
         private PauseMenuManager _pauseMenuManager;
+        private SubjectManager _subjectManager;
 
         private bool _isOpen = false;
         
@@ -20,9 +22,14 @@ namespace DefaultNamespace
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
             
-            minigameHelp.SetActive(false);
-            alchemyHelp.SetActive(false);
+            DisableAllHelp();
             helpShadow.SetActive(false);
+        }
+
+        private void Start()
+        {
+            _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
+                .GetComponent<SubjectManager>();
         }
 
         public void ToggleHelp()
@@ -31,30 +38,49 @@ namespace DefaultNamespace
             
             if (_isOpen)
             {
-                minigameHelp.SetActive(false);
-                alchemyHelp.SetActive(false);
+                DisableAllHelp();
                 helpShadow.SetActive(false);
+                Time.timeScale = 1f;
             }
             else
             {
                 OpenSceneRespectiveHelp();
                 helpShadow.SetActive(true);
+                Time.timeScale = 0f;
             }
             
             _isOpen = !_isOpen;
         }
 
+        public bool isHelpOpen()
+        {
+            return _isOpen;
+        }
+
         private void OpenSceneRespectiveHelp()
         {
+            DisableAllHelp();
             if (SCUSceneManager.IsMinigameScene())
             {
-                minigameHelp.SetActive(true);
-                alchemyHelp.SetActive(false);
+                if (_subjectManager.IsPotionMode())
+                {
+                    minigamePotionHelp.SetActive(true);
+                }
+                else
+                {
+                    minigameHelp.SetActive(true);
+                }
             } else if (SCUSceneManager.IsAlchemyScene())
             {
-                minigameHelp.SetActive(false);
                 alchemyHelp.SetActive(true);
             }
+        }
+
+        private void DisableAllHelp()
+        {
+            minigameHelp.SetActive(false);
+            minigamePotionHelp.SetActive(false);
+            alchemyHelp.SetActive(false);
         }
     }
 }

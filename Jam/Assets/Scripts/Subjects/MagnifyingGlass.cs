@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using Helpers;
 using UI;
 using UnityEngine;
@@ -42,6 +43,7 @@ namespace Subjects
         private SCUInputAction _scuInputAction;
         private MiniGameManager _miniGameManager;
         private PauseMenuManager _pauseMenuManager;
+        private HelpInstructions _helpInstructions;
         private Color inactiveColor = new Color32(128, 128, 128, 255);
 
         /** ****************************************************
@@ -57,11 +59,13 @@ namespace Subjects
                 .GetComponent<MiniGameManager>();
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                     .GetComponent<PauseMenuManager>();
+            _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         }
         
         private void Update()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (followMouse)
             {
@@ -77,6 +81,7 @@ namespace Subjects
         private void FixedUpdate()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             PaintMagnifyingGlassByActivity();
             
@@ -88,6 +93,7 @@ namespace Subjects
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             if (!glassShadowReference.GetMagnifyingGlassInUse()) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))

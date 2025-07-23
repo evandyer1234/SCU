@@ -1,4 +1,6 @@
 using System.Collections;
+using DefaultNamespace;
+using Helpers;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -43,7 +45,10 @@ public class MG_Drain : MiniGameBase
     [SerializeField] Slider syringe;
     [SerializeField, Tooltip("sprite renderer for the toxic spirt thats overlayed on the blood sprite")]
     SpriteRenderer toxicsp;
-
+    
+    private PauseMenuManager _pauseMenuManager;
+    private HelpInstructions _helpInstructions;
+    
     bool syringego = false;
     public override void Start()
     {
@@ -51,11 +56,16 @@ public class MG_Drain : MiniGameBase
         //set start value for blood
         bloodtoxicity = Random.Range(minstartvalue, maxstartvalue);
         SafeInd.SetActive(false);
-
+        _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
+            .GetComponent<PauseMenuManager>();
+        _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
     }
 
     public void FixedUpdate()
     {
+        if (_pauseMenuManager.isGamePaused()) return;
+        if (_helpInstructions.isHelpOpen()) return;
+        
         //drains blood based on the drain rate and the number of leeches
         bloodtoxicity -= Time.fixedDeltaTime * drainrate * leeches;
 
@@ -94,6 +104,9 @@ public class MG_Drain : MiniGameBase
     //outdated, now acts as finish button
     public void updatetox()
     {
+        if (_pauseMenuManager.isGamePaused()) return;
+        if (_helpInstructions.isHelpOpen()) return;
+        
         buttoncollider.enabled = true;
         displaylevel.text = bloodtoxicity.ToString("F0");
 
@@ -111,6 +124,8 @@ public class MG_Drain : MiniGameBase
     //updates syringe with current blood
     public void PullSyringe()
     {
+        if (_pauseMenuManager.isGamePaused()) return;
+        if (_helpInstructions.isHelpOpen()) return;
         
         syringego = true;
         syringe.value = minsyringe;

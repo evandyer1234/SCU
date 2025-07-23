@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DefaultNamespace;
 using Helpers;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ namespace Minigames.Abdomen
         [SerializeField] private bool isConnected;
 
         private PauseMenuManager _pauseMenuManager;
+        private HelpInstructions _helpInstructions;
         private SCUInputAction _scuInputAction;
         
         private Sprite healthyLiverSprite;
@@ -32,11 +34,13 @@ namespace Minigames.Abdomen
             GetComponent<SpriteRenderer>().sprite = healthyLiverSprite;
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
+            _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         }
 
         private void Update()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (followMouse)
             {
@@ -61,6 +65,7 @@ namespace Minigames.Abdomen
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {
@@ -97,6 +102,9 @@ namespace Minigames.Abdomen
 
         public void CutConnection()
         {
+            if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
+            
             isConnected = false;
             _liverPlaceholder.SetLastKnownLiverPosition(gameObject.transform.position);
             _liverPlaceholder.SetLastKnownLiverRootPosition(yRootPosition);

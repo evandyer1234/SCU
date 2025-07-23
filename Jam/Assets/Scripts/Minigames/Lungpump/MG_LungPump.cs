@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using Helpers;
 using UI;
 using UnityEngine;
@@ -49,6 +50,7 @@ namespace Minigames.Lungpump
         private static Vector2 _collOffsetRight = new Vector2(12.2f, 7f);
 
         private PauseMenuManager _pauseMenuManager;
+        private HelpInstructions _helpInstructions;
         private SCUInputAction _scuInputAction;
 
         private bool _usedOnce = false;
@@ -67,6 +69,7 @@ namespace Minigames.Lungpump
             _scuInputAction.UI.Enable();
             _pauseMenuManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_PAUSE_MENU_MANAGER)
                 .GetComponent<PauseMenuManager>();
+            _helpInstructions = GameObject.FindObjectOfType<HelpInstructions>();
         }
         
         public override void Start()
@@ -83,6 +86,7 @@ namespace Minigames.Lungpump
         private void FixedUpdate()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             float naturalPressureDrop = Random.Range(0.2f, 0.8f);
             if (IsPressureWithinSuccessRange())
@@ -106,6 +110,7 @@ namespace Minigames.Lungpump
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (_helpInstructions.isHelpOpen()) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {
