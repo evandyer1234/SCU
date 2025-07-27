@@ -2001,8 +2001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -74.95, y: -57.35}
-  m_SizeDelta: {x: 149.9, y: 210.31}
+  m_AnchoredPosition: {x: -74.95, y: -60.88}
+  m_SizeDelta: {x: 149.9, y: 207.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512303682
 MonoBehaviour:
@@ -2027,17 +2027,17 @@ MonoBehaviour:
   m_text: "March 23rd 1085\r\n\nAfter word that Shadow Corruption had spread beyond
     New London, I felt the need to advance my treatment more than ever. That need
     broke through in my work today.\r\n\nThe contemptible local butcher came in.
-    Levi Wylie, that was the poor, tired man\u2019s name. The man was not far from
-    the grave. He has likely been in pain for multiple weeks without seeking treatment.\r\n\nAfter
+    Levi Wylie, that was the poor, tired man's name. The man was not far from the
+    grave. He has likely been in pain for multiple weeks without seeking treatment.\r\n\nAfter
     I completed my procedure, I removed a portion of tissue from uncorrupted areas
     with no other purpose than to have the best possible chance of maybe, just maybe
     distilling a solution that would permanently cure Shadow Corruption. There was
     a risk to the patient. To make matters worse, I was unsuccessful in my attempt
     to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
     Levi is recovering well, though he experienced additional difficulties the other
-    patients did not.\r\n\n[Insert solution here]\r\n\nLevi\u2019s shock when I told
-    him this treatment was free of charge caused him to believe me a saint for my
-    conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
+    patients did not.\r\n\n[Insert solution here]\r\n\nLevi's shock when I told him
+    this treatment was free of charge caused him to believe me a saint for my conduct\u2026
+    He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -2213,7 +2213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &576398459
 Transform:
   m_ObjectHideFlags: 0
@@ -6671,8 +6671,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 91.6, y: -68.15}
-  m_SizeDelta: {x: 142, y: 192.92}
+  m_AnchoredPosition: {x: 91.6, y: -71.48}
+  m_SizeDelta: {x: 142, y: 186.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372279752
 MonoBehaviour:
@@ -6697,17 +6697,17 @@ MonoBehaviour:
   m_text: "March 23rd 1085\r\n\nAfter word that Shadow Corruption had spread beyond
     New London, I felt the need to advance my treatment more than ever. That need
     broke through in my work today.\r\n\nThe contemptible local butcher came in.
-    Levi Wylie, that was the poor, tired man\u2019s name. The man was not far from
-    the grave. He has likely been in pain for multiple weeks without seeking treatment.\r\n\nAfter
+    Levi Wylie, that was the poor, tired man's name. The man was not far from the
+    grave. He has likely been in pain for multiple weeks without seeking treatment.\r\n\nAfter
     I completed my procedure, I removed a portion of tissue from uncorrupted areas
     with no other purpose than to have the best possible chance of maybe, just maybe
     distilling a solution that would permanently cure Shadow Corruption. There was
     a risk to the patient. To make matters worse, I was unsuccessful in my attempt
     to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
     Levi is recovering well, though he experienced additional difficulties the other
-    patients did not.\r\n\n[Insert solution here]\r\n\nLevi\u2019s shock when I told
-    him this treatment was free of charge caused him to believe me a saint for my
-    conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
+    patients did not.\r\n\n[Insert solution here]\r\n\nLevi's shock when I told him
+    this treatment was free of charge caused him to believe me a saint for my conduct\u2026
+    He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
