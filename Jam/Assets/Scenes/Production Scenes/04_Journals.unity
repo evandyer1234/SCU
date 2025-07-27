@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213212}
   m_LocalRotation: {x: -0, y: -0, z: -0.072395585, w: 0.997376}
-  m_LocalPosition: {x: -6.15, y: 3.98, z: 0}
+  m_LocalPosition: {x: -8.4, y: 5.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -365,8 +365,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30527517}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.219999, y: -5.18, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011466684, w: 0.99993426}
+  m_LocalPosition: {x: -5.62, y: -3.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -375,7 +375,7 @@ Transform:
   - {fileID: 1162220219}
   m_Father: {fileID: 687681329}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.314}
 --- !u!1 &30886125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,7 +1298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181021462}
   m_LocalRotation: {x: -0, y: -0, z: -0.03367848, w: 0.99943274}
-  m_LocalPosition: {x: 6.1, y: -8.51, z: 0}
+  m_LocalPosition: {x: 3.8500004, y: -6.9100003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1819,8 +1819,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436427890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.26, y: -3.2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.056956783, w: 0.99837667}
+  m_LocalPosition: {x: -4.5, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1830,7 +1830,7 @@ Transform:
   - {fileID: 1140355808}
   m_Father: {fileID: 687681329}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.53}
 --- !u!1 &468321783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,8 +2001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.9, y: 26.8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -74.95, y: -57.35}
+  m_SizeDelta: {x: 149.9, y: 210.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512303682
 MonoBehaviour:
@@ -2033,7 +2033,11 @@ MonoBehaviour:
     with no other purpose than to have the best possible chance of maybe, just maybe
     distilling a solution that would permanently cure Shadow Corruption. There was
     a risk to the patient. To make matters worse, I was unsuccessful in my attempt
-    to neutralize the corruption permanently.\r\n"
+    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
+    Levi is recovering well, though he experienced additional difficulties the other
+    patients did not.\r\n\n[Insert solution here]\r\n\nLevi\u2019s shock when I told
+    him this treatment was free of charge caused him to believe me a saint for my
+    conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -2060,8 +2064,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2072,14 +2076,14 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
+  m_overflowMode: 6
+  m_linkedTextComponent: {fileID: 1372279752}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
@@ -2096,7 +2100,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 57.71432, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2209,7 +2213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &576398459
 Transform:
   m_ObjectHideFlags: 0
@@ -2439,7 +2443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687681328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7511104, y: 0.966432, z: 4.8002796}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3451,8 +3455,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1194832520}
-  - {fileID: 1231147059}
   - {fileID: 1160132269}
+  - {fileID: 1231147059}
   m_Father: {fileID: 30527518}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3709,7 +3713,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &894488876
 GameObject:
@@ -4683,7 +4687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074317283}
   m_LocalRotation: {x: 0, y: 0, z: -0.026002463, w: 0.99966186}
-  m_LocalPosition: {x: 7.32, y: 3.14, z: 0}
+  m_LocalPosition: {x: 5.0700006, y: 4.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4793,7 +4797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138673635}
   m_LocalRotation: {x: 0, y: 0, z: 0.07289002, w: 0.99733996}
-  m_LocalPosition: {x: 9.83, y: -1.95, z: 0}
+  m_LocalPosition: {x: 10.46, y: -2.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4841,7 +4845,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 685c678273aa8f545aace34a24b7be5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5120,12 +5124,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 848407322}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.6, y: 19.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 91.29, y: -59.88}
+  m_SizeDelta: {x: 141.38, y: 199.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160132270
 MonoBehaviour:
@@ -5147,15 +5151,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Alchemical Solution:
+  m_text: 'March 30th 1085
 
 
-    Milo required a complex solution to remedy
-    the lad.
+    I hit a stroke of luck! Milo Whittock, a frightened
+    young child with a nasty case of corruption, works at Cogwrights as a Chimney
+    Sweep. He spoke of the topic after I washed some soot off his chin and clothes.
+
+
+    Anyway,
+    I told him I was looking into the root cause of the epidemic and asked if he
+    had seen anything out of the ordinary when he offered to sneak me inside the
+    building! This waif has done more for this city than all the gentlemen on this
+    side of Rucker Avenue combined.
+
+
+    I have been testing the samples of water
+    and tar I took from the impressive new machine they use to make prosthetics and
+    automated machinery in every way imaginable, from fermentation to evaporation.
+    I may have answers before long!
+
+
+
+    Alchemical Solution:
+
+
+    Milo required
+    a complex solution to remedy the lad.
 
 
     [Insert solution here]
-
 
 '
   m_isRightToLeft: 0
@@ -5184,8 +5209,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5196,7 +5221,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5204,7 +5229,7 @@ MonoBehaviour:
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 1194832521}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -5220,7 +5245,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 62.837402, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5522,8 +5547,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.9, y: 26}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -74.95, y: -58.95}
+  m_SizeDelta: {x: 149.9, y: 219.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194832521
 MonoBehaviour:
@@ -5565,6 +5590,17 @@ MonoBehaviour:
     automated machinery in every way imaginable, from fermentation to evaporation.
     I may have answers before long!
 
+
+
+    Alchemical Solution:
+
+
+    Milo required
+    a complex solution to remedy the lad.
+
+
+    [Insert solution here]
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -5592,8 +5628,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5604,14 +5640,14 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
+  m_overflowMode: 6
+  m_linkedTextComponent: {fileID: 1160132270}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
@@ -5628,7 +5664,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 57.71432, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5741,7 +5777,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 12
   m_TargetDisplay: 0
 --- !u!1 &1214888905
 GameObject:
@@ -5868,7 +5904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223203783}
   m_LocalRotation: {x: 0, y: 0, z: -0.026002463, w: 0.99966186}
-  m_LocalPosition: {x: -6.64, y: 3.56, z: 0}
+  m_LocalPosition: {x: -10.25, y: 4.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5908,7 +5944,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 848407322}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6589,8 +6625,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343363507}
-  m_LocalRotation: {x: 0, y: 0, z: 0.025130056, w: 0.9996842}
-  m_LocalPosition: {x: -2.65, y: -4.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.028750118, w: 0.99958664}
+  m_LocalPosition: {x: -2.23, y: -3.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6599,7 +6635,7 @@ Transform:
   - {fileID: 1138673636}
   m_Father: {fileID: 576398459}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.88}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.295}
 --- !u!1 &1372279750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,12 +6667,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1506249931}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.6, y: 19.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 91.6, y: -68.15}
+  m_SizeDelta: {x: 142, y: 192.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372279752
 MonoBehaviour:
@@ -6658,10 +6694,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Alchemical Solution:\n\nLuckily, Levi is recovering well, though he experienced
-    additional difficulties the other patients did not.\r\n\n[Insert solution here]\r\n\nLevi\u2019s
-    shock when I told him this treatment was free of charge caused him to believe
-    me a saint for my conduct\u2026 He was unaware of the reasoning behind it.\r\n"
+  m_text: "March 23rd 1085\r\n\nAfter word that Shadow Corruption had spread beyond
+    New London, I felt the need to advance my treatment more than ever. That need
+    broke through in my work today.\r\n\nThe contemptible local butcher came in.
+    Levi Wylie, that was the poor, tired man\u2019s name. The man was not far from
+    the grave. He has likely been in pain for multiple weeks without seeking treatment.\r\n\nAfter
+    I completed my procedure, I removed a portion of tissue from uncorrupted areas
+    with no other purpose than to have the best possible chance of maybe, just maybe
+    distilling a solution that would permanently cure Shadow Corruption. There was
+    a risk to the patient. To make matters worse, I was unsuccessful in my attempt
+    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
+    Levi is recovering well, though he experienced additional difficulties the other
+    patients did not.\r\n\n[Insert solution here]\r\n\nLevi\u2019s shock when I told
+    him this treatment was free of charge caused him to believe me a saint for my
+    conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -6688,8 +6734,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6700,7 +6746,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -6708,7 +6754,7 @@ MonoBehaviour:
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 512303682}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -6724,7 +6770,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 62.837402, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6761,8 +6807,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470647277}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.96, y: 0.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.1570299, w: 0.9875939}
+  m_LocalPosition: {x: 0.66, y: -1.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6772,7 +6818,7 @@ Transform:
   - {fileID: 1283158053}
   m_Father: {fileID: 576398459}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 18.069}
 --- !u!1 &1483770408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,7 +6843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483770408}
   m_LocalRotation: {x: -0, y: -0, z: 0.03620476, w: 0.9993444}
-  m_LocalPosition: {x: 13.14, y: -5.49, z: 0}
+  m_LocalPosition: {x: 10.890001, y: -3.8899999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6821,7 +6867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1487930306
 Transform:
   m_ObjectHideFlags: 0
@@ -6830,7 +6876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487930305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7511104, y: 0.966432, z: 4.8002796}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7010,8 +7056,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 512303681}
-  - {fileID: 1918651590}
   - {fileID: 1372279751}
+  - {fileID: 1918651590}
   m_Father: {fileID: 1343363508}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7646,7 +7692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546432646}
   m_LocalRotation: {x: 0, y: 0, z: 0.033940107, w: 0.9994239}
-  m_LocalPosition: {x: -4.16, y: -4.11, z: 0}
+  m_LocalPosition: {x: -6.4099994, y: -2.5100002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9400,7 +9446,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1506249931}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9605,7 +9651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986652336}
   m_LocalRotation: {x: 0, y: 0, z: 0.05024433, w: 0.998737}
-  m_LocalPosition: {x: -7.73, y: 3.83, z: 0}
+  m_LocalPosition: {x: -7.33, y: 2.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9637,8 +9683,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994450236}
-  m_LocalRotation: {x: 0, y: 0, z: -0.006370322, w: 0.99997973}
-  m_LocalPosition: {x: 7.34, y: -10.16, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.027257927, w: 0.9996285}
+  m_LocalPosition: {x: 3.03, y: -9.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9646,7 +9692,7 @@ Transform:
   - {fileID: 741938338}
   m_Father: {fileID: 687681329}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.73}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.124}
 --- !u!1001 &2013405479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10319,7 +10365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145556878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.26, y: -3.2, z: 0}
+  m_LocalPosition: {x: -6.5099998, y: -1.6000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
