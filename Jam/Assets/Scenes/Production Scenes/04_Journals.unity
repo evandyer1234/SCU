@@ -147,14 +147,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213212}
-  m_LocalRotation: {x: 0, y: 0, z: 0.032631837, w: 0.9994675}
-  m_LocalPosition: {x: -11.53, y: 3.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.072395585, w: 0.997376}
+  m_LocalPosition: {x: -8.51, y: 3.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1487930306}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.74}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.303}
 --- !u!212 &1213214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1297,14 +1297,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181021462}
-  m_LocalRotation: {x: 0, y: 0, z: -0.067579925, w: 0.99771386}
-  m_LocalPosition: {x: 13.15, y: -8.74, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.03367848, w: 0.99943274}
+  m_LocalPosition: {x: 6.1, y: -8.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 925308874}
-  m_Father: {fileID: 1546432647}
-  m_RootOrder: 2
+  m_Father: {fileID: 1487930306}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.75}
 --- !u!212 &181021464
 SpriteRenderer:
@@ -1346,7 +1346,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 685c678273aa8f545aace34a24b7be5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2257,11 +2257,11 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -4.8002796}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2124678448}
-  - {fileID: 1899154848}
   - {fileID: 1628433705}
+  - {fileID: 1899154848}
   m_Father: {fileID: 1546432647}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3738,7 +3738,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894488876}
   m_LocalRotation: {x: 0, y: 0, z: 0.0006108209, w: 0.9999998}
-  m_LocalPosition: {x: 0, y: 0, z: -4.8002796}
+  m_LocalPosition: {x: 0, y: 0, z: -4.8}
   m_LocalScale: {x: 0.050000004, y: 0.050000004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3751,7 +3751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.07}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 12.04, y: 3.68}
+  m_AnchoredPosition: {x: 4, y: -1.7}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894488878
@@ -3852,7 +3852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.5, y: 0.4}
+  m_AnchoredPosition: {x: -2.21, y: 0.52}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925308875
@@ -4162,7 +4162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980212770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.12, y: 5.36, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4390,8 +4390,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.24
-  m_fontSizeBase: 13.24
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4683,7 +4683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074317283}
   m_LocalRotation: {x: 0, y: 0, z: -0.026002463, w: 0.99966186}
-  m_LocalPosition: {x: 10.82, y: 3.86, z: 0}
+  m_LocalPosition: {x: 7.32, y: 3.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6796,16 +6796,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483770408}
-  m_LocalRotation: {x: 0, y: 0, z: -0.006370322, w: 0.99997973}
-  m_LocalPosition: {x: -1.37, y: -8.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03620476, w: 0.9993444}
+  m_LocalPosition: {x: 13.14, y: -5.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 980212771}
   - {fileID: 894488877}
   m_Father: {fileID: 1487930306}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.73}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.15}
 --- !u!1 &1487930305
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,7 +6821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1487930306
 Transform:
   m_ObjectHideFlags: 0
@@ -6835,6 +6835,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1074317284}
+  - {fileID: 181021463}
   - {fileID: 1546432647}
   - {fileID: 2145556879}
   - {fileID: 1483770409}
@@ -7645,15 +7646,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546432646}
   m_LocalRotation: {x: 0, y: 0, z: 0.033940107, w: 0.9994239}
-  m_LocalPosition: {x: -6.75, y: -4.53, z: 0}
+  m_LocalPosition: {x: -4.16, y: -4.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 999672927}
   - {fileID: 627901303}
-  - {fileID: 181021463}
   m_Father: {fileID: 1487930306}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.89}
 --- !u!1 &1567212782
 GameObject:
@@ -7960,12 +7960,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 627901303}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120.6, y: 19.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 92.95, y: -66.32}
+  m_SizeDelta: {x: 144.7, y: 186.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628433706
 MonoBehaviour:
@@ -7987,18 +7987,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Alchemical Solution:
-
-
-    Here is the solution I am taking myself in
-    addition to Ms. Fernsby.
-
-
-    [Insert solution here]
-
-
-
-'
+  m_text: "February 23rd, 1085\r\n\nIt has happened. I contracted Shadow Corruption
+    from a patient. While I have been exposed daily for multiple weeks now, it was
+    likely Miss Lavinia Fernsby's case that snuck through. This case seemed like
+    it would be routine, as such, I was figuring I wouldn't add it to my weekly log,
+    but here we are.\r\n\nI am exhibiting the earliest symptoms. Recreating the same
+    concoction to combat the corruption for myself was a trying endeavor. The feeling
+    of this creeping throughout my body lingers, inciting a sickly reaction of the
+    mind. What if there are residual effects? It almost\u2026 sticks to the underside
+    of my skin.\r\n\nAll of my clientele have such standing that they are able to
+    get treatment quickly, in the early stages of the corruption. If only I could
+    study a patient with an advanced case.\r\n\nTo think, a month ago I was roaming
+    the city admiring the advancements in automated engineering, seeing the results
+    of my labor in action, and conversing with Bram about his latest inventions.\r\n\n\nAlchemical
+    Solution:\n\nHere is the solution I am taking myself in addition to Ms. Fernsby.\n\n[Insert
+    solution here]\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -8025,8 +8028,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8037,7 +8040,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -8045,7 +8048,7 @@ MonoBehaviour:
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 2124678449}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -8061,7 +8064,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 62.837402, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9260,7 +9263,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 627901303}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10170,7 +10173,7 @@ RectTransform:
   m_GameObject: {fileID: 2124678447}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.93, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 627901303}
@@ -10178,8 +10181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.9, y: 29}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -74.94999, y: -60.130024}
+  m_SizeDelta: {x: 149.9, y: 217.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124678449
 MonoBehaviour:
@@ -10203,17 +10206,19 @@ MonoBehaviour:
       m_Calls: []
   m_text: "February 23rd, 1085\r\n\nIt has happened. I contracted Shadow Corruption
     from a patient. While I have been exposed daily for multiple weeks now, it was
-    likely Miss Lavinia Fernsby\u2019s case that snuck through. This case seemed
-    like it would be routine, as such, I was figuring I wouldn\u2019t add it to my
-    weekly log, but here we are.\r\n\nI am exhibiting the earliest symptoms. Recreating
-    the same concoction to combat the corruption for myself was a trying endeavor.
-    The feeling of this creeping throughout my body lingers, inciting a sickly reaction
-    of the mind. What if there are residual effects? It almost\u2026 sticks to the
-    underside of my skin.\r\n\nAll of my clientele have such standing that they are
-    able to get treatment quickly, in the early stages of the corruption. If only
-    I could study a patient with an advanced case.\r\n\nTo think, a month ago I was
-    roaming the city admiring the advancements in automated engineering, seeing the
-    results of my labor in action, and conversing with Bram about his latest inventions.\r\n"
+    likely Miss Lavinia Fernsby's case that snuck through. This case seemed like
+    it would be routine, as such, I was figuring I wouldn't add it to my weekly log,
+    but here we are.\r\n\nI am exhibiting the earliest symptoms. Recreating the same
+    concoction to combat the corruption for myself was a trying endeavor. The feeling
+    of this creeping throughout my body lingers, inciting a sickly reaction of the
+    mind. What if there are residual effects? It almost\u2026 sticks to the underside
+    of my skin.\r\n\nAll of my clientele have such standing that they are able to
+    get treatment quickly, in the early stages of the corruption. If only I could
+    study a patient with an advanced case.\r\n\nTo think, a month ago I was roaming
+    the city admiring the advancements in automated engineering, seeing the results
+    of my labor in action, and conversing with Bram about his latest inventions.\r\n\n\nAlchemical
+    Solution:\n\nHere is the solution I am taking myself in addition to Ms. Fernsby.\n\n[Insert
+    solution here]\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -10240,8 +10245,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.52
-  m_fontSizeBase: 8.52
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10252,14 +10257,14 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 6.97
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
+  m_overflowMode: 6
+  m_linkedTextComponent: {fileID: 1628433706}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
@@ -10276,7 +10281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 57.71432, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10323,5 +10328,5 @@ Transform:
   - {fileID: 849899433}
   - {fileID: 1861821338}
   m_Father: {fileID: 1487930306}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
