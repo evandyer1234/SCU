@@ -38,6 +38,7 @@ namespace Minigames.Alchemy
         private void OnMouseOver()
         {
             if (_pauseMenuManager.isGamePaused()) return;
+            if (RecipeBook.Instance.RecipeBookOpen) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {

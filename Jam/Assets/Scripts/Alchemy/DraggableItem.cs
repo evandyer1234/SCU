@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Helpers;
+using Managers;
 using TMPro;
 using UnityEngine;
 
@@ -43,6 +44,7 @@ namespace Minigames.Alchemy
         {
             if (_pauseMenuManager.isGamePaused()) return;
             if (!isInteractable) return;
+            if (RecipeBook.Instance.RecipeBookOpen) return;
             
             if (followMouse)
             {
@@ -60,6 +62,7 @@ namespace Minigames.Alchemy
         {
             if (_pauseMenuManager.isGamePaused()) return;
             if (!isInteractable) return;
+            if (RecipeBook.Instance.RecipeBookOpen) return;
             
             if (MouseInput.LeftClicked(_scuInputAction))
             {

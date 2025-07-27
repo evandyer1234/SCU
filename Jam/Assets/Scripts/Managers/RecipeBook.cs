@@ -16,6 +16,16 @@ namespace Managers
         [SerializeField] private TMPro.TMP_Text _patientInfoText;
         [SerializeField] private TMPro.TMP_Text _ingredientHintsText;
         [SerializeField] private TMPro.TMP_Text _allergiesInfo;
+
+        public static RecipeBook Instance { get; private set; }
+        
+        public bool RecipeBookOpen
+        {
+            get
+            {
+                return _recipeBookOpen;
+            }
+        }
         
         private Vector3 _closedPosition;
         private Vector3 _openPosition;
@@ -24,6 +34,18 @@ namespace Managers
         
         private SubjectManager _subjectManager;
 
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        
         private void Start()
         {
             _subjectManager = GameObject.FindGameObjectWithTag(NamingConstants.TAG_MAIN_EVENT_SYSTEM)
