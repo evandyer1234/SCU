@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Helpers;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,7 @@ namespace Minigames.Alchemy
         {
             if (!_active) return;
             if (_inputIngredients.Count >= 3) return;
+            if (RecipeBook.Instance.RecipeBookOpen) return;
             
             var coll = gameObject.GetComponent<Collider2D>();
             var allColliders = new List<Collider2D>();
@@ -44,6 +46,7 @@ namespace Minigames.Alchemy
         public void GrindIngredients()
         {
             if (_inputIngredients.Count == 0) return;
+            if (RecipeBook.Instance.RecipeBookOpen) return;
             
             foreach (var inputIngredient in _inputIngredients)
             {
