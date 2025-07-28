@@ -1461,8 +1461,8 @@ MonoBehaviour:
   m_text: "<b>Patient 14</b>\nName: Milo Whittock\r\nAge: 5\r\nOccupation: Chimney
     Sweep\r\nAllergies: Myrrh\r\n\r\n<b>Short Description</b>\nA pitiable waif from
     the lower class.\r\nThe child can hardly stop fidgeting.\r\n\r\n<b>Current Health
-    Status\r</b>\nPatient complaints\r\n\u2013 Trouble breathing\r\nAny relevant
-    pre-existing info or dietary habits\r\n\u2013 \n\n"
+    Status\r</b>\nPatient complaints\r\n- Trouble breathing\r\nAny relevant pre-existing
+    info or dietary habits\r\n- \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
   m_sharedMaterial: {fileID: 8424620514008398344, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
@@ -2471,10 +2471,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>Patient 15</b>\nName: Levi Wylie\r\nAge: 35\r\nOccupation: Butcher\r\nAllergies:
-    Death\u2019s Flower, Fairy Dust\r\n\r\n<b>Short Description</b>\nA contemptible
-    man from the lower class.\r\nHis solemn stare betrays the fear in his eye.\r\n\r\n<b>Current
-    Health Status\r</b>\nPatient complaints\r\n\u2013 Severe pain of the heart\r\nAny
-    relevant pre-existing info or dietary habits\r\n\u2013\n"
+    Death's Flower, Fairy Dust\r\n\r\n<b>Short Description</b>\nA contemptible man
+    from the lower class.\r\nHis solemn stare betrays the fear in his eye.\r\n\r\n<b>Current
+    Health Status\r</b>\nPatient complaints\r\n- Severe pain of the heart\r\nAny
+    relevant pre-existing info or dietary habits\r\n-\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
   m_sharedMaterial: {fileID: 8424620514008398344, guid: 5182d6596a54d3a419c3e8751b600b9d, type: 2}
