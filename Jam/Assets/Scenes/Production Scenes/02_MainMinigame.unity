@@ -244,8 +244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.304}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 2.6}
-  m_SizeDelta: {x: 4, y: 4}
+  m_AnchoredPosition: {x: 2.7, y: 2.8}
+  m_SizeDelta: {x: 3.5, y: 3.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195830246
 MonoBehaviour:
@@ -269,8 +269,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ingredients
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
+  m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -359,7 +359,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1475,8 +1475,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d79c3ae32581ff74189331c6d5266d8f, type: 2}
+  m_sharedMaterial: {fileID: -7044100110425680052, guid: d79c3ae32581ff74189331c6d5266d8f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1565,7 +1565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -7044100110425680052, guid: d79c3ae32581ff74189331c6d5266d8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1800,12 +1800,44 @@ PrefabInstance:
       value: DebugMessageUserFeedback
       objectReference: {fileID: 0}
     - target: {fileID: 6246576666308176508, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176508, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176508, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.86
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 6246576666308176508, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.58
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_fontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246576666308176510, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7eea27fbe4b0d4182552f83360c161, type: 3}
