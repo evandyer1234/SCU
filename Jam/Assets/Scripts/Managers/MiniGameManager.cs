@@ -90,7 +90,7 @@ public class MiniGameManager : MonoBehaviour
     {
         if (hourglass != null)
             hourglass.Glassvalue = CurrentTime;
-        SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + " : " + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
+        SetTimerText("" + TimeSpan.FromSeconds(CurrentTime).Minutes.ToString("00") + ":" + TimeSpan.FromSeconds(CurrentTime).Seconds.ToString("00"));
     }
 
     public bool IsAnyMinigameRunning()
