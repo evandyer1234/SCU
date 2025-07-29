@@ -3502,6 +3502,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6816107020434701354, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
+      propertyPath: _Drain
+      value: 
+      objectReference: {fileID: 8082073346161567337}
     - target: {fileID: 7830608468180803279, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
       propertyPath: m_Name
       value: Leech (2)
@@ -3564,6 +3568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6816107020434701354, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
+      propertyPath: _Drain
+      value: 
+      objectReference: {fileID: 8082073346161567337}
     - target: {fileID: 7830608468180803279, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
       propertyPath: m_Name
       value: Leech (1)
