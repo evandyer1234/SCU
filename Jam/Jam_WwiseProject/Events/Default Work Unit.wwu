@@ -3,12 +3,53 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{F046847A-8C3B-44A8-98E9-8AD5BAC04714}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="StartMusic" ID="{5CCB75F0-5642-457A-94A3-5581B10AA7C7}">
+				<Folder Name="Music" ID="{F80B7600-7A82-4360-826C-2986C442E961}" ShortID="515019566">
 					<ChildrenList>
-						<Action Name="" ID="{4A761C32-E275-4680-AE20-E15CF2E85FCB}" ShortID="545660613">
+						<Event Name="StartMusic" ID="{5CCB75F0-5642-457A-94A3-5581B10AA7C7}">
+							<ChildrenList>
+								<Action Name="" ID="{4A761C32-E275-4680-AE20-E15CF2E85FCB}" ShortID="545660613">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Location Switch" ID="{6A672885-D21C-4901-82F5-6AE962917A84}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{51FE5ACC-4EBE-40FE-AC56-711B3BB381D6}" ShortID="419334674">
+					<ChildrenList>
+						<Event Name="Play_general_release" ID="{9F12B16D-F8F2-4682-B45D-0B052ED1F0BA}">
+							<ChildrenList>
+								<Action Name="" ID="{2A120BAA-5B38-46A8-A075-A609FCC99B5E}" ShortID="734983332">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="general release" ID="{809F5C6E-6499-491D-B8A8-332850B2127F}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_general_tap" ID="{E1A6A0EF-95AA-498D-819C-0470F4F5A036}">
+							<ChildrenList>
+								<Action Name="" ID="{7821F94F-D51B-4694-BFE3-0082855C05F9}" ShortID="620177949">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="general tap" ID="{59C3D885-18B8-46E2-B742-45F8B60F71AD}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_button_hover_2" ID="{3D271173-7370-4E25-98B4-6410FCEFDC48}">
+					<ChildrenList>
+						<Action Name="" ID="{BD0A39AE-69A4-4B29-A143-DD6C3E7BB58F}" ShortID="267415612">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Location Switch" ID="{6A672885-D21C-4901-82F5-6AE962917A84}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+									<ObjectRef Name="button hover 2" ID="{CE16B852-85D1-4D63-896D-3F5D129192A5}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
