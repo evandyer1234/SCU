@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{C37B28FE-A96D-D0FD-7E3B-445CE759CB4C}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{EE500256-12CE-EFA4-BA11-0438827B806B}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -18,56 +18,18 @@
 					<Path>Media/338466883.wem</Path>
 					<CachePath>SFX/title_legato_full_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="398285550" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general tap 3.wav</ShortName>
-					<CachePath>SFX/general tap 3_818F3B66.wem</CachePath>
-				</File>
-				<File Id="466926915" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general tap 2.wav</ShortName>
-					<CachePath>SFX/general tap 2_818F3B66.wem</CachePath>
-				</File>
 				<File Id="513198213" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>title_pizz_3_4_L51.wav</ShortName>
 					<Path>Media/513198213.wem</Path>
 					<CachePath>SFX/title_pizz_3_4_L51_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="565461563" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general release 2.wav</ShortName>
-					<CachePath>SFX/general release 2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="753671719" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>title_legato_piano_3_4_L51.wav</ShortName>
 					<Path>Media/753671719.wem</Path>
 					<CachePath>SFX/title_legato_piano_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="778838935" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general release 1.wav</ShortName>
-					<CachePath>SFX/general release 1_818F3B66.wem</CachePath>
-				</File>
-				<File Id="988877813" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general release 3.wav</ShortName>
-					<CachePath>SFX/general release 3_818F3B66.wem</CachePath>
-				</File>
-				<File Id="995581028" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>general tap 1.wav</ShortName>
-					<CachePath>SFX/general tap 1_818F3B66.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
-				<Event Id="1729406560" Name="Play_general_release" DurationType="OneShot" DurationMin="0.42491665" DurationMax="0.5683333">
-					<MediaRefs>
-						<MediaRef Id="565461563"/>
-						<MediaRef Id="778838935"/>
-						<MediaRef Id="988877813"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3018165852" Name="Play_general_tap" DurationType="OneShot" DurationMin="0.25691667" DurationMax="0.3148125">
-					<MediaRefs>
-						<MediaRef Id="398285550"/>
-						<MediaRef Id="466926915"/>
-						<MediaRef Id="995581028"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3827058668" Name="StartMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
@@ -95,6 +57,10 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="584226713" Type="User" Language="SFX" Hash="{8D29C8C7-993A-ADD7-1B83-2C5643FCB133}">
+			<ShortName>MainMenuBank</ShortName>
+			<Path>MainMenuBank.bnk</Path>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F6A1885-F4C6-220D-1FB0-D1FFA75B0123}">
 			<ShortName>Init</ShortName>
@@ -151,6 +117,14 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
+		<SoundBank Id="3567142168" Type="User" Language="SFX" Hash="{5342C9C0-F625-CD6E-BFC6-01ECAC27DAF8}">
+			<ShortName>AlchemyBank</ShortName>
+			<Path>AlchemyBank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4138422396" Type="User" Language="SFX" Hash="{B0A1F76B-CD53-E45B-D0FB-B920B37D6740}">
+			<ShortName>MinigameBank</ShortName>
+			<Path>MinigameBank.bnk</Path>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB4198E5-DF1C-9935-C95B-B6E806458CAB}</FileHash>
+	<FileHash>{B8AF50A0-4DB3-5697-1780-DC665503E139}</FileHash>
 </SoundBanksInfo>

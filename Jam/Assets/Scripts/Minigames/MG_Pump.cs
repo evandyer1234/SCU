@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class MG_Pump : MiniGameBase
 {
     [SerializeField] Slider pressure;
@@ -13,6 +14,13 @@ public class MG_Pump : MiniGameBase
     [SerializeField] float length;
     float currentvalue;
     float currentrate;
+    
+    
+    private AudioSource _audioSource;
+    [Header("Audio")]
+    [SerializeField] private AudioClip[] _pumpSounds = new AudioClip[2];
+
+   
 
     public override void Start()
     {
@@ -20,6 +28,8 @@ public class MG_Pump : MiniGameBase
         pressure.maxValue = 100f;
         currentvalue = goalnum;
         timeremaining.maxValue = length;
+        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     
@@ -63,5 +73,6 @@ public class MG_Pump : MiniGameBase
     public void PumpAction()
     {
         currentvalue += pumpamount;
+        _audioSource.PlayOneShot(_pumpSounds[Random.Range(0, _pumpSounds.Length)]);
     }
 }
