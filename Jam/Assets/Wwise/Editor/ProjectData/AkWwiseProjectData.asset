@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bb5279c5ff904fec9bd5e37bbf780bc, type: 3}
   m_Name: AkWwiseProjectData
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
     PathAndIcons:
@@ -23,7 +23,7 @@ MonoBehaviour:
       guid: b8eb6506fb98214dbf3f83e006d9fd35
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: b8eb6506fb98214dbf3f83e006d9fd35
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136925740
     List: []
   AuxBusWwu:
@@ -37,7 +37,7 @@ MonoBehaviour:
       guid: 6a99581d09d6374f97086e893f306926
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6a99581d09d6374f97086e893f306926
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607137166358
     List:
     - name: AMB
@@ -173,8 +173,8 @@ MonoBehaviour:
       guid: bacf48abaa24434abd679c18b69c0674
     ParentPath: SoundBanks/Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
-    GuidInternal:
-    m_lastTime: -8584494352559585675
+    GuidInternal: 
+    m_lastTime: -8584477770203326306
     List:
     - name: MainSoundBank
       guid: 5e53539efbf5714fb92a2b48c2c50cbc
@@ -201,8 +201,8 @@ MonoBehaviour:
       guid: 7a8446f03b8ca84498e98ad5bac04714
     ParentPath: Events/Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
-    GuidInternal:
-    m_lastTime: -8584494324520371837
+    GuidInternal: 
+    m_lastTime: -8584477770203701043
     List:
     - name: Music
       guid: 00760bf8827a6043826c2986c442e961
@@ -326,7 +326,7 @@ MonoBehaviour:
       guid: a69f641c3bab2248acdb7be4b41d4c51
     ParentPath: Game Parameters/Default Work Unit
     guid: a69f641c3bab2248acdb7be4b41d4c51
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584497656716703484
     List:
     - name: IsLevelSelect
@@ -410,7 +410,7 @@ MonoBehaviour:
       guid: 052f16e7c05eec44aba0595afa2a390f
     ParentPath: States/Default Work Unit
     guid: 052f16e7c05eec44aba0595afa2a390f
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584497656706450432
     List:
     - name: Location
@@ -522,7 +522,7 @@ MonoBehaviour:
       guid: f54625fefc1a474e83fb6e6d2c4d5e7f
     ParentPath: Switches/Default Work Unit
     guid: f54625fefc1a474e83fb6e6d2c4d5e7f
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136980618
     List: []
   TriggerWwu:
@@ -536,12 +536,12 @@ MonoBehaviour:
       guid: fbd7788a64caa34b81f44395cdfe2aba
     ParentPath: Triggers/Default Work Unit
     guid: fbd7788a64caa34b81f44395cdfe2aba
-    GuidInternal:
+    GuidInternal: 
     m_lastTime: -8584522607136947195
     List: []
-  ExpandedFileSystemItemIds:
-  ExpandedWaapiItemIds: 0500000006000000080000001500000016000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 050000000600000008000000090000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
-  CurrentPluginConfig:
+  CurrentPluginConfig: 

@@ -2529,15 +2529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2250ebf3ed5c14b8756c905372e962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  genericClickSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &8082073346180823260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,6 +3501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leech
       objectReference: {fileID: 0}
+    - target: {fileID: 8058832834493344020, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
 --- !u!4 &2412477551312012990 stripped
@@ -3576,6 +3571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leech (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8058832834493344020, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
 --- !u!4 &4389831175882558318 stripped
@@ -3641,6 +3640,10 @@ PrefabInstance:
     - target: {fileID: 7830608468180803279, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
       propertyPath: m_Name
       value: Leech (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058832834493344020, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38934769dfa72e84abe852719e77e7ba, type: 3}
