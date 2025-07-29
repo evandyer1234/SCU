@@ -59,7 +59,10 @@ MonoBehaviour:
   magnifyingGlassShadowRef: {fileID: 0}
   postItIngredients: {fileID: 0}
   goToPotionSceneButton: {fileID: 0}
+  goToJournalsSceneButton: {fileID: 0}
   minigameDoneText: {fileID: 0}
+  potionSuccessfulText: {fileID: 0}
+  clothLayerPatient: {fileID: 0}
 --- !u!1 &6246576665607146319
 GameObject:
   m_ObjectHideFlags: 0
