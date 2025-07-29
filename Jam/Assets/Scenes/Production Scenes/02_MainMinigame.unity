@@ -1411,6 +1411,10 @@ PrefabInstance:
       propertyPath: animationOffset
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2464677431237683723, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2809540555892644928, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
       propertyPath: m_SortingOrder
       value: 4
