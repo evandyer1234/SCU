@@ -142,6 +142,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 237190152719595194}
+        m_TargetAssemblyTypeName: SwitchSprite, Assembly-CSharp
+        m_MethodName: SwitchTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 9dea3e2274d260d48b1acb8fb99b979d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnRelease:
     m_PersistentCalls:
       m_Calls:
@@ -151,6 +163,18 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 21300000, guid: 515ca84455518274d9637cf65ba9a6e4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 237190152719595194}
+        m_TargetAssemblyTypeName: SwitchSprite, Assembly-CSharp
+        m_MethodName: SwitchTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 2ffb37e4fc3e0834e8050cc8f2d797ad, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -277,3 +301,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3634189846164599778, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
   m_PrefabInstance: {fileID: 8345551913138703564}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8058832834493344020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2019832531486778840, guid: f85e6809a0b7bb0449f5a61a1d6c98f9, type: 3}
+  m_PrefabInstance: {fileID: 8345551913138703564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &237190152719595194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058832834493344020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4af83933ae5104bbbdd1c2dec9e6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
