@@ -27,7 +27,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Alchemy" ID="{22FD449A-2804-402B-92B5-D2EE115835C4}"/>
+						<CurrentStateRef Name="MainMenu" ID="{C8F5BEF2-9739-4366-A06E-248CC1063EB6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{DD7AAECA-4057-A855-8608-996D2DBA906E}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{10E7939D-29A4-6A33-0C06-37FB7E616C72}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -62,7 +62,7 @@
 				</File>
 				<File Id="908203315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>alchemy_full_6_8_L61.wav</ShortName>
-					<CachePath>SFX/alchemy_full_6_8_L61_BAB373F7.wem</CachePath>
+					<CachePath>SFX/alchemy_full_6_8_L61_6DCF9DAA.wem</CachePath>
 				</File>
 				<File Id="995581028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 1.wav</ShortName>
@@ -188,5 +188,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A8E3AFBD-AD81-A89E-45F8-F8697D6D7C5F}</FileHash>
+	<FileHash>{0E318B58-1400-279B-8E19-BA95DF937805}</FileHash>
 </SoundBanksInfo>
