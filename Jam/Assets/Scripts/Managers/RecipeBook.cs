@@ -133,7 +133,7 @@ namespace Managers
             string ingredientsToDisplay = "Ingredient Hints:\n";
             foreach (var ingName in ingredientHints)
             {
-                ingredientsToDisplay += "\n* " + ingName;
+                ingredientsToDisplay += "\n" + ingName;
             }
             _ingredientHintsText.text = ingredientsToDisplay;
 
@@ -141,7 +141,7 @@ namespace Managers
             string allergiesToDisplay = "Allergies:\n";
             foreach (var allergy in allergies)
             {
-                allergiesToDisplay += "\n* " + allergy;
+                allergiesToDisplay += "\n" + allergy;
             }
             _allergiesInfo.text = allergiesToDisplay;
         }
