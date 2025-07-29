@@ -355,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2045512670232730397, guid: e0e6d53f7fe15c74aa8351660524bf90, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2045512670232730397, guid: e0e6d53f7fe15c74aa8351660524bf90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2761,7 +2761,7 @@ Transform:
   - {fileID: 817633379}
   - {fileID: 1594069560}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &719977788
 PrefabInstance:
@@ -3361,7 +3361,7 @@ Transform:
   m_Children:
   - {fileID: 1958042665}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &817633379 stripped
 Transform:
@@ -3564,7 +3564,7 @@ PrefabInstance:
       objectReference: {fileID: 1958042664}
     - target: {fileID: 4160979457431249697, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4160979457431249697, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3728,7 +3728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8599491488409202591, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8599491488888112715, guid: 282c0da2403a90648950841119b9225b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3770,7 +3770,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &838750092
 SpriteRenderer:
@@ -4544,7 +4544,7 @@ Transform:
   m_Children:
   - {fileID: 1206615905}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1132894940
 MonoBehaviour:
@@ -7917,7 +7917,7 @@ RectTransform:
   m_Children:
   - {fileID: 635044947}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
