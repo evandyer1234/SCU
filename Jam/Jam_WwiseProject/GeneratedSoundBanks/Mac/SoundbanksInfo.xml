@@ -9,18 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{10E7939D-29A4-6A33-0C06-37FB7E616C72}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{EB1CCE54-6F1A-A42B-E6C5-C46AE3DE2E46}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
-				<File Id="66648140" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Whole Book Page Flip.wav</ShortName>
-					<CachePath>SFX/Whole Book Page Flip_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="274846537" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>gameplay_full_6_8_L82.wav</ShortName>
-					<CachePath>SFX/gameplay_full_6_8_L82_FBC78EF0.wem</CachePath>
-				</File>
 				<File Id="338466883" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>title_legato_full_3_4_L51.wav</ShortName>
 					<Path>Media/338466883.wem</Path>
@@ -60,10 +52,6 @@
 					<ShortName>general release 1.wav</ShortName>
 					<CachePath>SFX/general release 1_818F3B66.wem</CachePath>
 				</File>
-				<File Id="908203315" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>alchemy_full_6_8_L61.wav</ShortName>
-					<CachePath>SFX/alchemy_full_6_8_L61_6DCF9DAA.wem</CachePath>
-				</File>
 				<File Id="995581028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 1.wav</ShortName>
 					<CachePath>SFX/general tap 1_818F3B66.wem</CachePath>
@@ -90,9 +78,6 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="3827058668" Name="StartMusic" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="66648140"/>
-					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="1176052424" Id="3604647259"/>
@@ -100,18 +85,6 @@
 								<MediaRef Id="338466883"/>
 								<MediaRef Id="513198213"/>
 								<MediaRef Id="753671719"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1176052424" Id="3310578182"/>
-							<MediaRefs>
-								<MediaRef Id="274846537"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1176052424" Id="1438324778"/>
-							<MediaRefs>
-								<MediaRef Id="908203315"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -188,5 +161,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0E318B58-1400-279B-8E19-BA95DF937805}</FileHash>
+	<FileHash>{FE729818-AA6A-3FF6-E94D-4A7F1C598F3E}</FileHash>
 </SoundBanksInfo>
