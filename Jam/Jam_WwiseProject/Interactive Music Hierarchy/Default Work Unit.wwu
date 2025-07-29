@@ -81,7 +81,7 @@
 												<Property Name="DestinationContextType" Type="int16" Value="2"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 												<Property Name="PlayTransitionPreEntry" Type="bool" Value="False"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
@@ -114,6 +114,96 @@
 														</PropertyList>
 													</MusicFade>
 												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{DC322162-159B-49FD-B702-83DB859FDE71}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlayTransitionPreEntry" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Alchemy Playlist" ID="{4040D766-C5E2-4CCA-BF10-44D5F5400188}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Minigame Playlist" ID="{96B286C6-6D5D-45B5-8C02-C10C901B0ABB}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="Whole Book Page Flip" ID="{A73604D1-6F03-47C9-BC4E-9610B315ECEF}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{B66B4D71-8288-4EBB-8D3F-463370785D67}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="2"/>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{CDFE7636-C990-49B3-9635-292411546863}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlayTransitionPreEntry" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Main Menu Playlist" ID="{0794088F-2AFE-4D10-8272-9BB7D028D11F}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Alchemy Playlist" ID="{4040D766-C5E2-4CCA-BF10-44D5F5400188}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="Whole Book Page Flip" ID="{A73604D1-6F03-47C9-BC4E-9610B315ECEF}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{8AD56E5F-14F2-436D-B102-C1CFA79DFF98}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="0"/>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{261A91B2-1B46-44CB-8AF8-2C1E1D6A2A10}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="PlayTransitionPreEntry" Type="bool" Value="False"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Journals Playlist" ID="{E912892C-033A-4B7B-82E3-955FB7B87E57}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Alchemy Playlist" ID="{4040D766-C5E2-4CCA-BF10-44D5F5400188}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="Whole Book Page Flip" ID="{A73604D1-6F03-47C9-BC4E-9610B315ECEF}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{78E5BDD8-0FB3-4CE5-8426-9EE37A835C90}">
+														<PropertyList>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
@@ -712,6 +802,18 @@
 											<PropertyList>
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{424AF91A-D19B-450B-817A-0198D3DE4B12}" ShortID="978214330">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="alchemy_full_6_8_L61" ID="{493766EE-DDFE-4F53-800F-5301A5D2F9D9}" WorkUnitID="{9BE687D5-73F9-4D8E-95CE-C6737AC74006}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
 									</Custom>
 								</Reference>
