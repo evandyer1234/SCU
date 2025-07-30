@@ -5677,30 +5677,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 635044947}
     m_Modifications:
-    - target: {fileID: 1735747459900674459, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Size.x
-      value: 47.329
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735747459900674459, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Size.y
-      value: 46.584
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540788588320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_text
-      value: Open Recipe Book
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540788588320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540788588320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_fontSize
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540788588320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5731,11 +5707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 47.329
+      value: 56.57
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 46.584
+      value: 52.991
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5767,11 +5743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 934
+      value: 938.6206
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 652.5
+      value: 649.2963
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5789,50 +5765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpenCloseRecipeBook_Button
       objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830322, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1909680382}
-    - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleRecipeBook
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Managers.RecipeBook, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050129540837830323, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
 --- !u!224 &1396985666 stripped
