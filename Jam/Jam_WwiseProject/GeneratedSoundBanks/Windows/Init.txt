@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	Location			
+	1117481573	Journals	Location			
 	1438324778	Alchemy	Location			
 	3310578182	MiniGame	Location			
 	3604647259	MainMenu	Location			

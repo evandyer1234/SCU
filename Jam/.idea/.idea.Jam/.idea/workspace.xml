@@ -6,20 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/01_MainMenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/03_MainAlchemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/04_Journals.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Scene Audio Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Scene Audio Controller.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

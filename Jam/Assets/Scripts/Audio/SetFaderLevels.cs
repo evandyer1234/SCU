@@ -9,6 +9,8 @@ public class SetFaderLevels : MonoBehaviour
     
     // Slider
     private Slider _slider;
+
+    [SerializeField] private float initialValue = 100f;
     
     // Start is called before the first frame update
     void Awake()
@@ -17,7 +19,8 @@ public class SetFaderLevels : MonoBehaviour
        
        if (SceneManager.GetActiveScene().buildIndex == 0)
        {
-           _slider.value = 100f;
+           _slider.value = initialValue;
+           SetFader();
        }
        else
        {
