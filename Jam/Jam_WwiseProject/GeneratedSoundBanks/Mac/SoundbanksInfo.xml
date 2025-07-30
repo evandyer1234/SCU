@@ -9,13 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{DD7AAECA-4057-A855-8608-996D2DBA906E}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{524E6A92-034F-F38E-8D8D-07FB1A041652}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
+				<File Id="10500011" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lung Pump 1.wav</ShortName>
+					<CachePath>SFX/Lung Pump 1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="66648140" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Whole Book Page Flip.wav</ShortName>
 					<CachePath>SFX/Whole Book Page Flip_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="117962856" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Organ Release.wav</ShortName>
+					<CachePath>SFX/Organ Release_818F3B66.wem</CachePath>
 				</File>
 				<File Id="274846537" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gameplay_full_6_8_L82.wav</ShortName>
@@ -26,13 +34,13 @@
 					<Path>Media/338466883.wem</Path>
 					<CachePath>SFX/title_legato_full_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="375232821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lung Pump 2.wav</ShortName>
+					<CachePath>SFX/Lung Pump 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="398285550" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 3.wav</ShortName>
 					<CachePath>SFX/general tap 3_818F3B66.wem</CachePath>
-				</File>
-				<File Id="445680170" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>button hover 2.wav</ShortName>
-					<CachePath>SFX/button hover 2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="466926915" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 2.wav</ShortName>
@@ -60,19 +68,40 @@
 					<ShortName>general release 1.wav</ShortName>
 					<CachePath>SFX/general release 1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="789975050" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>button hover.wav</ShortName>
+					<CachePath>SFX/button hover_818F3B66.wem</CachePath>
+				</File>
+				<File Id="812728678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Organ click.wav</ShortName>
+					<CachePath>SFX/Organ click_818F3B66.wem</CachePath>
+				</File>
 				<File Id="908203315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>alchemy_full_6_8_L61.wav</ShortName>
 					<CachePath>SFX/alchemy_full_6_8_L61_BAB373F7.wem</CachePath>
+				</File>
+				<File Id="991843750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>heart beat.wav</ShortName>
+					<CachePath>SFX/heart beat_818F3B66.wem</CachePath>
 				</File>
 				<File Id="995581028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 1.wav</ShortName>
 					<CachePath>SFX/general tap 1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1032125191" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>button click.wav</ShortName>
+					<CachePath>SFX/button click_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="1252961102" Name="Play_button_hover_2" DurationType="OneShot" DurationMin="0.130875" DurationMax="0.130875">
+				<Event Id="1149159311" Name="Play_button_click" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
-						<MediaRef Id="445680170"/>
+						<MediaRef Id="1032125191"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4021863785" Name="Play_button_hover" DurationType="OneShot" DurationMin="0.130875" DurationMax="0.130875">
+					<MediaRefs>
+						<MediaRef Id="789975050"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1729406560" Name="Play_general_release" DurationType="OneShot" DurationMin="0.19052084" DurationMax="0.5683333">
@@ -87,6 +116,27 @@
 						<MediaRef Id="398285550"/>
 						<MediaRef Id="466926915"/>
 						<MediaRef Id="995581028"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1545039113" Name="Play_heart_beat" DurationType="OneShot" DurationMin="0.563375" DurationMax="0.563375">
+					<MediaRefs>
+						<MediaRef Id="991843750"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3442601710" Name="Play_lung_pump_click" DurationType="OneShot" DurationMin="0.28125" DurationMax="0.28125">
+					<MediaRefs>
+						<MediaRef Id="10500011"/>
+						<MediaRef Id="375232821"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2121040196" Name="Play_organ_click" DurationType="OneShot" DurationMin="1.375" DurationMax="1.375">
+					<MediaRefs>
+						<MediaRef Id="812728678"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="70763155" Name="Play_organ_release" DurationType="OneShot" DurationMin="0.375" DurationMax="0.375">
+					<MediaRefs>
+						<MediaRef Id="117962856"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3827058668" Name="StartMusic" DurationType="Infinite">
@@ -132,7 +182,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{385F6566-4F63-DBDD-07EA-4ADE6F2C0A11}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7C1C042B-836C-521C-E27D-BEAF2514B89F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -188,5 +238,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A8E3AFBD-AD81-A89E-45F8-F8697D6D7C5F}</FileHash>
+	<FileHash>{021C36E9-4004-E424-6905-E6EAE27D03C2}</FileHash>
 </SoundBanksInfo>

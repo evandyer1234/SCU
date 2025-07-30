@@ -1,7 +1,6 @@
 using Helpers;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class LeftClickAudioEvent : MonoBehaviour
 {
     private PauseMenuManager _pauseMenuManager;

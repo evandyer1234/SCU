@@ -14,7 +14,6 @@
 				</GameParameter>
 				<GameParameter Name="MasterFaderLevel" ID="{A3B85998-3C44-431C-9605-DA5465830915}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
