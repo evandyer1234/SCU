@@ -678,7 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462714332}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: column 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,7 +982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697176604}
   m_Layer: 5
-  m_Name: GameObject (1)
+  m_Name: column 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2609,7 +2609,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Creative Director: <b>Jix\r</b>\nLead Game Designer: <b>Mason Green\r</b>\nGame
     Designer: <b>Jay Madan\r</b>\nGame Writer, Narrative Designer: <b>Stephanie Wood\r</b>\n\r\nLead
-    Developer: <b>Alexander Blehm\r</b>\nLead Developer: <b>Evan Dyer\r</b>\n\r\nLead
+    Developer: <b>Alexander Blehm\r</b>\nDeveloper: <b>Evan Dyer\r</b>\n\r\nLead
     Artist, 2D Artist: <b>Marcelo Injae\r</b>\nTechnical Artist, Character Designer,
     2D Artist: <b>toffl\r</b>\n\nComposer, Sound Designer: <b>Jared Kaye\r\r</b>\nProgrammer,
     Technical Sound Designer: <b>Ethan Bessette\r\r</b>\n<size=.75em>Violin: <b>Hope
@@ -2896,7 +2896,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Creative Director: <b>Jix\r</b>\nLead Game Designer: <b>Mason Green\r</b>\nGame
     Designer: <b>Jay Madan\r</b>\nGame Writer, Narrative Designer: <b>Stephanie Wood\r</b>\n\r\nLead
-    Developer: <b>Alexander Blehm\r</b>\nLead Developer: <b>Evan Dyer\r</b>\n\r\nLead
+    Developer: <b>Alexander Blehm\r</b>\nDeveloper: <b>Evan Dyer\r</b>\n\r\nLead
     Artist, 2D Artist: <b>Marcelo Injae\r</b>\nTechnical Artist, Character Designer,
     2D Artist: <b>toffl\r</b>\n\nComposer, Sound Designer: <b>Jared Kaye\r\r</b>\nProgrammer,
     Technical Sound Designer: <b>Ethan Bessette\r\r</b>\n<size=.75em>Violin: <b>Hope
