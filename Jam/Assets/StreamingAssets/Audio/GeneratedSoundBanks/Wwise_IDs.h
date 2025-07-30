@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTON_HOVER = 4021863785U;
         static const AkUniqueID PLAY_GENERAL_RELEASE = 1729406560U;
         static const AkUniqueID PLAY_GENERAL_TAP = 3018165852U;
+        static const AkUniqueID PLAY_HEART_BEAT = 1545039113U;
         static const AkUniqueID PLAY_LUNG_PUMP_CLICK = 3442601710U;
         static const AkUniqueID PLAY_ORGAN_CLICK = 2121040196U;
         static const AkUniqueID PLAY_ORGAN_RELEASE = 70763155U;

@@ -88,6 +88,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_lung_pump_click" ID="{CA44227D-2744-4050-90AE-65374C48E3F6}">
+					<ChildrenList>
+						<Action Name="" ID="{C840955E-43FB-4F47-A2EA-D4EAAA2759DF}" ShortID="1024107977">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lung pump click" ID="{8A34253D-D4DD-4BC4-A9A3-45A0C75D718F}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_heart_beat" ID="{D38CFC58-B1D7-4318-A346-2E149E0D29E9}">
+					<ChildrenList>
+						<Action Name="" ID="{94D8C77C-C9EC-4ABD-823B-F8DB4D808F29}" ShortID="937187027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="heart beat" ID="{22E4D936-98D7-4B75-99E8-85E31C4CFE91}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

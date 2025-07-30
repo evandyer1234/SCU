@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{5FDA966E-4E30-6B29-E102-5044F0073845}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{524E6A92-034F-F38E-8D8D-07FB1A041652}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -80,6 +80,10 @@
 					<ShortName>alchemy_full_6_8_L61.wav</ShortName>
 					<CachePath>SFX/alchemy_full_6_8_L61_BAB373F7.wem</CachePath>
 				</File>
+				<File Id="991843750" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>heart beat.wav</ShortName>
+					<CachePath>SFX/heart beat_818F3B66.wem</CachePath>
+				</File>
 				<File Id="995581028" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 1.wav</ShortName>
 					<CachePath>SFX/general tap 1_818F3B66.wem</CachePath>
@@ -112,6 +116,11 @@
 						<MediaRef Id="398285550"/>
 						<MediaRef Id="466926915"/>
 						<MediaRef Id="995581028"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1545039113" Name="Play_heart_beat" DurationType="OneShot" DurationMin="0.563375" DurationMax="0.563375">
+					<MediaRefs>
+						<MediaRef Id="991843750"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3442601710" Name="Play_lung_pump_click" DurationType="OneShot" DurationMin="0.28125" DurationMax="0.28125">
@@ -229,5 +238,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B7164F06-D9B0-6A8B-7C13-86DEF998A5F2}</FileHash>
+	<FileHash>{3B4CDB45-0E8A-C696-1692-9F3BBE417F91}</FileHash>
 </SoundBanksInfo>
