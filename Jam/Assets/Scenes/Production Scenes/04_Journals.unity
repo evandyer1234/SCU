@@ -2033,11 +2033,11 @@ MonoBehaviour:
     with no other purpose than to have the best possible chance of maybe, just maybe
     distilling a solution that would permanently cure Shadow Corruption. There was
     a risk to the patient. To make matters worse, I was unsuccessful in my attempt
-    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
-    Levi is recovering well, though he experienced additional difficulties the other
-    patients did not.\r\n\n[Insert solution here]\r\n\nLevi's shock when I told him
-    this treatment was free of charge caused him to believe me a saint for my conduct\u2026
-    He was unaware of the reasoning behind it.\r\n\n"
+    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution: Chimera
+    Claw, Spirit of the Sages, Myrrh\n\nLuckily, Levi is recovering well, though
+    he experienced additional difficulties the other patients did not.\r\n\nLevi's
+    shock when I told him this treatment was free of charge caused him to believe
+    me a saint for my conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -5234,14 +5234,11 @@ MonoBehaviour:
 
 
 
-    Alchemical Solution:
+    Alchemical Solution: Fairy Dust, Amaranth,
+    102% Pure Tea
 
 
-    Milo required
-    a complex solution to remedy the lad.
-
-
-    [Insert solution here]
+    Milo required a complex solution to remedy the lad.
 
 '
   m_isRightToLeft: 0
@@ -5653,14 +5650,11 @@ MonoBehaviour:
 
 
 
-    Alchemical Solution:
+    Alchemical Solution: Fairy Dust, Amaranth,
+    102% Pure Tea
 
 
-    Milo required
-    a complex solution to remedy the lad.
-
-
-    [Insert solution here]
+    Milo required a complex solution to remedy the lad.
 
 '
   m_isRightToLeft: 0
@@ -6764,11 +6758,11 @@ MonoBehaviour:
     with no other purpose than to have the best possible chance of maybe, just maybe
     distilling a solution that would permanently cure Shadow Corruption. There was
     a risk to the patient. To make matters worse, I was unsuccessful in my attempt
-    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution:\n\nLuckily,
-    Levi is recovering well, though he experienced additional difficulties the other
-    patients did not.\r\n\n[Insert solution here]\r\n\nLevi's shock when I told him
-    this treatment was free of charge caused him to believe me a saint for my conduct\u2026
-    He was unaware of the reasoning behind it.\r\n\n"
+    to neutralize the corruption permanently.\r\n\n\nAlchemical Solution: Chimera
+    Claw, Spirit of the Sages, Myrrh\n\nLuckily, Levi is recovering well, though
+    he experienced additional difficulties the other patients did not.\r\n\nLevi's
+    shock when I told him this treatment was free of charge caused him to believe
+    me a saint for my conduct\u2026 He was unaware of the reasoning behind it.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -6928,7 +6922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1487930306
 Transform:
   m_ObjectHideFlags: 0
@@ -8107,8 +8101,8 @@ MonoBehaviour:
     study a patient with an advanced case.\r\n\nTo think, a month ago I was roaming
     the city admiring the advancements in automated engineering, seeing the results
     of my labor in action, and conversing with Bram about his latest inventions.\r\n\n\nAlchemical
-    Solution:\n\nHere is the solution I am taking myself in addition to Ms. Fernsby.\n\n[Insert
-    solution here]\n"
+    Solution: Spirit of the Sages, Chimera Claw, Amaranth\n\nHere is the solution
+    I am taking myself in addition to Ms. Fernsby.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
@@ -10332,8 +10326,8 @@ MonoBehaviour:
     study a patient with an advanced case.\r\n\nTo think, a month ago I was roaming
     the city admiring the advancements in automated engineering, seeing the results
     of my labor in action, and conversing with Bram about his latest inventions.\r\n\n\nAlchemical
-    Solution:\n\nHere is the solution I am taking myself in addition to Ms. Fernsby.\n\n[Insert
-    solution here]\n"
+    Solution: Spirit of the Sages, Chimera Claw, Amaranth\n\nHere is the solution
+    I am taking myself in addition to Ms. Fernsby.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cb560556929fb214bbe22254a6625430, type: 2}
   m_sharedMaterial: {fileID: 4762790549467517037, guid: cb560556929fb214bbe22254a6625430, type: 2}
