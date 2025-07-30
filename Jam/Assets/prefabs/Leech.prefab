@@ -129,6 +129,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
   yonly: 0
   minY: 0
   maxY: 0

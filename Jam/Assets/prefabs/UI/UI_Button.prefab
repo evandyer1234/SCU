@@ -320,4 +320,5 @@ MonoBehaviour:
   leftReleasedEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f14fbc5cd9961438d86b692b558baf77, type: 2}
+  playDuringPause: 0

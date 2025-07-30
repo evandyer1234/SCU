@@ -12,6 +12,11 @@
 					<ChildrenList>
 						<Bus Name="MX" ID="{211D27EB-BE11-40F5-9F1B-9A30F60DE252}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
 								<Property Name="HdrEnable" Type="bool">
 									<ValueList>
 										<Value>True</Value>

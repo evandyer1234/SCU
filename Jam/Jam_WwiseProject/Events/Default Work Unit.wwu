@@ -44,12 +44,45 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_button_hover_2" ID="{3D271173-7370-4E25-98B4-6410FCEFDC48}">
+				<Event Name="Play_button_hover" ID="{3D271173-7370-4E25-98B4-6410FCEFDC48}">
 					<ChildrenList>
 						<Action Name="" ID="{BD0A39AE-69A4-4B29-A143-DD6C3E7BB58F}" ShortID="267415612">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="button hover 2" ID="{CE16B852-85D1-4D63-896D-3F5D129192A5}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+									<ObjectRef Name="button hover" ID="{96C57997-8476-477F-B765-1A01587EC0B7}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_organ_click" ID="{310310E6-3E79-42AA-9C96-DE59173E0DB6}">
+					<ChildrenList>
+						<Action Name="" ID="{9BA7E92B-AD1C-4680-9F04-494717C13662}" ShortID="231949391">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="organ click" ID="{5E1E1026-6FED-4EE6-A52D-517F84C57084}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_organ_release" ID="{2AE67B67-6169-4643-8E98-27CC8FB7D0FE}">
+					<ChildrenList>
+						<Action Name="" ID="{DBA23A05-AB30-4D1B-BCA6-8555162A1367}" ShortID="324687466">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="organ release" ID="{505D3478-D37A-43AD-BE5C-B9C39DAA04E6}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_button_click" ID="{AC4F09F7-52C1-42E2-B7D3-58AA97A3DBB6}">
+					<ChildrenList>
+						<Action Name="" ID="{5D4EC33B-3699-42F3-91E7-A1F0C14C7F3C}" ShortID="370832563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="button click" ID="{70943860-0F00-4220-8CA0-3F392EA36FCA}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
