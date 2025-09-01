@@ -7,30 +7,23 @@
     <list default="true" id="dcd313a3-fc4d-45cf-91bf-9bbf6f431c28" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Production Scenes/02_MainMinigame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/LeftClickAudioEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/LeftClickAudioEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subjects/MagnifyingGlassSwitch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3D271173-7370-4E25-98B4-6410FCEFDC48.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3D271173-7370-4E25-98B4-6410FCEFDC48.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Leech.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Leech.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ScanningSubject/Patient.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/UI/UI_Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/UI/UI_Button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Updated Mini Games/MG_LeechesBloodDrain.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Mac/SFX/Wwise.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/.cache/Windows/SFX/Wwise.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Actor-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Effects/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Effects/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Game Parameters/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Game Parameters/Default Work Unit.wwu" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/MainSoundBank.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.bnk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/MainSoundBank.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.validationcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Jam_WwiseProject.crossover.wsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Master-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Master-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Originals/SFX/button hover 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Jam_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,22 +68,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ethan-audio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "audio-demo-final-adjustments",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../BUILD/SCU\ShadowCorruptionUnitDemo.exe" />
@@ -287,6 +280,7 @@
       <workItem from="1751961136866" duration="10033000" />
       <workItem from="1752091711806" duration="1168000" />
       <workItem from="1752093312792" duration="4898000" />
+      <workItem from="1756684023735" duration="2898000" />
     </task>
     <task id="LOCAL-00003" summary="Remove Magnifying glass from toffl Scene">
       <option name="closed" value="true" />

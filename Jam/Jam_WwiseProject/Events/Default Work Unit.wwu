@@ -110,6 +110,160 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_chimera_claw" ID="{CE5FD91C-DC45-4D4E-8A68-52185439E7FA}">
+					<ChildrenList>
+						<Action Name="" ID="{309D1DD6-1FFB-4520-8509-B453C85AF47A}" ShortID="659866740">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="chimera claw" ID="{A5702BA2-F332-465D-A31A-28E4BF0E1A62}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fairy_dust" ID="{235FE92B-9B1A-492B-BCDA-774BDCA4FAF0}">
+					<ChildrenList>
+						<Action Name="" ID="{8AA15A54-9780-47C5-8216-F7FECCEF97BD}" ShortID="424210055">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fairy dust" ID="{11634AC3-D2DE-486F-A667-D6CBDD1CAC52}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_moonstone" ID="{6DFB1581-D078-4B7F-8BA3-8382206E26A6}">
+					<ChildrenList>
+						<Action Name="" ID="{574ED345-665B-4820-94E2-EA41D85B03B6}" ShortID="194322625">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="moonstone" ID="{3E5EADF1-3C21-44CF-8BFD-236BBE62E1BF}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_spirit_of_the_sages" ID="{7D665403-9525-48D0-8799-90778892905F}">
+					<ChildrenList>
+						<Action Name="" ID="{24FDF861-B7DE-49B9-BE8D-21BB87CB5868}" ShortID="958278074">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="spirit of the sages" ID="{35B64893-0AE6-4EE0-8D42-3DBC87048699}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_tea_bag" ID="{1D0084A4-5ACE-4DC5-AF07-06DF058E17F5}">
+					<ChildrenList>
+						<Action Name="" ID="{5773CAE4-D441-4699-9A82-F604CAA5A296}" ShortID="924760196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tea bag" ID="{5919FF11-2391-4B20-9352-F2E61B932518}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sunbathed_ivy" ID="{7A02AFEB-99C9-4A2A-90CE-0EFDACF46AA2}">
+					<ChildrenList>
+						<Action Name="" ID="{FBD33ED7-658F-4033-9F91-E218DBEDA632}" ShortID="1064558233">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sunbathed ivy" ID="{799F40E5-FA4D-4CDB-BF30-4BCE5E1469FC}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_myrrh" ID="{60C59E7A-787A-49C3-9297-ED958108F4C3}">
+					<ChildrenList>
+						<Action Name="" ID="{27CFB8A6-7945-49CA-9188-2E1D40B84774}" ShortID="260256844">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="myrrh" ID="{E6933AAE-B7BC-468D-9B74-9FB1ED011C7D}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_amaranth" ID="{317A0419-95CF-41A0-BDEC-6ED54B1F8729}">
+					<ChildrenList>
+						<Action Name="" ID="{3ED686D0-47BA-48C0-ACC4-B9F61B101E7F}" ShortID="493371405">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amaranth" ID="{2250BE7F-A375-462B-B20D-49804CF47F67}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_moon_mushroom" ID="{15BDA760-C278-42E9-9AD0-563BBFFBAB11}">
+					<ChildrenList>
+						<Action Name="" ID="{2907F21F-B26E-4088-AEB8-907BDC19DB81}" ShortID="764248873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="moon mushroom" ID="{A12AC21A-F4B1-4051-9B7E-31DFD78B7869}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_boil" ID="{3176E12A-05A3-478A-9D4A-2ED3B1ECDB62}">
+					<ChildrenList>
+						<Action Name="" ID="{D42FE051-0A76-45B6-9647-E09192EDD8E5}" ShortID="863421201">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boil" ID="{A450F321-9E3B-4665-9DE7-A0C2D7860A65}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_grind" ID="{DD3DEE42-B155-47FB-A576-D8CE476D9012}">
+					<ChildrenList>
+						<Action Name="" ID="{0BD68187-59B2-49D2-AC26-851F7E3D1D21}" ShortID="300169840">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grind" ID="{DAB3C4CA-0ECC-467F-8DF0-B6B3723EC546}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_scroll_magnifying_glass" ID="{26B73FC6-B12D-49F3-9565-9A92EB0A19FE}">
+					<ChildrenList>
+						<Action Name="" ID="{8D7C1F93-2BA4-43A9-A287-7C534C2C477A}" ShortID="632757538">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scroll magnifying glass" ID="{304DDE1A-3C70-4B6B-BB0B-976C407D2564}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_toggle_magnifying_glass" ID="{9B73DFBD-A6AC-4B98-A90F-F509559E6468}">
+					<ChildrenList>
+						<Action Name="" ID="{7FCF369C-DB39-4F06-975F-B5AC2F3E747F}" ShortID="221008905">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="toggle magnifying glass" ID="{C9814534-0105-4F06-AE17-CC7FB02A5225}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_deaths_flower" ID="{4680BF7E-8262-48E0-AE49-629744CBD33C}">
+					<ChildrenList>
+						<Action Name="" ID="{AD976745-E2C0-49A3-A1E2-AE3EB0C36326}" ShortID="53160452">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="deaths flower" ID="{4F28C1F6-45DB-4211-9829-00036CF018F1}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
