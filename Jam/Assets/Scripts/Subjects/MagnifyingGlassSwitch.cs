@@ -224,6 +224,8 @@ namespace Subjects
                     FocusRightLensAndLayer();
                     break;
             }
+
+            AkSoundEngine.PostEvent("Play_scroll_magnifying_glass", gameObject);
         }
 
         private void UnfocusAllLensesAndLayers()

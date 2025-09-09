@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{524E6A92-034F-F38E-8D8D-07FB1A041652}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{CDE9D105-476F-E8C8-C88B-E4ED632E1D95}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -21,18 +21,50 @@
 					<ShortName>Whole Book Page Flip.wav</ShortName>
 					<CachePath>SFX/Whole Book Page Flip_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="70384945" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Claw Scratch_V1_03.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Claw Scratch_V1_03_99953D33.wem</CachePath>
+				</File>
 				<File Id="117962856" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Organ Release.wav</ShortName>
 					<CachePath>SFX/Organ Release_818F3B66.wem</CachePath>
+				</File>
+				<File Id="207407049" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Twig Snap_V1_02.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Twig Snap_V1_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="266028095" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Claw Scratch_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Claw Scratch_V1_01_99953D33.wem</CachePath>
+				</File>
+				<File Id="268022123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mushroom Boing_V1_03.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mushroom Boing_V1_03_818F3B66.wem</CachePath>
 				</File>
 				<File Id="274846537" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>gameplay_full_6_8_L82.wav</ShortName>
 					<CachePath>SFX/gameplay_full_6_8_L82_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="326523950" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mortar-Pestle_V1_02.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mortar-Pestle_V1_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="338466883" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>title_legato_full_3_4_L51.wav</ShortName>
 					<Path>Media/338466883.wem</Path>
 					<CachePath>SFX/title_legato_full_3_4_L51_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="348617389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>magnifying glass open.wav</ShortName>
+					<CachePath>SFX/magnifying glass open_818F3B66.wem</CachePath>
+				</File>
+				<File Id="355571966" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Leaf Crunch_V1_04.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Leaf Crunch_V1_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="357155073" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Leaf Crunch_V1_02.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Leaf Crunch_V1_02_818F3B66.wem</CachePath>
 				</File>
 				<File Id="375232821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Lung Pump 2.wav</ShortName>
@@ -41,6 +73,14 @@
 				<File Id="398285550" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 3.wav</ShortName>
 					<CachePath>SFX/general tap 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="410393915" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Twig Snap_V1_03.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Twig Snap_V1_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="424702026" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Twig Snap_V1_04.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Twig Snap_V1_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="466926915" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general tap 2.wav</ShortName>
@@ -51,13 +91,41 @@
 					<Path>Media/513198213.wem</Path>
 					<CachePath>SFX/title_pizz_3_4_L51_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="521394631" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mortar-Pestle_V1_03.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mortar-Pestle_V1_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="548392929" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>magnifying glass close.wav</ShortName>
+					<CachePath>SFX/magnifying glass close_818F3B66.wem</CachePath>
+				</File>
+				<File Id="563477342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>spirit of the sages.wav</ShortName>
+					<CachePath>SFX/spirit of the sages_818F3B66.wem</CachePath>
+				</File>
 				<File Id="565461563" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general release 2.wav</ShortName>
 					<CachePath>SFX/general release 2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="637481433" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>magnifying glass scroll.wav</ShortName>
+					<CachePath>SFX/magnifying glass scroll_818F3B66.wem</CachePath>
+				</File>
 				<File Id="642561708" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>general release 5.wav</ShortName>
 					<CachePath>SFX/general release 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="685369083" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mushroom Boing_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mushroom Boing_V1_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="685882836" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Twig Snap_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Twig Snap_V1_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="690543678" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Tea Bag Crunch_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Tea Bag Crunch_V1_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="753671719" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>title_legato_piano_3_4_L51.wav</ShortName>
@@ -68,17 +136,45 @@
 					<ShortName>general release 1.wav</ShortName>
 					<CachePath>SFX/general release 1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="789493984" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mushroom Boing_V1_02.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mushroom Boing_V1_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="789975050" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>button hover.wav</ShortName>
 					<CachePath>SFX/button hover_818F3B66.wem</CachePath>
+				</File>
+				<File Id="798683606" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Leaf Rustle_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Leaf Rustle_V1_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="812728678" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Organ click.wav</ShortName>
 					<CachePath>SFX/Organ click_818F3B66.wem</CachePath>
 				</File>
+				<File Id="899336273" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Claw Scratch_V1_02.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Claw Scratch_V1_02_99953D33.wem</CachePath>
+				</File>
 				<File Id="908203315" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>alchemy_full_6_8_L61.wav</ShortName>
 					<CachePath>SFX/alchemy_full_6_8_L61_BAB373F7.wem</CachePath>
+				</File>
+				<File Id="909599830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>moonstone.wav</ShortName>
+					<CachePath>SFX/moonstone_818F3B66.wem</CachePath>
+				</File>
+				<File Id="953035095" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Mortar-Pestle_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Mortar-Pestle_V1_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="953043515" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Cauldron_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Cauldron_V1_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="983809582" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Leaf Crunch_V1_01.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Leaf Crunch_V1_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="991843750" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>heart beat.wav</ShortName>
@@ -92,8 +188,27 @@
 					<ShortName>button click.wav</ShortName>
 					<CachePath>SFX/button click_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1054815522" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SCU_Alchemy_Leaf Crunch_V1_03.wav</ShortName>
+					<CachePath>SFX/SCU_Alchemy_Leaf Crunch_V1_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1055397902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>fairy dust.wav</ShortName>
+					<CachePath>SFX/fairy dust_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="2363214772" Name="Play_amaranth" DurationType="OneShot" DurationMin="0.6779583" DurationMax="0.7213542">
+					<MediaRefs>
+						<MediaRef Id="357155073"/>
+						<MediaRef Id="983809582"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1256853996" Name="Play_boil" DurationType="OneShot" DurationMin="2.93125" DurationMax="2.93125">
+					<MediaRefs>
+						<MediaRef Id="953043515"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1149159311" Name="Play_button_click" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="1032125191"/>
@@ -102,6 +217,24 @@
 				<Event Id="4021863785" Name="Play_button_hover" DurationType="OneShot" DurationMin="0.130875" DurationMax="0.130875">
 					<MediaRefs>
 						<MediaRef Id="789975050"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="987105281" Name="Play_chimera_claw" DurationType="OneShot" DurationMin="0.49583334" DurationMax="0.5593333">
+					<MediaRefs>
+						<MediaRef Id="70384945"/>
+						<MediaRef Id="266028095"/>
+						<MediaRef Id="899336273"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2948119407" Name="Play_deaths_flower" DurationType="OneShot" DurationMin="0.7838542" DurationMax="0.7838542">
+					<MediaRefs>
+						<MediaRef Id="355571966"/>
+						<MediaRef Id="1054815522"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1871809092" Name="Play_fairy_dust" DurationType="OneShot" DurationMin="0.93135417" DurationMax="0.93135417">
+					<MediaRefs>
+						<MediaRef Id="1055397902"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1729406560" Name="Play_general_release" DurationType="OneShot" DurationMin="0.19052084" DurationMax="0.5683333">
@@ -118,6 +251,13 @@
 						<MediaRef Id="995581028"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3519015892" Name="Play_grind" DurationType="OneShot" DurationMin="0.6986667" DurationMax="1.1506667">
+					<MediaRefs>
+						<MediaRef Id="326523950"/>
+						<MediaRef Id="521394631"/>
+						<MediaRef Id="953035095"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1545039113" Name="Play_heart_beat" DurationType="OneShot" DurationMin="0.563375" DurationMax="0.563375">
 					<MediaRefs>
 						<MediaRef Id="991843750"/>
@@ -129,6 +269,26 @@
 						<MediaRef Id="375232821"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2345606802" Name="Play_moon_mushroom" DurationType="OneShot" DurationMin="1.152" DurationMax="1.152">
+					<MediaRefs>
+						<MediaRef Id="268022123"/>
+						<MediaRef Id="685369083"/>
+						<MediaRef Id="789493984"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="622392560" Name="Play_moonstone" DurationType="OneShot" DurationMin="0.33645833" DurationMax="0.33645833">
+					<MediaRefs>
+						<MediaRef Id="909599830"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1506709500" Name="Play_myrrh" DurationType="OneShot" DurationMin="0.37829167" DurationMax="0.8871667">
+					<MediaRefs>
+						<MediaRef Id="207407049"/>
+						<MediaRef Id="410393915"/>
+						<MediaRef Id="424702026"/>
+						<MediaRef Id="685882836"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2121040196" Name="Play_organ_click" DurationType="OneShot" DurationMin="1.375" DurationMax="1.375">
 					<MediaRefs>
 						<MediaRef Id="812728678"/>
@@ -137,6 +297,32 @@
 				<Event Id="70763155" Name="Play_organ_release" DurationType="OneShot" DurationMin="0.375" DurationMax="0.375">
 					<MediaRefs>
 						<MediaRef Id="117962856"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2518694598" Name="Play_scroll_magnifying_glass" DurationType="OneShot" DurationMin="0.125" DurationMax="0.125">
+					<MediaRefs>
+						<MediaRef Id="637481433"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2046168745" Name="Play_spirit_of_the_sages" DurationType="OneShot" DurationMin="0.283" DurationMax="0.283">
+					<MediaRefs>
+						<MediaRef Id="563477342"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="603186159" Name="Play_sunbathed_ivy" DurationType="OneShot" DurationMin="1.0123333" DurationMax="1.0123333">
+					<MediaRefs>
+						<MediaRef Id="798683606"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3051426075" Name="Play_tea_bag" DurationType="OneShot" DurationMin="1.1506667" DurationMax="1.1506667">
+					<MediaRefs>
+						<MediaRef Id="690543678"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3350264679" Name="Play_toggle_magnifying_glass" DurationType="OneShot" DurationMin="0.125" DurationMax="0.125">
+					<MediaRefs>
+						<MediaRef Id="348617389"/>
+						<MediaRef Id="548392929"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3827058668" Name="StartMusic" DurationType="Infinite">
@@ -238,5 +424,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3B4CDB45-0E8A-C696-1692-9F3BBE417F91}</FileHash>
+	<FileHash>{BB80CB9B-C410-58FC-C80B-E92006D61C22}</FileHash>
 </SoundBanksInfo>

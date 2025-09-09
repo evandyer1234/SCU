@@ -2439,6 +2439,7 @@ GameObject:
   - component: {fileID: 667368254}
   - component: {fileID: 667368253}
   - component: {fileID: 667368252}
+  - component: {fileID: 667368256}
   m_Layer: 0
   m_Name: Sunbathed Ivy
   m_TagString: Untagged
@@ -2587,6 +2588,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667368250}
   m_CullTransparentMesh: 1
+--- !u!114 &667368256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667368250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9aa908b50335442d9f8a844c815a41f, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!1 &673939890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9794,6 +9820,7 @@ GameObject:
   - component: {fileID: 1623713741972351432}
   - component: {fileID: 4707918331151032554}
   - component: {fileID: 4707918331151032555}
+  - component: {fileID: 4707918331151032556}
   m_Layer: 0
   m_Name: SpiritOfTheSages
   m_TagString: Untagged
@@ -9844,6 +9871,7 @@ GameObject:
   - component: {fileID: 1623713742220907432}
   - component: {fileID: 4707918331374426762}
   - component: {fileID: 4707918331374426763}
+  - component: {fileID: 4707918331374426764}
   m_Layer: 0
   m_Name: DeathsFlower
   m_TagString: Untagged
@@ -9894,6 +9922,7 @@ GameObject:
   - component: {fileID: 1623713742227254665}
   - component: {fileID: 4707918331397547179}
   - component: {fileID: 4707918331397547180}
+  - component: {fileID: 4707918331397547181}
   m_Layer: 0
   m_Name: Fairy Dust
   m_TagString: Untagged
@@ -9936,6 +9965,7 @@ GameObject:
   - component: {fileID: 1623713741477409432}
   - component: {fileID: 4707918331444624314}
   - component: {fileID: 4707918331444624315}
+  - component: {fileID: 4707918331444624316}
   m_Layer: 0
   m_Name: Moonstone
   m_TagString: Untagged
@@ -9986,6 +10016,7 @@ GameObject:
   - component: {fileID: 1623713741487301369}
   - component: {fileID: 4707918331467099099}
   - component: {fileID: 4707918331467099100}
+  - component: {fileID: 4707918331467099101}
   m_Layer: 0
   m_Name: Myrrh
   m_TagString: Untagged
@@ -10022,6 +10053,7 @@ GameObject:
   - component: {fileID: 1623713741543223170}
   - component: {fileID: 4707918331514627744}
   - component: {fileID: 4707918331514627745}
+  - component: {fileID: 4707918331514627746}
   m_Layer: 0
   m_Name: Amaranth
   m_TagString: Untagged
@@ -10072,6 +10104,7 @@ GameObject:
   - component: {fileID: 1623713741555599567}
   - component: {fileID: 4707918331535393261}
   - component: {fileID: 4707918331535393262}
+  - component: {fileID: 4707918331535393263}
   m_Layer: 0
   m_Name: 102PureTea
   m_TagString: Untagged
@@ -10144,6 +10177,7 @@ GameObject:
   - component: {fileID: 1623713743445935461}
   - component: {fileID: 4707918330212895815}
   - component: {fileID: 4707918330212895816}
+  - component: {fileID: 4707918330212895817}
   m_Layer: 0
   m_Name: ChimeraClaw
   m_TagString: Untagged
@@ -10172,6 +10206,7 @@ GameObject:
   - component: {fileID: 1623713742432786027}
   - component: {fileID: 4707918330520952649}
   - component: {fileID: 4707918330520952650}
+  - component: {fileID: 4707918330520952651}
   m_Layer: 0
   m_Name: MoonMushroom
   m_TagString: Untagged
@@ -10251,6 +10286,31 @@ PolygonCollider2D:
       - {x: -6.2923775, y: 20.40319}
       - {x: -10.109871, y: 19.894066}
       - {x: -13.343431, y: 17.461596}
+--- !u!114 &4707918330212895817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274663066519487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 817888839ecf14e0b898c72fc8f79ab9, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918330520952649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10302,6 +10362,31 @@ PolygonCollider2D:
       - {x: 12.030856, y: 5.940586}
       - {x: 13.039615, y: 6.086843}
       - {x: 13.934443, y: 7.881212}
+--- !u!114 &4707918330520952651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274663156929713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 00d4a92df400b43ceb477b5a12a57bbf, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331151032554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10349,6 +10434,31 @@ PolygonCollider2D:
       - {x: -0.17, y: 1.3057756}
       - {x: -0.17, y: -3.48}
       - {x: -1.6003969, y: -5.589855}
+--- !u!114 &4707918331151032556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274661587823378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 024fba99596f2470a940d2b64cd0f549, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331374426762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10401,6 +10511,31 @@ PolygonCollider2D:
       - {x: 13.755539, y: -9.552905}
       - {x: 11.048562, y: -9.048745}
       - {x: 5.8695326, y: -2.7317915}
+--- !u!114 &4707918331374426764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274661825827186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db248661d6ba84ebaa44b4613ac28bdf, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331397547179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10447,6 +10582,31 @@ PolygonCollider2D:
       - {x: 8.185533, y: -1.6242921}
       - {x: 2.7849026, y: 3.961291}
       - {x: 3.4001184, y: 5.505262}
+--- !u!114 &4707918331397547181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274661869268819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e2ab4bc6f6b8148d08c167c4c6b93826, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331444624314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10497,6 +10657,31 @@ PolygonCollider2D:
       - {x: -8.305662, y: -0.32054517}
       - {x: -7.540947, y: 1.7606559}
       - {x: -7.8147736, y: 2.777708}
+--- !u!114 &4707918331444624316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274662166687810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3d93cca9eb07d4610b001e39189e4415, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331467099099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10545,6 +10730,31 @@ PolygonCollider2D:
       - {x: -10.831958, y: -10.6219425}
       - {x: -12.517069, y: -10.713178}
       - {x: -13.779499, y: -20.124739}
+--- !u!114 &4707918331467099101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274662207119395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c69ae7c5f58cf43dba59010bdb1be895, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331514627744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10595,6 +10805,31 @@ PolygonCollider2D:
       - {x: -5.6201177, y: 1.894511}
       - {x: -8.693859, y: -2.6638792}
       - {x: -11.101926, y: -3.7474174}
+--- !u!114 &4707918331514627746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274662234533208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ec07992978fdb48e1858695801b109d6, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!114 &4707918331535393261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10640,6 +10875,31 @@ PolygonCollider2D:
       - {x: -2.7363205, y: 11.754598}
       - {x: -4.716629, y: 12.640932}
       - {x: -8.26777, y: 8.527985}
+--- !u!114 &4707918331535393263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090274662272993813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e55005d9a6fa04981ae95422c21eded9, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!1001 &7434979835901075425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10647,6 +10907,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 711675196}
     m_Modifications:
+    - target: {fileID: 3259213174424118782, guid: e99c7c3ec8353ad4b8e0c8a45a61b6b1, type: 3}
+      propertyPath: leftReleasedEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b3dc97b2498248c2b209dc6808ea07b, type: 2}
     - target: {fileID: 5406239108944226035, guid: e99c7c3ec8353ad4b8e0c8a45a61b6b1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 109.33
@@ -10716,6 +10980,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 711675196}
     m_Modifications:
+    - target: {fileID: 2340449453968796756, guid: 158875f2b4ec1dc448742be7d2b6fe68, type: 3}
+      propertyPath: leftReleasedEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c9791eada87fd419d924ffe91228309c, type: 2}
     - target: {fileID: 6679006691205570080, guid: 158875f2b4ec1dc448742be7d2b6fe68, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

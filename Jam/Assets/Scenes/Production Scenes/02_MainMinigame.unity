@@ -2156,6 +2156,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2809540556786409279, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
   m_PrefabInstance: {fileID: 1157558273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1157558275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2809540557942932638, guid: e605b7d53cfaf1c49991f1d592c6a535, type: 3}
+  m_PrefabInstance: {fileID: 1157558273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1157558277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157558275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c81949184cb0b4fd38a28a848d2d7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseOverEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  leftClickedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c08417e46218a4f6b81ca1945e4baa51, type: 2}
+  leftReleasedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playDuringPause: 0
 --- !u!1 &1202504912
 GameObject:
   m_ObjectHideFlags: 0

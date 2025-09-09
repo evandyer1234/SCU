@@ -57,12 +57,20 @@ public class PauseMenuManager : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (_paused && Mathf.Approximately(Time.timeScale, 1))
+        {
+            Time.timeScale = 0f;
+        }
+    }
+
     public void Resume()
     {
         _pauseMenu.SetActive(false);
         _paused = false;
-        //AkSoundEngine.SetRTPCValue("isPaused", 0, null);
         Time.timeScale = 1f;
+        //AkSoundEngine.SetRTPCValue("isPaused", 0, null);
 
         EnableAllTooltipsInScene(true);
         EnableAllOutlinesInScene(true);
@@ -90,7 +98,6 @@ public class PauseMenuManager : MonoBehaviour
         _pauseMenu.SetActive(true);
         _paused = true;
         //AkSoundEngine.SetRTPCValue("isPaused", 1, null);
-        Time.timeScale = 0f;
         if (_gameOver)
         {
             _resumeButton.SetActive(false);

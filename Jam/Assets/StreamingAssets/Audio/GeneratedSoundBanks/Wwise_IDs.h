@@ -13,14 +13,28 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMARANTH = 2363214772U;
+        static const AkUniqueID PLAY_BOIL = 1256853996U;
         static const AkUniqueID PLAY_BUTTON_CLICK = 1149159311U;
         static const AkUniqueID PLAY_BUTTON_HOVER = 4021863785U;
+        static const AkUniqueID PLAY_CHIMERA_CLAW = 987105281U;
+        static const AkUniqueID PLAY_DEATHS_FLOWER = 2948119407U;
+        static const AkUniqueID PLAY_FAIRY_DUST = 1871809092U;
         static const AkUniqueID PLAY_GENERAL_RELEASE = 1729406560U;
         static const AkUniqueID PLAY_GENERAL_TAP = 3018165852U;
+        static const AkUniqueID PLAY_GRIND = 3519015892U;
         static const AkUniqueID PLAY_HEART_BEAT = 1545039113U;
         static const AkUniqueID PLAY_LUNG_PUMP_CLICK = 3442601710U;
+        static const AkUniqueID PLAY_MOON_MUSHROOM = 2345606802U;
+        static const AkUniqueID PLAY_MOONSTONE = 622392560U;
+        static const AkUniqueID PLAY_MYRRH = 1506709500U;
         static const AkUniqueID PLAY_ORGAN_CLICK = 2121040196U;
         static const AkUniqueID PLAY_ORGAN_RELEASE = 70763155U;
+        static const AkUniqueID PLAY_SCROLL_MAGNIFYING_GLASS = 2518694598U;
+        static const AkUniqueID PLAY_SPIRIT_OF_THE_SAGES = 2046168745U;
+        static const AkUniqueID PLAY_SUNBATHED_IVY = 603186159U;
+        static const AkUniqueID PLAY_TEA_BAG = 3051426075U;
+        static const AkUniqueID PLAY_TOGGLE_MAGNIFYING_GLASS = 3350264679U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
     } // namespace EVENTS
 

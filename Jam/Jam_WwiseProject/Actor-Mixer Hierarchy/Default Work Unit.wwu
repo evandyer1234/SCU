@@ -480,6 +480,807 @@
 								<ActiveSource Name="heart beat" ID="{C433AD66-73C2-4A1E-97B8-CD4FE1CBC78A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Folder Name="Alchemy" ID="{0D3AD8EE-9593-436D-B191-05B99CD77F87}" ShortID="113917457">
+							<ChildrenList>
+								<Sound Name="fairy dust" ID="{11634AC3-D2DE-486F-A667-D6CBDD1CAC52}" ShortID="814428902">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fairy dust" ID="{FA4758E2-7FD4-4F84-90CF-F70BA04E22DA}">
+											<Language>SFX</Language>
+											<AudioFile>fairy dust.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1055397902"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fairy dust" ID="{FA4758E2-7FD4-4F84-90CF-F70BA04E22DA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="moonstone" ID="{3E5EADF1-3C21-44CF-8BFD-236BBE62E1BF}" ShortID="1008717182">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="moonstone" ID="{2D17F2A5-3129-4131-B25A-959A6A852848}">
+											<Language>SFX</Language>
+											<AudioFile>moonstone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="909599830"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="moonstone" ID="{2D17F2A5-3129-4131-B25A-959A6A852848}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="spirit of the sages" ID="{35B64893-0AE6-4EE0-8D42-3DBC87048699}" ShortID="774342732">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="spirit of the sages" ID="{0D55B74F-86C4-4742-A1CA-CE51AEE2FB17}">
+											<Language>SFX</Language>
+											<AudioFile>spirit of the sages.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="563477342"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="spirit of the sages" ID="{0D55B74F-86C4-4742-A1CA-CE51AEE2FB17}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="chimera claw" ID="{A5702BA2-F332-465D-A31A-28E4BF0E1A62}" ShortID="809039112">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Claw Scratch_V1_01" ID="{29983257-AC95-4F3C-B00F-A7888DB55C9E}" ShortID="823886926">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Claw Scratch_V1_01" ID="{2889A9DA-77F1-4C33-A291-8E66C37A2C15}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Claw Scratch_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="266028095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Claw Scratch_V1_01" ID="{2889A9DA-77F1-4C33-A291-8E66C37A2C15}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Claw Scratch_V1_02" ID="{647DE2E0-3789-406D-BF8E-257A980C2752}" ShortID="885477902">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Claw Scratch_V1_02" ID="{29D2D83A-E7AF-4BFE-9364-570C0A84DE02}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Claw Scratch_V1_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="899336273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Claw Scratch_V1_02" ID="{29D2D83A-E7AF-4BFE-9364-570C0A84DE02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Claw Scratch_V1_03" ID="{D3283A22-153D-4EB5-A826-86DF15D159A1}" ShortID="699350495">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Claw Scratch_V1_03" ID="{19BD3932-64D2-4F3C-BF16-73114AA95763}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Claw Scratch_V1_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="70384945"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Claw Scratch_V1_03" ID="{19BD3932-64D2-4F3C-BF16-73114AA95763}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{6FE763C2-C519-42B0-AE1B-4F086A498EF7}" ShortID="161285264">
+														<PropertyList>
+															<Property Name="Render" Type="bool" Value="True"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="New_Parametric_EQ" ID="{BB0DF437-1E3E-4552-9717-697F713EDC0F}" WorkUnitID="{0AF99F80-9944-4BC9-924F-053DC69AB247}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="myrrh" ID="{E6933AAE-B7BC-468D-9B74-9FB1ED011C7D}" ShortID="353403560">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Twig Snap_V1_01" ID="{592B7F81-67BA-444B-96F9-0FAD6DDFE437}" ShortID="601085850">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Twig Snap_V1_01" ID="{BDC054A3-C56C-4DB2-946B-6F135D978A0A}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Twig Snap_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685882836"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Twig Snap_V1_01" ID="{BDC054A3-C56C-4DB2-946B-6F135D978A0A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Twig Snap_V1_02" ID="{1E6B43BC-FBE0-42C2-A843-6C992F2AC6BD}" ShortID="184186038">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Twig Snap_V1_02" ID="{1C38CE11-9562-47B0-9056-DA9170D9534F}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Twig Snap_V1_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="207407049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Twig Snap_V1_02" ID="{1C38CE11-9562-47B0-9056-DA9170D9534F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Twig Snap_V1_03" ID="{B9A88BE3-A5C2-4840-9845-6CF5B68AAC00}" ShortID="235752378">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Twig Snap_V1_03" ID="{E1BFDC87-68EA-4668-A772-6EEDB65265B3}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Twig Snap_V1_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="410393915"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Twig Snap_V1_03" ID="{E1BFDC87-68EA-4668-A772-6EEDB65265B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Twig Snap_V1_04" ID="{93E81724-FC3C-47EC-BC3D-84F843225261}" ShortID="836777882">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Twig Snap_V1_04" ID="{31FC03FE-F0B1-48C7-AA25-E5C825213E30}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Twig Snap_V1_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="424702026"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Twig Snap_V1_04" ID="{31FC03FE-F0B1-48C7-AA25-E5C825213E30}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="tea bag" ID="{5919FF11-2391-4B20-9352-F2E61B932518}" ShortID="191386712">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SCU_Alchemy_Tea Bag Crunch_V1_01" ID="{7531F0F1-2879-4BC5-AC86-EB3A7C13152E}">
+											<Language>SFX</Language>
+											<AudioFile>SCU_Alchemy_Tea Bag Crunch_V1_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="690543678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SCU_Alchemy_Tea Bag Crunch_V1_01" ID="{7531F0F1-2879-4BC5-AC86-EB3A7C13152E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sunbathed ivy" ID="{799F40E5-FA4D-4CDB-BF30-4BCE5E1469FC}" ShortID="684871569">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SCU_Alchemy_Leaf Rustle_V1_01" ID="{7570DC5A-BE33-42E2-B40A-1510F1C94533}">
+											<Language>SFX</Language>
+											<AudioFile>SCU_Alchemy_Leaf Rustle_V1_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798683606"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SCU_Alchemy_Leaf Rustle_V1_01" ID="{7570DC5A-BE33-42E2-B40A-1510F1C94533}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="amaranth" ID="{2250BE7F-A375-462B-B20D-49804CF47F67}" ShortID="894877868">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Leaf Crunch_V1_01" ID="{8B11E957-09E2-40F1-9FD4-2B7E82442AE5}" ShortID="802635788">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Leaf Crunch_V1_01" ID="{58046B08-9F2A-4288-A625-424633F370EB}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Leaf Crunch_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983809582"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Leaf Crunch_V1_01" ID="{58046B08-9F2A-4288-A625-424633F370EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Leaf Crunch_V1_02" ID="{849221B0-5A5D-4561-A1A4-E760694DB0F0}" ShortID="472459806">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Leaf Crunch_V1_02" ID="{AC55DD3D-A0F1-420C-AD1E-78308F25ABF2}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Leaf Crunch_V1_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="357155073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Leaf Crunch_V1_02" ID="{AC55DD3D-A0F1-420C-AD1E-78308F25ABF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="deaths flower" ID="{4F28C1F6-45DB-4211-9829-00036CF018F1}" ShortID="935668473">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Leaf Crunch_V1_03" ID="{D0D762C1-9782-4E88-9287-B39DE5BBF556}" ShortID="344911339">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Leaf Crunch_V1_03" ID="{0D420985-E802-4C34-8860-4D8C62B8928D}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Leaf Crunch_V1_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1054815522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Leaf Crunch_V1_03" ID="{0D420985-E802-4C34-8860-4D8C62B8928D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Leaf Crunch_V1_04" ID="{91E0EAA6-7A74-4C3A-A13D-7BA299C570EC}" ShortID="164256208">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Leaf Crunch_V1_04" ID="{603F129C-D971-4DBC-9666-B96883442391}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Leaf Crunch_V1_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="355571966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Leaf Crunch_V1_04" ID="{603F129C-D971-4DBC-9666-B96883442391}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="moon mushroom" ID="{A12AC21A-F4B1-4051-9B7E-31DFD78B7869}" ShortID="228182796">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Mushroom Boing_V1_01" ID="{515C79F0-D10A-47D5-8A9C-C081087F3381}" ShortID="474963318">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mushroom Boing_V1_01" ID="{802A8248-1E92-416B-BD17-F97255609C5B}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mushroom Boing_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685369083"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mushroom Boing_V1_01" ID="{802A8248-1E92-416B-BD17-F97255609C5B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Mushroom Boing_V1_02" ID="{840F353A-A79B-4384-A222-BB49A6277E0D}" ShortID="101252493">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mushroom Boing_V1_02" ID="{D7AF669E-09C8-4AD1-A1BD-9BC105EA9DC1}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mushroom Boing_V1_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="789493984"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mushroom Boing_V1_02" ID="{D7AF669E-09C8-4AD1-A1BD-9BC105EA9DC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Mushroom Boing_V1_03" ID="{86FBE8D9-99F6-4C33-84E4-5B6F3D589446}" ShortID="115698573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mushroom Boing_V1_03" ID="{48079D38-AC74-48D9-A5EB-14D85B3CCFDE}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mushroom Boing_V1_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="268022123"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mushroom Boing_V1_03" ID="{48079D38-AC74-48D9-A5EB-14D85B3CCFDE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="boil" ID="{A450F321-9E3B-4665-9DE7-A0C2D7860A65}" ShortID="873956124">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Cauldron_V1_01" ID="{9FE6DE5D-4EC9-48F3-A814-4D86BDC71B58}" ShortID="1039382381">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Cauldron_V1_01" ID="{47F4474E-D5C1-4ADB-8AE0-B114EBF19FD6}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Cauldron_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="953043515"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Cauldron_V1_01" ID="{47F4474E-D5C1-4ADB-8AE0-B114EBF19FD6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="grind" ID="{DAB3C4CA-0ECC-467F-8DF0-B6B3723EC546}" ShortID="341973076">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SCU_Alchemy_Mortar-Pestle_V1_01" ID="{3ED1A164-94D2-4E53-A1AB-2E96BF9AE32D}" ShortID="66346808">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mortar-Pestle_V1_01" ID="{7A7612AE-8969-4D61-9E8C-6AFEC7332FF7}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mortar-Pestle_V1_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="953035095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mortar-Pestle_V1_01" ID="{7A7612AE-8969-4D61-9E8C-6AFEC7332FF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Mortar-Pestle_V1_02" ID="{052C01C5-9F1B-40C7-B00E-865C1BC1BA69}" ShortID="58340365">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mortar-Pestle_V1_02" ID="{B2C02BBC-8ACC-4466-9106-0E974F8CBE37}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mortar-Pestle_V1_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="326523950"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mortar-Pestle_V1_02" ID="{B2C02BBC-8ACC-4466-9106-0E974F8CBE37}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SCU_Alchemy_Mortar-Pestle_V1_03" ID="{7F64C031-1EC1-4B4C-A2E0-97219A047061}" ShortID="632053919">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SCU_Alchemy_Mortar-Pestle_V1_03" ID="{DAE342B2-98EC-4BA9-93F6-2BE64FA4AABA}">
+													<Language>SFX</Language>
+													<AudioFile>SCU_Alchemy_Mortar-Pestle_V1_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="521394631"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SCU_Alchemy_Mortar-Pestle_V1_03" ID="{DAE342B2-98EC-4BA9-93F6-2BE64FA4AABA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="magnifying glass" ID="{1E075408-D5E4-4329-AE80-2345C13EC599}" ShortID="434401180">
+							<ChildrenList>
+								<Sound Name="scroll magnifying glass" ID="{304DDE1A-3C70-4B6B-BB0B-976C407D2564}" ShortID="651504061">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{48046411-0E23-4CED-A85C-E15BAD1BAFA9}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="magnifying glass scroll" ID="{118584D5-F40F-42DB-9E42-BD942521324D}">
+											<Language>SFX</Language>
+											<AudioFile>magnifying glass scroll.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="637481433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="magnifying glass scroll" ID="{118584D5-F40F-42DB-9E42-BD942521324D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="toggle magnifying glass" ID="{C9814534-0105-4F06-AE17-CC7FB02A5225}" ShortID="657400036">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="magnifying glass close" ID="{AC6AF811-B079-4A57-8C4D-77522C4F2AD4}" ShortID="365818554">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnifying glass close" ID="{B75E82C0-21D7-4E54-813D-29A4B318A513}">
+													<Language>SFX</Language>
+													<AudioFile>magnifying glass close.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548392929"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnifying glass close" ID="{B75E82C0-21D7-4E54-813D-29A4B318A513}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="magnifying glass open" ID="{A727CA11-5D5C-46D5-9460-9F90EE9C3823}" ShortID="661790782">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8FBCBB6A-2885-4210-BC99-6192A6DCFFDC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D58996A-D609-4F37-9708-6E893F306926}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="magnifying glass open" ID="{DF7940C0-441D-42DC-AD3C-E25947E006D2}">
+													<Language>SFX</Language>
+													<AudioFile>magnifying glass open.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="348617389"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="magnifying glass open" ID="{DF7940C0-441D-42DC-AD3C-E25947E006D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Playlist">
+											<Reference>
+												<ObjectRef Name="magnifying glass open" ID="{A727CA11-5D5C-46D5-9460-9F90EE9C3823}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+											</Reference>
+											<Reference>
+												<ObjectRef Name="magnifying glass close" ID="{AC6AF811-B079-4A57-8C4D-77522C4F2AD4}" WorkUnitID="{D81828B9-48FE-4DB9-BADB-3D9D6918D66F}"/>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
