@@ -5677,14 +5677,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 635044947}
     m_Modifications:
-    - target: {fileID: 1735747459900674459, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Size.x
-      value: 47.329
-      objectReference: {fileID: 0}
-    - target: {fileID: 1735747459900674459, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
-      propertyPath: m_Size.y
-      value: 46.584
-      objectReference: {fileID: 0}
     - target: {fileID: 3050129540788588320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_text
       value: Open Recipe Book
@@ -5731,11 +5723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 47.329
+      value: 63.467
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 46.584
+      value: 60.392
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5767,11 +5759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 934
+      value: 942.069
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 652.5
+      value: 645.6
       objectReference: {fileID: 0}
     - target: {fileID: 3050129540837830320, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5833,7 +5825,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1735747459900674459, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
+    - {fileID: 5506178750128270781, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36a0b80a602ad9441a74ff0d43d6c2c3, type: 3}
 --- !u!224 &1396985666 stripped
 RectTransform:

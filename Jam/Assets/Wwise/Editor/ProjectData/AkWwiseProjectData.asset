@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Virtual Acoustics
       ObjectType: 5
@@ -21,13 +21,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: b8eb6506fb98214dbf3f83e006d9fd35
-    ParentPath: Virtual Acoustics/Default Work Unit
+    ParentPath: Virtual Acoustics\Default Work Unit
     guid: b8eb6506fb98214dbf3f83e006d9fd35
     GuidInternal: 
-    m_lastTime: -8584522607136925740
+    m_lastTime: -8584522195084944108
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Master-Mixer Hierarchy
       ObjectType: 5
@@ -35,10 +35,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 6a99581d09d6374f97086e893f306926
-    ParentPath: Master-Mixer Hierarchy/Default Work Unit
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6a99581d09d6374f97086e893f306926
     GuidInternal: 
-    m_lastTime: -8584477607783086126
+    m_lastTime: -8584476981307185695
     List:
     - name: AMB
       guid: 402e4812c70fb64a803ca2e547300499
@@ -59,7 +59,7 @@ MonoBehaviour:
       - ElementName: AMB
         ObjectType: 2
         guid: 402e4812c70fb64a803ca2e547300499
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/AMB
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\AMB
     - name: DX
       guid: b8379625ad7ae849a59b1af896fe645a
       id: 1836525785
@@ -79,7 +79,7 @@ MonoBehaviour:
       - ElementName: DX
         ObjectType: 2
         guid: b8379625ad7ae849a59b1af896fe645a
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/DX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\DX
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -93,7 +93,7 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
     - name: MediumVerb
       guid: c2dc03aaa7de534484ea9c430c6fb7ee
       id: 202757255
@@ -110,7 +110,7 @@ MonoBehaviour:
       - ElementName: MediumVerb
         ObjectType: 1
         guid: c2dc03aaa7de534484ea9c430c6fb7ee
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MediumVerb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MediumVerb
     - name: MX
       guid: eb271d2111bef5409f1b9a30f60de252
       id: 1685527054
@@ -127,7 +127,7 @@ MonoBehaviour:
       - ElementName: MX
         ObjectType: 2
         guid: eb271d2111bef5409f1b9a30f60de252
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/MX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MX
     - name: SFX
       guid: 11640448230eed4ca85ce15bad1bafa9
       id: 393239870
@@ -144,7 +144,7 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 2
         guid: 11640448230eed4ca85ce15bad1bafa9
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
     - name: SmallVerb
       guid: 91adf1460c3eb0468cbdbc3995d43e1e
       id: 117523933
@@ -161,9 +161,9 @@ MonoBehaviour:
       - ElementName: SmallVerb
         ObjectType: 1
         guid: 91adf1460c3eb0468cbdbc3995d43e1e
-      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SmallVerb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SmallVerb
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
@@ -171,10 +171,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: bacf48abaa24434abd679c18b69c0674
-    ParentPath: SoundBanks/Default Work Unit
+    ParentPath: SoundBanks\Default Work Unit
     guid: bacf48abaa24434abd679c18b69c0674
     GuidInternal: 
-    m_lastTime: -8584477515360263153
+    m_lastTime: -8584476981294804764
     List:
     - name: MainSoundBank
       guid: 5e53539efbf5714fb92a2b48c2c50cbc
@@ -189,9 +189,9 @@ MonoBehaviour:
       - ElementName: MainSoundBank
         ObjectType: 7
         guid: 5e53539efbf5714fb92a2b48c2c50cbc
-      Path: SoundBanks/Default Work Unit/MainSoundBank
+      Path: SoundBanks\Default Work Unit\MainSoundBank
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -199,10 +199,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 7a8446f03b8ca84498e98ad5bac04714
-    ParentPath: Events/Default Work Unit
+    ParentPath: Events\Default Work Unit
     guid: 7a8446f03b8ca84498e98ad5bac04714
     GuidInternal: 
-    m_lastTime: -8584477515360219181
+    m_lastTime: -8584476981309302333
     List:
     - name: Music
       guid: 00760bf8827a6043826c2986c442e961
@@ -217,7 +217,7 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 00760bf8827a6043826c2986c442e961
-      Path: Events/Default Work Unit/Music
+      Path: Events\Default Work Unit\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -234,7 +234,7 @@ MonoBehaviour:
       - ElementName: Play_button_click
         ObjectType: 3
         guid: f7094facc152e242b7d358aa97a3dbb6
-      Path: Events/Default Work Unit/Play_button_click
+      Path: Events\Default Work Unit\Play_button_click
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.5
@@ -251,7 +251,7 @@ MonoBehaviour:
       - ElementName: Play_button_hover
         ObjectType: 3
         guid: 7311273d7073254e98b46410fcefdc48
-      Path: Events/Default Work Unit/Play_button_hover
+      Path: Events\Default Work Unit\Play_button_hover
       maxAttenuation: 0
       maxDuration: 0.130875
       minDuration: 0.130875
@@ -271,7 +271,7 @@ MonoBehaviour:
       - ElementName: Play_general_release
         ObjectType: 3
         guid: 6db1129ff2f88246b45d0b052ed1f0ba
-      Path: Events/Default Work Unit/SFX/Play_general_release
+      Path: Events\Default Work Unit\SFX\Play_general_release
       maxAttenuation: 0
       maxDuration: 0.5683333
       minDuration: 0.19052084
@@ -291,10 +291,44 @@ MonoBehaviour:
       - ElementName: Play_general_tap
         ObjectType: 3
         guid: efa0a6e1aa958d49819c0470f4f5a036
-      Path: Events/Default Work Unit/SFX/Play_general_tap
+      Path: Events\Default Work Unit\SFX\Play_general_tap
       maxAttenuation: 0
       maxDuration: 0.5683333
       minDuration: 0.5683333
+    - name: Play_heart_beat
+      guid: 58fc8cd3d7b11843a3462e149e0d29e9
+      id: 1545039113
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a8446f03b8ca84498e98ad5bac04714
+      - ElementName: Play_heart_beat
+        ObjectType: 3
+        guid: 58fc8cd3d7b11843a3462e149e0d29e9
+      Path: Events\Default Work Unit\Play_heart_beat
+      maxAttenuation: 0
+      maxDuration: 0.563375
+      minDuration: 0.563375
+    - name: Play_lung_pump_click
+      guid: 7d2244ca4427504090ae65374c48e3f6
+      id: 3442601710
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7a8446f03b8ca84498e98ad5bac04714
+      - ElementName: Play_lung_pump_click
+        ObjectType: 3
+        guid: 7d2244ca4427504090ae65374c48e3f6
+      Path: Events\Default Work Unit\Play_lung_pump_click
+      maxAttenuation: 0
+      maxDuration: 0.28125
+      minDuration: 0.28125
     - name: Play_organ_click
       guid: e6100331793eaa429c96de59173e0db6
       id: 2121040196
@@ -308,7 +342,7 @@ MonoBehaviour:
       - ElementName: Play_organ_click
         ObjectType: 3
         guid: e6100331793eaa429c96de59173e0db6
-      Path: Events/Default Work Unit/Play_organ_click
+      Path: Events\Default Work Unit\Play_organ_click
       maxAttenuation: 0
       maxDuration: 1.375
       minDuration: 1.375
@@ -325,7 +359,7 @@ MonoBehaviour:
       - ElementName: Play_organ_release
         ObjectType: 3
         guid: 677be62a696143468e9827cc8fb7d0fe
-      Path: Events/Default Work Unit/Play_organ_release
+      Path: Events\Default Work Unit\Play_organ_release
       maxAttenuation: 0
       maxDuration: 0.375
       minDuration: 0.375
@@ -342,7 +376,7 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: cc5afe51be4efe40ac56711b3bb381d6
-      Path: Events/Default Work Unit/SFX
+      Path: Events\Default Work Unit\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -362,12 +396,12 @@ MonoBehaviour:
       - ElementName: StartMusic
         ObjectType: 3
         guid: f075cb5c42567a4594a35581b10aa7c7
-      Path: Events/Default Work Unit/Music/StartMusic
+      Path: Events\Default Work Unit\Music\StartMusic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
       ObjectType: 5
@@ -375,10 +409,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: a69f641c3bab2248acdb7be4b41d4c51
-    ParentPath: Game Parameters/Default Work Unit
+    ParentPath: Game Parameters\Default Work Unit
     guid: a69f641c3bab2248acdb7be4b41d4c51
     GuidInternal: 
-    m_lastTime: -8584477607783002109
+    m_lastTime: -8584476981309292360
     List:
     - name: IsLevelSelect
       guid: 41eaea101af453488b329b62d15f40ed
@@ -393,7 +427,7 @@ MonoBehaviour:
       - ElementName: IsLevelSelect
         ObjectType: 13
         guid: 41eaea101af453488b329b62d15f40ed
-      Path: Game Parameters/Default Work Unit/IsLevelSelect
+      Path: Game Parameters\Default Work Unit\IsLevelSelect
     - name: IsPaused
       guid: 8453a215b6cd004986130f1baa485b33
       id: 2443794319
@@ -407,7 +441,7 @@ MonoBehaviour:
       - ElementName: IsPaused
         ObjectType: 13
         guid: 8453a215b6cd004986130f1baa485b33
-      Path: Game Parameters/Default Work Unit/IsPaused
+      Path: Game Parameters\Default Work Unit\IsPaused
     - name: MasterFaderLevel
       guid: 9859b8a3443c1c439605da5465830915
       id: 3195687121
@@ -421,7 +455,7 @@ MonoBehaviour:
       - ElementName: MasterFaderLevel
         ObjectType: 13
         guid: 9859b8a3443c1c439605da5465830915
-      Path: Game Parameters/Default Work Unit/MasterFaderLevel
+      Path: Game Parameters\Default Work Unit\MasterFaderLevel
     - name: MusicFaderLevel
       guid: 124a9ff97986b342a08ea0f01689eb1a
       id: 1664846544
@@ -435,7 +469,7 @@ MonoBehaviour:
       - ElementName: MusicFaderLevel
         ObjectType: 13
         guid: 124a9ff97986b342a08ea0f01689eb1a
-      Path: Game Parameters/Default Work Unit/MusicFaderLevel
+      Path: Game Parameters\Default Work Unit\MusicFaderLevel
     - name: SoundFaderLevel
       guid: e99f648f2dca4343a764caf395550de1
       id: 3847619804
@@ -449,9 +483,9 @@ MonoBehaviour:
       - ElementName: SoundFaderLevel
         ObjectType: 13
         guid: e99f648f2dca4343a764caf395550de1
-      Path: Game Parameters/Default Work Unit/SoundFaderLevel
+      Path: Game Parameters\Default Work Unit\SoundFaderLevel
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -459,10 +493,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: 052f16e7c05eec44aba0595afa2a390f
-    ParentPath: States/Default Work Unit
+    ParentPath: States\Default Work Unit
     guid: 052f16e7c05eec44aba0595afa2a390f
     GuidInternal: 
-    m_lastTime: -8584497656706450432
+    m_lastTime: -8584485748940512175
     List:
     - name: Location
       guid: 21351387e281764b8067248aae1f79c0
@@ -477,7 +511,7 @@ MonoBehaviour:
       - ElementName: Location
         ObjectType: 9
         guid: 21351387e281764b8067248aae1f79c0
-      Path: States/Default Work Unit/Location
+      Path: States\Default Work Unit\Location
       values:
       - name: Alchemy
         guid: 9a44fd2204282b4092b5d2ee115835c4
@@ -563,7 +597,7 @@ MonoBehaviour:
       ValueIcons: []
       valuesInternal: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
       ObjectType: 5
@@ -571,13 +605,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f54625fefc1a474e83fb6e6d2c4d5e7f
-    ParentPath: Switches/Default Work Unit
+    ParentPath: Switches\Default Work Unit
     guid: f54625fefc1a474e83fb6e6d2c4d5e7f
     GuidInternal: 
-    m_lastTime: -8584522607136980618
+    m_lastTime: -8584522195084949205
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Triggers
       ObjectType: 5
@@ -585,10 +619,10 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: fbd7788a64caa34b81f44395cdfe2aba
-    ParentPath: Triggers/Default Work Unit
+    ParentPath: Triggers\Default Work Unit
     guid: fbd7788a64caa34b81f44395cdfe2aba
     GuidInternal: 
-    m_lastTime: -8584522607136947195
+    m_lastTime: -8584522195084944108
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 05000000060000000800000009000000150000001600000017000000
